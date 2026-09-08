@@ -362,7 +362,7 @@ function renderDash(){
  const doneI=s=>{s=String(s||'').trim();if(/to\s*be/i.test(s))return false;return /^comp/i.test(s)||/^closed$/i.test(s)};
  let itrT=ITR.length,itrCl=ITR.filter(r=>doneI(r[5])).length,itrOp=itrT-itrCl,itrPct=itrT?Math.round(itrCl/itrT*100):0;
  let puT=PUNCH.length,puCl=PUNCH.filter(r=>String(r[5]).trim()==='Closed').length,puOp=puT-puCl,puPct=puT?Math.round(puCl/puT*100):0;
- let comp100=RFC.filter(r=>typeof r.tot==='number'&&r.tot>=100).length;
+ let comp100=DPRSUM.signed;
  $('dash-kpis').innerHTML='<div class="kpi k-navy"><b>'+itrT.toLocaleString('en-US')+'</b><span>ITR TOTAL</span></div>'
   +'<div class="kpi k-green"><b>'+itrCl.toLocaleString('en-US')+'</b><span>ITR CLOSED</span><i class="pk" style="width:'+itrPct+'%"></i></div>'
   +'<div class="kpi k-teal"><b>'+itrPct+'%</b><span>ITR %</span></div>'
@@ -370,7 +370,9 @@ function renderDash(){
   +'<div class="kpi k-green"><b>'+puCl.toLocaleString('en-US')+'</b><span>PUNCH CLOSED</span><i class="pk" style="width:'+puPct+'%"></i></div>'
   +'<div class="kpi k-orange"><b>'+puOp.toLocaleString('en-US')+'</b><span>PUNCH OPEN</span><i class="pk" style="width:'+(100-puPct)+'%"></i></div>'
   +'<div class="kpi k-navy"><b>'+MILES.length+'</b><span>MILESTONES</span></div>'
-  +'<div class="kpi k-green"><b>'+comp100+'</b><span>100% COMPLETE</span></div>';
+  +'<div class="kpi k-green"><b>'+DPRSUM.signed+'</b><span>RFC SIGNED</span></div>'
+  +'<div class="kpi k-teal"><b>'+DPRSUM.walk+'</b><span>WALKDOWN DONE</span></div>'
+  +'<div class="kpi k-orange"><b>'+DPRSUM.submitted+'</b><span>RFC SUBMITTED</span></div>';
  let h='<tr><th>GROUP</th><th>DISCIPLINE</th><th>TOTAL</th><th>CLOSED</th><th>%</th><th>OPEN</th></tr>';
  for(const r of ITRT){
   const tot=String(r[1]||'').toLowerCase().indexOf('total')>=0;
@@ -578,28 +580,29 @@ function renderList(w){
  $(isP?'t-pu':'t-it').innerHTML='<thead>'+h+'</thead><tbody>'+(rows||emptyRow())+'</tbody>';
  $(isP?'h-pu':'h-it').textContent=d.length+' record(s)'+(trunc?' (first '+LIMIT+' shown)':'')+(sid?' | subsystem: '+sid:'')+(q?' | search: "'+q+'"':'');
 }
+const RFCSIGNED={"PS5-06-02":"COMPLETE","PS5-60-02":"COMPLETE","PS5-60-30":"COMPLETE","PS5-60-36":"COMPLETE","PS5-60-43":"COMPLETE","PS5-71-22":"COMPLETE","PS5-91-01":"COMPLETE","PS5-09-05":"PARTIAL","PS5-60-05":"PARTIAL","PS5-61-05":"PARTIAL","PS5-78-01":"PARTIAL"};const DPRSUM={walk:55,submitted:22,signed:17,full:12,part:5};
 function renderDone(){
  const SH='RFC PROGRESS';
- const d=allRFC().filter(x=>ADDS[x.sid]||(x.tot!==''&&x.tot>=100)||(x.signed+'').trim().toUpperCase().indexOf('COMPLETE')>-1||(x.signed+'').trim().toUpperCase().indexOf('PARTIAL')>-1);
+ const d=allRFC().filter(x=>ADDS[x.sid]||RFCSIGNED[x.sid]!==undefined);
  const N=NOTES[SH]||{};
  let h='<tr><th>#</th><th>SUB SYSTEM</th><th>TOTAL %</th><th>MILESTONE</th><th>RFC SIGNED</th><th>WALKDOWN STATUS</th><th>MY REMARKS</th></tr>';
  let rows='';
  d.forEach((x,i)=>{
+  const stv=RFCSIGNED[x.sid];const isFull=(stv==='COMPLETE');
   rows+='<tr data-id="'+esc(x.sid)+'" data-sh="'+SH+'">';
-  rows+='<td style="text-align:center;font-weight:700;background:'+(x.tot!==''&&x.tot>=100?'#c6efce':'#ffeb9c')+'">'+(i+1)+'</td>';
+  rows+='<td style="text-align:center;font-weight:700;background:'+(isFull?'#c6efce':'#ffeb9c')+'">'+(i+1)+'</td>';
   rows+='<td class="sublink" data-go="'+esc(x.sid)+'" style="white-space:normal;min-width:260px">'+esc(x.name)+(ADDS[x.sid]?'<button class="delsubre" data-id="'+esc(x.sid)+'" title="DELETE">✕</button>':'')+'</td>';
   rows+='<td style="text-align:center;font-weight:700">'+(x.tot===''?'-':x.tot+'%')+'</td>';
   rows+=edt(SH,x.sid,'Milestone',x.mile);
-const sg7=(x.signed||'').toString().trim().toUpperCase();
-   const scol=sg7.startsWith('COMPLETE')?'color:#2e7d32':(sg7.startsWith('PARTIAL')?'color:#ed7d31':'');
-   rows+=edt(SH,x.sid,'SIGNED',x.signed||'-','style="text-align:center;font-weight:700;'+scol+'"');
+  const stv2=isFull?'FULL SIGNED':'PARTIAL SIGNED';
+  const scol=isFull?'color:#2e7d32':'color:#ed7d31';
+  rows+=edt(SH,x.sid,'SIGNED',stv2,'style="text-align:center;font-weight:700;'+scol+'"');
   rows+=edt(SH,x.sid,'STATUS',ovv(SH,x.sid,'STATUS',x.wd),'style="text-align:center"');
   rows+='<td><input class="ni" style="width:220px" placeholder="+ remark..." value="'+esc(N[x.sid]||'')+'"></td></tr>';
  });
  $('t-done').innerHTML='<thead>'+h+'</thead><tbody>'+(rows||emptyRow())+'</tbody>';
- $('h-done').textContent=d.length+' of '+(RFC.length+Object.keys(ADDS).length)+' subsystems at 100%';
-}
-function showCablesForSub(sid){
+ $('h-done').textContent=d.length+' subsystems RFC-SIGNED (RFC PROGRESS)';
+}function showCablesForSub(sid){
  $('s-cab').value=sid;$('s-disc').value='';$('q-cab').value='';
  show('cables');renderCables();
 }
