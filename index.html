@@ -580,28 +580,44 @@ function renderList(w){
  $(isP?'t-pu':'t-it').innerHTML='<thead>'+h+'</thead><tbody>'+(rows||emptyRow())+'</tbody>';
  $(isP?'h-pu':'h-it').textContent=d.length+' record(s)'+(trunc?' (first '+LIMIT+' shown)':'')+(sid?' | subsystem: '+sid:'')+(q?' | search: "'+q+'"':'');
 }
-const RFCSIGNED={"PS5-06-02": "COMPLETE", "PS5-60-02": "COMPLETE", "PS5-60-30": "COMPLETE", "PS5-60-36": "COMPLETE", "PS5-60-43": "COMPLETE", "PS5-71-22": "COMPLETE", "PS5-91-01": "COMPLETE", "PS5-09-05": "PARTIAL", "PS5-60-05": "PARTIAL", "PS5-61-05": "PARTIAL", "PS5-78-01": "PARTIAL"};const DPRSUM={walk:55,submitted:22,signed:17,full:12,part:5};
+const RFCK=[["2026-08-08","FULL RFC-SIGNED"],["07-Aug-26","FULL RFC-SIGNED"],["PARTIAL","PARTIAL RFC-SIGNED"],["COMPLETE","FULL RFC-SIGNED"],["PS5-06-02","FULL RFC-SIGNED"],["PS5-09-05","PARTIAL RFC-SIGNED"],["PS5-60-01","PARTIAL RFC(SUBMITTED)"],["PS5-60-02","FULL RFC-SIGNED"],["PS5-60-03","PARTIAL RFC(SUBMITTED)"],["PS5-60-04","PARTIAL RFC(SUBMITTED)"],["PS5-60-05","PARTIAL RFC-SIGNED"],["PS5-60-06","PARTIAL RFC"],["PS5-60-23","FULL RFC(SUBMITTED)"],["PS5-60-24","PARTIAL RFC(SUBMITTED)"],["PS5-60-25","PARTIAL RFC(SUBMITTED)"],["PS5-60-26","FULL RFC"],["PS5-60-27","FULL RFC"],["PARTIAL","FULL RFC(SUBMITTED)"],["PS5-60-29","FULL RFC(SUBMITTED)"],["COMPLETE","FULL RFC-SIGNED"],["PS5-60-36","FULL RFC-SIGNED"],["COMPLETE","FULL RFC-SIGNED"],["PS5-60-43","FULL RFC-SIGNED"],["PS5-60-49","PARTIAL RFC(SUBMITTED)"],["PS5-60-50","PARTIAL RFC"],["PS5-60-56","PARTIAL RFC(SUBMITTED)"],["PS5-60-57","PARTIAL RFC(SUBMITTED)"],["PS5-60-58","PARTIAL RFC(SUBMITTED)"],["PS5-60-59","PARTIAL RFC"],["PS5-60-70","FULL RFC(SUBMITTED)"],["PS5-60-71","FULL RFC(SUBMITTED)"],["PS5-61-01","PARTIAL RFC"],["PS5-61-05","PARTIAL RFC-SIGNED"],["PS5-63-03","PARTIAL RFC(SUBMITTED)"],["PS5-71-18","PARTIAL RFC"],["PS5-71-20","PARTIAL RFC(SUBMITTED)"],["PS5-71-21","PARTIAL RFC"],["PS5-71-22","FULL RFC-SIGNED"],["PS5-71-23","PARTIAL RFC(SUBMITTED)"],["PS5-91-01","FULL RFC-SIGNED"],["PS5-60-07","PARTIAL RFC"],["PS5-60-08","PARTIAL RFC"],["PS5-60-09","PARTIAL RFC"],["PS5-60-12","PARTIAL RFC(SUBMITTED)"],["PS5-60-30","FULL RFC-SIGNED"],["PS5-60-31","FULL RFC(SUBMITTED)"],["PS5-60-37","FULL RFC(SUBMITTED)"],["PS5-60-38","FULL RFC(SUBMITTED)"],["PS5-60-44","PARTIAL RFC"],["PS5-60-45","PARTIAL RFC"],["PS5-60-51","PARTIAL RFC"],["PS5-60-61","PARTIAL RFC"],["PS5-60-63","PARTIAL RFC"],["PS5-71-09","PARTIAL RFC(SUBMITTED)"],["PS5-78-01","PARTIAL RFC-SIGNED"]];const DPRSUM={walk:55,submitted:22,signed:17,full:12,part:5};
 function renderDone(){
  const SH='RFC PROGRESS';
- const d=allRFC().filter(x=>ADDS[x.sid]||RFCSIGNED[x.sid]!==undefined);
+ const dm={};allRFC().forEach(x=>dm[x.sid]=x);
  const N=NOTES[SH]||{};
- let h='<tr><th>#</th><th>SUB SYSTEM</th><th>TOTAL %</th><th>MILESTONE</th><th>RFC SIGNED</th><th>WALKDOWN STATUS</th><th>MY REMARKS</th></tr>';
- let rows='';
- d.forEach((x,i)=>{
-  const stv=RFCSIGNED[x.sid];const isFull=(stv==='COMPLETE');
+ let h='<tr><th>#</th><th>SUB SYSTEM</th><th>TOTAL %</th><th>MILESTONE</th><th>RFC STATUS</th><th>WALKDOWN STATUS</th><th>MY REMARKS</th></tr>';
+ let rows='';let n=0;const seen={};let any=0;
+ RFCK.forEach(r=>{
+  const sid=r[0];const stv=r[1];const x=dm[sid];const noName=!(x&&x.name);
+  seen[sid]=1;n++;any=1;
+  const up=(stv||'').toUpperCase();
+  const isFull=up.indexOf('FULL RFC-SIGNED')===0;
+  const isPart=up.indexOf('PARTIAL RFC-SIGNED')===0;
+  const bg=noName?'#fbe4dc':(isFull?'#c6efce':(isPart?'#ffeb9c':'#eef2f7'));
+  const scol=isFull?'color:#2e7d32':(isPart?'color:#ed7d31':'color:#666');
+  rows+='<tr data-id="'+esc(sid)+'" data-sh="'+SH+'">';
+  rows+='<td style="text-align:center;font-weight:700;background:'+bg+'">'+n+'</td>';
+  rows+='<td'+(noName?'':' class="sublink" data-go="'+esc(sid)+'"')+' style="white-space:normal;min-width:260px">'+(noName?'&#9888; ':'')+(noName?esc(sid):esc(x.name+(ADDS[x.sid]?'<button class="delsubre" data-id="'+esc(x.sid)+'" title="DELETE">&#10005;</button>':'')))+'</td>';
+  rows+='<td style="text-align:center;font-weight:700">'+(x&&x.tot!==''?x.tot+'%':'-')+'</td>';
+  rows+=edt(SH,sid,'Milestone',x?x.mile:'');
+  rows+='<td style="text-align:center;font-weight:700;'+scol+'">'+esc(stv)+'</td>';
+  rows+=edt(SH,sid,'STATUS',ovv(SH,sid,'STATUS',x?x.wd:''),'style="text-align:center"');
+  rows+='<td><input class="ni" style="width:220px" placeholder="+ remark..." value="'+esc(N[sid]||'')+'"></td></tr>';
+ });
+ allRFC().forEach(x=>{
+  if(seen[x.sid]||!ADDS[x.sid])return;
+  seen[x.sid]=1;n++;any=1;
   rows+='<tr data-id="'+esc(x.sid)+'" data-sh="'+SH+'">';
-  rows+='<td style="text-align:center;font-weight:700;background:'+(isFull?'#c6efce':'#ffeb9c')+'">'+(i+1)+'</td>';
-  rows+='<td class="sublink" data-go="'+esc(x.sid)+'" style="white-space:normal;min-width:260px">'+esc(x.name)+(ADDS[x.sid]?'<button class="delsubre" data-id="'+esc(x.sid)+'" title="DELETE">&#10005;</button>':'')+'</td>';
+  rows+='<td style="text-align:center;font-weight:700;background:#eef2f7">'+n+'</td>';
+  rows+='<td class="sublink" data-go="'+esc(x.sid)+'" style="white-space:normal;min-width:260px">'+esc(x.name)+'</td>';
   rows+='<td style="text-align:center;font-weight:700">'+(x.tot===''?'-':x.tot+'%')+'</td>';
   rows+=edt(SH,x.sid,'Milestone',x.mile);
-  const stv2=isFull?'FULL SIGNED':'PARTIAL SIGNED';
-  const scol=isFull?'color:#2e7d32':'color:#ed7d31';
-  rows+=edt(SH,x.sid,'SIGNED',stv2,'style="text-align:center;font-weight:700;'+scol+'"');
+  rows+='<td style="text-align:center;font-weight:700;color:#666">-</td>';
   rows+=edt(SH,x.sid,'STATUS',ovv(SH,x.sid,'STATUS',x.wd),'style="text-align:center"');
   rows+='<td><input class="ni" style="width:220px" placeholder="+ remark..." value="'+esc(N[x.sid]||'')+'"></td></tr>';
  });
  $('t-done').innerHTML='<thead>'+h+'</thead><tbody>'+(rows||emptyRow())+'</tbody>';
- $('h-done').textContent=d.length+' subsystems RFC-SIGNED (RFC PROGRESS)';
+ $('h-done').textContent=any?(n+' subsystems (RFC STATUS - RFC PROGRESS)'):'0 subsystems';
 }
 function showCablesForSub(sid){
  $('s-cab').value=sid;$('s-disc').value='';$('q-cab').value='';
