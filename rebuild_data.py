@@ -182,14 +182,19 @@ if dpr_files:
     for r0 in ws_dpr.iter_rows(min_row=1, max_row=1, values_only=True):
         a1 = str(r0[0] or '')
     rfc_status_col = Counter()
-    
+    rfc_rows = []      # (sid, status) for rows where col10 has an RFC status AND row has a subsystem id
+    junk_rows = []     # col10 statuses on rows WITHOUT a subsystem id (attributed later)
+    dpr_valid_sids = set()
+
     for row in ws_dpr.iter_rows(min_row=4, values_only=True):
         vals = list(row[:81])
         sub = str(vals[0] or '').strip()
+        had_id = bool(re.match(r'PS5-\d{2}-\d{2}', sub))
+        status10 = str(vals[10] or '').strip() if len(vals) > 10 else ''
+
         if not sub or 'GRAND TOTAL' in sub.upper():
             continue
-        
-        # Extract subsystem ID from "PS5-01-01 - Fire Water Jockey Pump A/B"
+
         sid = sub.split(' - ')[0].strip() if ' - ' in sub else sub.strip()
         
         def fmt_date(v):
@@ -262,9 +267,15 @@ if dpr_files:
 
         if len(vals) > 10 and vals[10]:
             rfc_status_col[str(vals[10]).strip().upper()] += 1
+            if had_id:
+                rfc_rows.append((sid, str(vals[10]).strip()))
+                dpr_valid_sids.add(sid)
+            else:
+                junk_rows.append(str(vals[10]).strip())
 
     wb_dpr.close()
     print(f"  RFC PROGRESS rows: {len(dpr_data)}")
+    print(f"  RFC statuses (col10): valid={len(rfc_rows)} junk={len(junk_rows)}")
     s10 = rfc_status_col.get('FULL RFC-SIGNED', 0)
     s5 = rfc_status_col.get('PARTIAL RFC-SIGNED', 0)
     sub_full = rfc_status_col.get('FULL RFC(SUBMITTED)', 0)
@@ -407,7 +418,6 @@ else:
 print("\n" + "="*60)
 print("STEP 5: Build SUBS from unique subsystems in ITR")
 print("="*60)
-
 all_subs = set()
 for r in itr_raw:
     if r[9]: all_subs.add(r[9])
@@ -598,6 +608,59 @@ PUNT.append(grand)
 print(f"  PUNT rows: {len(PUNT)}")
 
 print("\n" + "="*60)
+print("STEP 8.5: Build RFCK (page 7 - RFC STATUS) from DPR col10")
+print("="*60)
+
+def _cur_rfck(html_text):
+    m = re.search(r'const RFCK=\[(.*?)\];const DPRSUM', html_text, re.S)
+    if not m:
+        return []
+    try:
+        return json.loads('[' + m.group(1) + ']')
+    except Exception:
+        return []
+
+cur_rfck = _cur_rfck(html)
+
+# Subsystems already present in DPR col10 rows (valid ids)
+def _is_signed_sid(r):
+    return 'RFC-SIGNED' in (r[1] or '').upper()
+
+# Junk rows carry an RFC status but no subsystem id. The affected subsystems are
+# almost always ones already marked signed in the previous RFCK which are missing
+# from the DPR rows. Reconcile counts (6 full + 1 partial -> match DPR/DPRSUM).
+rfc_entries = list(rfc_rows)
+used = set(s for s, _ in rfc_entries)
+extra_cur = [(sid, st) for sid, st in cur_rfck
+             if sid not in used and _is_signed_sid((sid, st))]
+full_junk = sum(1 for s in junk_rows if 'FULL RFC-SIGNED' in s.upper())
+part_junk = sum(1 for s in junk_rows if 'PARTIAL RFC-SIGNED' in s.upper())
+full_extra = [x for x in extra_cur if 'FULL RFC-SIGNED' in x[1].upper()]
+part_extra = [x for x in extra_cur if 'PARTIAL RFC-SIGNED' in x[1].upper()]
+if len(full_extra) >= full_junk and len(part_extra) >= part_junk:
+    for k in range(full_junk):
+        rfc_entries.append(full_extra[k])
+    for k in range(part_junk):
+        rfc_entries.append(part_extra[k])
+    print(f"  Attributed {full_junk} FULL + {part_junk} PARTIAL junk status(es) from previous RFCK")
+
+# Dedupe keeping first occurrence + order
+seen_id = set()
+RFCK = []
+for sid, st in rfc_entries:
+    if sid not in seen_id:
+        seen_id.add(sid)
+        RFCK.append([sid, st])
+
+print(f"  RFCK: {len(RFCK)} subsystems (page 7 rows)")
+print(f"  -> FULL RFC-SIGNED: {sum(1 for x in RFCK if x[1]=='FULL RFC-SIGNED')}, "
+      f"PARTIAL RFC-SIGNED: {sum(1 for x in RFCK if x[1]=='PARTIAL RFC-SIGNED')}, "
+      f"FULL RFC(SUBMITTED): {sum(1 for x in RFCK if x[1]=='FULL RFC(SUBMITTED)')}, "
+      f"PARTIAL RFC(SUBMITTED): {sum(1 for x in RFCK if x[1]=='PARTIAL RFC(SUBMITTED)')}, "
+      f"PARTIAL RFC: {sum(1 for x in RFCK if x[1]=='PARTIAL RFC')}, "
+      f"FULL RFC: {sum(1 for x in RFCK if x[1]=='FULL RFC')}")
+
+print("\n" + "="*60)
 print("STEP 9: Build new data line and replace in HTML")
 print("="*60)
 
@@ -658,11 +721,14 @@ if dpr_files:
 
 new_html = '\n'.join(lines)
 
-# STEP 11: Inject DPRSUM totals (WALKDOWN / SUBMITTED / SIGNED) into HTML
+# STEP 11: Inject RFCK + DPRSUM totals into HTML
 print("\n" + "="*60)
-print("STEP 11: Inject DPRSUM totals")
+print("STEP 11: Inject RFCK + DPRSUM totals")
 print("="*60)
 import re as _re
+rfck_new = 'const RFCK=' + fmt_arr(RFCK) + ';'
+new_html, nr = _re.subn(r'const RFCK=\[.*?\];const DPRSUM=', rfck_new + 'const DPRSUM=', new_html, count=1, flags=_re.S)
+print(f"  RFCK: {nr} replacement(s), {len(RFCK)} rows")
 dprsum_new = "const DPRSUM={walk:%d,submitted:%d,signed:%d,full:%d,part:%d};" % (
     DPRSUM['walk'], DPRSUM['submitted'], DPRSUM['signed'], DPRSUM['full'], DPRSUM['part'])
 new_html, n = _re.subn(r'const DPRSUM=\{[^}]*\};', dprsum_new, new_html, count=1)
