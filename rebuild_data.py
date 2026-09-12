@@ -236,41 +236,34 @@ if dpr_files:
             'rec': fmt_date(vals[7]),
             'signed': fmt_str(vals[8]),
             'mile': fmt_str(vals[9]),
-            'tot_pct': vals[10],  # keep raw for now
-            'b_total': fmt_num(vals[9]),
-            'b_closed': fmt_num(vals[10]),
-            'b_bal': fmt_num(vals[11]),
-            'e_total': fmt_num(vals[13]),
-            'e_closed': fmt_num(vals[14]),
-            'e_bal': fmt_num(vals[15]),
-            'h_total': fmt_num(vals[17]),
-            'h_closed': fmt_num(vals[18]),
-            'h_bal': fmt_num(vals[19]),
-            'i_total': fmt_num(vals[21]),
-            'i_closed': fmt_num(vals[22]),
-            'i_bal': fmt_num(vals[23]),
-            'm_total': fmt_num(vals[25]),
-            'm_closed': fmt_num(vals[26]),
-            'm_bal': fmt_num(vals[27]),
-            'p_total': fmt_num(vals[29]),
-            'p_closed': fmt_num(vals[30]),
-            'p_bal': fmt_num(vals[31]),
-            's_total': fmt_num(vals[33]),
-            's_closed': fmt_num(vals[34]),
-            's_bal': fmt_num(vals[35]),
-            't_total': fmt_num(vals[37]),
-            't_closed': fmt_num(vals[38]),
-            't_bal': fmt_num(vals[39]),
-            'itr_total': fmt_num(vals[41]),
-            'itr_closed': fmt_num(vals[42]),
-            'itr_bal': fmt_num(vals[43]),
-            'itr_pct': vals[44],
-            'b1': fmt_num(vals[51]),  # BLOCKING ITRs CPP-1 (AZ)
-            'b2': fmt_num(vals[52]),  # BLOCKING ITRs EIT (BA)
-            'b3': fmt_num(vals[53]),  # BLOCKING ITRs CPY/EACOP (BB)
-            're1': fmt_str(vals[54]),  # REMARK EACOP (BC)
-            're2': fmt_str(vals[55]),  # REMARK CPP-EIT (BD)
-            're3': fmt_str(vals[56]),  # REMARK CPP-1 (BE)
+            'tot_pct': vals[13],  # TOTAL % (N); raw - usually empty per row
+            'b_total': fmt_num(vals[14]),
+            'b_closed': fmt_num(vals[15]),
+            'e_total': fmt_num(vals[18]),
+            'e_closed': fmt_num(vals[19]),
+            'h_total': fmt_num(vals[22]),
+            'h_closed': fmt_num(vals[23]),
+            'i_total': fmt_num(vals[26]),
+            'i_closed': fmt_num(vals[27]),
+            'm_total': fmt_num(vals[30]),
+            'm_closed': fmt_num(vals[31]),
+            'p_total': fmt_num(vals[34]),
+            'p_closed': fmt_num(vals[35]),
+            's_total': fmt_num(vals[38]),
+            's_closed': fmt_num(vals[39]),
+            't_total': fmt_num(vals[42]),
+            't_closed': fmt_num(vals[43]),
+            'itr_total': fmt_num(vals[46]),
+            'itr_closed': fmt_num(vals[47]),
+            'itr_bal': fmt_num(vals[48]),
+            'itr_pct': vals[49],
+            'has_disc': any(vals[c] not in (None, '', 'None') for c in (14, 15, 18, 19, 22, 23, 26, 27, 30, 31, 34, 35, 38, 39, 42, 43)),
+            'b1': fmt_num(vals[54]),  # BLOCKING ITRs CPP-1 (AZ)
+            'b2': fmt_num(vals[55]),  # BLOCKING ITRs EIT (BA)
+            'b3': fmt_num(vals[56]),  # BLOCKING ITRs CPY/EACOP (BB)
+            're1': fmt_str(vals[57]),  # REMARK CPY (BC)
+            're2': fmt_str(vals[58]),  # REMARK CPP-EIT (BD)
+            're3': fmt_str(vals[59]),  # REMARK CPP-1 (BE)
         }
 
         if len(vals) > 10 and vals[10]:
@@ -470,25 +463,28 @@ rfc_ovr = OVR.get('RFC PROGRESS', {})
 RFC = []
 for s in SUBS:
     sid = s['sid']
+    dd = dpr_data.get(sid, {})
+    ro = rfc_ovr.get(sid, {})
     d = []
     for k in RFK:
-        t = int(sub_disc[sid][k]['total'])
-        c = int(sub_disc[sid][k]['closed'])
+        if dd.get('has_disc'):
+            t = dd.get(k.lower() + '_total', 0)
+            c = dd.get(k.lower() + '_closed', 0)
+        else:
+            t = int(sub_disc[sid][k]['total'])
+            c = int(sub_disc[sid][k]['closed'])
         d.append({'t': t, 'c': c})
-    
-    it = sub_itr_total[sid]['total']
-    ic = sub_itr_total[sid]['closed']
+
+    it = sum(x['t'] for x in d)
+    ic = sum(x['c'] for x in d)
     ib = it - ic
-    
+
     sT = sum(x['t'] for x in d)
     sC = sum(x['c'] for x in d)
     itrp = round(ic / it * 100) if it > 0 else ''
-    
-    # Use DPR data if available, otherwise keep overrides
-    dd = dpr_data.get(sid, {})
-    ro = rfc_ovr.get(sid, {})
-    
-    # TOTAL % from DPR col I (0..1 fraction); fallback to ITR aggregation
+
+    # TOTAL % from DPR col N; fallback to DPR/ITR discipline aggregation
+    dpr_tot = dd.get('tot_pct')
     dpr_tot = dd.get('tot_pct')
     if dpr_tot not in (None, '') and isinstance(dpr_tot, (int, float)):
         tot = round(float(dpr_tot) * 100)
