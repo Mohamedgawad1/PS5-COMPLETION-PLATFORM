@@ -304,6 +304,42 @@ if dpr_files:
         wb_dpr2.close()
     print(f"  DETAILED ITR LIST subsystems: {len(det_data)}")
 
+    # Also read EIT PROGRESS + M-P PROGRESS: per-subsystem discipline
+    # numbers for subsystems not covered by RFC PROGRESS discipline columns.
+    eit_mp = {}
+    if dpr_files:
+        wb_dpr3 = openpyxl.load_workbook(dpr_files[0], read_only=True, data_only=True)
+        progress_maps = {
+            'EIT PROGRESS': {'E': (4, 5), 'I': (8, 9), 'T': (12, 13)},
+            'M-P PROGRESS': {'B': (4, 5), 'H': (8, 9), 'M': (12, 13),
+                             'P': (16, 17), 'S': (20, 21)},
+        }
+        for sn, dmap in progress_maps.items():
+            try:
+                wsx = wb_dpr3[sn]
+            except KeyError:
+                continue
+            for row in wsx.iter_rows(min_row=2, values_only=True):
+                if not row or not row[0]:
+                    continue
+                m = re.match(r'(PS5-\d{2}-\d{2})', str(row[0]).strip())
+                if not m:
+                    continue
+                sid = m.group(1)
+                agg = eit_mp.setdefault(sid, {})
+                for k, (a, b) in dmap.items():
+                    if len(row) <= max(a, b):
+                        continue
+                    t, c = row[a], row[b]
+                    if t in (None, '') and c in (None, ''):
+                        continue
+                    cur = agg.get(k, {'total': 0, 'closed': 0})
+                    cur['total'] = int(float(t)) if t not in (None, '') else 0
+                    cur['closed'] = int(float(c)) if c not in (None, '') else 0
+                    agg[k] = cur
+        wb_dpr3.close()
+    print(f"  EIT/M-P PROGRESS subsystems: {len(eit_mp)}")
+
     print(f"  RFC PROGRESS rows: {len(dpr_data)}")
     print(f"  RFC statuses (col10): valid={len(rfc_rows)} junk={len(junk_rows)}")
     s10 = rfc_status_col.get('FULL RFC-SIGNED', 0)
@@ -496,12 +532,28 @@ for s in SUBS:
     ro = rfc_ovr.get(sid, {})
     d = []
     for k in RFK:
-        t = int(sub_disc[sid][k]['total'])
-        c = int(sub_disc[sid][k]['closed'])
+        if dd.get('has_disc'):
+            t = dd.get(k.lower() + '_total', 0)
+            c = dd.get(k.lower() + '_closed', 0)
+        else:
+            em = eit_mp.get(sid, {})
+            if em:
+                v = em.get(k)
+                t = v['total'] if v is not None else 0
+                c = v['closed'] if v is not None else 0
+            else:
+                da = det_data.get(sid, {})
+                if da:
+                    v = da.get(k, {'total': 0, 'closed': 0})
+                    t = v['total']
+                    c = v['closed']
+                else:
+                    t = int(sub_disc[sid][k]['total'])
+                    c = int(sub_disc[sid][k]['closed'])
         d.append({'t': t, 'c': c})
 
-    it = sub_itr_total[sid]['total']
-    ic = sub_itr_total[sid]['closed']
+    it = sum(x['t'] for x in d)
+    ic = sum(x['c'] for x in d)
     ib = it - ic
 
     sT = sum(x['t'] for x in d)
