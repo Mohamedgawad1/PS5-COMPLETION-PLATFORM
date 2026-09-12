@@ -11,6 +11,14 @@ print("="*60)
 print("STEP 1: Read XLSX files")
 print("="*60)
 
+def fmt_dt(v):
+    if v is None: return ''
+    if hasattr(v, 'strftime'):
+        return v.strftime('%Y-%m-%d')
+    s = str(v).strip()
+    if not s or s == 'None': return ''
+    return s[:10]
+
 # --- ITR from ovTasks_TestsPlanned_1369.xlsx ---
 print("\nReading ovTasks_TestsPlanned_1369.xlsx...")
 wb_itr = openpyxl.load_workbook('C:/Users/mylap/Downloads/PS5 - CPP AGI Completion Progress Dashboard_files/ovTasks_TestsPlanned_1369.xlsx', read_only=True, data_only=True)
@@ -31,7 +39,7 @@ for row in ws_itr.iter_rows(min_row=2, values_only=True):
     ttype = str(row[9] or '')
     desc = str(row[11] or '')
     state = str(row[28] or '')
-    closedate = str(row[22] or '') if row[22] else ''
+    closedate = fmt_dt(row[22])
     company = str(row[13] or '')
     sub_full = str(row[21] or '')
     sub_id = str(row[23] or '')
@@ -84,14 +92,14 @@ for row in ws_punch.iter_rows(min_row=2, values_only=True):
     disc = str(row[4] or '')
     desc = str(row[5] or '')
     sub_full = str(row[7] or '')
-    closedate = str(row[8] or '') if row[8] else ''
+    closedate = fmt_dt(row[8])
     status = str(row[9] or '')
     action = str(row[11] or '') if row[11] else ''
     sub_id = sub_full.split(' - ')[0].strip() if ' - ' in sub_full else sub_full.strip()
     
     is_closed = status.strip().lower() in ('closed', 'completed')
     
-    punch_raw.append([pid, tag, cat, disc, desc, status, action, 0, sub_full, sub_id])
+    punch_raw.append([pid, tag, cat, disc, desc, status, closedate, action, sub_full, sub_id])
     
     punch_statuses[status] += 1
     punch_disc_cat[disc][cat]['total'] += 1
