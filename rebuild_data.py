@@ -177,6 +177,11 @@ if dpr_files:
     print(f"  DPR file: {dpr_name}")
     wb_dpr = openpyxl.load_workbook(dpr_files[0], read_only=True, data_only=True)
     ws_dpr = wb_dpr['RFC PROGRESS']
+
+    a1 = ''
+    for r0 in ws_dpr.iter_rows(min_row=1, max_row=1, values_only=True):
+        a1 = str(r0[0] or '')
+    rfc_status_col = Counter()
     
     for row in ws_dpr.iter_rows(min_row=4, values_only=True):
         vals = list(row[:81])
@@ -254,9 +259,44 @@ if dpr_files:
             're2': fmt_str(vals[55]),  # REMARK CPP-EIT (BD)
             're3': fmt_str(vals[56]),  # REMARK CPP-1 (BE)
         }
-    
+
+        if len(vals) > 10 and vals[10]:
+            rfc_status_col[str(vals[10]).strip().upper()] += 1
+
     wb_dpr.close()
     print(f"  RFC PROGRESS rows: {len(dpr_data)}")
+    s10 = rfc_status_col.get('FULL RFC-SIGNED', 0)
+    s5 = rfc_status_col.get('PARTIAL RFC-SIGNED', 0)
+    sub_full = rfc_status_col.get('FULL RFC(SUBMITTED)', 0)
+    sub_part = rfc_status_col.get('PARTIAL RFC(SUBMITTED)', 0)
+
+    def _int(m, g):
+        try:
+            return int(m.group(g))
+        except Exception:
+            return 0
+
+    m_walk = re.search(r'TOTAL\s+WALKDOWN\s+COMPLETED\s*-\s*(\d+)', a1, re.I)
+    m_sub = re.search(r'TOTAL\s+RFC\s+SUBMITTED\s*-\s*(\d+)', a1, re.I)
+    m_sig = re.search(r'TOTAL\s+RFC\s+SIGNED\s*-\s*(\d+)', a1, re.I)
+    m_full = re.search(r'(\d+)\s*FULL', a1, re.I)
+    m_part = re.search(r'(\d+)\s*PARTIAL', a1, re.I)
+
+    DPRSUM = {
+        'walk': _int(m_walk, 1),
+        'submitted': _int(m_sub, 1),
+        'signed': _int(m_sig, 1),
+        'full': _int(m_full, 1) if m_full else s10,
+        'part': _int(m_part, 1) if m_part else s5,
+    }
+    if not DPRSUM['submitted']:
+        DPRSUM['submitted'] = sub_full + sub_part
+    if not DPRSUM['signed']:
+        DPRSUM['signed'] = s10 + s5
+    if DPRSUM['full'] + DPRSUM['part'] != DPRSUM['signed']:
+        DPRSUM['full'], DPRSUM['part'] = s10, s5
+    print(f"  A1 summary: {a1.replace(chr(10), ' ')[:80]}")
+    print(f"  DPRSUM: {DPRSUM}")
 else:
     print("  WARNING: No DPR SUMMARY file found")
 
@@ -617,6 +657,16 @@ if dpr_files:
                 break
 
 new_html = '\n'.join(lines)
+
+# STEP 11: Inject DPRSUM totals (WALKDOWN / SUBMITTED / SIGNED) into HTML
+print("\n" + "="*60)
+print("STEP 11: Inject DPRSUM totals")
+print("="*60)
+import re as _re
+dprsum_new = "const DPRSUM={walk:%d,submitted:%d,signed:%d,full:%d,part:%d};" % (
+    DPRSUM['walk'], DPRSUM['submitted'], DPRSUM['signed'], DPRSUM['full'], DPRSUM['part'])
+new_html, n = _re.subn(r'const DPRSUM=\{[^}]*\};', dprsum_new, new_html, count=1)
+print(f"  {n} replacement(s): {dprsum_new}")
 
 out_path = 'C:/Users/mylap/OneDrive/Desktop/PS5-COMPLETION-PLATFORM/index.html'
 with open(out_path, 'w', encoding='utf-8') as f:
