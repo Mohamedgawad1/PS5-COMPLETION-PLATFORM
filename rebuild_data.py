@@ -275,6 +275,35 @@ if dpr_files:
                 junk_rows.append(str(vals[10]).strip())
 
     wb_dpr.close()
+
+    # Also read DETAILED ITR LIST (DPR's curated ITR scope) as fallback
+    # for subsystems not present in RFC PROGRESS discipline columns.
+    det_data = {}
+    if dpr_files:
+        wb_dpr2 = openpyxl.load_workbook(dpr_files[0], read_only=True, data_only=True)
+        try:
+            ws_det = wb_dpr2['DETAILED ITR LIST']
+        except KeyError:
+            ws_det = None
+        if ws_det is not None:
+            for row in ws_det.iter_rows(min_row=2, values_only=True):
+                if not row or not row[0]:
+                    continue
+                sid = str(row[23] or '').strip()
+                if not sid:
+                    continue
+                disc = str(row[8] or '').strip()
+                state = str(row[28] or '').strip()
+                done = state.lower().startswith('comp') or state.lower() == 'closed'
+                agg = det_data.setdefault(sid, {})
+                cur = agg.get(disc, {'total': 0, 'closed': 0})
+                cur['total'] += 1
+                if done:
+                    cur['closed'] += 1
+                agg[disc] = cur
+        wb_dpr2.close()
+    print(f"  DETAILED ITR LIST subsystems: {len(det_data)}")
+
     print(f"  RFC PROGRESS rows: {len(dpr_data)}")
     print(f"  RFC statuses (col10): valid={len(rfc_rows)} junk={len(junk_rows)}")
     s10 = rfc_status_col.get('FULL RFC-SIGNED', 0)
@@ -471,8 +500,14 @@ for s in SUBS:
             t = dd.get(k.lower() + '_total', 0)
             c = dd.get(k.lower() + '_closed', 0)
         else:
-            t = int(sub_disc[sid][k]['total'])
-            c = int(sub_disc[sid][k]['closed'])
+            da = det_data.get(sid, {})
+            if da:
+                v = da.get(k, {'total': 0, 'closed': 0})
+                t = v['total']
+                c = v['closed']
+            else:
+                t = int(sub_disc[sid][k]['total'])
+                c = int(sub_disc[sid][k]['closed'])
         d.append({'t': t, 'c': c})
 
     it = sum(x['t'] for x in d)
