@@ -333,7 +333,7 @@ def build_workbook(SUBS, PUNCH, ITR, RFC, ITRT, PUNT, MILES, CABLES,
     row1 = list(fixed)
     row1 += ['B', 'E', 'H', 'I', 'M', 'P', 'S', 'T']
     row1 += ['ITRs', 'CL', 'BAL', 'ITR%', 'CPP', 'EIT', 'EACP',
-             'REMARK E', 'REMARK C', 'REMARK 1', 'WALKDOWN', '\u25cf', 'MY NOTES']
+             'REMARK CPP', 'REMARK EIT', 'REMARK EACP', 'WALKDOWN', '\u25cf', 'MY NOTES']
     # discipline group spans start at excel col 10
     grp_start = len(fixed) + 1
     spans = {grp_start + k: 3 for k in range(8)}
@@ -458,8 +458,8 @@ def build_workbook(SUBS, PUNCH, ITR, RFC, ITRT, PUNT, MILES, CABLES,
     SH = 'RFC PROGRESS'
     d = sorted([x for x in RFC],
                key=lambda x: -((x['b1'] or 0) + (x['b2'] or 0) + (x['b3'] or 0)))
-    heads = ['SUB SYSTEM', 'PRIO', 'TOTAL %', 'CPP-1', 'EIT', 'EACOP',
-             'REMARK EACOP', 'REMARK CPP-EIT', 'REMARK CPP-1', 'WALKDOWN',
+    heads = ['SUB SYSTEM', 'PRIO', 'TOTAL %', 'CPP', 'EIT', 'EACP',
+             'REMARK CPP', 'REMARK EIT', 'REMARK EACP', 'WALKDOWN',
              '\u25cf', 'MY REMARKS']
     w.title(ws, len(heads), 'BLOCKERS - sorted by blocking count')
     w.head(ws, 2, heads, height=26)
@@ -887,7 +887,7 @@ def build_workbook(SUBS, PUNCH, ITR, RFC, ITRT, PUNT, MILES, CABLES,
         ('SHEETS (all 8 platform pages - same names, colours & formatting)', True, 12, NAVY, WHITE),
         ('1 \u00b7 DASHBOARD            = page 1 - KPI cards + ITR progress + Punch A/B/C + milestones', False, 11, None, None),
         ('2 \u00b7 RFC PROGRESS         = page 2 - matrix (editable), disciplines B E H I M P S T', False, 11, None, None),
-        ('3 \u00b7 BLOCKING \u2013 REMARKS = page 3 - blocking points & remarks (CPP-1 / EIT / EACOP)', False, 11, None, None),
+        ('3 \u00b7 BLOCKING \u2013 REMARKS = page 3 - blocking points & remarks (CPP / EIT / EACP)', False, 11, None, None),
         ('4 \u00b7 PUNCH LIST           = page 4 - detailed punch (CAT A/red, B/yellow, C/green)', False, 11, None, None),
         ('5 \u00b7 ITR LIST             = page 5 - detailed ITR tasks', False, 11, None, None),
         ('6 \u00b7 SUBSYSTEM            = page 6 - per-subsystem punch / ITR / E-I-T summaries', False, 11, None, None),

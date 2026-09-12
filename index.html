@@ -184,7 +184,7 @@ header,#wrap,.flow,footer{position:relative;z-index:1}
 
 <section class="view" id="v-blk">
  <div class="panel">
-  <h2 style="border-color:#c00000">Blocking Points &amp; Remarks &mdash; CPP-1 / EIT / EACOP</h2>
+  <h2 style="border-color:#c00000">Blocking Points &amp; Remarks &mdash; CPP / EIT / EACP</h2>
    <div class="tools"><input type="search" id="q-blk" placeholder="Search subsystem..."><span class="chip" id="blk-all" style="display:none">&#8630; ALL SYSTEMS</span></div>
   <div class="tblwrap"><table id="t-blk"></table></div><div class="hint" id="h-blk"></div>
  </div>
@@ -473,7 +473,7 @@ function renderRfc(){
  const DL={B:'#8b5e3c',E:'#1a5276',H:'#1e8449',I:'#b9770e',M:'#922b21',P:'#6c3483',S:'#7d6608',T:'#1b4f72'};
   let hh='<tr><th rowspan="2" style="min-width:180px;max-width:220px">SUB SYSTEM</th><th rowspan="2" style="width:40px">PRIO</th><th rowspan="2" style="width:70px">RFC BHM</th><th rowspan="2" style="width:65px">RFC EIT</th><th rowspan="2" style="width:70px">BASE</th><th rowspan="2" style="width:70px">RECOV</th><th rowspan="2" style="width:55px">SIGNED</th><th rowspan="2" style="width:90px">MILESTONE</th><th rowspan="2" style="width:50px">TOT%</th>';
    for(const dd of RFK)hh+='<th colspan="3" style="text-align:center;background:'+DL[dd]+';color:#fff;border:1px solid #888;font-size:10px;letter-spacing:1px;padding:4px 2px">'+dd+'</th>';
-   hh+='<th rowspan="2" style="width:38px">ITRs</th><th rowspan="2" style="width:38px">CL</th><th rowspan="2" style="width:38px">BAL</th><th rowspan="2" style="width:42px">ITR%</th><th rowspan="2" style="width:38px">CPP</th><th rowspan="2" style="width:38px">EIT</th><th rowspan="2" style="width:38px">EACP</th><th rowspan="2" style="width:80px">REMARK E</th><th rowspan="2" style="width:80px">REMARK C</th><th rowspan="2" style="width:80px">REMARK 1</th><th rowspan="2" style="width:65px">WALKDOWN</th><th rowspan="2" style="width:22px">&#9873;</th><th rowspan="2" style="width:140px">MY NOTES</th></tr>';
+   hh+='<th rowspan="2" style="width:38px">ITRs</th><th rowspan="2" style="width:38px">CL</th><th rowspan="2" style="width:38px">BAL</th><th rowspan="2" style="width:42px">ITR%</th><th rowspan="2" style="width:38px">CPP</th><th rowspan="2" style="width:38px">EIT</th><th rowspan="2" style="width:38px">EACP</th><th rowspan="2" style="width:80px">REMARK CPP</th><th rowspan="2" style="width:80px">REMARK EIT</th><th rowspan="2" style="width:80px">REMARK EACP</th><th rowspan="2" style="width:65px">WALKDOWN</th><th rowspan="2" style="width:22px">&#9873;</th><th rowspan="2" style="width:140px">MY NOTES</th></tr>';
    hh+='<tr>';
    for(const dd of RFK)hh+='<th style="font-size:9px;background:'+DL[dd]+';color:#fff;border:1px solid #888;padding:3px 2px">T</th><th style="font-size:9px;background:'+DL[dd]+';color:#fff;border:1px solid #888;padding:3px 2px">CL</th><th style="font-size:9px;background:'+DL[dd]+';color:#fff;border:1px solid #888;padding:3px 2px">%</th>';
    hh+='</tr>';
@@ -516,7 +516,7 @@ function renderBlk(){
   if(SUBCUR)d=d.filter(x=>x.sid===SUBCUR);
   d=d.slice().sort((a,b)=>(b.b1+b.b2+b.b3)-(a.b1+a.b2+a.b3));
  const N=NOTES[SH]||{},C=PCOL[SH]||{};
- let h='<tr><th>SUB SYSTEM</th><th>PRIO</th><th>TOTAL %</th><th>CPP-1</th><th>EIT</th><th>EACOP</th><th>EACOP</th><th>CPP-EIT</th><th>CPP-1</th><th>WALKDOWN</th><th>&#9873;</th><th style="min-width:170px">MY REMARKS</th></tr>';
+ let h='<tr><th>SUB SYSTEM</th><th>PRIO</th><th>TOTAL %</th><th>CPP</th><th>EIT</th><th>EACP</th><th>REMARK CPP</th><th>REMARK EIT</th><th>REMARK EACP</th><th>WALKDOWN</th><th>&#9873;</th><th style="min-width:170px">MY REMARKS</th></tr>';
  let rows='';
  for(const x of d){
   const col=C[x.sid]||'';const bg=col?'style="background:'+HEX[col]+'"':'';
