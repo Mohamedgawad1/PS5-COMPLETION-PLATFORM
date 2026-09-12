@@ -496,35 +496,24 @@ for s in SUBS:
     ro = rfc_ovr.get(sid, {})
     d = []
     for k in RFK:
-        if dd.get('has_disc'):
-            t = dd.get(k.lower() + '_total', 0)
-            c = dd.get(k.lower() + '_closed', 0)
-        else:
-            da = det_data.get(sid, {})
-            if da:
-                v = da.get(k, {'total': 0, 'closed': 0})
-                t = v['total']
-                c = v['closed']
-            else:
-                t = int(sub_disc[sid][k]['total'])
-                c = int(sub_disc[sid][k]['closed'])
+        t = int(sub_disc[sid][k]['total'])
+        c = int(sub_disc[sid][k]['closed'])
         d.append({'t': t, 'c': c})
 
-    it = sum(x['t'] for x in d)
-    ic = sum(x['c'] for x in d)
+    it = sub_itr_total[sid]['total']
+    ic = sub_itr_total[sid]['closed']
     ib = it - ic
 
     sT = sum(x['t'] for x in d)
     sC = sum(x['c'] for x in d)
-    itrp = round(ic / it * 100) if it > 0 else ''
+    itrp = min(100, round(ic / it * 100)) if it > 0 else ''
 
     # TOTAL % from DPR col N; fallback to DPR/ITR discipline aggregation
     dpr_tot = dd.get('tot_pct')
-    dpr_tot = dd.get('tot_pct')
     if dpr_tot not in (None, '') and isinstance(dpr_tot, (int, float)):
-        tot = round(float(dpr_tot) * 100)
+        tot = min(100, round(float(dpr_tot) * 100))
     else:
-        tot = round(sC / sT * 100) if sT > 0 else ''
+        tot = min(100, round(sC / sT * 100)) if sT > 0 else ''
     
     RFC.append({
         'sid': sid,
