@@ -432,20 +432,26 @@ function renderSub(){
  const x=RFC.find(r=>r.sid===SUBCUR)||ADDS[SUBCUR]||{name:SUBCUR};
  $('sub-name').innerHTML='<span class="sidchip">'+esc(SUBCUR||'-')+'</span>'+esc(x.name||'SELECT A SUBSYSTEM')+'<div class="submeta">TOTAL: <b>'+esc(ovv('RFC PROGRESS',SUBCUR,'TOTAL %',x.tot))+'%</b> &nbsp;&middot;&nbsp; MILESTONE: <b>'+esc(ovv('RFC PROGRESS',SUBCUR,'Milestone',x.mile||'--'))+'</b></div>';
  const P=PUNCH.filter(r=>r[9]===SUBCUR);
- const I=ITR.filter(r=>r[9]===SUBCUR);
+ const I=ITR.filter(r=>r[9]===SUBCUR&&r[7]==='CPP AGI');
  const pc=P.filter(r=>{const s=String(r[5]).trim().toLowerCase();return s==='closed'||s==='completed'}).length;
  const ic=I.filter(r=>doneI(r[5])).length;
  const pp=P.length?Math.round(pc/P.length*100):0;
  const ip=I.length?Math.round(ic/I.length*100):0;
- const E=I.filter(r=>r[2]==='E'&&r[7]==='CPP AGI');
+ const E=I.filter(r=>r[2]==='E');
  const ec=E.filter(r=>doneI(r[5])).length;
  const ep=E.length?Math.round(ec/E.length*100):0;
- const INS=I.filter(r=>r[2]==='I'&&r[7]==='CPP AGI');
+ const INS=I.filter(r=>r[2]==='I');
  const isc=INS.filter(r=>doneI(r[5])).length;
  const isp=INS.length?Math.round(isc/INS.length*100):0;
- const T=I.filter(r=>r[2]==='T'&&r[7]==='CPP AGI');
+ const T=I.filter(r=>r[2]==='T');
  const tc=T.filter(r=>doneI(r[5])).length;
  const tp_val=T.length?Math.round(tc/T.length*100):0;
+ const M=I.filter(r=>r[2]==='M');
+ const mc2=M.filter(r=>doneI(r[5])).length;
+ const mp_val=M.length?Math.round(mc2/M.length*100):0;
+ const PP=I.filter(r=>r[2]==='P');
+ const ppc=PP.filter(r=>doneI(r[5])).length;
+ const pp_val=PP.length?Math.round(ppc/PP.length*100):0;
  function st(lab,cp,op,c,o,n){
   return '<div class="stat"><h4>'+lab+'</h4><div class="v">'+cp+'% <small>CLOSED</small><span class="sep">|</span>'+op+'% <small>OPEN</small></div><div class="segbar"><i style="width:'+cp+'%;background:linear-gradient(90deg,#57a05b,#8bd48d)"></i><i style="width:'+op+'%;background:linear-gradient(90deg,#ed7d31,#ffb066)"></i></div><div class="duo2"><span><b>'+c.toLocaleString('en-US')+'</b> CLOSED</span><span><b>'+o.toLocaleString('en-US')+'</b> OPEN · '+n.toLocaleString('en-US')+' TOT</span></div></div>';
  }
@@ -457,6 +463,8 @@ function renderSub(){
    +st('E - ELECTRICAL (CPP AGI)',ep,100-ep,ec,E.length-ec,E.length)
    +st('I - INSTRUMENT (CPP AGI)',isp,100-isp,isc,INS.length-isc,INS.length)
    +st('T - TELECOM (CPP AGI)',tp_val,100-tp_val,tc,T.length-tc,T.length)
+   +st('M - MECHANICAL (CPP AGI)',mp_val,100-mp_val,mc2,M.length-mc2,M.length)
+   +st('P - PIPING (CPP AGI)',pp_val,100-pp_val,ppc,PP.length-ppc,PP.length)
    +'</div>'
    +'<div style="margin-top:10px">TOTAL %: <b>'+(x.tot===''?'-':x.tot+'%')+'</b> &nbsp;|&nbsp; RFC SIGNED: <b>'+esc(x.signed||'-')+'</b>'
    +(CABLES.some(c=>c[0]===SUBCUR)?' &nbsp;|&nbsp; <a href="#" onclick="showCablesForSub(\''+esc(SUBCUR)+'\');return false" style="color:#1a5276;font-weight:700;text-decoration:underline;cursor:pointer">CABLES ('+CABLES.filter(c=>c[0]===SUBCUR).length+')</a>':'')

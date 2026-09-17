@@ -596,23 +596,25 @@ def build_workbook(SUBS, PUNCH, ITR, RFC, ITRT, PUNT, MILES, CABLES,
     ws = w.sheet('SUB SYSTEM')
     heads = ['SID', 'SUB SYSTEM', 'PUNCH T', 'PUNCH CL', 'PUNCH %', 'ITR T',
              'ITR CL', 'ITR %', 'E CPP CL/T', 'I CPP CL/T', 'T CPP CL/T',
-             'TOTAL %', 'RFC SIGNED']
+             'M CPP CL/T', 'P CPP CL/T', 'TOTAL %', 'RFC SIGNED']
     w.title(ws, len(heads), f'SUB SYSTEM - {len(SUBS)} subsystem(s)')
     w.head(ws, 2, heads, height=26)
-    w.widths(ws, [10, 42, 9, 9, 9, 9, 9, 9, 13, 13, 13, 9, 14])
+    w.widths(ws, [10, 42, 9, 9, 9, 9, 9, 9, 13, 13, 13, 13, 13, 9, 14])
     r = 3
     for s in SUBS:
         sid = s['sid']
         P = [p for p in PUNCH if str(p[9]) == sid]
-        I = [t for t in ITR if str(t[9]) == sid]
+        I = [t for t in ITR if str(t[9]) == sid and t[7] == 'CPP AGI']
         pc = sum(1 for p in P
                  if str(p[5]).strip().lower() in ('closed', 'completed'))
         ic = sum(1 for t in I if done_state(t[5]))
         pp = round(pc / len(P) * 100) if P else 0
         ip = round(ic / len(I) * 100) if I else 0
-        E = [t for t in I if t[2] == 'E' and t[7] == 'CPP AGI']
-        IN = [t for t in I if t[2] == 'I' and t[7] == 'CPP AGI']
-        T = [t for t in I if t[2] == 'T' and t[7] == 'CPP AGI']
+        E = [t for t in I if t[2] == 'E']
+        IN = [t for t in I if t[2] == 'I']
+        T = [t for t in I if t[2] == 'T']
+        M = [t for t in I if t[2] == 'M']
+        PP = [t for t in I if t[2] == 'P']
         def cl(pool):
             c = sum(1 for t in pool if done_state(t[5]))
             return f"{c}/{len(pool)}"
@@ -642,18 +644,22 @@ def build_workbook(SUBS, PUNCH, ITR, RFC, ITRT, PUNT, MILES, CABLES,
         done_style(ws, r, 10, center=True)
         ws.cell(r, 11, value=cl(T))
         done_style(ws, r, 11, center=True)
+        ws.cell(r, 12, value=cl(M))
+        done_style(ws, r, 12, center=True)
+        ws.cell(r, 13, value=cl(PP))
+        done_style(ws, r, 13, center=True)
         tv = x['tot'] if x else ''
-        ws.cell(r, 12, value='-' if tv == '' else f"{tv}%")
-        done_style(ws, r, 12, center=True, bold=True,
+        ws.cell(r, 14, value='-' if tv == '' else f"{tv}%")
+        done_style(ws, r, 14, center=True, bold=True,
                    color=pct_color(int(tv)) if str(tv).isdigit() else GRAY)
         sg = ''
         if x:
             sg = v(OVR, 'RFC PROGRESS', sid, 'SIGNED', x['signed'])
-        ws.cell(r, 13,
+        ws.cell(r, 15,
                 value=v(OVR, 'RFC PROGRESS', sid, 'SIGNED', x['signed'] or '-')
                 if x else '-')
         sgu = str(sg or '').upper()
-        done_style(ws, r, 13, center=True, bold=True,
+        done_style(ws, r, 15, center=True, bold=True,
                    color=GREEN if sgu.startswith('COMPLETE') else
                    (ORANGE if sgu.startswith('PARTIAL') else None))
         r += 1
