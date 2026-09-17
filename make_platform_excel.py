@@ -332,8 +332,8 @@ def build_workbook(SUBS, PUNCH, ITR, RFC, ITRT, PUNT, MILES, CABLES,
                  5: 'Baseline', 6: 'Recovery', 7: 'SIGNED', 8: 'Milestone'}
     row1 = list(fixed)
     row1 += ['B', 'E', 'H', 'I', 'M', 'P', 'S', 'T']
-    row1 += ['ITRs', 'CL', 'BAL', 'ITR%', 'CPP', 'EIT', 'EACP',
-             'REMARK CPP', 'REMARK EIT', 'REMARK EACP', 'WALKDOWN', '\u25cf', 'MY NOTES']
+    row1 += ['ITRs', 'CL', 'BAL', 'ITR%', 'CPP-1', 'EIT', 'EACOP',
+             'REMARK EACOP', 'REMARK CPP-EIT', 'REMARK CPP-1', 'WALKDOWN', '\u25cf', 'MY NOTES']
     # discipline group spans start at excel col 10
     grp_start = len(fixed) + 1
     spans = {grp_start + k: 3 for k in range(8)}
@@ -458,8 +458,8 @@ def build_workbook(SUBS, PUNCH, ITR, RFC, ITRT, PUNT, MILES, CABLES,
     SH = 'RFC PROGRESS'
     d = sorted([x for x in RFC],
                key=lambda x: -((x['b1'] or 0) + (x['b2'] or 0) + (x['b3'] or 0)))
-    heads = ['SUB SYSTEM', 'PRIO', 'TOTAL %', 'CPP', 'EIT', 'EACP',
-             'REMARK CPP', 'REMARK EIT', 'REMARK EACP', 'WALKDOWN',
+    heads = ['SUB SYSTEM', 'PRIO', 'TOTAL %', 'CPP-1', 'EIT', 'EACOP',
+             'REMARK EACOP', 'REMARK CPP-EIT', 'REMARK CPP-1', 'WALKDOWN',
              '\u25cf', 'MY REMARKS']
     w.title(ws, len(heads), 'BLOCKERS - sorted by blocking count')
     w.head(ws, 2, heads, height=26)
@@ -550,36 +550,43 @@ def build_workbook(SUBS, PUNCH, ITR, RFC, ITRT, PUNT, MILES, CABLES,
     w.head(ws, 2, heads, height=24)
     w.widths(ws, [15, 16, 5, 12, 55, 22, 14, 30, 4, 30])
     r = 3
+    blk_sids = set()
+    for x in RFC:
+        if (x.get('b1') or 0) + (x.get('b2') or 0) + (x.get('b3') or 0) > 0:
+            blk_sids.add(x['sid'])
     for rec in ITR:
         tid = str(rec[0])
-        bs = PCOL.get(SH, {}).get(tid)
+        bs = PCOL.get(SH, {}).get(tid) or ('#ffc7ce' if str(rec[9]) in blk_sids else '')
         ws.cell(r, 1, value=tid)
         done_style(ws, r, 1, bold=True, bg=bs or None)
         ws.cell(r, 2, value=v(OVR, SH, tid, 'TAG', rec[1]))
         done_style(ws, r, 2, bg=bs or None)
         ws.cell(r, 3, value=v(OVR, SH, tid, 'DISC', rec[2]))
         done_style(ws, r, 3, center=True, bg=bs or None)
+        if rec[9] in blk_sids:
+            done_style(ws, r, 1, bold=True, bg='#c00000', color=WHITE)
         tt = v(OVR, SH, tid, 'TASK TYPE', '') or rec[3]
         ws.cell(r, 4, value=tt)
         done_style(ws, r, 4, bg=bs or None)
         ws.cell(r, 5, value=v(OVR, SH, tid, 'ASSET DESCRIPTION', rec[4]))
-        done_style(ws, r, 5, wrap=True)
+        done_style(ws, r, 5, wrap=True, bg=bs or None)
         st = v(OVR, SH, tid, 'STATE', rec[5])
         ws.cell(r, 6, value=st)
         if done_state(st):
-            done_style(ws, r, 6, bold=True, color=GREEN)
+            done_style(ws, r, 6, bold=True, color=GREEN, bg=bs or None)
         elif re.search(r'originated|to\s*be', st, re.I):
-            done_style(ws, r, 6, color='#b35900')
+            done_style(ws, r, 6, color='#b35900', bg=bs or None)
         else:
-            done_style(ws, r, 6)
+            done_style(ws, r, 6, bg=bs or None)
         ws.cell(r, 7, value=v(OVR, SH, tid, 'CLOSING DATE', rec[6]))
         done_style(ws, r, 7, center=True, bg=bs or None)
         ws.cell(r, 8, value=rec[8])
         done_style(ws, r, 8, wrap=True, bg=bs or None)
         link_cell(ws, r, 8, rec[8], PLATFORM + '/#' + str(rec[9]),
                   bg=bs or None, wrap=True)
-        ws.cell(r, 9)
-        done_style(ws, r, 9, center=True, bg=bs or None)
+        ws.cell(r, 9, value='\u25cf' if rec[9] in blk_sids else '')
+        done_style(ws, r, 9, center=True, bold=True,
+                   bg=bs or None, color='#c00000' if rec[9] in blk_sids else None)
         ws.cell(r, 10, value=(NOTES.get(SH, {}) or {}).get(tid, ''))
         done_style(ws, r, 10, wrap=True, size=9)
         r += 1
