@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ITR Live — PS5 CPP AGI</title>
+<style>
+  body{font-family:'Segoe UI',Arial,sans-serif;background:#0f172a;color:#e2e8f0;margin:0;padding:20px}
+  h1{font-size:20px;color:#38bdf8;margin:0 0 4px}
+  .sub{font-size:12px;color:#94a3b8;margin-bottom:18px}
+  .cards{display:flex;flex-wrap:wrap;gap:14px}
+  .card{background:#0b2f56;border:1px solid #164e63;border-radius:12px;padding:16px 20px;min-width:150px;flex:1}
+  .card .lbl{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#7dd3fc}
+  .card .num{font-size:34px;font-weight:800;margin-top:4px}
+  .card.e .num{color:#34d399}.card.i .num{color:#fbbf24}.card.t .num{color:#f472b6}
+  .card.total{background:#155e75;border-color:#38bdf8}
+  .meta{margin-top:22px;font-size:12px;color:#94a3b8;line-height:1.7}
+  .bar{height:10px;background:#1e293b;border-radius:6px;overflow:hidden;margin-top:8px}
+  .bar span{display:block;height:100%}
+  .err{color:#f87171}
+  table{width:100%;border-collapse:collapse;margin-top:22px;font-size:12px}
+  th,td{border:1px solid #1e293b;padding:6px 9px;text-align:left;white-space:nowrap}
+  th{background:#0b2f56;color:#7dd3fc;text-transform:uppercase;font-size:10px;letter-spacing:.5px}
+  tr:nth-child(even){background:#111c33}
+  .wrap{overflow-x:auto}
+  .chip{display:inline-block;padding:1px 8px;border-radius:10px;font-size:10px}
+  .chip.e{background:#065f46;color:#a7f3d0}.chip.i{background:#78350f;color:#fde68a}.chip.t{background:#831843;color:#fbcfe8}
+</style>
+</head>
+<body>
+<h1>كم ITR اتقفل — CPP AGI (E&I&amp;T) — PS5</h1>
+<div class="sub">تحديث مباشر من منصة Smart Completions (automatic zoom)</div>
+<div id="content" class="cards">
+  <div class="card total"><div class="lbl">عدد المقفول الآن</div><div class="num" id="closed">&hellip;</div></div>
+  <div class="card e"><div class="lbl">Electrical</div><div class="num" id="e">&hellip;</div></div>
+  <div class="card i"><div class="lbl">Instrumentation</div><div class="num" id="i">&hellip;</div></div>
+  <div class="card t"><div class="lbl">Telecom</div><div class="num" id="t">&hellip;</div></div>
+</div>
+<div class="cards" style="margin-top:14px">
+  <div class="card"><div class="lbl">شغّال (Open)</div><div class="num" id="open" style="color:#fca5a5">&hellip;</div></div>
+  <div class="card"><div class="lbl">إجمالي E&amp;I&amp;T</div><div class="num" id="total">&hellip;</div></div>
+</div>
+<div class="meta" id="meta">جارٍ التحديث…</div>
+<h2 style="font-size:15px;color:#7dd3fc;margin-top:28px">آخر ITRs متقفلة — بالتفاصيل (باشر)</h2>
+<div class="wrap"><table id="tbl">
+<thead><tr><th>Task ID</th><th>Asset Tag</th><th>النظام (System)</th><th>Loop</th><th>Disc</th><th>التشغيل</th><th>تاريخ القفل</th></tr></thead>
+<tbody id="rows"></tbody>
+</table></div>
+<script>
+  function fmt(n){ return (n||0).toLocaleString('en-US'); }
+  function render(u){
+    document.getElementById('closed').textContent = fmt(u.closed);
+    document.getElementById('open').textContent = fmt(u.open);
+    document.getElementById('total').textContent = fmt(u.eit_total);
+    document.getElementById('e').textContent = fmt((u.closed_by_discipline||{}).E||0);
+    document.getElementById('i').textContent = fmt((u.closed_by_discipline||{}).I||0);
+    document.getElementById('t').textContent = fmt((u.closed_by_discipline||{}).T||0);
+    document.getElementById('meta').innerHTML =
+      'آخر تحديث من المنصة: <b>' + (u.updated||'') + '</b><br>النطاق: ' + (u.scope||'') +
+      '<br>يتحدث تلقائياً كل دقيقة. <span class="err" id="st"></span>';
+    document.title = 'ITR Closed: ' + fmt(u.closed) + ' | PS5 CPP AGI';
+    const tb = document.getElementById('rows');
+    if(tb && Array.isArray(u.recent_closed)){
+      tb.innerHTML = u.recent_closed.map(r=>{
+        const esc = s => String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        return '<tr><td>'+esc(r.task)+'</td><td>'+esc(r.tag)+'</td><td>'+esc(r.system)+'</td>'+
+               '<td>'+esc(r.loop)+'</td><td><span class="chip '+(r.disc||'').toLowerCase()+'">'+esc(r.disc)+'</span></td>'+
+               '<td>'+esc(r.cat)+'</td><td>'+esc(r.approved)+'</td></tr>';
+      }).join('');
+    }
+  }
+  function go(){
+    fetch('itr_live_state.json?v=' + Math.floor(Date.now()/60000), {cache:'no-store'})
+      .then(r => r.json()).then(render)
+      .catch(e => { document.getElementById('meta').innerHTML = '<span class="err">تعذر التحديث: ' + e + '</span>'; });
+  }
+  go(); setInterval(go, 60000);
+</script>
+</body>
+</html>
