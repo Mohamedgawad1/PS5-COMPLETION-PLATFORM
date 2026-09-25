@@ -298,7 +298,7 @@ const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const doneI=s=>{s=String(s||'').trim();if(/to\s*be/i.test(s))return false;return /^comp/i.test(s)||/^closed$/i.test(s);};
 const pcol=p=>p>=90?'#2e7d32':(p>=50?'#ed7d31':(p>0?'#c00000':'#8a97a5'));
-const LIVEVER='9';
+const LIVEVER='10';
 function dbg(m){try{const el=document.getElementById('syncdbg');if(el)el.textContent=m;}catch(e){}}
 function tokc(){try{return (typeof EMB!=='undefined'&&EMB&&EMB.trim?EMB.trim():'')||(localStorage.getItem('gh_token')||'').trim();}catch(e){try{return (localStorage.getItem('gh_token')||'').trim();}catch(x){return '';}}}
 cloudBadge(true,'ONLINE - auto sync');
