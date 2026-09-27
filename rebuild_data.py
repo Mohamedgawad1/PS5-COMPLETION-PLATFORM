@@ -175,8 +175,24 @@ print("="*60)
 
 import glob as globmod
 dpr_dir = 'C:/Users/mylap/Downloads/PS5 - CPP AGI Completion Progress Dashboard_files'
-dpr_files = sorted(globmod.glob(os.path.join(dpr_dir, 'PS-5 COMPLETIONS DPR SUMMERY -*.xlsx')),
-                   key=os.path.getmtime, reverse=True)
+# The daily file is spelled SUMMARY, older ones SUMMERY -> match both.
+# Skip Excel lock files (~$...) and BACKUP copies, then take the newest.
+_DPR_PAT = 'PS-5 COMPLETIONS DPR SUMM[AE]RY -*.xlsx'
+_dpr_all = globmod.glob(os.path.join(dpr_dir, _DPR_PAT))
+dpr_files = sorted(
+    (f for f in _dpr_all
+     if not os.path.basename(f).startswith('~$')
+     and 'BACKUP' not in os.path.basename(f).upper()),
+    key=lambda f: (re.search(r'(\d{2}-\w+-\d{2})', os.path.basename(f)) is not None,
+                   re.search(r'(\d{2}-\w+-\d{2})', os.path.basename(f)).group(1)
+                   if re.search(r'(\d{2}-\w+-\d{2})', os.path.basename(f)) else '',
+                   os.path.getmtime(f)),
+    reverse=True)
+if not dpr_files:
+    dpr_files = sorted(globmod.glob(os.path.join(dpr_dir, _DPR_PAT)),
+                       key=os.path.getmtime, reverse=True)
+print(f"  DPR candidates found: {[os.path.basename(f) for f in _dpr_all]}")
+print(f"  DPR candidates used : {[os.path.basename(f) for f in dpr_files]}")
 
 dpr_data = {}  # subsystem_id -> {priority, bhm, eit, base, rec, signed, mile, b1, b2, b3, re1, re2, re3, wd}
 
@@ -353,26 +369,45 @@ if dpr_files:
         except Exception:
             return 0
 
-    m_walk = re.search(r'TOTAL\s+WALKDOWN\s+COMPLETED\s*-\s*(\d+)', a1, re.I)
-    m_sub = re.search(r'TOTAL\s+RFC\s+SUBMITTED\s*-\s*(\d+)', a1, re.I)
+    # A1 comes in two layouts:
+    #   old: "TOTAL WALKDOWN COMPLETED - 99 / TOTAL RFC SUBMITTED - 55 (13 FULL + 42 PARTIAL)
+    #         / TOTAL RFC SIGNED - 40(35 FULL + 5 PARTIAL)"
+    #   new: "WD DONE - STATUS- 104 / Full SIGNED- 39 / Submitted- 53 / Not Submitted- 4"
+    # In the new layout "Full SIGNED" is the FULL signed count only, so the
+    # PARTIAL signed count has to come from col10 and be added on.
+    m_walk = (re.search(r'TOTAL\s+WALKDOWN\s+COMPLETED\s*-\s*(\d+)', a1, re.I)
+              or re.search(r'WD\s*DONE.*?STATUS\D*(\d+)', a1, re.I | re.S))
+    m_sub = (re.search(r'TOTAL\s+RFC\s+SUBMITTED\s*-\s*(\d+)', a1, re.I)
+             or re.search(r'(?<!Not )Submitted\s*-?\s*(\d+)', a1, re.I))
     m_sig = re.search(r'TOTAL\s+RFC\s+SIGNED\s*-\s*(\d+)', a1, re.I)
+    m_newfull = re.search(r'Full\s*SIGNED\D*(\d+)', a1, re.I)
     m_full = re.search(r'(\d+)\s*FULL', a1, re.I)
     m_part = re.search(r'(\d+)\s*PARTIAL', a1, re.I)
 
-    DPRSUM = {
-        'walk': _int(m_walk, 1),
-        'submitted': _int(m_sub, 1),
-        'signed': _int(m_sig, 1),
-        'full': _int(m_full, 1) if m_full else s10,
-        'part': _int(m_part, 1) if m_part else s5,
-    }
-    if not DPRSUM['submitted']:
-        DPRSUM['submitted'] = sub_full + sub_part
-    if not DPRSUM['signed']:
-        DPRSUM['signed'] = s10 + s5
-    if DPRSUM['full'] + DPRSUM['part'] != DPRSUM['signed']:
-        DPRSUM['full'], DPRSUM['part'] = s10, s5
+    if m_newfull and not m_sig:
+        DPRSUM = {
+            'walk': _int(m_walk, 1),
+            'submitted': _int(m_sub, 1),
+            'full': _int(m_newfull, 1),
+            'part': s5,
+        }
+        DPRSUM['signed'] = DPRSUM['full'] + DPRSUM['part']
+    else:
+        DPRSUM = {
+            'walk': _int(m_walk, 1),
+            'submitted': _int(m_sub, 1),
+            'signed': _int(m_sig, 1),
+            'full': _int(m_full, 1) if m_full else s10,
+            'part': _int(m_part, 1) if m_part else s5,
+        }
+        if not DPRSUM['submitted']:
+            DPRSUM['submitted'] = sub_full + sub_part
+        if not DPRSUM['signed']:
+            DPRSUM['signed'] = s10 + s5
+        if DPRSUM['full'] + DPRSUM['part'] != DPRSUM['signed']:
+            DPRSUM['full'], DPRSUM['part'] = s10, s5
     print(f"  A1 summary: {a1.replace(chr(10), ' ')[:80]}")
+    print(f"  A1 layout : {'new' if (m_newfull and not m_sig) else 'old'}")
     print(f"  DPRSUM: {DPRSUM}")
 else:
     print("  WARNING: No DPR SUMMARY file found")
@@ -783,12 +818,23 @@ print("="*60)
 
 if dpr_files:
     dpr_name = os.path.basename(dpr_files[0])
-    date_match = re.search(r'(\d{2}-\d{2}-\d{2})', dpr_name)
-    if date_match:
-        report_date = date_match.group(1)
+    # Daily files are named like "...-27-SEPTEMBER-2026.xlsx" (month spelled out),
+    # so plain \d{2}-\d{2}-\d{2} never matches them.
+    report_date = None
+    m = re.search(r'(\d{1,2})-([A-Za-z]{3,9})-(\d{4})', dpr_name)
+    if m:
+        mon = m.group(2)[:3].upper()
+        mi = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN',
+              'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'].index(mon) + 1
+        report_date = '%02d-%02d-%s' % (int(m.group(1)), mi, m.group(3)[2:])
+    else:
+        date_match = re.search(r'(\d{2}-\d{2}-\d{2})', dpr_name)
+        if date_match:
+            report_date = date_match.group(1)
+    if report_date:
         source_name = dpr_name.replace('.xlsx', '')
         print(f"  Date: {report_date}")
-        
+
         for i, ln in enumerate(lines):
             if 'Report Date:' in ln and 'Source:' in ln:
                 new_meta = f'<div class="meta">Report Date: {report_date}    |    Source: {source_name}.xlsx</div>'
@@ -798,6 +844,8 @@ if dpr_files:
                 )
                 print(f"  Updated header at line {i+1}")
                 break
+    else:
+        print(f"  WARNING: could not parse a date out of {dpr_name}")
 
 new_html = '\n'.join(lines)
 
