@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-09-28 22:08:33",
+  "updated": "2026-09-28 22:12:32",
   "total_tasks_ps5": 14001,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 5654,
-  "open": 4646,
-  "today_closed": 116,
+  "closed": 5655,
+  "open": 4645,
+  "today_closed": 117,
   "closed_by_discipline": {
     "I": 2833,
-    "E": 2605,
+    "E": 2606,
     "T": 216
   },
   "open_by_discipline": {
     "I": 1762,
-    "E": 2022,
+    "E": 2021,
     "T": 862
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-09-28",
-      "E": 59,
+      "E": 60,
       "I": 57,
       "T": 0,
-      "Total": 116
+      "Total": 117
     }
   ],
-  "closed_this_week": 116,
-  "closed_this_month": 2102,
+  "closed_this_week": 117,
+  "closed_this_month": 2103,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -253,7 +253,7 @@
       "milestone": "Milestone E",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 8
+      "count": 9
     },
     {
       "milestone": "Milestone E",
@@ -286,7 +286,7 @@
       "count": 19
     }
   ],
-  "today_milestone_total": 116,
+  "today_milestone_total": 117,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -348,13 +348,13 @@
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1533,
-      "closed": 1197,
-      "remaining": 336,
+      "closed": 1198,
+      "remaining": 335,
       "pct": 78.1,
       "status": {
-        "Closed": 1197,
+        "Closed": 1198,
         "Submitted": 14,
-        "To be completed": 312,
+        "To be completed": 311,
         "Other": 10
       }
     },
@@ -416,6 +416,15 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-60-BI-0006G-CL06",
+      "task": "T-00023-9223",
+      "system": "PS5-60-68 - Fuel Conditioning Module PS5-60-UZ-8900G",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/28/2026 7:10:35 P"
+    },
     {
       "tag": "PS5-60-BI-0006G-CL05",
       "task": "T-00023-9222",
@@ -1486,15 +1495,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "9/27/2026 3:58:54 P"
-    },
-    {
-      "tag": "PS5-60-IE-0002G-CL01",
-      "task": "T-00023-5184",
-      "system": "PS5-60-19 - Power Generation Package G",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/27/2026 3:57:34 P"
     }
   ]
 }
