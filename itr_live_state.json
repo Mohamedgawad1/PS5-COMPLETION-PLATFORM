@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-09-28 20:29:51",
+  "updated": "2026-09-28 20:50:57",
   "total_tasks_ps5": 14001,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 5604,
-  "open": 4696,
-  "today_closed": 66,
+  "closed": 5607,
+  "open": 4693,
+  "today_closed": 69,
   "closed_by_discipline": {
-    "I": 2792,
+    "I": 2795,
     "E": 2596,
     "T": 216
   },
   "open_by_discipline": {
-    "I": 1803,
+    "I": 1800,
     "E": 2031,
     "T": 862
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-09-28",
       "E": 50,
-      "I": 16,
+      "I": 19,
       "T": 0,
-      "Total": 66
+      "Total": 69
     }
   ],
-  "closed_this_week": 66,
-  "closed_this_month": 2052,
+  "closed_this_week": 69,
+  "closed_this_month": 2055,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -247,7 +247,7 @@
       "milestone": "Milestone E",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 6
+      "count": 12
     },
     {
       "milestone": "Milestone F",
@@ -265,10 +265,10 @@
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 9
+      "count": 6
     }
   ],
-  "today_milestone_total": 66,
+  "today_milestone_total": 69,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -330,13 +330,13 @@
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1533,
-      "closed": 1160,
-      "remaining": 373,
-      "pct": 75.7,
+      "closed": 1166,
+      "remaining": 367,
+      "pct": 76.1,
       "status": {
-        "Closed": 1160,
+        "Closed": 1166,
         "Submitted": 25,
-        "To be completed": 337,
+        "To be completed": 331,
         "Other": 11
       }
     },
@@ -372,14 +372,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3249,
-      "closed": 1702,
-      "remaining": 1547,
-      "pct": 52.4,
+      "closed": 1699,
+      "remaining": 1550,
+      "pct": 52.3,
       "status": {
-        "Closed": 1702,
+        "Closed": 1699,
         "Submitted": 12,
         "To be completed": 1520,
-        "Other": 15
+        "Other": 18
       }
     },
     {
@@ -398,6 +398,60 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-60-BI-0017G-CC02",
+      "task": "T-00254-5054",
+      "system": "PS5-60-68 - Fuel Conditioning Module PS5-60-UZ-8900G",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/28/2026 5:39:46 P"
+    },
+    {
+      "tag": "PS5-61-BI-0007-CC03",
+      "task": "T-00254-5378",
+      "system": "PS5-60-19 - Power Generation Package G",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/28/2026 5:38:40 P"
+    },
+    {
+      "tag": "PS5-60-BI-0019G-CC01",
+      "task": "T-00254-5067",
+      "system": "PS5-60-19 - Power Generation Package G",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/28/2026 5:37:16 P"
+    },
+    {
+      "tag": "PS5-60-IE-0002G-CC03",
+      "task": "T-00254-12988",
+      "system": "PS5-60-19 - Power Generation Package G",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/28/2026 5:36:13 P"
+    },
+    {
+      "tag": "PS5-60-IE-0002G-CC02",
+      "task": "T-00254-12987",
+      "system": "PS5-60-19 - Power Generation Package G",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/28/2026 5:35:13 P"
+    },
+    {
+      "tag": "PS5-60-IE-0002G-CC01",
+      "task": "T-00254-12986",
+      "system": "PS5-60-19 - Power Generation Package G",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/28/2026 5:34:10 P"
+    },
     {
       "tag": "PS5-25-PIT-1102",
       "task": "T-00067-2125",
@@ -424,33 +478,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "9/28/2026 5:20:20 P"
-    },
-    {
-      "tag": "PS5-25-PIT-0007B",
-      "task": "T-00067-2127",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/28/2026 5:18:43 P"
-    },
-    {
-      "tag": "PS5-25-PIT-0007A",
-      "task": "T-00067-2131",
-      "system": "PS5-25-02 - Crude Oil Export Pump A",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/28/2026 5:17:12 P"
-    },
-    {
-      "tag": "PS5-25-PIT-0005C",
-      "task": "T-00067-2141",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/28/2026 5:16:00 P"
     },
     {
       "tag": "PS5-25-PIT-0005B",
@@ -1450,33 +1477,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "9/27/2026 1:27:14 P"
-    },
-    {
-      "tag": "PS5-03-GDIR-1202-CC01",
-      "task": "T-00254-4368",
-      "system": "PS5-03-12 - FZ-12 - Power Generation Building - Engine Bay 4",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/27/2026 1:27:01 P"
-    },
-    {
-      "tag": "PS5-03-GDIR-1201-CC01",
-      "task": "T-00254-4367",
-      "system": "PS5-03-12 - FZ-12 - Power Generation Building - Engine Bay 4",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/27/2026 1:26:47 P"
-    },
-    {
-      "tag": "PS5-01-RAB-61004B-CJ01",
-      "task": "T-00254-4308",
-      "system": "PS5-01-11 - Inergen for Power Gen Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/27/2026 1:26:28 P"
     }
   ]
 }
