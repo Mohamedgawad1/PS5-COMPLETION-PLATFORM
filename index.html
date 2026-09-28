@@ -161,6 +161,7 @@ header,#wrap,.flow,footer{position:relative;z-index:1}
  <button class="step" data-v="cables">8 &middot; EIT CABLES</button>
  <button class="step" data-v="eit9">9 &middot; ITR OPEN E/I/T</button>
  <button class="step" data-v="wire">10 &middot; WIRING DIAGRAM</button>
+<button class="step" data-v="layout">11 &middot; LAYOUT INDEX</button>
 </div>
 
 <section class="view on" id="v-dash">
@@ -264,6 +265,16 @@ header,#wrap,.flow,footer{position:relative;z-index:1}
    <input type="search" id="q-wire" placeholder="Search cable tag / device / terminal / task / subsystem...">
   </div>
   <div class="tblwrap"><table id="t-wire"></table></div><div class="hint" id="h-wire"></div>
+ </div>
+</section>
+<section class="view" id="v-layout">
+ <div class="panel">
+  <h2>LAYOUT INDEX &mdash; Drawing Reference &amp; Page No. Within Reference</h2>
+  <div class="tools">
+   <select id="s-layout"><option value="">ALL REFERENCES</option></select>
+   <input type="search" id="q-layout" placeholder="Search reference / page no. / device / subsystem...">
+  </div>
+  <div class="tblwrap"><table id="t-layout"></table></div><div class="hint" id="h-layout"></div>
  </div>
 </section>
 <footer>PS5 &middot; CPP-AGI COMPLETION PLATFORM &mdash; CONFIDENTIAL &middot; FOR INTERNAL PROJECT USE ONLY</footer>
@@ -749,7 +760,35 @@ function renderWiring(){
  $('t-wire').innerHTML='<thead>'+h+'</thead><tbody>'+(rows||emptyRow())+'</tbody>';
  $('h-wire').textContent=d.length+' wiring terminations'+(trunc?' (first '+LIMIT+' shown)':'')+(sid?' | subsystem: '+sid:'')+((d.length)&&!q?' | '+new Set(d.map(r=>r[0])).size+' cables':'');
 }
-const RENDER={dash:null,rfc:renderRfc,blk:renderBlk,pu:()=>renderList('pu'),it:()=>renderList('it'),sub:renderSub,done:renderDone,cables:renderCables,eit9:renderEit9,wire:renderWiring};
+const REFTITLE={'TZ-MID-68-WPR2-161503_05':'Instrument Wiring Drawing - PS-5 (Rev 05, AFC 25-Jul-2025)','TZ-MID-68-WPR2-161503_03':'Instrument Wiring Drawing - PS-5 (Rev 03, AFCH 09-Nov-2023)','TZ-MID-68-WPR2-161503':'Instrument Wiring Drawing - PS-5'};
+function renderLayout(){
+ const q=$('q-layout').value.trim().toLowerCase();
+ const rf=$('s-layout').value;
+ const src=WIRE.map(r=>({ref:r[8]||'-',pg:String(r[9]===undefined?'':r[9]),lay:r[13]||'',dev:r[4]||'',tag:r[0]||'',sid:r[12]||'',task:r[10]||''}));
+ let f=src;
+ if(rf)f=f.filter(x=>x.ref===rf);
+ if(q)f=f.filter(x=>(x.ref+' '+x.pg+' '+x.dev+' '+x.tag+' '+x.sid).toLowerCase().indexOf(q)>=0);
+ const m=new Map();
+ f.forEach(x=>{const k=x.ref+'||'+x.pg;let g=m.get(k);
+  if(!g){g={ref:x.ref,pg:x.pg,lay:x.lay,n:0,tags:new Set(),devs:new Set(),subs:new Set(),tasks:new Set()};m.set(k,g);}
+  g.n++;g.tags.add(x.tag);g.devs.add(x.dev);if(x.sid)g.subs.add(x.sid);if(x.task)g.tasks.add(x.task);});
+ const L=Array.from(m.values()).sort((a,b)=>a.ref<b.ref?-1:a.ref>b.ref?1:(+a.pg)-(+b.pg));
+ let h='<tr><th style="width:40px">#</th><th style="min-width:190px;max-width:260px">REFERENCE DOCUMENT</th><th style="min-width:220px;max-width:340px">DRAWING TITLE</th><th style="width:120px">PAGE No. IN REFERENCE</th><th style="min-width:190px;max-width:280px">LAYOUT (REF / PAGE)</th><th style="width:95px">TERMINATIONS</th><th style="width:70px">CABLES</th><th style="width:80px">DEVICES</th><th style="width:95px">SUBSYSTEMS</th><th style="width:80px">TASK IDs</th></tr>';
+ let out='';
+ L.forEach((g,i)=>{out+='<tr><td style="text-align:center">'+(i+1)+'</td>'
+  +'<td style="font-weight:600;font-size:11px">'+esc(g.ref)+'</td>'
+  +'<td style="font-size:11px">'+esc(REFTITLE[g.ref]||'—')+'</td>'
+  +'<td style="text-align:center"><b>'+esc(g.pg)+'</b></td>'
+  +'<td style="font-family:monospace;font-size:11px">'+esc(g.lay)+'</td>'
+  +'<td style="text-align:center"><b>'+g.n+'</b></td>'
+  +'<td style="text-align:center">'+g.tags.size+'</td>'
+  +'<td style="text-align:center">'+g.devs.size+'</td>'
+  +'<td style="text-align:center">'+g.subs.size+'</td>'
+  +'<td style="text-align:center">'+g.tasks.size+'</td></tr>';});
+ $('t-layout').innerHTML='<thead>'+h+'</thead><tbody>'+(out||emptyRow())+'</tbody>';
+ $('h-layout').textContent=L.length+' layout sheet(s) from '+src.length+' terminations'+(rf?' | reference: '+rf:'')+(q?' | search: "'+q+'"':'');
+}
+const RENDER={dash:null,rfc:renderRfc,blk:renderBlk,pu:()=>renderList('pu'),it:()=>renderList('it'),sub:renderSub,done:renderDone,cables:renderCables,eit9:renderEit9,wire:renderWiring,layout:renderLayout};
 function countUp(){
  document.querySelectorAll('#v-dash .kpi b').forEach(el=>{
   const t=el.textContent;
@@ -873,6 +912,8 @@ function openMenu(th,tid,ci){closeMenu();const tb=document.getElementById(tid);i
  draw('');FMENU=m;m.querySelector('input').focus();}
 (function(){const s=$('s-wire');SUBS.forEach(x=>{const o=document.createElement('option');o.value=x.sid;o.textContent=x.name;s.appendChild(o)});})();
 $('q-wire').addEventListener('input',renderWiring);$('s-wire').addEventListener('change',renderWiring);
+(function(){const s=$('s-layout');const seen={};WIRE.forEach(r=>{const k=r[8]||'-';if(!seen[k]){seen[k]=1;const o=document.createElement('option');o.value=k;o.textContent=k;s.appendChild(o);}});})();
+$('q-layout').addEventListener('input',renderLayout);$('s-layout').addEventListener('change',renderLayout);
 document.querySelectorAll('table[id]').forEach(tb=>{
  function mk(){const cm=thCols(tb);allThs(tb).forEach(th=>{if(th.querySelector('.fbtn')||(th.colSpan||1)>1)return;
   const ci=cm.get(th)??-1;if(ci<0)return;
