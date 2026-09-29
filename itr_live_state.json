@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-09-29 09:12:19",
+  "updated": "2026-09-29 09:19:30",
   "total_tasks_ps5": 14001,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 5670,
-  "open": 4630,
-  "today_closed": 14,
+  "closed": 5671,
+  "open": 4629,
+  "today_closed": 15,
   "closed_by_discipline": {
     "I": 2833,
-    "E": 2621,
+    "E": 2622,
     "T": 216
   },
   "open_by_discipline": {
     "I": 1762,
-    "E": 2006,
+    "E": 2005,
     "T": 862
   },
   "daily": [
@@ -228,15 +228,21 @@
     },
     {
       "label": "2026-09-29",
-      "E": 14,
+      "E": 15,
       "I": 0,
       "T": 0,
-      "Total": 14
+      "Total": 15
     }
   ],
-  "closed_this_week": 132,
-  "closed_this_month": 2118,
+  "closed_this_week": 133,
+  "closed_this_month": 2119,
   "today_milestone": [
+    {
+      "milestone": "Milestone A",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 1
+    },
     {
       "milestone": "Milestone E",
       "disc": "E",
@@ -244,19 +250,19 @@
       "count": 14
     }
   ],
-  "today_milestone_total": 14,
+  "today_milestone_total": 15,
   "milestone_summary": [
     {
       "label": "Milestone A",
       "raw": "PS5 - Milestone A",
       "total": 273,
-      "closed": 226,
-      "remaining": 47,
-      "pct": 82.8,
+      "closed": 227,
+      "remaining": 46,
+      "pct": 83.2,
       "status": {
-        "Closed": 226,
+        "Closed": 227,
         "Submitted": 3,
-        "To be completed": 43,
+        "To be completed": 42,
         "Other": 1
       }
     },
@@ -374,6 +380,15 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-61-IV-0001B",
+      "task": "T-00018-0103",
+      "system": "PS5-61-07 - 0.4kV Switchboard EITS Building (PS5-61-IK-0001)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/29/2026 6:14:26 A"
+    },
     {
       "tag": "PS5-60-IE-0003G-CD15",
       "task": "T-00024-2226",
@@ -1444,15 +1459,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "9/28/2026 12:10:14 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1486",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/28/2026 12:09:35 "
     }
   ]
 }
