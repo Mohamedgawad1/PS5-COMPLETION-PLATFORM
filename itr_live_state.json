@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-09-29 11:35:17",
+  "updated": "2026-09-29 11:45:33",
   "total_tasks_ps5": 14001,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 5673,
-  "open": 4627,
-  "today_closed": 15,
+  "closed": 5674,
+  "open": 4626,
+  "today_closed": 16,
   "closed_by_discipline": {
     "I": 2835,
-    "E": 2622,
+    "E": 2623,
     "T": 216
   },
   "open_by_discipline": {
     "I": 1760,
-    "E": 2005,
+    "E": 2004,
     "T": 862
   },
   "daily": [
@@ -228,17 +228,23 @@
     },
     {
       "label": "2026-09-29",
-      "E": 15,
+      "E": 16,
       "I": 0,
       "T": 0,
-      "Total": 15
+      "Total": 16
     }
   ],
-  "closed_this_week": 135,
-  "closed_this_month": 2121,
+  "closed_this_week": 136,
+  "closed_this_month": 2122,
   "today_milestone": [
     {
       "milestone": "Milestone A",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 1
+    },
+    {
+      "milestone": "Milestone B",
       "disc": "E",
       "discipline": "Electrical (E)",
       "count": 1
@@ -250,7 +256,7 @@
       "count": 14
     }
   ],
-  "today_milestone_total": 15,
+  "today_milestone_total": 16,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -270,13 +276,13 @@
       "label": "Milestone B",
       "raw": "PS5 - Milestone B",
       "total": 1714,
-      "closed": 1585,
-      "remaining": 129,
+      "closed": 1586,
+      "remaining": 128,
       "pct": 92.5,
       "status": {
-        "Closed": 1585,
+        "Closed": 1586,
         "Submitted": 0,
-        "To be completed": 126,
+        "To be completed": 125,
         "Other": 3
       }
     },
@@ -332,8 +338,8 @@
       "status": {
         "Closed": 569,
         "Submitted": 2,
-        "To be completed": 568,
-        "Other": 9
+        "To be completed": 567,
+        "Other": 10
       }
     },
     {
@@ -380,6 +386,15 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "",
+      "task": "T-00240-1332",
+      "system": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/29/2026 8:40:50 A"
+    },
     {
       "tag": "PS5-61-IV-0001B",
       "task": "T-00018-0103",
@@ -1450,15 +1465,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "9/28/2026 12:11:31 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1605",
-      "system": "PS5-79-09 - Electrical Heat Tracing Transformer/Distribution Board 9 (PS5-79-IG-0009)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/28/2026 12:11:07 "
     }
   ]
 }
