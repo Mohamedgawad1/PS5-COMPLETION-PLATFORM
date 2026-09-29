@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-09-29 20:49:29",
+  "updated": "2026-09-29 20:55:52",
   "total_tasks_ps5": 14004,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 5706,
-  "open": 4594,
-  "today_closed": 48,
+  "closed": 5707,
+  "open": 4593,
+  "today_closed": 49,
   "closed_by_discipline": {
-    "I": 2848,
+    "I": 2849,
     "E": 2642,
     "T": 216
   },
   "open_by_discipline": {
-    "I": 1747,
+    "I": 1746,
     "E": 1985,
     "T": 862
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-09-29",
       "E": 35,
-      "I": 13,
+      "I": 14,
       "T": 0,
-      "Total": 48
+      "Total": 49
     }
   ],
-  "closed_this_week": 168,
-  "closed_this_month": 2154,
+  "closed_this_week": 169,
+  "closed_this_month": 2155,
   "today_milestone": [
     {
       "milestone": "Milestone A",
@@ -265,7 +265,7 @@
       "milestone": "Milestone E",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 6
+      "count": 7
     },
     {
       "milestone": "Milestone F",
@@ -280,7 +280,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 48,
+  "today_milestone_total": 49,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -342,14 +342,14 @@
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1532,
-      "closed": 1240,
-      "remaining": 292,
-      "pct": 80.9,
+      "closed": 1241,
+      "remaining": 291,
+      "pct": 81.0,
       "status": {
-        "Closed": 1240,
+        "Closed": 1241,
         "Submitted": 3,
-        "To be completed": 281,
-        "Other": 8
+        "To be completed": 279,
+        "Other": 9
       }
     },
     {
@@ -410,6 +410,15 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-60-BI-0016G-CC01",
+      "task": "T-00069-5032",
+      "system": "PS5-60-19 - Power Generation Package G",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/29/2026 5:53:14 P"
+    },
     {
       "tag": "PS5-60-BI-0014B-CC02",
       "task": "T-00069-5007",
@@ -1480,15 +1489,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "9/28/2026 12:26:33 "
-    },
-    {
-      "tag": "PS5-71-DM-3100A",
-      "task": "T-00026-0171",
-      "system": "PS5-71-16 - Diesel Fuel Supply Pump A/B",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/28/2026 12:25:58 "
     }
   ]
 }
