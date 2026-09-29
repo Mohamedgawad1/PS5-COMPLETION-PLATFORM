@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-09-29 17:04:26",
+  "updated": "2026-09-29 17:15:55",
   "total_tasks_ps5": 14004,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 5678,
-  "open": 4622,
-  "today_closed": 20,
+  "closed": 5679,
+  "open": 4621,
+  "today_closed": 21,
   "closed_by_discipline": {
-    "I": 2839,
+    "I": 2840,
     "E": 2623,
     "T": 216
   },
   "open_by_discipline": {
-    "I": 1756,
+    "I": 1755,
     "E": 2004,
     "T": 862
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-09-29",
       "E": 16,
-      "I": 4,
+      "I": 5,
       "T": 0,
-      "Total": 20
+      "Total": 21
     }
   ],
-  "closed_this_week": 140,
-  "closed_this_month": 2126,
+  "closed_this_week": 141,
+  "closed_this_month": 2127,
   "today_milestone": [
     {
       "milestone": "Milestone A",
@@ -260,9 +260,15 @@
       "disc": "I",
       "discipline": "Instrumentation (I)",
       "count": 4
+    },
+    {
+      "milestone": "Milestone G",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
     }
   ],
-  "today_milestone_total": 20,
+  "today_milestone_total": 21,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -330,8 +336,8 @@
       "status": {
         "Closed": 1215,
         "Submitted": 2,
-        "To be completed": 308,
-        "Other": 7
+        "To be completed": 307,
+        "Other": 8
       }
     },
     {
@@ -344,22 +350,22 @@
       "status": {
         "Closed": 576,
         "Submitted": 3,
-        "To be completed": 564,
-        "Other": 6
+        "To be completed": 563,
+        "Other": 7
       }
     },
     {
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 904,
-      "closed": 588,
-      "remaining": 316,
-      "pct": 65.0,
+      "closed": 589,
+      "remaining": 315,
+      "pct": 65.2,
       "status": {
-        "Closed": 588,
+        "Closed": 589,
         "Submitted": 2,
-        "To be completed": 302,
-        "Other": 12
+        "To be completed": 300,
+        "Other": 13
       }
     },
     {
@@ -392,6 +398,15 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-28-FO-0007",
+      "task": "T-00070-0066",
+      "system": "PS5-28-03 - Closed Drain Drum and Pump 01",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/29/2026 2:07:05 P"
+    },
     {
       "tag": "PS5-71-FO-0013A",
       "task": "T-00070-0060",
@@ -1462,15 +1477,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "9/28/2026 12:13:38 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1630",
-      "system": "PS5-79-10 - Electrical Heat Tracing Transformer/Distribution Board 10 (PS5-79-IG-0010)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/28/2026 12:13:12 "
     }
   ]
 }
