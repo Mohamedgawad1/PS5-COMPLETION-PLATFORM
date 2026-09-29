@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-09-28 22:12:32",
+  "updated": "2026-09-29 07:45:07",
   "total_tasks_ps5": 14001,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,27 +9,20 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 5655,
-  "open": 4645,
-  "today_closed": 117,
+  "closed": 5656,
+  "open": 4644,
+  "today_closed": 0,
   "closed_by_discipline": {
     "I": 2833,
-    "E": 2606,
+    "E": 2607,
     "T": 216
   },
   "open_by_discipline": {
     "I": 1762,
-    "E": 2021,
+    "E": 2020,
     "T": 862
   },
   "daily": [
-    {
-      "label": "2026-08-30",
-      "E": 36,
-      "I": 31,
-      "T": 0,
-      "Total": 67
-    },
     {
       "label": "2026-08-31",
       "E": 45,
@@ -228,65 +221,23 @@
     },
     {
       "label": "2026-09-28",
-      "E": 60,
+      "E": 61,
       "I": 57,
       "T": 0,
-      "Total": 117
+      "Total": 118
+    },
+    {
+      "label": "2026-09-29",
+      "E": 0,
+      "I": 0,
+      "T": 0,
+      "Total": 0
     }
   ],
-  "closed_this_week": 117,
-  "closed_this_month": 2103,
-  "today_milestone": [
-    {
-      "milestone": "Milestone B",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 1
-    },
-    {
-      "milestone": "Milestone D",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 2
-    },
-    {
-      "milestone": "Milestone E",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 9
-    },
-    {
-      "milestone": "Milestone E",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 35
-    },
-    {
-      "milestone": "Milestone F",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 2
-    },
-    {
-      "milestone": "Milestone G",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 1
-    },
-    {
-      "milestone": "Milestone H",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 48
-    },
-    {
-      "milestone": "Milestone H",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 19
-    }
-  ],
-  "today_milestone_total": 117,
+  "closed_this_week": 118,
+  "closed_this_month": 2104,
+  "today_milestone": [],
+  "today_milestone_total": 0,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -348,12 +299,12 @@
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1533,
-      "closed": 1198,
-      "remaining": 335,
-      "pct": 78.1,
+      "closed": 1199,
+      "remaining": 334,
+      "pct": 78.2,
       "status": {
-        "Closed": 1198,
-        "Submitted": 14,
+        "Closed": 1199,
+        "Submitted": 13,
         "To be completed": 311,
         "Other": 10
       }
@@ -416,6 +367,15 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-60-BI-0006G-CL07",
+      "task": "T-00023-9224",
+      "system": "PS5-60-68 - Fuel Conditioning Module PS5-60-UZ-8900G",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/28/2026 7:13:21 P"
+    },
     {
       "tag": "PS5-60-BI-0006G-CL06",
       "task": "T-00023-9223",
@@ -1486,15 +1446,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "9/27/2026 4:00:08 P"
-    },
-    {
-      "tag": "PS5-60-IE-0002G-CL02",
-      "task": "T-00023-5185",
-      "system": "PS5-60-19 - Power Generation Package G",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/27/2026 3:58:54 P"
     }
   ]
 }
