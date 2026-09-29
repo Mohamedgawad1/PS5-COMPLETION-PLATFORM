@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-09-29 20:55:52",
+  "updated": "2026-09-29 21:02:53",
   "total_tasks_ps5": 14004,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 5707,
-  "open": 4593,
-  "today_closed": 49,
+  "closed": 5711,
+  "open": 4589,
+  "today_closed": 53,
   "closed_by_discipline": {
-    "I": 2849,
+    "I": 2853,
     "E": 2642,
     "T": 216
   },
   "open_by_discipline": {
-    "I": 1746,
+    "I": 1742,
     "E": 1985,
     "T": 862
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-09-29",
       "E": 35,
-      "I": 14,
+      "I": 18,
       "T": 0,
-      "Total": 49
+      "Total": 53
     }
   ],
-  "closed_this_week": 169,
-  "closed_this_month": 2155,
+  "closed_this_week": 173,
+  "closed_this_month": 2159,
   "today_milestone": [
     {
       "milestone": "Milestone A",
@@ -265,7 +265,7 @@
       "milestone": "Milestone E",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 7
+      "count": 8
     },
     {
       "milestone": "Milestone F",
@@ -278,9 +278,15 @@
       "disc": "I",
       "discipline": "Instrumentation (I)",
       "count": 1
+    },
+    {
+      "milestone": "Milestone H",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 3
     }
   ],
-  "today_milestone_total": 49,
+  "today_milestone_total": 53,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -342,14 +348,14 @@
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1532,
-      "closed": 1241,
-      "remaining": 291,
-      "pct": 81.0,
+      "closed": 1242,
+      "remaining": 290,
+      "pct": 81.1,
       "status": {
-        "Closed": 1241,
+        "Closed": 1242,
         "Submitted": 3,
         "To be completed": 279,
-        "Other": 9
+        "Other": 8
       }
     },
     {
@@ -384,14 +390,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 1717,
-      "remaining": 1534,
-      "pct": 52.8,
+      "closed": 1720,
+      "remaining": 1531,
+      "pct": 52.9,
       "status": {
-        "Closed": 1717,
+        "Closed": 1720,
         "Submitted": 9,
-        "To be completed": 1489,
-        "Other": 36
+        "To be completed": 1485,
+        "Other": 37
       }
     },
     {
@@ -410,6 +416,42 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-60-BI-0004G-CC01",
+      "task": "T-00069-4923",
+      "system": "PS5-60-19 - Power Generation Package G",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/29/2026 6:01:23 P"
+    },
+    {
+      "tag": "PS5-25-XXS-0053-CJ01",
+      "task": "T-00069-4803",
+      "system": "PS5-25-05 - Crude Oil Export Pumps Bypass",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/29/2026 6:00:29 P"
+    },
+    {
+      "tag": "PS5-25-XV-0053-CC02",
+      "task": "T-00069-4801",
+      "system": "PS5-25-05 - Crude Oil Export Pumps Bypass",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/29/2026 5:58:50 P"
+    },
+    {
+      "tag": "PS5-25-XV-0053-CC01",
+      "task": "T-00069-4800",
+      "system": "PS5-25-05 - Crude Oil Export Pumps Bypass",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/29/2026 5:56:41 P"
+    },
     {
       "tag": "PS5-60-BI-0016G-CC01",
       "task": "T-00069-5032",
@@ -1453,42 +1495,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "9/28/2026 4:04:53 P"
-    },
-    {
-      "tag": "PS5-60-BI-0001G-CC03",
-      "task": "T-00069-4910",
-      "system": "PS5-60-19 - Power Generation Package G",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/28/2026 4:03:08 P"
-    },
-    {
-      "tag": "PS5-60-BI-0001G-CC01",
-      "task": "T-00069-4909",
-      "system": "PS5-60-19 - Power Generation Package G",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/28/2026 4:01:06 P"
-    },
-    {
-      "tag": "PS5-60-PIT-8114B-CC01",
-      "task": "T-00069-13003",
-      "system": "PS5-60-58 - Fuel Conditioning Module PS5-60-UZ-8900B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/28/2026 3:57:56 P"
-    },
-    {
-      "tag": "PS5-71-DM-3100B",
-      "task": "T-00026-0172",
-      "system": "PS5-71-16 - Diesel Fuel Supply Pump A/B",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/28/2026 12:26:33 "
     }
   ]
 }
