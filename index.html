@@ -787,16 +787,16 @@ const REFTITLE={'TZ-MID-68-WPR2-161503_05':'Instrument Wiring Drawing - PS-5 (Re
 function renderLayout(){
  const q=$('q-layout').value.trim().toLowerCase();
  const rf=$('s-layout').value;
- const src=WIRE.map(r=>({ref:r[8]||'-',pg:String(r[9]===undefined?'':r[9]),lay:r[13]||'',dev:r[4]||'',tag:r[0]||'',sid:r[12]||'',task:r[10]||''}));
+ const src=WIRE.map(r=>({ref:r[8]||'-',pg:String(r[9]===undefined?'':r[9]),lay:r[13]||'',dev:r[4]||'',tag:r[0]||'',sid:r[12]||'',task:r[10]||'',snm:r[11]||''}));
  let f=src;
  if(rf)f=f.filter(x=>x.ref===rf);
- if(q)f=f.filter(x=>(x.ref+' '+x.pg+' '+x.dev+' '+x.tag+' '+x.sid).toLowerCase().indexOf(q)>=0);
+ if(q)f=f.filter(x=>(x.ref+' '+x.pg+' '+x.dev+' '+x.tag+' '+x.sid+' '+x.snm+' '+x.task).toLowerCase().indexOf(q)>=0);
  const m=new Map();
  f.forEach(x=>{const k=x.ref+'||'+x.pg;let g=m.get(k);
-  if(!g){g={ref:x.ref,pg:x.pg,lay:x.lay,n:0,tags:new Set(),devs:new Set(),subs:new Set(),tasks:new Set()};m.set(k,g);}
-  g.n++;g.tags.add(x.tag);g.devs.add(x.dev);if(x.sid)g.subs.add(x.sid);if(x.task)g.tasks.add(x.task);});
+   if(!g){g={ref:x.ref,pg:x.pg,lay:x.lay,n:0,tags:new Set(),devs:new Set(),subs:new Set(),tasks:new Set(),snames:new Set()};m.set(k,g);}
+  g.n++;g.tags.add(x.tag);g.devs.add(x.dev); if(x.sid){g.subs.add(x.sid);if(x.snm)g.snames.add(x.snm);}if(x.task)g.tasks.add(x.task);});
  const L=Array.from(m.values()).sort((a,b)=>a.ref<b.ref?-1:a.ref>b.ref?1:(+a.pg)-(+b.pg));
- let h='<tr><th style="width:40px">#</th><th style="min-width:190px;max-width:260px">REFERENCE DOCUMENT</th><th style="min-width:220px;max-width:340px">DRAWING TITLE</th><th style="width:120px">PAGE No. IN REFERENCE</th><th style="min-width:190px;max-width:280px">LAYOUT (REF / PAGE)</th><th style="width:95px">TERMINATIONS</th><th style="width:70px">CABLES</th><th style="width:80px">DEVICES</th><th style="width:95px">SUBSYSTEMS</th><th style="width:80px">TASK IDs</th></tr>';
+ let h='<tr><th style="width:40px">#</th><th style="min-width:190px;max-width:260px">REFERENCE DOCUMENT</th><th style="min-width:220px;max-width:340px">DRAWING TITLE</th><th style="width:120px">PAGE No. IN REFERENCE</th><th style="min-width:190px;max-width:280px">LAYOUT (REF / PAGE)</th><th style="width:95px">TERMINATIONS</th><th style="width:70px">CABLES</th><th style="width:80px">DEVICES</th><th style="min-width:150px;max-width:230px">SUBSYSTEM ID (No.)</th><th style="min-width:130px;max-width:200px">TASK ID</th></tr>';
  let out='';
  L.forEach((g,i)=>{out+='<tr><td style="text-align:center">'+(i+1)+'</td>'
   +'<td style="font-weight:600;font-size:11px">'+esc(g.ref)+'</td>'
@@ -806,10 +806,13 @@ function renderLayout(){
   +'<td style="text-align:center"><b>'+g.n+'</b></td>'
   +'<td style="text-align:center">'+g.tags.size+'</td>'
   +'<td style="text-align:center">'+g.devs.size+'</td>'
-  +'<td style="text-align:center">'+g.subs.size+'</td>'
-  +'<td style="text-align:center">'+g.tasks.size+'</td></tr>';});
+  +'<td style="max-width:230px;white-space:normal;font-size:10px;font-family:monospace">'
+   +(g.subs.size?esc(Array.from(g.snames).slice(0,2).join(' | '))+(g.subs.size>2?'':'<br>'):'')
+   +(g.subs.size?Array.from(g.subs).slice(0,4).map(v=>'<b>'+esc(v.split(' - ')[0])+'</b>').join('<br>')+(g.subs.size>4?'<br><span style="opacity:.6">+'+(g.subs.size-4)+' more</span>':''):'<span style="opacity:.35">&mdash;</span>')+'</td>'
+  +'<td style="max-width:200px;white-space:normal;font-size:10px;font-family:monospace">'
+   +(g.tasks.size?Array.from(g.tasks).slice(0,3).map(v=>esc(v)).join('<br>')+(g.tasks.size>3?'<br><span style="opacity:.6">+'+(g.tasks.size-3)+' more</span>':''):'<span style="opacity:.35">—</span>')+'</td></tr>';});
  $('t-layout').innerHTML='<thead>'+h+'</thead><tbody>'+(out||emptyRow())+'</tbody>';
- $('h-layout').textContent=L.length+' layout sheet(s) from '+src.length+' terminations'+(rf?' | reference: '+rf:'')+(q?' | search: "'+q+'"':'');
+ $('h-layout').textContent=L.length+' layout sheet(s) from '+src.length+' terminations | '+new Set(f.map(x=>x.sid).filter(Boolean)).size+' subsystem(s) | '+new Set(f.map(x=>x.task).filter(Boolean)).size+' task id(s)'+(rf?' | reference: '+rf:'')+(q?' | "'+q+'"':'');
 }
 function renderCbl(){
  const q=$('q-cbl').value.trim().toLowerCase(), sf=$('s-cbl').value;
