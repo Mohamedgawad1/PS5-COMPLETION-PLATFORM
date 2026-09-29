@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-09-29 11:54:00",
+  "updated": "2026-09-29 12:03:14",
   "total_tasks_ps5": 14001,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 5674,
-  "open": 4626,
-  "today_closed": 16,
+  "closed": 5677,
+  "open": 4623,
+  "today_closed": 19,
   "closed_by_discipline": {
-    "I": 2835,
+    "I": 2838,
     "E": 2623,
     "T": 216
   },
   "open_by_discipline": {
-    "I": 1760,
+    "I": 1757,
     "E": 2004,
     "T": 862
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-09-29",
       "E": 16,
-      "I": 0,
+      "I": 3,
       "T": 0,
-      "Total": 16
+      "Total": 19
     }
   ],
-  "closed_this_week": 136,
-  "closed_this_month": 2122,
+  "closed_this_week": 139,
+  "closed_this_month": 2125,
   "today_milestone": [
     {
       "milestone": "Milestone A",
@@ -254,9 +254,15 @@
       "disc": "E",
       "discipline": "Electrical (E)",
       "count": 14
+    },
+    {
+      "milestone": "Milestone F",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 3
     }
   ],
-  "today_milestone_total": 16,
+  "today_milestone_total": 19,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -332,14 +338,14 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 1148,
-      "closed": 569,
-      "remaining": 579,
-      "pct": 49.6,
+      "closed": 572,
+      "remaining": 576,
+      "pct": 49.8,
       "status": {
-        "Closed": 569,
+        "Closed": 572,
         "Submitted": 2,
-        "To be completed": 566,
-        "Other": 11
+        "To be completed": 565,
+        "Other": 9
       }
     },
     {
@@ -386,6 +392,33 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-71-FO-0013B",
+      "task": "T-00070-0051",
+      "system": "PS5-71-16 - Diesel Fuel Supply Pump A/B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/29/2026 9:00:10 A"
+    },
+    {
+      "tag": "PS5-71-FO-0013A",
+      "task": "T-00255-0060",
+      "system": "PS5-71-16 - Diesel Fuel Supply Pump A/B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/29/2026 8:57:44 A"
+    },
+    {
+      "tag": "PS5-71-FO-0013B",
+      "task": "T-00255-0051",
+      "system": "PS5-71-16 - Diesel Fuel Supply Pump A/B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/29/2026 8:57:38 A"
+    },
     {
       "tag": "",
       "task": "T-00240-1332",
@@ -1438,33 +1471,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "9/28/2026 12:12:49 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1623",
-      "system": "PS5-79-09 - Electrical Heat Tracing Transformer/Distribution Board 9 (PS5-79-IG-0009)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/28/2026 12:12:26 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1620",
-      "system": "PS5-79-09 - Electrical Heat Tracing Transformer/Distribution Board 9 (PS5-79-IG-0009)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/28/2026 12:12:01 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1614",
-      "system": "PS5-79-09 - Electrical Heat Tracing Transformer/Distribution Board 9 (PS5-79-IG-0009)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/28/2026 12:11:31 "
     }
   ]
 }
