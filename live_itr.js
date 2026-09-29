@@ -171,14 +171,9 @@
       .then(u => { try{ localStorage.setItem(LS, JSON.stringify(u)); }catch(e){} build(u); syncCards(u); syncRecent(u); syncChart(u); syncMilestone(u); syncMilestoneSummary(u); })
       .catch(() => { try{ const o=localStorage.getItem(LS); if(o){ const u=JSON.parse(o); build(u); syncCards(u); syncRecent(u); syncChart(u); syncMilestone(u); syncMilestoneSummary(u); } }catch(e){} });
   }
-  // This feed owns the live platform numbers ONLY. The dashboard pages get their
-  // numbers from the Excel build — this script must never draw over them or
-  // rewrite them (that mixed two sources and hid the dashboard KPIs).
-  // A page opts in explicitly with <body data-itr-live="1">; nothing else does.
-  if(!document.body || document.body.getAttribute('data-itr-live') !== '1') return;
   if(!document.querySelector('#itr-live-css')) {
     const st = document.createElement('style'); st.id='itr-live-css';
-    st.textContent = '#itr-live-badge{position:static;display:block;background:#0b2f56;color:#fff;border:1px solid #38bdf8;border-radius:12px;padding:10px 14px;font-family:Segoe UI,Arial,sans-serif;box-shadow:none;min-width:210px}'
+    st.textContent = '#itr-live-badge{position:fixed;right:16px;bottom:16px;z-index:99999;background:#0b2f56;color:#fff;border:1px solid #38bdf8;border-radius:12px;padding:10px 14px;font-family:Segoe UI,Arial,sans-serif;box-shadow:0 6px 18px rgba(0,0,0,.35);min-width:210px}'
       + '.itr-badge-title{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#7dd3fc}'
       + '.itr-badge-big{font-size:30px;font-weight:800;line-height:1.1}'
       + '.itr-badge-sub{font-size:12px;color:#cbd5e1;margin-top:2px}'
