@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-09-29 12:03:14",
+  "updated": "2026-09-29 12:14:24",
   "total_tasks_ps5": 14001,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 5677,
-  "open": 4623,
-  "today_closed": 19,
+  "closed": 5678,
+  "open": 4622,
+  "today_closed": 20,
   "closed_by_discipline": {
-    "I": 2838,
+    "I": 2839,
     "E": 2623,
     "T": 216
   },
   "open_by_discipline": {
-    "I": 1757,
+    "I": 1756,
     "E": 2004,
     "T": 862
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-09-29",
       "E": 16,
-      "I": 3,
+      "I": 4,
       "T": 0,
-      "Total": 19
+      "Total": 20
     }
   ],
-  "closed_this_week": 139,
-  "closed_this_month": 2125,
+  "closed_this_week": 140,
+  "closed_this_month": 2126,
   "today_milestone": [
     {
       "milestone": "Milestone A",
@@ -259,10 +259,10 @@
       "milestone": "Milestone F",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 3
+      "count": 4
     }
   ],
-  "today_milestone_total": 19,
+  "today_milestone_total": 20,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -338,13 +338,13 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 1148,
-      "closed": 572,
-      "remaining": 576,
-      "pct": 49.8,
+      "closed": 573,
+      "remaining": 575,
+      "pct": 49.9,
       "status": {
-        "Closed": 572,
+        "Closed": 573,
         "Submitted": 2,
-        "To be completed": 565,
+        "To be completed": 564,
         "Other": 9
       }
     },
@@ -392,6 +392,15 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-71-FO-0013A",
+      "task": "T-00070-0060",
+      "system": "PS5-71-16 - Diesel Fuel Supply Pump A/B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "9/29/2026 9:02:23 A"
+    },
     {
       "tag": "PS5-71-FO-0013B",
       "task": "T-00070-0051",
@@ -1462,15 +1471,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "9/28/2026 12:13:12 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1624",
-      "system": "PS5-79-09 - Electrical Heat Tracing Transformer/Distribution Board 9 (PS5-79-IG-0009)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "9/28/2026 12:12:49 "
     }
   ]
 }
