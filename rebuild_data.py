@@ -189,28 +189,17 @@ print("\n" + "="*60)
 print("STEP 3: Read RFC PROGRESS from DPR SUMMARY")
 print("="*60)
 
-import glob as globmod
-dpr_dir = 'C:/Users/mylap/Downloads/PS5 - CPP AGI Completion Progress Dashboard_files'
-# The daily file is spelled SUMMARY, older ones SUMMERY -> match both.
-# Skip Excel lock files (~$...) and BACKUP copies, then take the newest.
-# Both spellings exist on disk ("DPR SUMMARY" for the newer daily files,
-# "DPR SUMMERY" for the older ones).
-_DPR_PAT = 'PS-5 COMPLETIONS DPR SUMM[AE]RY*.xlsx'
-_dpr_all = globmod.glob(os.path.join(dpr_dir, _DPR_PAT))
-dpr_files = sorted(
-    (f for f in _dpr_all
-     if not os.path.basename(f).startswith('~$')
-     and 'BACKUP' not in os.path.basename(f).upper()),
-    key=lambda f: (re.search(r'(\d{2}-\w+-\d{2})', os.path.basename(f)) is not None,
-                   re.search(r'(\d{2}-\w+-\d{2})', os.path.basename(f)).group(1)
-                   if re.search(r'(\d{2}-\w+-\d{2})', os.path.basename(f)) else '',
-                   os.path.getmtime(f)),
-    reverse=True)
-if not dpr_files:
-    dpr_files = sorted(globmod.glob(os.path.join(dpr_dir, _DPR_PAT)),
-                       key=os.path.getmtime, reverse=True)
-print(f"  DPR candidates found: {[os.path.basename(f) for f in _dpr_all]}")
-print(f"  DPR candidates used : {[os.path.basename(f) for f in dpr_files]}")
+# dpr_file is the single resolver: it pins the workbook to ONE canonical path
+# and accepts both the SUMMARY and SUMMERY spellings. Doing the lookup here
+# instead used to read a different file than the one sync_cloud_to_excel wrote.
+import dpr_file
+
+_dpr = dpr_file.find_dpr()
+dpr_files = [_dpr] if _dpr else []
+print(f"  DPR canonical file   : {_dpr}")
+print(f"  DPR candidates found : "
+      f"{[os.path.basename(f) for _, _, f in dpr_file._scan((dpr_file.CANON_DIR,))]}")
+dpr_file.warn_if_shadow_copies(_dpr)
 
 dpr_data = {}  # subsystem_id -> {priority, bhm, eit, base, rec, signed, mile, b1, b2, b3, re1, re2, re3, wd}
 

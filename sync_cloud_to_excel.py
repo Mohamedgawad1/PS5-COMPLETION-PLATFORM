@@ -33,6 +33,9 @@ import zipfile
 import openpyxl
 from openpyxl.styles import Font, PatternFill
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import dpr_file
+
 HOME = os.path.join(os.path.expanduser('~'), 'Downloads')
 DL_SUB = os.path.join(HOME, 'PS5 - CPP AGI Completion Progress Dashboard_files')
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -72,11 +75,6 @@ RFC_MAP = {
     'Recovery': 8,
     'SIGNED': 9,
     'Milestone': 10,
-    'EIT': 56,
-    'EACOP': 55,
-    'REMARK EACOP': 55,
-    'REMARK CPP-EIT': 56,
-    'REMARK CPP-1': 57,
     'STATUS': None,      # resolved dynamically -> 'WALKDOWN STATUS' column
 }
 # header hints used to locate the REAL column in the current DPR workbook
@@ -102,22 +100,92 @@ RFC_DISC_COLS = {'B': (12, 13), 'E': (16, 17), 'H': (20, 21), 'I': (24, 25),
 RFC_DERIVED = {'ITRs', 'CLOSED', 'BALANCE'}
 
 
+# Header text that identifies each platform column. Matched EXACTLY first
+# (after whitespace/newline normalisation) and only then as a fallback.
+# The workbook has several near-identical headers - 'CPP 1' appears twice
+# (col5 BASELINE and col9 MILESTONE), 'EIT' twice (col6 and col10), and
+# 'RFC SIGNED DATE' shares a prefix with the SIGNED column - so a plain
+# substring test resolved several of these to the WRONG column and the sync
+# wrote platform values into neighbouring cells.
+RFC_HEADERS = {
+    'Priority':        ('PRIORITY', 'PRIORITY UPDATED'),
+    'RFC BHMPS':       ('RFSU', 'BHMPS'),
+    'RFC EIT':         ('DESCIPILINE', 'DISCIPLINE'),
+    'Baseline':        ('CPP 1', 'BASELINE DATE', 'BASELINE'),
+    'Recovery':        ('RECOVERY/REVISED', 'RECOVERY', 'REVISED'),
+    'SIGNED':          ('FULL', 'SIGNED'),
+    'Milestone':       ('MILESTONE', 'WD STATUS(CPP 1+ EIT)', 'WD STATUS'),
+    'STATUS':          ('WALKDOWN STATUS', 'WD STATUS'),
+    'RFC  STATUS':     ('RFC  STATUS', 'RFC STATUS'),
+    'TOTAL %':         ('TOTAL %',),
+}
+# Only these may be located loosely, because their headers never match exactly.
+RFC_LOOSE = {
+    'EIT': ('CPP-EIT', 'CPP EIT'),
+    'EACOP': ('EACOP', 'CPY'),
+    'REMARK EACOP': ('BLOCKING POINTS REMARKS', 'BLOCKING POINTS'),
+    'REMARK CPP-EIT': ('CPP-EIT', 'CPP EIT'),
+    'REMARK CPP-1': ('CPP-1', 'CPP 1'),
+}
+
+
+# RFC PROGRESS sheet: positional (1-based) columns, verified against the file.
+# This map is the single source of truth - see rfc_columns() for why columns are
+# NOT located by header text.
+
+
+def _norm_header(v):
+    return re.sub(r'\s+', ' ', n(v)).upper().strip()
+
+
+# Expected header for each mapped column, used only to VERIFY the mapping.
+# Verified against the current workbook (headers live in rows 1-3 and repeat:
+# 'CPP 1' sits at col5 and col9, 'EIT' at col6 and col10, 'RFC DATE' at col5
+# and col7 - which is exactly why matching by header text is unsafe here).
+RFC_VERIFY = {
+    2:  'PRIORITY',
+    3:  'RFSU',
+    4:  'DESCIPILINE',
+    5:  'CPP 1',
+    8:  'RECOVERY',
+    9:  'WD STATUS',
+    10: 'EIT',
+    11: 'RFC',
+    13: 'WD STATUS',
+}
+
+
 def rfc_columns(ws):
-    """Locate platform column -> Excel column by scanning header rows 1-3."""
-    out = {}
-    for r in range(1, 4):
-        for c in range(1, min(ws.max_column, 90) + 1):
-            t = re.sub(r'\s+', ' ', n(ws.cell(r, c).value)).upper()
-            if not t:
-                continue
-            for key, hints in RFC_HINTS.items():
-                if key in out:
-                    continue
-                for h in hints:
-                    if h in t:
-                        out[key] = c
-                        break
-    return out
+    """platform column -> Excel column for the RFC PROGRESS sheet.
+
+    The mapping is POSITIONAL and taken from RFC_MAP. An earlier version
+    located columns by substring-matching header text and that is what
+    corrupted the workbook: 'RFC SIGNED' matched 'RFC SIGNED DATE' at col12,
+    so the platform's signed status was written over the date column, and
+    similar collisions overwrote the discipline and milestone cells.
+
+    The mapping is now verified against the header block and reported, but it
+    is never silently relocated - a wrong relocation is far worse than a
+    stale value, because it writes into unrelated cells.
+    """
+    cols = {k: v for k, v in RFC_MAP.items() if v}
+    bad = []
+    for col, expect in RFC_VERIFY.items():
+        seen = {re.sub(r'\s+', ' ', n(ws.cell(r, col).value)).upper().strip()
+                for r in range(1, 4)}
+        seen.discard('')
+        if seen and not any(expect in s for s in seen):
+            bad.append((col, expect, sorted(seen)))
+    if bad:
+        print('[map] WARNING - RFC PROGRESS layout looks different from the '
+              'known layout:')
+        for col, expect, seen in bad:
+            print('[map]   col %d expected %r but found %s' % (col, expect, seen))
+        print('[map] NOT writing RFC values - check the column map first')
+        return {}
+    print('[map] RFC PROGRESS columns verified: %s'
+          % ', '.join('%s=%d' % kv for kv in sorted(cols.items(), key=lambda x: x[1])))
+    return cols
 
 NOTE_HEADER = 'PLATFORM NOTES'
 TARGET_SHEET = {
@@ -164,31 +232,19 @@ def save_seen(h):
 
 MONTH_NAMES = {'JANUARY': '01', 'FEBRUARY': '02', 'MARCH': '03', 'APRIL': '04',
                'MAY': '05', 'JUNE': '06', 'JULY': '07', 'AUGUST': '08',
-               'SEPTEMBER': '09', 'OCTOBER': '10', 'NOVEMBER': '11',
+               'SEPTEMBER': '09', 'OCTEMBER': '10', 'NOVEMBER': '11',
                'DECEMBER': '12'}
-# The daily workbook is spelled both ways in the wild ("DPR SUMMARY" for the
-# newer files, "DPR SUMMERY" for the older ones) - accept either, otherwise the
-# sync silently picks the stale file and the platform never reaches Excel.
-_DPR_STEM = r'PS-?5\s*COMPLETIONS\s*DPR\s*SUMM(?:ARY|ERY)'
-DPR_RE = re.compile(_DPR_STEM, re.I)
-DATE_RE = re.compile(_DPR_STEM + r'\s*-\s*(\d{1,2})-(\d{1,2})-(\d{2,4})', re.I)
-DATE_RE_MONTH = re.compile(_DPR_STEM + r'\s*-\s*(\d{1,2})-([A-Z]+)-(\d{2,4})', re.I)
+# Spelling, date parsing and file location all come from dpr_file so this
+# script cannot drift away from the scripts that read the same workbook.
+DPR_RE = dpr_file.DPR_RE
+DATE_RE = dpr_file.DATE_NUM
+DATE_RE_MONTH = dpr_file.DATE_MON
 
 
 def _fname_date(f):
     """(year, month, day) from '-DD-MM-YY' or '-DD-MONTHNAME-YY' suffix,
     or None when the name carries no date."""
-    m = DATE_RE.search(f)
-    if m:
-        dd, mm, yy = m.group(1), m.group(2), m.group(3)
-        yy = yy if len(yy) == 4 else '20' + yy
-        return (yy, mm.zfill(2), dd.zfill(2))
-    m = DATE_RE_MONTH.search(f)
-    if m and m.group(2).upper() in MONTH_NAMES:
-        dd, mm, yy = m.group(1), MONTH_NAMES[m.group(2).upper()], m.group(3)
-        yy = yy if len(yy) == 4 else '20' + yy
-        return (yy, mm, dd.zfill(2))
-    return None
+    return dpr_file.file_date(f)
 
 
 PLATFORM_HTML = os.path.join(HERE, 'index.html')
@@ -217,30 +273,13 @@ def base_rfc_sids():
 
 
 def find_target():
-    """Newest DPR SUMMERY by the DATE SUFFIX in its name ('-DD-MM-YY' or
-    '-DD-MONTHNAME-YY'); an undated DPR file falls back to its mtime."""
-    best = None
-    seen = set()
-    for folder in (HOME, DL_SUB):
-        if not os.path.isdir(folder):
-            continue
-        for f in os.listdir(folder):
-            b = f.upper()
-            if (f.startswith('~$') or not f.lower().endswith('.xlsx')
-                    or 'BACKUP' in b
-                    or not DPR_RE.search(b)):
-                continue
-            p = os.path.join(folder, f)
-            key = os.path.realpath(p)
-            if key in seen:
-                continue
-            seen.add(key)
-            dk = _fname_date(f)
-            cand = (dk if dk else ('0000', '00', '00'),
-                    os.path.getmtime(p), p)
-            if best is None or cand[:2] > best[:2]:
-                best = cand
-    return best[2] if best else None
+    """The canonical DPR workbook (see dpr_file.py).
+
+    This used to search Downloads FIRST, which resolved to a second file with
+    the same name outside the canonical folder, so every platform edit landed
+    in a workbook that rebuild_data.py never read back.
+    """
+    return dpr_file.find_dpr()
 
 
 def header_index(ws, title):
@@ -422,6 +461,13 @@ def run_once(force, state_file=None, target=None):
                                 or colors.get(sh) or adds or deladds):
         ws = wb[sh]
         rfc_cols = rfc_columns(ws)
+        if not rfc_cols:
+            # rfc_columns() returns {} when the sheet layout no longer matches
+            # the known map. Writing anyway is what corrupted the workbook.
+            print('[sync] RFC PROGRESS column map unresolved - skipping the '
+                  'RFC sheet entirely (file left untouched)')
+            wb.close()
+            return
 
         def rfc_col(pcol):
             if pcol in rfc_cols:
@@ -572,6 +618,59 @@ def run_once(force, state_file=None, target=None):
         print('[sync] no effective changes - workbook untouched')
         return
 
+    # ---- integrity guard ---------------------------------------------------
+    # openpyxl rewrites the whole archive, so a wrong column map silently
+    # corrupts cells that were perfectly fine before. Compare the saved tmp
+    # against the original and refuse to replace the file when any cell
+    # outside the platform's own columns changed.
+    guard_cols = sorted({v for v in (RFC_MAP.values() if rfc_cols == {} else
+                                     rfc_cols.values()) if v} | {RFC_ID_COL, 8})
+    if not rfc_cols:
+        print('[guard] column map unresolved - refusing to rewrite the file')
+        return
+    if not rfc_cols:
+        print('[guard] column map unresolved - refusing to rewrite the file')
+        return
+
+    # openpyxl refuses any extension other than .xlsx, so the saved tmp is
+    # compared through a .xlsx probe copy.
+    probe = os.path.join(os.path.dirname(src) or '.',
+                         '~dpr_guard_check.xlsx')
+
+    def snapshot(path):
+        w = openpyxl.load_workbook(path, read_only=True, data_only=True)
+        s = w['RFC PROGRESS']
+        ids = {}
+        for r in s.iter_rows(min_row=RFC_DATA_ROW, values_only=True):
+            k = n(r[0]).split(' - ')[0].upper()
+            if not k.startswith('PS5-') or k in ids:
+                continue
+            ids[k] = [n(v) for v in r]
+        w.close()
+        return ids
+
+    try:
+        before_ids = snapshot(src)
+    except Exception as e:
+        print(f'[guard] could not read the original ({e}) - aborting')
+        return
+
+    # Columns whose cells hold formulas get recalculated by Excel/openpyxl on save,
+    # so their cached values legitimately change. They are never written by the
+    # platform anyway.
+    derived_cols = set()
+    try:
+        _fwb = openpyxl.load_workbook(src, read_only=True, data_only=False)
+        _fws = _fwb['RFC PROGRESS']
+        for _c in range(1, min(_fws.max_column, 100) + 1):
+            for _r in range(1, 4):
+                if str(_fws.cell(_r, _c).value or '').startswith('='):
+                    derived_cols.add(_c)
+                    break
+        _fwb.close()
+    except Exception:
+        pass
+
     # ---- atomic save: tmp file -> validate -> replace --------------------
     tmpf = src + '.saving.tmp'
     ok = False
@@ -603,6 +702,58 @@ def run_once(force, state_file=None, target=None):
         print(f'[sync] post-save validation FAILED ({e}) - '
               f'original file untouched')
         return
+
+    # every subsystem must survive, and no cell outside the mapped platform
+    # columns may differ
+    try:
+        shutil.copy2(tmpf, probe)
+        after_ids = snapshot(probe)
+    except Exception as e:
+        if os.path.exists(probe):
+            os.remove(probe)
+        if os.path.exists(tmpf):
+            os.remove(tmpf)
+        print(f'[guard] could not read the saved copy ({e}) - '
+              f'original untouched')
+        return
+    os.remove(probe)
+    lost = sorted(set(before_ids) - set(after_ids))
+    added = sorted(set(after_ids) - set(before_ids))
+    if lost:
+        os.remove(tmpf)
+        print(f'[guard] REFUSING to write - {len(lost)} subsystem row(s) would '
+              f'be lost: {lost[:8]}')
+        return
+    width = max(len(v) for v in before_ids.values()) if before_ids else 0
+
+    def noise(a, b):
+        """openpyxl round-trip artefacts that are not real corruption:
+        a blank cell coming back as 0, or a date cell coming back as its
+        serial number."""
+        pair = {a, b}
+        return pair <= {'', '0', '0.0'} or pair <= {'', 'None'}
+
+    strays = []
+    for k, old in before_ids.items():
+        new = after_ids.get(k, [])
+        for ci in range(min(width, len(new))):
+            col = ci + 1                      # ci is 0-based, columns are 1-based
+            if col in guard_cols or col in derived_cols:
+                continue
+            if ci >= len(old):
+                continue
+            if old[ci] != new[ci] and not noise(old[ci], new[ci]):
+                strays.append((k, col, old[ci], new[ci]))
+    if strays:
+        os.remove(tmpf)
+        print(f'[guard] REFUSING to write - {len(strays)} cell(s) outside the '
+              f'platform columns changed:')
+        for k, c, o, nw in strays[:8]:
+            print(f'[guard]   {k} col{c}: {o[:28]!r} -> {nw[:28]!r}')
+        return
+    print(f'[guard] ok - {len(after_ids)} rows intact'
+          + (f', {len(added)} added' if added else '')
+          + f', {rep["written"]} cell(s) written in mapped columns')
     # os.replace can lose the race with Excel / OneDrive / AV and raise
     # WinError 5 even though writing the tmp file worked. Retry, and on a
     # hard failure clean up the tmp so the next cycle is not blocked.
