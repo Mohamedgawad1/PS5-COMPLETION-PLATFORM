@@ -376,48 +376,55 @@ if dpr_files:
         except Exception:
             return 0
 
-    # A1 comes in two layouts:
-    #   old: "TOTAL WALKDOWN COMPLETED - 99 / TOTAL RFC SUBMITTED - 55 (13 FULL + 42 PARTIAL)
-    #         / TOTAL RFC SIGNED - 40(35 FULL + 5 PARTIAL)"
-    #   new: "WD DONE - STATUS- 104 / Full SIGNED- 39 / Submitted- 53 / Not Submitted- 4"
-    # In the new layout "Full SIGNED" is the FULL signed count only, so the
-    # PARTIAL signed count has to come from col10 and be added on.
-    m_walk = (re.search(r'TOTAL\s+WALKDOWN\s+COMPLETED\s*-\s*(\d+)', a1, re.I)
-              or re.search(r'WD\s*DONE.*?STATUS\D*(\d+)', a1, re.I | re.S))
-    m_sub = (re.search(r'TOTAL\s+RFC\s+SUBMITTED\s*-\s*(\d+)', a1, re.I)
-             or re.search(r'(?<!Not )Submitted\s*-?\s*(\d+)', a1, re.I))
-    m_sig = re.search(r'TOTAL\s+RFC\s+SIGNED\s*-\s*(\d+)', a1, re.I)
-    m_newfull = re.search(r'Full\s*SIGNED\D*(\d+)', a1, re.I)
-    m_full = re.search(r'(\d+)\s*FULL', a1, re.I)
-    m_part = re.search(r'(\d+)\s*PARTIAL', a1, re.I)
+    # ---- DPRSUM totals -------------------------------------------------------
+    # The KPI row on page 1 (RFC SIGNED / WALKDOWN DONE / RFC SUBMITTED) is
+    # driven by DPRSUM, and it used to be scraped out of the free-text summary
+    # in RFC PROGRESS!A1. That header cell is not guaranteed to exist - it was
+    # already empty in the daily workbook - so every tile silently rendered 0
+    # while the underlying rows were perfectly fine.
+    #
+    # Count the RFC STATUS column (col 11) instead. It is the real source of
+    # truth and needs no header text at all:
+    #   WD Full / WD Partial              -> walkdown done
+    #   Signed Full / Signed Partial      -> RFC signed (full / partial)
+    #   Submitted Full / Submitted Partial-> RFC submitted
+    def _st(*names):
+        return sum(rfc_status_col.get(n, 0) for n in names)
 
-    if m_newfull and not m_sig:
-        DPRSUM = {
-            'walk': _int(m_walk, 1),
-            'submitted': _int(m_sub, 1),
-            'full': _int(m_newfull, 1),
-            'part': s5,
-        }
-        DPRSUM['signed'] = DPRSUM['full'] + DPRSUM['part']
-    else:
-        DPRSUM = {
-            'walk': _int(m_walk, 1),
-            'submitted': _int(m_sub, 1),
-            'signed': _int(m_sig, 1),
-            'full': _int(m_full, 1) if m_full else s10,
-            'part': _int(m_part, 1) if m_part else s5,
-        }
-        if not DPRSUM['submitted']:
-            DPRSUM['submitted'] = sub_full + sub_part
-        if not DPRSUM['signed']:
-            DPRSUM['signed'] = s10 + s5
-        if DPRSUM['full'] + DPRSUM['part'] != DPRSUM['signed']:
-            DPRSUM['full'], DPRSUM['part'] = s10, s5
-    print(f"  A1 summary: {a1.replace(chr(10), ' ')[:80]}")
-    print(f"  A1 layout : {'new' if (m_newfull and not m_sig) else 'old'}")
-    print(f"  DPRSUM: {DPRSUM}")
+    wd_full = _st('WD FULL')
+    wd_part = _st('WD PARTIAL')
+    sg_full = _st('SIGNED FULL')
+    sg_part = _st('SIGNED PARTIAL')
+    sb_full = _st('SUBMITTED FULL')
+    sb_part = _st('SUBMITTED PARTIAL')
+
+    # Walkdown done = every subsystem that carries ANY RFC status, i.e. signed
+    # + submitted + the WD-only ones. Not just the WD rows.
+    walk = sum(rfc_status_col.values())
+    DPRSUM = {
+        'walk': walk,
+        'signed': sg_full + sg_part,
+        'full': sg_full,
+        'part': sg_part,
+        'submitted': sb_full + sb_part,
+    }
+    print("  RFC STATUS tally: WD=%d/%d  SIGNED=%d/%d  SUBMITTED=%d/%d"
+          % (wd_full, wd_part, sg_full, sg_part, sb_full, sb_part))
+
+    # Cross-check against the A1 free-text summary when the workbook still has
+    # it, so a layout change in the status column cannot pass unnoticed.
+    m_walk = (re.search(r'TOTAL\s+WALKDOWN\s+COMPLETED\s*-\s*(\d+)', a1, re.I)
+              or re.search(r'WD\s*DONE.*?STATUS\D*(\d+)', a1, re.I | re.S)
+              or re.search(r'Walkdown\s*Done\D*(\d+)', a1, re.I | re.S))
+    if m_walk and _int(m_walk, 1) != DPRSUM['walk']:
+        print("  WARNING: A1 says walkdown=%s but the RFC STATUS column has %d"
+              " - using the column count."
+              % (_int(m_walk, 1), DPRSUM['walk']))
+    print("  A1 summary : %s" % (a1.replace(chr(10), ' ')[:80] if a1 else "(empty)"))
+    print("  DPRSUM: %s" % DPRSUM)
 else:
-    print("  WARNING: No DPR SUMMARY file found")
+    print("  WARNING: No DPR SUMMARY file found - DPRSUM totals stay at 0")
+    DPRSUM = {'walk': 0, 'signed': 0, 'full': 0, 'part': 0, 'submitted': 0}
 
 print("\n" + "="*60)
 print("STEP 4: Read cable data from PS5 Master tracker")
@@ -746,20 +753,45 @@ def _cur_rfck(html_text):
 cur_rfck = _cur_rfck(html)
 
 # Subsystems already present in DPR col10 rows (valid ids)
+# RFC PROGRESS col11 speaks "Signed Full" / "Submitted Partial" / "WD Full",
+# while the RFCK consumers on page 7 test for "FULL RFC-SIGNED" /
+# "PARTIAL RFC(SUBMITTED)". Without this translation every RFCK row fell into
+# the default branch and page 7 lost its green/amber signing colours.
+_RFC_CANON = (
+    ('WD FULL', 'FULL RFC'),
+    ('WD PARTIAL', 'PARTIAL RFC'),
+    ('SIGNED FULL', 'FULL RFC-SIGNED'),
+    ('SIGNED PARTIAL', 'PARTIAL RFC-SIGNED'),
+    ('SUBMITTED FULL', 'FULL RFC(SUBMITTED)'),
+    ('SUBMITTED PARTIAL', 'PARTIAL RFC(SUBMITTED)'),
+)
+
+
+def canon_rfc_status(st):
+    """Map a workbook RFC STATUS string onto the RFCK vocabulary."""
+    up = (st or '').strip().upper()
+    for src, dst in _RFC_CANON:
+        if up == src:
+            return dst
+    return (st or '').strip()
+
+
 def _is_signed_sid(r):
-    return 'RFC-SIGNED' in (r[1] or '').upper()
+    return canon_rfc_status(r[1]) in ('FULL RFC-SIGNED', 'PARTIAL RFC-SIGNED')
 
 # Junk rows carry an RFC status but no subsystem id. The affected subsystems are
 # almost always ones already marked signed in the previous RFCK which are missing
 # from the DPR rows. Reconcile counts (6 full + 1 partial -> match DPR/DPRSUM).
-rfc_entries = list(rfc_rows)
+rfc_entries = [(sid, canon_rfc_status(st)) for sid, st in rfc_rows]
 used = set(s for s, _ in rfc_entries)
 extra_cur = [(sid, st) for sid, st in cur_rfck
              if sid not in used and _is_signed_sid((sid, st))]
-full_junk = sum(1 for s in junk_rows if 'FULL RFC-SIGNED' in s.upper())
-part_junk = sum(1 for s in junk_rows if 'PARTIAL RFC-SIGNED' in s.upper())
-full_extra = [x for x in extra_cur if 'FULL RFC-SIGNED' in x[1].upper()]
-part_extra = [x for x in extra_cur if 'PARTIAL RFC-SIGNED' in x[1].upper()]
+full_junk = sum(1 for s in junk_rows
+                if canon_rfc_status(s) == 'FULL RFC-SIGNED')
+part_junk = sum(1 for s in junk_rows
+                if canon_rfc_status(s) == 'PARTIAL RFC-SIGNED')
+full_extra = [x for x in extra_cur if x[1] == 'FULL RFC-SIGNED']
+part_extra = [x for x in extra_cur if x[1] == 'PARTIAL RFC-SIGNED']
 if len(full_extra) >= full_junk and len(part_extra) >= part_junk:
     for k in range(full_junk):
         rfc_entries.append(full_extra[k])
@@ -776,6 +808,12 @@ for sid, st in rfc_entries:
         RFCK.append([sid, st])
 
 print(f"  RFCK: {len(RFCK)} subsystems (page 7 rows)")
+# The RFCK tally must reconcile with the DPRSUM tiles on page 1, otherwise the
+# same workbook reports two different numbers on two pages.
+if sum(1 for x in RFCK if x[1] == 'FULL RFC-SIGNED') + \
+        sum(1 for x in RFCK if x[1] == 'PARTIAL RFC-SIGNED') != DPRSUM['signed']:
+    print("  WARNING: RFCK signed count != DPRSUM.signed (%d)" % DPRSUM['signed'])
+
 print(f"  -> FULL RFC-SIGNED: {sum(1 for x in RFCK if x[1]=='FULL RFC-SIGNED')}, "
       f"PARTIAL RFC-SIGNED: {sum(1 for x in RFCK if x[1]=='PARTIAL RFC-SIGNED')}, "
       f"FULL RFC(SUBMITTED): {sum(1 for x in RFCK if x[1]=='FULL RFC(SUBMITTED)')}, "
