@@ -68,11 +68,21 @@ def main():
     refresh_xlsm()
 
     print("\n>>> git pull (clean tree) / commit only-if-changed / push")
-    subprocess.run(["git", "pull", "--rebase", "origin", "main"],
-                   cwd=HERE, check=True)
     subprocess.run(["git", "add", "--", "EXCEL", GOLDEN, "index.html",
-                    "rebuild_data.py", "make_platform_excel.py"],
-                   cwd=HERE, check=True)
+                     "rebuild_data.py", "make_platform_excel.py",
+                     "d_*.js", "patch_index.py", "split_data.py",
+                     "_snapshot.json", "platform_state.json"],
+                   cwd=HERE, check=False)
+    subprocess.run(["git", "stash", "push", "-m", "auto-sync: pre-pull"],
+                   cwd=HERE, check=False)
+    try:
+        subprocess.run(["git", "pull", "--rebase", "origin", "main"],
+                       cwd=HERE, check=True)
+    finally:
+        subprocess.run(["git", "stash", "pop"], cwd=HERE, check=False)
+    subprocess.run(["git", "add", "--", "EXCEL", GOLDEN, "index.html",
+                     "rebuild_data.py", "make_platform_excel.py"],
+                   cwd=HERE, check=False)
     staged = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=HERE).returncode
     if staged != 0:
         subprocess.run(["git", "commit", "-m", "Full sync: platform + all Excel downloads"],

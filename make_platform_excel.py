@@ -142,7 +142,10 @@ def split_obj(line, name):
 def parse_index(html, ovr_add=None, notes_add=None, pcol_add=None):
     """Return (SUBS,PUNCH,ITR,RFC,ITRT,PUNT,MILES,CABLES,OVR,NOTES,PCOL)."""
     lines = html.split('\n')
-    data_line = next(ln for ln in lines if 'const SUBS=' in ln)
+    try:
+        data_line = next(ln for ln in lines if 'const SUBS=' in ln)
+    except StopIteration:
+        raise RuntimeError('[parse_index] cannot find `const SUBS=` in index.html')
     SUBS = split_array(data_line, 'SUBS')
     PUNCH = split_array(data_line, 'PUNCH')
     ITR = split_array(data_line, 'ITR')
@@ -152,7 +155,10 @@ def parse_index(html, ovr_add=None, notes_add=None, pcol_add=None):
     MILES = split_array(data_line, 'MILES')
     CABLES = split_array(data_line, 'CABLES')
 
-    ovr_line = next(ln for ln in lines if 'const NOTES=' in ln)
+    try:
+        ovr_line = next(ln for ln in lines if 'const NOTES=' in ln or 'OVR=' in ln)
+    except StopIteration:
+        raise RuntimeError('[parse_index] cannot find `const NOTES=`/`OVR=` in index.html')
     OVR = split_obj(ovr_line, 'OVR')
     NOTES = split_obj(ovr_line, 'NOTES')
     PCOL = split_obj(ovr_line, 'PCOL')
