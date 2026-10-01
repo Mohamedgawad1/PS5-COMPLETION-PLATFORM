@@ -84,7 +84,7 @@ def publish():
     """
     tracked = ["EXCEL", GOLDEN, "index.html", "rebuild_data.py",
                "make_platform_excel.py", "sync_all.py",
-               "sync_cloud_to_excel.py"]
+               "sync_cloud_to_excel.py", "dpr_file.py"]
     subprocess.run(["git", "add", "--"] + tracked, cwd=HERE, check=True)
 
     staged = subprocess.run(["git", "diff", "--cached", "--quiet"],

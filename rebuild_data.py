@@ -423,7 +423,8 @@ print("\n" + "="*60)
 print("STEP 4: Read cable data from PS5 Master tracker")
 print("="*60)
 
-cable_file = os.path.join(dpr_dir, 'PS5 Master tracker EIT Combined.xlsx')
+cable_file = os.path.join(dpr_file.CANON_DIR,
+                         'PS5 Master tracker EIT Combined.xlsx')
 cable_sheets = ['Electrical Cable Schedule', 'Instrument Cable Schedule', 'Telecom Cable Schedule', 'Trace Heating - Cable Schedule']
 cable_labels = ['Electrical', 'Instrument', 'Telecom', 'Trace Heating']
 
