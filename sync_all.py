@@ -67,30 +67,76 @@ def main():
     copy_pages()
     refresh_xlsm()
 
-    print("\n>>> git pull (clean tree) / commit only-if-changed / push")
-    subprocess.run(["git", "add", "--", "EXCEL", GOLDEN, "index.html",
-                     "rebuild_data.py", "make_platform_excel.py",
-                     "d_*.js", "patch_index.py", "split_data.py",
-                     "_snapshot.json", "platform_state.json"],
-                   cwd=HERE, check=False)
-    subprocess.run(["git", "stash", "push", "-m", "auto-sync: pre-pull"],
-                   cwd=HERE, check=False)
-    try:
-        subprocess.run(["git", "pull", "--rebase", "origin", "main"],
-                       cwd=HERE, check=True)
-    finally:
-        subprocess.run(["git", "stash", "pop"], cwd=HERE, check=False)
-    subprocess.run(["git", "add", "--", "EXCEL", GOLDEN, "index.html",
-                     "rebuild_data.py", "make_platform_excel.py"],
-                   cwd=HERE, check=False)
-    staged = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=HERE).returncode
-    if staged != 0:
-        subprocess.run(["git", "commit", "-m", "Full sync: platform + all Excel downloads"],
-                       cwd=HERE, check=True)
-        subprocess.run(["git", "push", "origin", "main"], cwd=HERE, check=True)
-    else:
-        print("  nothing staged to commit - already in sync")
+    print("\n>>> git commit / pull --rebase / push")
+    publish()
     print("\nDONE - platform online + all downloads synced.")
+
+
+def publish():
+    """Commit the build, rebase it onto origin/main, then push.
+
+    Order matters. `git pull --rebase` refuses to run on a dirty tree
+    ("cannot pull with rebase: You have unstaged changes", exit 128) and the
+    old order pulled BEFORE committing, so every cycle aborted here and the
+    live platform never received a single update. The pull is wrapped in a
+    stash + pop so a leftover untracked/modified file can never block the
+    push either.
+    """
+    tracked = ["EXCEL", GOLDEN, "index.html", "rebuild_data.py",
+               "make_platform_excel.py", "sync_all.py",
+               "sync_cloud_to_excel.py"]
+    subprocess.run(["git", "add", "--"] + tracked, cwd=HERE, check=True)
+
+    staged = subprocess.run(["git", "diff", "--cached", "--quiet"],
+                            cwd=HERE).returncode
+    committed = False
+    if staged != 0:
+        subprocess.run(["git", "commit", "-m",
+                        "Full sync: platform + all Excel downloads"],
+                       cwd=HERE, check=True)
+        committed = True
+        print("  committed the new build")
+
+    # Rebase onto origin/main with the tree clean. `git stash -u` also parks
+    # untracked leftovers, which is what used to make the pull impossible.
+    stash = subprocess.run(["git", "stash", "push", "-u", "-m",
+                            "auto-sync: untracked leftovers"],
+                           cwd=HERE, capture_output=True, text=True)
+    parked = 'No local changes to save' not in (stash.stdout or '')
+    try:
+        r = subprocess.run(["git", "pull", "--rebase", "origin", "main"],
+                           cwd=HERE, capture_output=True, text=True)
+        if r.returncode != 0:
+            # A half-finished rebase would block every future run.
+            subprocess.run(["git", "rebase", "--abort"], cwd=HERE,
+                           capture_output=True)
+            print("  pull --rebase failed (%s) - pushing our commit anyway"
+                  % r.returncode)
+            print((r.stderr or '').strip()[-400:])
+        else:
+            print("  rebased on origin/main")
+    finally:
+        if parked:
+            subprocess.run(["git", "stash", "pop"], cwd=HERE,
+                           capture_output=True)
+
+    if not committed:
+        print("  nothing staged to commit - already in sync")
+
+    for attempt in (1, 2):
+        r = subprocess.run(["git", "push", "origin", "main"], cwd=HERE,
+                           capture_output=True, text=True)
+        if r.returncode == 0:
+            print("  pushed to origin/main")
+            return
+        # Someone pushed between our pull and our push - rebase and retry once.
+        print("  push rejected (%s) - rebasing and retrying" % r.returncode)
+        subprocess.run(["git", "fetch", "origin", "main"], cwd=HERE,
+                       capture_output=True)
+        subprocess.run(["git", "rebase", "origin/main"], cwd=HERE,
+                       capture_output=True)
+    print((r.stderr or '').strip()[-400:])
+    raise SystemExit("push failed - the live platform was NOT updated")
 
 
 if __name__ == "__main__":

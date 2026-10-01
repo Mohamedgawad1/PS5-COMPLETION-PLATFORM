@@ -166,10 +166,13 @@ MONTH_NAMES = {'JANUARY': '01', 'FEBRUARY': '02', 'MARCH': '03', 'APRIL': '04',
                'MAY': '05', 'JUNE': '06', 'JULY': '07', 'AUGUST': '08',
                'SEPTEMBER': '09', 'OCTOBER': '10', 'NOVEMBER': '11',
                'DECEMBER': '12'}
-DATE_RE = re.compile(r'PS-5\s*COMPLETIONS\s*DPR\s*SUMMERY\s*-\s*'
-                     r'(\d{1,2})-(\d{1,2})-(\d{2,4})')
-DATE_RE_MONTH = re.compile(r'PS-5\s*COMPLETIONS\s*DPR\s*SUMMERY\s*-\s*'
-                           r'(\d{1,2})-([A-Z]+)-(\d{2,4})')
+# The daily workbook is spelled both ways in the wild ("DPR SUMMARY" for the
+# newer files, "DPR SUMMERY" for the older ones) - accept either, otherwise the
+# sync silently picks the stale file and the platform never reaches Excel.
+_DPR_STEM = r'PS-?5\s*COMPLETIONS\s*DPR\s*SUMM(?:ARY|ERY)'
+DPR_RE = re.compile(_DPR_STEM, re.I)
+DATE_RE = re.compile(_DPR_STEM + r'\s*-\s*(\d{1,2})-(\d{1,2})-(\d{2,4})', re.I)
+DATE_RE_MONTH = re.compile(_DPR_STEM + r'\s*-\s*(\d{1,2})-([A-Z]+)-(\d{2,4})', re.I)
 
 
 def _fname_date(f):
@@ -225,7 +228,7 @@ def find_target():
             b = f.upper()
             if (f.startswith('~$') or not f.lower().endswith('.xlsx')
                     or 'BACKUP' in b
-                    or 'COMPLETIONS DPR SUMMERY' not in b):
+                    or not DPR_RE.search(b)):
                 continue
             p = os.path.join(folder, f)
             key = os.path.realpath(p)
