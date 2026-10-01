@@ -127,12 +127,28 @@ for i, ln in enumerate(lines):
         data_line_idx = i
         break
 
+if data_line_idx < 0:
+    sys.exit(
+        'FATAL: `const SUBS=` not found in index.html.\n'
+        'The platform file is not in the expected single-file layout (it was\n'
+        'probably stripped by patch_index.py/split_data.py, which move the\n'
+        'datasets out into d_*.js). Refusing to rebuild - doing so would\n'
+        'overwrite the last line of the page and wipe OVR/NOTES/PCOL.\n'
+        'Restore index.html from git (git checkout -- index.html) or from\n'
+        'index.html.before-split, then re-run.')
+
 # Find OVR/NOTES/PCOL line (search for 'const NOTES=' or 'OVR=' on the line AFTER data)
 ovr_line = ''
 for i in range(data_line_idx + 1, min(data_line_idx + 5, len(lines))):
     if 'OVR=' in lines[i] or 'NOTES=' in lines[i]:
         ovr_line = lines[i]
         break
+
+if not ovr_line:
+    sys.exit(
+        'FATAL: no OVR=/NOTES= line found after the data line in index.html.\n'
+        'Refusing to rebuild - the platform cell overrides (OVR), notes and\n'
+        'colours would all be lost.')
 
 def extract_array(line, name):
     idx = line.find(f'{name}=[')
@@ -177,7 +193,9 @@ import glob as globmod
 dpr_dir = 'C:/Users/mylap/Downloads/PS5 - CPP AGI Completion Progress Dashboard_files'
 # The daily file is spelled SUMMARY, older ones SUMMERY -> match both.
 # Skip Excel lock files (~$...) and BACKUP copies, then take the newest.
-_DPR_PAT = 'PS-5 COMPLETIONS DPR SUMM[AE]RY -*.xlsx'
+# Both spellings exist on disk ("DPR SUMMARY" for the newer daily files,
+# "DPR SUMMERY" for the older ones).
+_DPR_PAT = 'PS-5 COMPLETIONS DPR SUMM[AE]RY*.xlsx'
 _dpr_all = globmod.glob(os.path.join(dpr_dir, _DPR_PAT))
 dpr_files = sorted(
     (f for f in _dpr_all
