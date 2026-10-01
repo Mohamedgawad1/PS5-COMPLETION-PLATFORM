@@ -603,7 +603,31 @@ def run_once(force, state_file=None, target=None):
         print(f'[sync] post-save validation FAILED ({e}) - '
               f'original file untouched')
         return
-    os.replace(tmpf, src)
+    # os.replace can lose the race with Excel / OneDrive / AV and raise
+    # WinError 5 even though writing the tmp file worked. Retry, and on a
+    # hard failure clean up the tmp so the next cycle is not blocked.
+    replaced = False
+    for attempt in range(15):
+        try:
+            os.replace(tmpf, src)
+            replaced = True
+            break
+        except PermissionError:
+            print(f'[wait] cannot replace "{os.path.basename(src)}" yet '
+                  f'({attempt + 1}/15)... close it in Excel')
+            time.sleep(2)
+        except OSError as e:
+            print(f'[wait] replace failed ({e}) - retrying '
+                  f'({attempt + 1}/15)')
+            time.sleep(2)
+    if not replaced:
+        if os.path.exists(tmpf):
+            try:
+                os.remove(tmpf)
+            except OSError:
+                pass
+        print('[sync] target stays locked - nothing changed, try again later')
+        return
 
     save_seen(h) if not state_file else None
     lines = [
