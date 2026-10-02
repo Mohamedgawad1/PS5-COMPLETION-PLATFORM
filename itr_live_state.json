@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-02 11:20:07",
+  "updated": "2026-10-02 11:38:47",
   "total_tasks_ps5": 14004,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 5967,
-  "open": 4333,
-  "today_closed": 42,
+  "closed": 5968,
+  "open": 4332,
+  "today_closed": 43,
   "closed_by_discipline": {
-    "I": 2953,
+    "I": 2954,
     "E": 2739,
     "T": 275
   },
   "open_by_discipline": {
-    "I": 1642,
+    "I": 1641,
     "E": 1888,
     "T": 803
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-10-02",
       "E": 0,
-      "I": 27,
+      "I": 28,
       "T": 15,
-      "Total": 42
+      "Total": 43
     }
   ],
-  "closed_this_week": 429,
-  "closed_this_month": 131,
+  "closed_this_week": 430,
+  "closed_this_month": 132,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -283,7 +283,7 @@
       "milestone": "Milestone G",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 2
+      "count": 3
     },
     {
       "milestone": "Milestone H",
@@ -298,7 +298,7 @@
       "count": 2
     }
   ],
-  "today_milestone_total": 42,
+  "today_milestone_total": 43,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -388,14 +388,14 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 904,
-      "closed": 654,
-      "remaining": 250,
-      "pct": 72.3,
+      "closed": 655,
+      "remaining": 249,
+      "pct": 72.5,
       "status": {
-        "Closed": 654,
+        "Closed": 655,
         "Submitted": 0,
-        "To be completed": 243,
-        "Other": 7
+        "To be completed": 241,
+        "Other": 8
       }
     },
     {
@@ -428,6 +428,15 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-28-TW-1201",
+      "task": "T-00257-0172",
+      "system": "PS5-28-06 - Relief Drum and Pump",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/2/2026 8:16:52 A"
+    },
     {
       "tag": "PS5-28-TW-1201",
       "task": "T-00072-0172",
@@ -1498,15 +1507,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/1/2026 6:25:09 A"
-    },
-    {
-      "tag": "PS5-60-IN-0002F",
-      "task": "T-00044-0190",
-      "system": "PS5-60-67 - Fuel Conditioning Module PS5-60-UZ-8900F (UCP)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/1/2026 6:24:13 A"
     }
   ]
 }
