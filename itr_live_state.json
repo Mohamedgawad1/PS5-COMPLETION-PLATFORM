@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-02 11:38:47",
+  "updated": "2026-10-02 11:52:11",
   "total_tasks_ps5": 14004,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 5968,
-  "open": 4332,
-  "today_closed": 43,
+  "closed": 5974,
+  "open": 4326,
+  "today_closed": 49,
   "closed_by_discipline": {
-    "I": 2954,
-    "E": 2739,
+    "I": 2955,
+    "E": 2744,
     "T": 275
   },
   "open_by_discipline": {
-    "I": 1641,
-    "E": 1888,
+    "I": 1640,
+    "E": 1883,
     "T": 803
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-10-02",
-      "E": 0,
-      "I": 28,
+      "E": 5,
+      "I": 29,
       "T": 15,
-      "Total": 43
+      "Total": 49
     }
   ],
-  "closed_this_week": 430,
-  "closed_this_month": 132,
+  "closed_this_week": 436,
+  "closed_this_month": 138,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -251,9 +251,15 @@
     },
     {
       "milestone": "Milestone D",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 5
+    },
+    {
+      "milestone": "Milestone D",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 8
+      "count": 9
     },
     {
       "milestone": "Milestone D",
@@ -298,7 +304,7 @@
       "count": 2
     }
   ],
-  "today_milestone_total": 43,
+  "today_milestone_total": 49,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -346,13 +352,13 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3433,
-      "closed": 2304,
-      "remaining": 1129,
-      "pct": 67.1,
+      "closed": 2310,
+      "remaining": 1123,
+      "pct": 67.3,
       "status": {
-        "Closed": 2304,
+        "Closed": 2310,
         "Submitted": 2,
-        "To be completed": 1125,
+        "To be completed": 1119,
         "Other": 2
       }
     },
@@ -365,9 +371,9 @@
       "pct": 82.9,
       "status": {
         "Closed": 1270,
-        "Submitted": 0,
-        "To be completed": 247,
-        "Other": 15
+        "Submitted": 1,
+        "To be completed": 245,
+        "Other": 16
       }
     },
     {
@@ -428,6 +434,60 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-60-IE-0003F",
+      "task": "T-00044-0095",
+      "system": "PS5-60-17 - Power Gen Package F (UCP)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/2/2026 8:46:08 A"
+    },
+    {
+      "tag": "PS5-60-IE-0003E",
+      "task": "T-00044-0094",
+      "system": "PS5-60-14 - Power Gen Package E (UCP)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/2/2026 8:45:09 A"
+    },
+    {
+      "tag": "PS5-60-IE-0003C",
+      "task": "T-00044-0092",
+      "system": "PS5-60-08 - Power Gen Package C (UCP)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/2/2026 8:43:37 A"
+    },
+    {
+      "tag": "PS5-60-UR-8200F",
+      "task": "T-00090-0277",
+      "system": "PS5-60-16 - Power Generation Package F",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/2/2026 8:42:26 A"
+    },
+    {
+      "tag": "PS5-60-IE-0002F",
+      "task": "T-00044-0111",
+      "system": "PS5-60-16 - Power Generation Package F",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/2/2026 8:40:06 A"
+    },
+    {
+      "tag": "PS5-60-IE-0002E",
+      "task": "T-00044-0110",
+      "system": "PS5-60-13 - Power Generation Package E",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/2/2026 8:39:13 A"
+    },
     {
       "tag": "PS5-28-TW-1201",
       "task": "T-00257-0172",
@@ -1453,60 +1513,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/1/2026 6:32:23 A"
-    },
-    {
-      "tag": "PS5-60-TW-0007G",
-      "task": "T-00257-0213",
-      "system": "PS5-60-76 - Engine G Cooling system",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/1/2026 6:29:26 A"
-    },
-    {
-      "tag": "PS5-60-TW-0005G",
-      "task": "T-00257-0179",
-      "system": "PS5-60-76 - Engine G Cooling system",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/1/2026 6:28:32 A"
-    },
-    {
-      "tag": "PS5-60-TW-0006G",
-      "task": "T-00257-0165",
-      "system": "PS5-60-76 - Engine G Cooling system",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/1/2026 6:27:45 A"
-    },
-    {
-      "tag": "PS5-60-TW-0008G",
-      "task": "T-00072-0214",
-      "system": "PS5-60-76 - Engine G Cooling system",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/1/2026 6:26:50 A"
-    },
-    {
-      "tag": "PS5-60-TW-0007G",
-      "task": "T-00072-0213",
-      "system": "PS5-60-76 - Engine G Cooling system",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/1/2026 6:26:00 A"
-    },
-    {
-      "tag": "PS5-60-TW-0005G",
-      "task": "T-00072-0179",
-      "system": "PS5-60-76 - Engine G Cooling system",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/1/2026 6:25:09 A"
     }
   ]
 }
