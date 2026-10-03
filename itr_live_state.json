@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-03 11:24:04",
+  "updated": "2026-10-03 11:33:04",
   "total_tasks_ps5": 14004,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6043,
-  "open": 4257,
-  "today_closed": 12,
+  "closed": 6044,
+  "open": 4256,
+  "today_closed": 13,
   "closed_by_discipline": {
     "I": 3000,
-    "E": 2756,
+    "E": 2757,
     "T": 287
   },
   "open_by_discipline": {
     "I": 1595,
-    "E": 1871,
+    "E": 1870,
     "T": 791
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-10-03",
-      "E": 7,
+      "E": 8,
       "I": 5,
       "T": 0,
-      "Total": 12
+      "Total": 13
     }
   ],
-  "closed_this_week": 505,
-  "closed_this_month": 207,
+  "closed_this_week": 506,
+  "closed_this_month": 208,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -254,9 +254,15 @@
       "disc": "I",
       "discipline": "Instrumentation (I)",
       "count": 5
+    },
+    {
+      "milestone": "Milestone G",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 1
     }
   ],
-  "today_milestone_total": 12,
+  "today_milestone_total": 13,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -346,13 +352,13 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 904,
-      "closed": 658,
-      "remaining": 246,
-      "pct": 72.8,
+      "closed": 659,
+      "remaining": 245,
+      "pct": 72.9,
       "status": {
-        "Closed": 658,
+        "Closed": 659,
         "Submitted": 0,
-        "To be completed": 239,
+        "To be completed": 238,
         "Other": 7
       }
     },
@@ -386,6 +392,15 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-05-IG-0004",
+      "task": "T-00028-0464",
+      "system": "PS5-62-03 - Outdoor Emergency Lighting DB  - PS5-05-IG-0004",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/3/2026 8:21:45 A"
+    },
     {
       "tag": "PS5-60-IN-0002G",
       "task": "T-00044-0191",
@@ -1456,15 +1471,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/1/2026 8:36:48 P"
-    },
-    {
-      "tag": "PS5-25-MOV-0012",
-      "task": "T-00078-0148",
-      "system": "PS5-25-07 - Export Pipeline Pig Launcher",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/1/2026 8:35:32 P"
     }
   ]
 }
