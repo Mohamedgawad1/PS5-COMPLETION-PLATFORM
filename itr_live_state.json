@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-03 11:51:44",
+  "updated": "2026-10-03 12:00:53",
   "total_tasks_ps5": 14004,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6044,
-  "open": 4256,
-  "today_closed": 13,
+  "closed": 6046,
+  "open": 4254,
+  "today_closed": 15,
   "closed_by_discipline": {
-    "I": 3000,
+    "I": 3002,
     "E": 2757,
     "T": 287
   },
   "open_by_discipline": {
-    "I": 1595,
+    "I": 1593,
     "E": 1870,
     "T": 791
   },
@@ -229,19 +229,25 @@
     {
       "label": "2026-10-03",
       "E": 8,
-      "I": 5,
+      "I": 7,
       "T": 0,
-      "Total": 13
+      "Total": 15
     }
   ],
-  "closed_this_week": 506,
-  "closed_this_month": 208,
+  "closed_this_week": 508,
+  "closed_this_month": 210,
   "today_milestone": [
     {
       "milestone": "Milestone B",
       "disc": "E",
       "discipline": "Electrical (E)",
       "count": 1
+    },
+    {
+      "milestone": "Milestone D",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 2
     },
     {
       "milestone": "Milestone E",
@@ -262,7 +268,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 13,
+  "today_milestone_total": 15,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -310,13 +316,13 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3433,
-      "closed": 2328,
-      "remaining": 1105,
-      "pct": 67.8,
+      "closed": 2330,
+      "remaining": 1103,
+      "pct": 67.9,
       "status": {
-        "Closed": 2328,
+        "Closed": 2330,
         "Submitted": 2,
-        "To be completed": 1101,
+        "To be completed": 1099,
         "Other": 2
       }
     },
@@ -392,6 +398,24 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-60-BE-0004D-CC01",
+      "task": "T-00069-4893",
+      "system": "PS5-60-52 - Lube Oil Separator Module PS5-60-UO-81100D",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/3/2026 8:54:00 A"
+    },
+    {
+      "tag": "PS5-60-BE-0004C-CC01",
+      "task": "T-00069-4892",
+      "system": "PS5-60-51 - Lube Oil Separator Module PS5-60-UO-81100C",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/3/2026 8:51:50 A"
+    },
     {
       "tag": "PS5-05-IG-0004",
       "task": "T-00028-0464",
@@ -1453,24 +1477,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/2/2026 5:55:21 A"
-    },
-    {
-      "tag": "PS5-03-BI-1502-CC01",
-      "task": "T-00614-0879",
-      "system": "PS5-03-04 - FZ-04 - Utilities - Diesel and Firewater Pumps Areas",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/2/2026 5:53:26 A"
-    },
-    {
-      "tag": "PS5-25-MOV-0002",
-      "task": "T-00078-0154",
-      "system": "PS5-25-01 - Export Pipeline Pig Receiver",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/1/2026 8:36:48 P"
     }
   ]
 }
