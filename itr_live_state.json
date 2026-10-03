@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-03 10:47:55",
+  "updated": "2026-10-03 10:56:59",
   "total_tasks_ps5": 14004,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6031,
-  "open": 4269,
-  "today_closed": 0,
+  "closed": 6033,
+  "open": 4267,
+  "today_closed": 2,
   "closed_by_discipline": {
     "I": 2995,
-    "E": 2749,
+    "E": 2751,
     "T": 287
   },
   "open_by_discipline": {
     "I": 1600,
-    "E": 1878,
+    "E": 1876,
     "T": 791
   },
   "daily": [
@@ -228,16 +228,23 @@
     },
     {
       "label": "2026-10-03",
-      "E": 0,
+      "E": 2,
       "I": 0,
       "T": 0,
-      "Total": 0
+      "Total": 2
     }
   ],
-  "closed_this_week": 493,
-  "closed_this_month": 195,
-  "today_milestone": [],
-  "today_milestone_total": 0,
+  "closed_this_week": 495,
+  "closed_this_month": 197,
+  "today_milestone": [
+    {
+      "milestone": "Milestone E",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 2
+    }
+  ],
+  "today_milestone_total": 2,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -299,13 +306,13 @@
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1532,
-      "closed": 1298,
-      "remaining": 234,
-      "pct": 84.7,
+      "closed": 1300,
+      "remaining": 232,
+      "pct": 84.9,
       "status": {
-        "Closed": 1298,
+        "Closed": 1300,
         "Submitted": 0,
-        "To be completed": 219,
+        "To be completed": 217,
         "Other": 15
       }
     },
@@ -367,6 +374,24 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-60-UR-8200G",
+      "task": "T-00046-0390",
+      "system": "PS5-60-19 - Power Generation Package G",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/3/2026 7:51:48 A"
+    },
+    {
+      "tag": "PS5-60-IE-0002G",
+      "task": "T-00044-0112",
+      "system": "PS5-60-19 - Power Generation Package G",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/3/2026 7:50:55 A"
+    },
     {
       "tag": "PS5-61-IE-0002-CD06",
       "task": "T-00606-0070",
@@ -1428,24 +1453,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/1/2026 8:20:38 P"
-    },
-    {
-      "tag": "PS5-71-BI-0008A-CC01",
-      "task": "T-00069-5390",
-      "system": "PS5-71-06 - Crude Fuel Separation Module",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/1/2026 8:19:06 P"
-    },
-    {
-      "tag": "PS5-71-BI-0008A-CC02",
-      "task": "T-00069-5391",
-      "system": "PS5-71-06 - Crude Fuel Separation Module",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/1/2026 8:17:42 P"
     }
   ]
 }
