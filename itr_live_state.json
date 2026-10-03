@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-03 11:06:42",
+  "updated": "2026-10-03 11:15:04",
   "total_tasks_ps5": 14004,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6036,
-  "open": 4264,
-  "today_closed": 5,
+  "closed": 6040,
+  "open": 4260,
+  "today_closed": 9,
   "closed_by_discipline": {
-    "I": 2996,
-    "E": 2753,
+    "I": 2998,
+    "E": 2755,
     "T": 287
   },
   "open_by_discipline": {
-    "I": 1599,
-    "E": 1874,
+    "I": 1597,
+    "E": 1872,
     "T": 791
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-10-03",
-      "E": 4,
-      "I": 1,
+      "E": 6,
+      "I": 3,
       "T": 0,
-      "Total": 5
+      "Total": 9
     }
   ],
-  "closed_this_week": 498,
-  "closed_this_month": 200,
+  "closed_this_week": 502,
+  "closed_this_month": 204,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -247,16 +247,16 @@
       "milestone": "Milestone E",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 3
+      "count": 5
     },
     {
       "milestone": "Milestone E",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 1
+      "count": 3
     }
   ],
-  "today_milestone_total": 5,
+  "today_milestone_total": 9,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -318,13 +318,13 @@
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1532,
-      "closed": 1302,
-      "remaining": 230,
-      "pct": 85.0,
+      "closed": 1306,
+      "remaining": 226,
+      "pct": 85.2,
       "status": {
-        "Closed": 1302,
+        "Closed": 1306,
         "Submitted": 0,
-        "To be completed": 215,
+        "To be completed": 211,
         "Other": 15
       }
     },
@@ -386,6 +386,42 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-60-UR-8300G",
+      "task": "T-00090-0442",
+      "system": "PS5-60-41 - Injector Tip Cooling Module G",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/3/2026 8:07:04 A"
+    },
+    {
+      "tag": "PS5-60-UZ-8200G",
+      "task": "T-00090-0279",
+      "system": "PS5-60-41 - Injector Tip Cooling Module G",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/3/2026 8:06:21 A"
+    },
+    {
+      "tag": "PS5-60-UR-8300G",
+      "task": "T-00046-0558",
+      "system": "PS5-60-41 - Injector Tip Cooling Module G",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/3/2026 8:05:27 A"
+    },
+    {
+      "tag": "PS5-60-UZ-8200G",
+      "task": "T-00046-0391",
+      "system": "PS5-60-41 - Injector Tip Cooling Module G",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/3/2026 8:03:45 A"
+    },
     {
       "tag": "PS5-60-IE-0004",
       "task": "T-00044-0097",
@@ -1429,42 +1465,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/1/2026 8:31:37 P"
-    },
-    {
-      "tag": "PS5-25-MOV-0026",
-      "task": "T-00078-0137",
-      "system": "PS5-25-01 - Export Pipeline Pig Receiver",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/1/2026 8:30:27 P"
-    },
-    {
-      "tag": "PS5-25-MOV-0028",
-      "task": "T-00078-0134",
-      "system": "PS5-25-07 - Export Pipeline Pig Launcher",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/1/2026 8:28:40 P"
-    },
-    {
-      "tag": "PS5-25-MOV-0025",
-      "task": "T-00078-0133",
-      "system": "PS5-25-01 - Export Pipeline Pig Receiver",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/1/2026 8:27:23 P"
-    },
-    {
-      "tag": "PS5-25-MOV-0008",
-      "task": "T-00078-0132",
-      "system": "PS5-25-07 - Export Pipeline Pig Launcher",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/1/2026 8:26:04 P"
     }
   ]
 }
