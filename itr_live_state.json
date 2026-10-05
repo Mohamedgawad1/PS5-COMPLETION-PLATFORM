@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-05 17:28:29",
+  "updated": "2026-10-05 18:35:14",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6119,
-  "open": 4181,
-  "today_closed": 3,
+  "closed": 6128,
+  "open": 4172,
+  "today_closed": 12,
   "closed_by_discipline": {
-    "I": 3057,
+    "I": 3066,
     "E": 2775,
     "T": 287
   },
   "open_by_discipline": {
-    "I": 1538,
+    "I": 1529,
     "E": 1852,
     "T": 791
   },
@@ -229,22 +229,22 @@
     {
       "label": "2026-10-05",
       "E": 0,
-      "I": 3,
+      "I": 12,
       "T": 0,
-      "Total": 3
+      "Total": 12
     }
   ],
-  "closed_this_week": 3,
-  "closed_this_month": 283,
+  "closed_this_week": 12,
+  "closed_this_month": 292,
   "today_milestone": [
     {
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 3
+      "count": 12
     }
   ],
-  "today_milestone_total": 3,
+  "today_milestone_total": 12,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -348,14 +348,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 1869,
-      "remaining": 1382,
-      "pct": 57.5,
+      "closed": 1878,
+      "remaining": 1373,
+      "pct": 57.8,
       "status": {
-        "Closed": 1869,
-        "Submitted": 1,
-        "To be completed": 1361,
-        "Other": 20
+        "Closed": 1878,
+        "Submitted": 0,
+        "To be completed": 1354,
+        "Other": 19
       }
     },
     {
@@ -374,6 +374,87 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-25-SDV-0022",
+      "task": "T-00077-0257",
+      "system": "PS5-25-01 - Export Pipeline Pig Receiver",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 2:39:24 P"
+    },
+    {
+      "tag": "PS5-28-SDV-0053A",
+      "task": "T-00077-0255",
+      "system": "PS5-28-13 - Seal Oil Drain Drum & Pump A",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 2:38:31 P"
+    },
+    {
+      "tag": "PS5-28-SDV-0045",
+      "task": "T-00077-0252",
+      "system": "PS5-28-17 - Reinjection Pump",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 2:35:35 P"
+    },
+    {
+      "tag": "PS5-71-XV-0089",
+      "task": "T-00077-0251",
+      "system": "PS5-71-04 - CFO Storage Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 2:33:44 P"
+    },
+    {
+      "tag": "PS5-28-SDV-0053C",
+      "task": "T-00077-0250",
+      "system": "PS5-28-15 - Seal Oil Drain Drum & Pump C",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 2:31:46 P"
+    },
+    {
+      "tag": "PS5-71-SDV-0022",
+      "task": "T-00077-0248",
+      "system": "PS5-71-04 - CFO Storage Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 2:30:25 P"
+    },
+    {
+      "tag": "PS5-71-SDV-0039",
+      "task": "T-00077-0243",
+      "system": "PS5-71-12 - CFO Service Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 2:28:10 P"
+    },
+    {
+      "tag": "PS5-28-SDV-0053B",
+      "task": "T-00077-0242",
+      "system": "PS5-28-14 - Seal Oil Drain Drum & Pump B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 2:25:56 P"
+    },
+    {
+      "tag": "PS5-25-SDV-0052",
+      "task": "T-00077-0240",
+      "system": "PS5-25-07 - Export Pipeline Pig Launcher",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 2:24:34 P"
+    },
     {
       "tag": "PS5-71-XV-0090",
       "task": "T-00077-0239",
@@ -1372,87 +1453,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/2/2026 7:01:54 P"
-    },
-    {
-      "tag": "PS5-28-SXS-0053A-CJ01",
-      "task": "T-00254-4867",
-      "system": "PS5-28-13 - Seal Oil Drain Drum & Pump A",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/2/2026 7:01:50 P"
-    },
-    {
-      "tag": "PS5-25-BI-1802C-CC01",
-      "task": "T-00254-4627",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/2/2026 6:59:50 P"
-    },
-    {
-      "tag": "PS5-60-IE-0003F-CC22",
-      "task": "T-00614-1055",
-      "system": "PS5-60-17 - Power Gen Package F (UCP)",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/2/2026 6:57:42 P"
-    },
-    {
-      "tag": "PS5-60-LA-0002C-CA01",
-      "task": "T-00171-4398",
-      "system": "PS5-60-16 - Power Generation Package F",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/2/2026 6:55:06 P"
-    },
-    {
-      "tag": "PS5-60-LA-0002B-CA01",
-      "task": "T-00171-4392",
-      "system": "PS5-60-10 - Power Generation Package D",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/2/2026 6:54:07 P"
-    },
-    {
-      "tag": "PS5-60-IH-0001G-CA01",
-      "task": "T-00171-4377",
-      "system": "PS5-60-21 - Power Gen Package G Generator Auxiliary MCCs & DBs",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/2/2026 6:53:04 P"
-    },
-    {
-      "tag": "PS5-60-IH-0001F-CA01",
-      "task": "T-00171-4376",
-      "system": "PS5-60-18 - Power Gen Package F Generator Auxiliary MCCs & DBs",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/2/2026 6:52:09 P"
-    },
-    {
-      "tag": "PS5-60-IH-0001E-CA01",
-      "task": "T-00171-4375",
-      "system": "PS5-60-15 - Power Gen Package E Generator Auxiliary MCCs & DBs",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/2/2026 6:51:58 P"
-    },
-    {
-      "tag": "PS5-60-IH-0001C-CA01",
-      "task": "T-00171-4373",
-      "system": "PS5-60-09 - Power Gen Package C Generator Auxiliary MCCs & DBs",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/2/2026 6:49:53 P"
     }
   ]
 }
