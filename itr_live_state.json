@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-05 19:28:50",
+  "updated": "2026-10-05 19:34:53",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6160,
-  "open": 4140,
-  "today_closed": 44,
+  "closed": 6162,
+  "open": 4138,
+  "today_closed": 46,
   "closed_by_discipline": {
     "I": 3075,
-    "E": 2790,
+    "E": 2792,
     "T": 295
   },
   "open_by_discipline": {
     "I": 1520,
-    "E": 1837,
+    "E": 1835,
     "T": 783
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-10-05",
-      "E": 15,
+      "E": 17,
       "I": 21,
       "T": 8,
-      "Total": 44
+      "Total": 46
     }
   ],
-  "closed_this_week": 44,
-  "closed_this_month": 324,
+  "closed_this_week": 46,
+  "closed_this_month": 326,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -247,7 +247,7 @@
       "milestone": "Milestone C",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 6
+      "count": 8
     },
     {
       "milestone": "Milestone D",
@@ -286,7 +286,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 44,
+  "today_milestone_total": 46,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -320,14 +320,14 @@
       "label": "Milestone C",
       "raw": "PS5 - Milestone C",
       "total": 963,
-      "closed": 594,
-      "remaining": 369,
-      "pct": 61.7,
+      "closed": 596,
+      "remaining": 367,
+      "pct": 61.9,
       "status": {
-        "Closed": 594,
-        "Submitted": 2,
-        "To be completed": 365,
-        "Other": 2
+        "Closed": 596,
+        "Submitted": 1,
+        "To be completed": 363,
+        "Other": 3
       }
     },
     {
@@ -416,6 +416,24 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-61-IE-0002-CD49",
+      "task": "T-00610-0602",
+      "system": "PS5-61-08 - Electrical Control System",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:33:54 P"
+    },
+    {
+      "tag": "PS5-61-IE-0002-CD48",
+      "task": "T-00610-0601",
+      "system": "PS5-61-08 - Electrical Control System",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:29:18 P"
+    },
     {
       "tag": "PS5-61-IE-0002-CD47",
       "task": "T-00610-0600",
@@ -1477,24 +1495,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/3/2026 8:19:33 A"
-    },
-    {
-      "tag": "PS5-60-UZ-8900G",
-      "task": "T-00090-0286",
-      "system": "PS5-60-68 - Fuel Conditioning Module PS5-60-UZ-8900G",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 8:18:20 A"
-    },
-    {
-      "tag": "PS5-60-UO-81100G",
-      "task": "T-00090-0195",
-      "system": "PS5-60-55 - Lube Oil Separator Module PS5-60-UO-81100G",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 8:12:01 A"
     }
   ]
 }
