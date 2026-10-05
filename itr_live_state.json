@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-05 19:16:45",
+  "updated": "2026-10-05 19:22:52",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6154,
-  "open": 4146,
-  "today_closed": 38,
+  "closed": 6158,
+  "open": 4142,
+  "today_closed": 42,
   "closed_by_discipline": {
     "I": 3075,
-    "E": 2784,
+    "E": 2788,
     "T": 295
   },
   "open_by_discipline": {
     "I": 1520,
-    "E": 1843,
+    "E": 1839,
     "T": 783
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-10-05",
-      "E": 9,
+      "E": 13,
       "I": 21,
       "T": 8,
-      "Total": 38
+      "Total": 42
     }
   ],
-  "closed_this_week": 38,
-  "closed_this_month": 318,
+  "closed_this_week": 42,
+  "closed_this_month": 322,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -247,7 +247,7 @@
       "milestone": "Milestone C",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 3
+      "count": 4
     },
     {
       "milestone": "Milestone D",
@@ -271,7 +271,7 @@
       "milestone": "Milestone H",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 4
+      "count": 7
     },
     {
       "milestone": "Milestone H",
@@ -286,7 +286,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 38,
+  "today_milestone_total": 42,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -320,14 +320,14 @@
       "label": "Milestone C",
       "raw": "PS5 - Milestone C",
       "total": 963,
-      "closed": 591,
-      "remaining": 372,
-      "pct": 61.4,
+      "closed": 592,
+      "remaining": 371,
+      "pct": 61.5,
       "status": {
-        "Closed": 591,
+        "Closed": 592,
         "Submitted": 1,
-        "To be completed": 369,
-        "Other": 2
+        "To be completed": 367,
+        "Other": 3
       }
     },
     {
@@ -390,13 +390,13 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 1892,
-      "remaining": 1359,
-      "pct": 58.2,
+      "closed": 1895,
+      "remaining": 1356,
+      "pct": 58.3,
       "status": {
-        "Closed": 1892,
+        "Closed": 1895,
         "Submitted": 0,
-        "To be completed": 1340,
+        "To be completed": 1337,
         "Other": 19
       }
     },
@@ -416,6 +416,42 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-61-IE-0003-CD03",
+      "task": "T-00610-0582",
+      "system": "PS5-61-08 - Electrical Control System",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:22:25 P"
+    },
+    {
+      "tag": "PS5-28-DM-3800C-CL01",
+      "task": "T-00608-0405",
+      "system": "PS5-28-15 - Seal Oil Drain Drum & Pump C",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:20:43 P"
+    },
+    {
+      "tag": "PS5-28-DM-3800B-CL01",
+      "task": "T-00608-0404",
+      "system": "PS5-28-14 - Seal Oil Drain Drum & Pump B",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:19:28 P"
+    },
+    {
+      "tag": "PS5-28-DM-3800A-CL01",
+      "task": "T-00608-0403",
+      "system": "PS5-28-13 - Seal Oil Drain Drum & Pump A",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:18:24 P"
+    },
     {
       "tag": "PS5-75-DM-3200B-CL01",
       "task": "T-00608-0466",
@@ -1459,42 +1495,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/3/2026 8:06:21 A"
-    },
-    {
-      "tag": "PS5-60-UR-8300G",
-      "task": "T-00046-0558",
-      "system": "PS5-60-41 - Injector Tip Cooling Module G",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 8:05:27 A"
-    },
-    {
-      "tag": "PS5-60-UZ-8200G",
-      "task": "T-00046-0391",
-      "system": "PS5-60-41 - Injector Tip Cooling Module G",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 8:03:45 A"
-    },
-    {
-      "tag": "PS5-60-IE-0004",
-      "task": "T-00044-0097",
-      "system": "PS5-60-22 - Power Gen Master UCP",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 8:02:21 A"
-    },
-    {
-      "tag": "PS5-60-IE-0003G",
-      "task": "T-00044-0096",
-      "system": "PS5-60-20 - Power Gen Package G (UCP)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 7:56:33 A"
     }
   ]
 }
