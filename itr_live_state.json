@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-05 19:10:40",
+  "updated": "2026-10-05 19:16:45",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6150,
-  "open": 4150,
-  "today_closed": 34,
+  "closed": 6154,
+  "open": 4146,
+  "today_closed": 38,
   "closed_by_discipline": {
     "I": 3075,
-    "E": 2780,
+    "E": 2784,
     "T": 295
   },
   "open_by_discipline": {
     "I": 1520,
-    "E": 1847,
+    "E": 1843,
     "T": 783
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-10-05",
-      "E": 5,
+      "E": 9,
       "I": 21,
       "T": 8,
-      "Total": 34
+      "Total": 38
     }
   ],
-  "closed_this_week": 34,
-  "closed_this_month": 314,
+  "closed_this_week": 38,
+  "closed_this_month": 318,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -262,10 +262,16 @@
       "count": 1
     },
     {
-      "milestone": "Milestone H",
+      "milestone": "Milestone G",
       "disc": "E",
       "discipline": "Electrical (E)",
       "count": 1
+    },
+    {
+      "milestone": "Milestone H",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 4
     },
     {
       "milestone": "Milestone H",
@@ -280,7 +286,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 34,
+  "today_milestone_total": 38,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -370,13 +376,13 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 904,
-      "closed": 681,
-      "remaining": 223,
-      "pct": 75.3,
+      "closed": 682,
+      "remaining": 222,
+      "pct": 75.4,
       "status": {
-        "Closed": 681,
+        "Closed": 682,
         "Submitted": 6,
-        "To be completed": 208,
+        "To be completed": 207,
         "Other": 9
       }
     },
@@ -384,14 +390,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 1889,
-      "remaining": 1362,
-      "pct": 58.1,
+      "closed": 1892,
+      "remaining": 1359,
+      "pct": 58.2,
       "status": {
-        "Closed": 1889,
+        "Closed": 1892,
         "Submitted": 0,
-        "To be completed": 1342,
-        "Other": 20
+        "To be completed": 1340,
+        "Other": 19
       }
     },
     {
@@ -410,6 +416,42 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-75-DM-3200B-CL01",
+      "task": "T-00608-0466",
+      "system": "PS5-75-02 - Biocide Injection Package",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:16:33 P"
+    },
+    {
+      "tag": "PS5-25-DM-6600B-CL01",
+      "task": "T-00608-0382",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:14:08 P"
+    },
+    {
+      "tag": "PS5-25-DM-6600A-CL01",
+      "task": "T-00608-0381",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:12:51 P"
+    },
+    {
+      "tag": "PS5-25-DM-6500B-CL01",
+      "task": "T-00608-0380",
+      "system": "PS5-25-03 - Crude Oil Export Pump B",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:11:25 P"
+    },
     {
       "tag": "PS5-25-DM-6500A-CL01",
       "task": "T-00608-0379",
@@ -1453,42 +1495,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/3/2026 7:56:33 A"
-    },
-    {
-      "tag": "PS5-60-UR-8200G",
-      "task": "T-00090-0278",
-      "system": "PS5-60-19 - Power Generation Package G",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 7:53:04 A"
-    },
-    {
-      "tag": "PS5-60-UR-8200G",
-      "task": "T-00046-0390",
-      "system": "PS5-60-19 - Power Generation Package G",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 7:51:48 A"
-    },
-    {
-      "tag": "PS5-60-IE-0002G",
-      "task": "T-00044-0112",
-      "system": "PS5-60-19 - Power Generation Package G",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 7:50:55 A"
-    },
-    {
-      "tag": "PS5-61-IE-0002-CD06",
-      "task": "T-00606-0070",
-      "system": "PS5-61-08 - Electrical Control System",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/2/2026 8:05:00 P"
     }
   ]
 }
