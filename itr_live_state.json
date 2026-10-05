@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-05 19:04:39",
+  "updated": "2026-10-05 19:10:40",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6145,
-  "open": 4155,
-  "today_closed": 29,
+  "closed": 6150,
+  "open": 4150,
+  "today_closed": 34,
   "closed_by_discipline": {
     "I": 3075,
-    "E": 2775,
+    "E": 2780,
     "T": 295
   },
   "open_by_discipline": {
     "I": 1520,
-    "E": 1852,
+    "E": 1847,
     "T": 783
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-10-05",
-      "E": 0,
+      "E": 5,
       "I": 21,
       "T": 8,
-      "Total": 29
+      "Total": 34
     }
   ],
-  "closed_this_week": 29,
-  "closed_this_month": 309,
+  "closed_this_week": 34,
+  "closed_this_month": 314,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -244,9 +244,27 @@
       "count": 6
     },
     {
+      "milestone": "Milestone C",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 3
+    },
+    {
+      "milestone": "Milestone D",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 1
+    },
+    {
       "milestone": "Milestone E",
       "disc": "T",
       "discipline": "Telecom (T)",
+      "count": 1
+    },
+    {
+      "milestone": "Milestone H",
+      "disc": "E",
+      "discipline": "Electrical (E)",
       "count": 1
     },
     {
@@ -262,7 +280,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 29,
+  "today_milestone_total": 34,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -296,13 +314,13 @@
       "label": "Milestone C",
       "raw": "PS5 - Milestone C",
       "total": 963,
-      "closed": 588,
-      "remaining": 375,
-      "pct": 61.1,
+      "closed": 591,
+      "remaining": 372,
+      "pct": 61.4,
       "status": {
-        "Closed": 588,
+        "Closed": 591,
         "Submitted": 1,
-        "To be completed": 372,
+        "To be completed": 369,
         "Other": 2
       }
     },
@@ -310,13 +328,13 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3437,
-      "closed": 2332,
-      "remaining": 1105,
-      "pct": 67.8,
+      "closed": 2333,
+      "remaining": 1104,
+      "pct": 67.9,
       "status": {
-        "Closed": 2332,
+        "Closed": 2333,
         "Submitted": 2,
-        "To be completed": 1101,
+        "To be completed": 1100,
         "Other": 2
       }
     },
@@ -366,14 +384,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 1888,
-      "remaining": 1363,
+      "closed": 1889,
+      "remaining": 1362,
       "pct": 58.1,
       "status": {
-        "Closed": 1888,
+        "Closed": 1889,
         "Submitted": 0,
-        "To be completed": 1344,
-        "Other": 19
+        "To be completed": 1342,
+        "Other": 20
       }
     },
     {
@@ -392,6 +410,51 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-25-DM-6500A-CL01",
+      "task": "T-00608-0379",
+      "system": "PS5-25-03 - Crude Oil Export Pump B",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:09:44 P"
+    },
+    {
+      "tag": "PS5-09-LB-0008-CL01",
+      "task": "T-00023-4878",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:08:15 P"
+    },
+    {
+      "tag": "PS5-08-11CB-1901-CL03",
+      "task": "T-00023-4811",
+      "system": "PS5-08-11 - Corporate LAN  (SIE)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:07:21 P"
+    },
+    {
+      "tag": "PS5-08-11CB-1901-CL02",
+      "task": "T-00023-4810",
+      "system": "PS5-08-11 - Corporate LAN  (SIE)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:06:16 P"
+    },
+    {
+      "tag": "PS5-08-11CB-1901-CL01",
+      "task": "T-00023-4809",
+      "system": "PS5-08-11 - Corporate LAN  (SIE)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:05:20 P"
+    },
     {
       "tag": "PS5-71-IN-0002-CA01",
       "task": "T-00171-4407",
@@ -1426,51 +1489,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/2/2026 8:05:00 P"
-    },
-    {
-      "tag": "PS5-60-SEA-0001",
-      "task": "T-00087-0105",
-      "system": "PS5-03-14 - FZ-14 - Power Generation Building - Switchgear Room",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/2/2026 7:55:25 P"
-    },
-    {
-      "tag": "PS5-60-LA-0003",
-      "task": "T-00087-0528",
-      "system": "PS5-60-22 - Power Gen Master UCP",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/2/2026 7:54:08 P"
-    },
-    {
-      "tag": "PS5-60-BI-0019E-CC02",
-      "task": "T-00069-5052",
-      "system": "PS5-60-13 - Power Generation Package E",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/2/2026 7:47:45 P"
-    },
-    {
-      "tag": "PS5-60-BI-0019E-CC01",
-      "task": "T-00069-5051",
-      "system": "PS5-60-13 - Power Generation Package E",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/2/2026 7:44:56 P"
-    },
-    {
-      "tag": "PS5-25-SY-0046A-CJ01",
-      "task": "T-00069-4780",
-      "system": "PS5-25-05 - Crude Oil Export Pumps Bypass",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/2/2026 7:24:56 P"
     }
   ]
 }
