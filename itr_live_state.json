@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-05 19:22:52",
+  "updated": "2026-10-05 19:28:50",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6158,
-  "open": 4142,
-  "today_closed": 42,
+  "closed": 6160,
+  "open": 4140,
+  "today_closed": 44,
   "closed_by_discipline": {
     "I": 3075,
-    "E": 2788,
+    "E": 2790,
     "T": 295
   },
   "open_by_discipline": {
     "I": 1520,
-    "E": 1839,
+    "E": 1837,
     "T": 783
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-10-05",
-      "E": 13,
+      "E": 15,
       "I": 21,
       "T": 8,
-      "Total": 42
+      "Total": 44
     }
   ],
-  "closed_this_week": 42,
-  "closed_this_month": 322,
+  "closed_this_week": 44,
+  "closed_this_month": 324,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -247,7 +247,7 @@
       "milestone": "Milestone C",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 4
+      "count": 6
     },
     {
       "milestone": "Milestone D",
@@ -286,7 +286,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 42,
+  "today_milestone_total": 44,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -320,14 +320,14 @@
       "label": "Milestone C",
       "raw": "PS5 - Milestone C",
       "total": 963,
-      "closed": 592,
-      "remaining": 371,
-      "pct": 61.5,
+      "closed": 594,
+      "remaining": 369,
+      "pct": 61.7,
       "status": {
-        "Closed": 592,
-        "Submitted": 1,
-        "To be completed": 367,
-        "Other": 3
+        "Closed": 594,
+        "Submitted": 2,
+        "To be completed": 365,
+        "Other": 2
       }
     },
     {
@@ -416,6 +416,24 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-61-IE-0002-CD47",
+      "task": "T-00610-0600",
+      "system": "PS5-61-08 - Electrical Control System",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:25:44 P"
+    },
+    {
+      "tag": "PS5-61-IE-0002-CD46",
+      "task": "T-00610-0599",
+      "system": "PS5-61-08 - Electrical Control System",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:23:50 P"
+    },
     {
       "tag": "PS5-61-IE-0003-CD03",
       "task": "T-00610-0582",
@@ -1477,24 +1495,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/3/2026 8:12:01 A"
-    },
-    {
-      "tag": "PS5-60-UR-8300G",
-      "task": "T-00090-0442",
-      "system": "PS5-60-41 - Injector Tip Cooling Module G",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 8:07:04 A"
-    },
-    {
-      "tag": "PS5-60-UZ-8200G",
-      "task": "T-00090-0279",
-      "system": "PS5-60-41 - Injector Tip Cooling Module G",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 8:06:21 A"
     }
   ]
 }
