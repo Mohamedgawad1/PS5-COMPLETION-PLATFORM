@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-06 19:22:14",
+  "updated": "2026-10-06 19:35:14",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6189,
-  "open": 4111,
-  "today_closed": 1,
+  "closed": 6198,
+  "open": 4102,
+  "today_closed": 10,
   "closed_by_discipline": {
-    "I": 3089,
-    "E": 2805,
+    "I": 3096,
+    "E": 2807,
     "T": 295
   },
   "open_by_discipline": {
-    "I": 1506,
-    "E": 1822,
+    "I": 1499,
+    "E": 1820,
     "T": 783
   },
   "daily": [
@@ -228,23 +228,35 @@
     },
     {
       "label": "2026-10-06",
-      "E": 0,
-      "I": 1,
+      "E": 2,
+      "I": 8,
       "T": 0,
-      "Total": 1
+      "Total": 10
     }
   ],
-  "closed_this_week": 75,
-  "closed_this_month": 355,
+  "closed_this_week": 84,
+  "closed_this_month": 364,
   "today_milestone": [
+    {
+      "milestone": "Milestone F",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
+    },
+    {
+      "milestone": "Milestone G",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 2
+    },
     {
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 1
+      "count": 7
     }
   ],
-  "today_milestone_total": 1,
+  "today_milestone_total": 10,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -320,42 +332,42 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 1149,
-      "closed": 618,
-      "remaining": 531,
-      "pct": 53.8,
+      "closed": 619,
+      "remaining": 530,
+      "pct": 53.9,
       "status": {
-        "Closed": 618,
+        "Closed": 619,
         "Submitted": 0,
         "To be completed": 528,
-        "Other": 3
+        "Other": 2
       }
     },
     {
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 904,
-      "closed": 691,
-      "remaining": 213,
-      "pct": 76.4,
+      "closed": 693,
+      "remaining": 211,
+      "pct": 76.7,
       "status": {
-        "Closed": 691,
+        "Closed": 693,
         "Submitted": 6,
-        "To be completed": 199,
-        "Other": 8
+        "To be completed": 196,
+        "Other": 9
       }
     },
     {
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 1917,
-      "remaining": 1334,
-      "pct": 59.0,
+      "closed": 1923,
+      "remaining": 1328,
+      "pct": 59.2,
       "status": {
-        "Closed": 1917,
-        "Submitted": 1,
+        "Closed": 1923,
+        "Submitted": 0,
         "To be completed": 1309,
-        "Other": 24
+        "Other": 19
       }
     },
     {
@@ -374,6 +386,87 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-62-IE-0001-CL03",
+      "task": "T-00023-10061",
+      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:31:57 P"
+    },
+    {
+      "tag": "PS5-62-IE-0001-CL02",
+      "task": "T-00023-10060",
+      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:30:49 P"
+    },
+    {
+      "tag": "PS5-71-FIT-0011B",
+      "task": "T-00067-2058",
+      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:25:34 P"
+    },
+    {
+      "tag": "PS5-71-FIT-0011A",
+      "task": "T-00067-2070",
+      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:25:05 P"
+    },
+    {
+      "tag": "PS5-50-FIT-0001",
+      "task": "T-00067-2059",
+      "system": "PS5-50-03 - Water Pre-Treatment Package",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:23:11 P"
+    },
+    {
+      "tag": "PS5-25-FIT-0004",
+      "task": "T-00067-2065",
+      "system": "PS5-25-06 - Crude Oil Export Pumps Discharge",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:21:15 P"
+    },
+    {
+      "tag": "PS5-25-FIT-0003C",
+      "task": "T-00067-2066",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:20:18 P"
+    },
+    {
+      "tag": "PS5-25-FIT-0003A",
+      "task": "T-00067-2061",
+      "system": "PS5-25-02 - Crude Oil Export Pump A",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:20:09 P"
+    },
+    {
+      "tag": "PS5-25-FIT-0003B",
+      "task": "T-00067-2056",
+      "system": "PS5-25-03 - Crude Oil Export Pump B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:19:07 P"
+    },
     {
       "tag": "PS5-25-FIT-0001",
       "task": "T-00067-2067",
@@ -1372,87 +1465,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/3/2026 4:35:43 P"
-    },
-    {
-      "tag": "PS5-60-SEA-0001-CC16",
-      "task": "T-00069-5329",
-      "system": "PS5-03-14 - FZ-14 - Power Generation Building - Switchgear Room",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 4:34:33 P"
-    },
-    {
-      "tag": "PS5-60-SEA-0001-CC15",
-      "task": "T-00069-5328",
-      "system": "PS5-03-14 - FZ-14 - Power Generation Building - Switchgear Room",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 4:32:57 P"
-    },
-    {
-      "tag": "PS5-60-SEA-0001-CC14",
-      "task": "T-00069-5327",
-      "system": "PS5-03-14 - FZ-14 - Power Generation Building - Switchgear Room",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 4:32:01 P"
-    },
-    {
-      "tag": "PS5-60-SEA-0001-CC13",
-      "task": "T-00069-5326",
-      "system": "PS5-03-14 - FZ-14 - Power Generation Building - Switchgear Room",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 4:31:10 P"
-    },
-    {
-      "tag": "PS5-60-SEA-0001-CC12",
-      "task": "T-00069-5325",
-      "system": "PS5-03-14 - FZ-14 - Power Generation Building - Switchgear Room",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 4:30:17 P"
-    },
-    {
-      "tag": "PS5-60-SEA-0001-CC11",
-      "task": "T-00069-5324",
-      "system": "PS5-03-14 - FZ-14 - Power Generation Building - Switchgear Room",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 4:28:56 P"
-    },
-    {
-      "tag": "PS5-60-SEA-0001-CC10",
-      "task": "T-00069-5323",
-      "system": "PS5-03-14 - FZ-14 - Power Generation Building - Switchgear Room",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 4:27:59 P"
-    },
-    {
-      "tag": "PS5-60-SEA-0001-CC07",
-      "task": "T-00069-5322",
-      "system": "PS5-03-14 - FZ-14 - Power Generation Building - Switchgear Room",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 4:26:54 P"
-    },
-    {
-      "tag": "PS5-60-SEA-0001-CC06",
-      "task": "T-00069-5321",
-      "system": "PS5-03-14 - FZ-14 - Power Generation Building - Switchgear Room",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 4:25:52 P"
     }
   ]
 }
