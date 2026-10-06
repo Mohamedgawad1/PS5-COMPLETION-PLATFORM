@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-06 19:47:47",
+  "updated": "2026-10-06 20:01:34",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6206,
-  "open": 4094,
-  "today_closed": 18,
+  "closed": 6214,
+  "open": 4086,
+  "today_closed": 26,
   "closed_by_discipline": {
     "I": 3096,
-    "E": 2815,
+    "E": 2823,
     "T": 295
   },
   "open_by_discipline": {
     "I": 1499,
-    "E": 1812,
+    "E": 1804,
     "T": 783
   },
   "daily": [
@@ -228,15 +228,21 @@
     },
     {
       "label": "2026-10-06",
-      "E": 10,
+      "E": 18,
       "I": 8,
       "T": 0,
-      "Total": 18
+      "Total": 26
     }
   ],
-  "closed_this_week": 92,
-  "closed_this_month": 372,
+  "closed_this_week": 100,
+  "closed_this_month": 380,
   "today_milestone": [
+    {
+      "milestone": "Milestone B",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 1
+    },
     {
       "milestone": "Milestone F",
       "disc": "I",
@@ -247,7 +253,13 @@
       "milestone": "Milestone G",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 10
+      "count": 15
+    },
+    {
+      "milestone": "Milestone H",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 2
     },
     {
       "milestone": "Milestone H",
@@ -256,7 +268,7 @@
       "count": 7
     }
   ],
-  "today_milestone_total": 18,
+  "today_milestone_total": 26,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -276,14 +288,14 @@
       "label": "Milestone B",
       "raw": "PS5 - Milestone B",
       "total": 1714,
-      "closed": 1613,
-      "remaining": 101,
-      "pct": 94.1,
+      "closed": 1614,
+      "remaining": 100,
+      "pct": 94.2,
       "status": {
-        "Closed": 1613,
+        "Closed": 1614,
         "Submitted": 0,
-        "To be completed": 98,
-        "Other": 3
+        "To be completed": 96,
+        "Other": 4
       }
     },
     {
@@ -346,28 +358,28 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 904,
-      "closed": 701,
-      "remaining": 203,
-      "pct": 77.5,
+      "closed": 706,
+      "remaining": 198,
+      "pct": 78.1,
       "status": {
-        "Closed": 701,
-        "Submitted": 7,
-        "To be completed": 187,
-        "Other": 9
+        "Closed": 706,
+        "Submitted": 6,
+        "To be completed": 185,
+        "Other": 7
       }
     },
     {
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 1923,
-      "remaining": 1328,
+      "closed": 1925,
+      "remaining": 1326,
       "pct": 59.2,
       "status": {
-        "Closed": 1923,
+        "Closed": 1925,
         "Submitted": 0,
-        "To be completed": 1309,
-        "Other": 19
+        "To be completed": 1306,
+        "Other": 20
       }
     },
     {
@@ -386,6 +398,78 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-05-IG-0004-CL01",
+      "task": "T-00608-0369",
+      "system": "PS5-62-03 - Outdoor Emergency Lighting DB  - PS5-05-IG-0004",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:59:51 P"
+    },
+    {
+      "tag": "PS5-61-IG-0015-CL01",
+      "task": "T-00023-5335",
+      "system": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:52:41 P"
+    },
+    {
+      "tag": "PS5-25-MOV-0012-CL01",
+      "task": "T-00023-4923",
+      "system": "PS5-25-07 - Export Pipeline Pig Launcher",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:50:33 P"
+    },
+    {
+      "tag": "PS5-25-MOV-0011-CL01",
+      "task": "T-00023-4922",
+      "system": "PS5-25-07 - Export Pipeline Pig Launcher",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:49:15 P"
+    },
+    {
+      "tag": "PS5-62-IE-0001-CL59",
+      "task": "T-00023-10073",
+      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:47:35 P"
+    },
+    {
+      "tag": "PS5-62-IE-0001-CL58",
+      "task": "T-00023-10072",
+      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:46:47 P"
+    },
+    {
+      "tag": "PS5-62-IE-0001-CL57",
+      "task": "T-00023-10071",
+      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:45:56 P"
+    },
+    {
+      "tag": "PS5-62-IE-0001-CL56",
+      "task": "T-00023-10070",
+      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:45:02 P"
+    },
     {
       "tag": "PS5-62-IE-0001-CL55",
       "task": "T-00023-10069",
@@ -1393,78 +1477,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/3/2026 8:57:02 P"
-    },
-    {
-      "tag": "PS5-62-IE-0002-CL05",
-      "task": "T-00023-10077",
-      "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 8:55:26 P"
-    },
-    {
-      "tag": "PS5-62-IE-0002-CL04",
-      "task": "T-00023-10076",
-      "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 8:54:05 P"
-    },
-    {
-      "tag": "PS5-62-IE-0002-CL03",
-      "task": "T-00023-10075",
-      "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 8:51:06 P"
-    },
-    {
-      "tag": "PS5-62-IE-0002-CL02",
-      "task": "T-00023-10074",
-      "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 8:46:07 P"
-    },
-    {
-      "tag": "PS5-61-IJ-0001-CD42",
-      "task": "T-00606-0082",
-      "system": "PS5-61-03 - 6.6kV Switchboard and Transformer LLHT South - EITS Building (PS5-61-IJ-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 8:43:41 P"
-    },
-    {
-      "tag": "PS5-60-BE-0004E-CC01",
-      "task": "T-00069-4894",
-      "system": "PS5-60-53 - Lube Oil Separator Module PS5-60-UO-81100E",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 8:20:34 P"
-    },
-    {
-      "tag": "PS5-60-BE-0004F-CC01",
-      "task": "T-00069-4895",
-      "system": "PS5-60-54 - Lube Oil Separator Module PS5-60-UO-81100F",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 8:18:13 P"
-    },
-    {
-      "tag": "PS5-60-BE-0004G-CC01",
-      "task": "T-00069-4896",
-      "system": "PS5-60-55 - Lube Oil Separator Module PS5-60-UO-81100G",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 8:16:14 P"
     }
   ]
 }
