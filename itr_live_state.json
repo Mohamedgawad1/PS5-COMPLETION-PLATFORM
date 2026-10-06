@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-06 19:35:14",
+  "updated": "2026-10-06 19:47:47",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6198,
-  "open": 4102,
-  "today_closed": 10,
+  "closed": 6206,
+  "open": 4094,
+  "today_closed": 18,
   "closed_by_discipline": {
     "I": 3096,
-    "E": 2807,
+    "E": 2815,
     "T": 295
   },
   "open_by_discipline": {
     "I": 1499,
-    "E": 1820,
+    "E": 1812,
     "T": 783
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-10-06",
-      "E": 2,
+      "E": 10,
       "I": 8,
       "T": 0,
-      "Total": 10
+      "Total": 18
     }
   ],
-  "closed_this_week": 84,
-  "closed_this_month": 364,
+  "closed_this_week": 92,
+  "closed_this_month": 372,
   "today_milestone": [
     {
       "milestone": "Milestone F",
@@ -247,7 +247,7 @@
       "milestone": "Milestone G",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 2
+      "count": 10
     },
     {
       "milestone": "Milestone H",
@@ -256,7 +256,7 @@
       "count": 7
     }
   ],
-  "today_milestone_total": 10,
+  "today_milestone_total": 18,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -346,13 +346,13 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 904,
-      "closed": 693,
-      "remaining": 211,
-      "pct": 76.7,
+      "closed": 701,
+      "remaining": 203,
+      "pct": 77.5,
       "status": {
-        "Closed": 693,
-        "Submitted": 6,
-        "To be completed": 196,
+        "Closed": 701,
+        "Submitted": 7,
+        "To be completed": 187,
         "Other": 9
       }
     },
@@ -386,6 +386,78 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-62-IE-0001-CL55",
+      "task": "T-00023-10069",
+      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:43:41 P"
+    },
+    {
+      "tag": "PS5-62-IE-0001-CL54",
+      "task": "T-00023-10068",
+      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:42:35 P"
+    },
+    {
+      "tag": "PS5-62-IE-0001-CL53",
+      "task": "T-00023-10067",
+      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:41:30 P"
+    },
+    {
+      "tag": "PS5-62-IE-0001-CL52",
+      "task": "T-00023-10066",
+      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:39:58 P"
+    },
+    {
+      "tag": "PS5-62-IE-0001-CL51",
+      "task": "T-00023-10065",
+      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:38:13 P"
+    },
+    {
+      "tag": "PS5-62-IE-0001-CL07",
+      "task": "T-00023-10064",
+      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:36:17 P"
+    },
+    {
+      "tag": "PS5-62-IE-0001-CL06",
+      "task": "T-00023-10063",
+      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:35:03 P"
+    },
+    {
+      "tag": "PS5-62-IE-0001-CL05",
+      "task": "T-00023-10062",
+      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:34:02 P"
+    },
     {
       "tag": "PS5-62-IE-0001-CL03",
       "task": "T-00023-10061",
@@ -1393,78 +1465,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/3/2026 8:16:14 P"
-    },
-    {
-      "tag": "PS5-28-LIT-0002-CJ01",
-      "task": "T-00069-4826",
-      "system": "PS5-28-08 - Open Drain Sump and Pumps",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 4:45:31 P"
-    },
-    {
-      "tag": "PS5-28-LIT-0008-CJ01",
-      "task": "T-00069-4827",
-      "system": "PS5-28-08 - Open Drain Sump and Pumps",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 4:44:40 P"
-    },
-    {
-      "tag": "PS5-28-HY-3901A-CJ01",
-      "task": "T-00069-4819",
-      "system": "PS5-28-17 - Reinjection Pump",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 4:43:53 P"
-    },
-    {
-      "tag": "PS5-28-HY-3901B-CJ01",
-      "task": "T-00069-4820",
-      "system": "PS5-28-17 - Reinjection Pump",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 4:42:46 P"
-    },
-    {
-      "tag": "PS5-28-PIT-3901A-CJ01",
-      "task": "T-00069-4844",
-      "system": "PS5-28-17 - Reinjection Pump",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 4:41:48 P"
-    },
-    {
-      "tag": "PS5-28-PIT-0041-CJ01",
-      "task": "T-00069-4839",
-      "system": "PS5-28-17 - Reinjection Pump",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 4:41:12 P"
-    },
-    {
-      "tag": "PS5-28-PIT-3901B-CJ01",
-      "task": "T-00069-4845",
-      "system": "PS5-28-17 - Reinjection Pump",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 4:38:41 P"
-    },
-    {
-      "tag": "PS5-60-SEA-0001-CC17",
-      "task": "T-00069-5330",
-      "system": "PS5-03-14 - FZ-14 - Power Generation Building - Switchgear Room",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 4:35:43 P"
     }
   ]
 }
