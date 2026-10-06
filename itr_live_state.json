@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-06 20:14:48",
+  "updated": "2026-10-06 20:27:53",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6219,
-  "open": 4081,
-  "today_closed": 31,
+  "closed": 6223,
+  "open": 4077,
+  "today_closed": 35,
   "closed_by_discipline": {
-    "I": 3096,
-    "E": 2828,
+    "I": 3097,
+    "E": 2831,
     "T": 295
   },
   "open_by_discipline": {
-    "I": 1499,
-    "E": 1799,
+    "I": 1498,
+    "E": 1796,
     "T": 783
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-10-06",
-      "E": 23,
-      "I": 8,
+      "E": 26,
+      "I": 9,
       "T": 0,
-      "Total": 31
+      "Total": 35
     }
   ],
-  "closed_this_week": 105,
-  "closed_this_month": 385,
+  "closed_this_week": 109,
+  "closed_this_month": 389,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -256,6 +256,12 @@
       "count": 1
     },
     {
+      "milestone": "Milestone E",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
+    },
+    {
       "milestone": "Milestone F",
       "disc": "I",
       "discipline": "Instrumentation (I)",
@@ -271,7 +277,7 @@
       "milestone": "Milestone H",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 4
+      "count": 7
     },
     {
       "milestone": "Milestone H",
@@ -280,7 +286,7 @@
       "count": 7
     }
   ],
-  "today_milestone_total": 31,
+  "today_milestone_total": 35,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -342,14 +348,14 @@
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1532,
-      "closed": 1329,
-      "remaining": 203,
-      "pct": 86.7,
+      "closed": 1330,
+      "remaining": 202,
+      "pct": 86.8,
       "status": {
-        "Closed": 1329,
+        "Closed": 1330,
         "Submitted": 0,
-        "To be completed": 189,
-        "Other": 14
+        "To be completed": 187,
+        "Other": 15
       }
     },
     {
@@ -384,14 +390,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 1927,
-      "remaining": 1324,
-      "pct": 59.3,
+      "closed": 1930,
+      "remaining": 1321,
+      "pct": 59.4,
       "status": {
-        "Closed": 1927,
+        "Closed": 1930,
         "Submitted": 0,
-        "To be completed": 1304,
-        "Other": 20
+        "To be completed": 1302,
+        "Other": 19
       }
     },
     {
@@ -410,6 +416,42 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-03-RMAC-0613",
+      "task": "T-00067-0079",
+      "system": "PS5-03-06 - FZ-06 - Transformer Area",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 5:16:00 P"
+    },
+    {
+      "tag": "PS5-28-BE-0002B-CL02",
+      "task": "T-00023-4946",
+      "system": "PS5-28-17 - Reinjection Pump",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 5:10:20 P"
+    },
+    {
+      "tag": "PS5-28-BE-0002A-CL02",
+      "task": "T-00023-4944",
+      "system": "PS5-28-17 - Reinjection Pump",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 5:08:57 P"
+    },
+    {
+      "tag": "PS5-28-SDV-0045-CL01",
+      "task": "T-00023-4967",
+      "system": "PS5-28-17 - Reinjection Pump",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 5:08:03 P"
+    },
     {
       "tag": "PS5-60-BE-0004F-CL01",
       "task": "T-00023-4999",
@@ -1453,42 +1495,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/3/2026 9:15:36 P"
-    },
-    {
-      "tag": "PS5-62-IE-0002-CL58",
-      "task": "T-00023-10086",
-      "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 9:14:02 P"
-    },
-    {
-      "tag": "PS5-62-IE-0002-CL57",
-      "task": "T-00023-10085",
-      "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 9:11:43 P"
-    },
-    {
-      "tag": "PS5-62-IE-0002-CL56",
-      "task": "T-00023-10084",
-      "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 9:06:03 P"
-    },
-    {
-      "tag": "PS5-62-IE-0002-CL55",
-      "task": "T-00023-10083",
-      "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/3/2026 9:04:42 P"
     }
   ]
 }
