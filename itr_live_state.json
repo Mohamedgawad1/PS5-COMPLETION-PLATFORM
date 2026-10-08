@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-08 17:32:15",
+  "updated": "2026-10-08 19:28:21",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6308,
-  "open": 3992,
-  "today_closed": 41,
+  "closed": 6310,
+  "open": 3990,
+  "today_closed": 43,
   "closed_by_discipline": {
-    "I": 3162,
+    "I": 3164,
     "E": 2851,
     "T": 295
   },
   "open_by_discipline": {
-    "I": 1433,
+    "I": 1431,
     "E": 1776,
     "T": 783
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-10-08",
       "E": 19,
-      "I": 22,
+      "I": 24,
       "T": 0,
-      "Total": 41
+      "Total": 43
     }
   ],
-  "closed_this_week": 181,
-  "closed_this_month": 475,
+  "closed_this_week": 183,
+  "closed_this_month": 477,
   "today_milestone": [
     {
       "milestone": "Milestone E",
@@ -259,10 +259,10 @@
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 22
+      "count": 24
     }
   ],
-  "today_milestone_total": 41,
+  "today_milestone_total": 43,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -316,8 +316,8 @@
       "status": {
         "Closed": 2332,
         "Submitted": 2,
-        "To be completed": 1098,
-        "Other": 5
+        "To be completed": 1097,
+        "Other": 6
       }
     },
     {
@@ -366,14 +366,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 1992,
-      "remaining": 1259,
+      "closed": 1994,
+      "remaining": 1257,
       "pct": 61.3,
       "status": {
-        "Closed": 1992,
+        "Closed": 1994,
         "Submitted": 1,
-        "To be completed": 1163,
-        "Other": 95
+        "To be completed": 1160,
+        "Other": 96
       }
     },
     {
@@ -392,6 +392,24 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-25-BI-1803B-CC02",
+      "task": "T-00614-0977",
+      "system": "PS5-25-03 - Crude Oil Export Pump B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 4:26:27 P"
+    },
+    {
+      "tag": "PS5-25-BI-1803B-CC01",
+      "task": "T-00614-0976",
+      "system": "PS5-25-03 - Crude Oil Export Pump B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 4:23:36 P"
+    },
     {
       "tag": "PS5-53-DM-3100B",
       "task": "T-00236-0168",
@@ -1453,24 +1471,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/5/2026 7:34:20 P"
-    },
-    {
-      "tag": "PS5-25-TW-0003C",
-      "task": "T-00072-0192",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 7:33:26 P"
-    },
-    {
-      "tag": "PS5-25-TW-0002A",
-      "task": "T-00072-0191",
-      "system": "PS5-25-02 - Crude Oil Export Pump A",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 7:32:39 P"
     }
   ]
 }
