@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-08 19:39:46",
+  "updated": "2026-10-08 19:52:03",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6317,
-  "open": 3983,
-  "today_closed": 50,
+  "closed": 6319,
+  "open": 3981,
+  "today_closed": 52,
   "closed_by_discipline": {
-    "I": 3171,
+    "I": 3173,
     "E": 2851,
     "T": 295
   },
   "open_by_discipline": {
-    "I": 1424,
+    "I": 1422,
     "E": 1776,
     "T": 783
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-10-08",
       "E": 19,
-      "I": 31,
+      "I": 33,
       "T": 0,
-      "Total": 50
+      "Total": 52
     }
   ],
-  "closed_this_week": 190,
-  "closed_this_month": 484,
+  "closed_this_week": 192,
+  "closed_this_month": 486,
   "today_milestone": [
     {
       "milestone": "Milestone E",
@@ -259,10 +259,10 @@
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 31
+      "count": 33
     }
   ],
-  "today_milestone_total": 50,
+  "today_milestone_total": 52,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -366,14 +366,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2001,
-      "remaining": 1250,
+      "closed": 2003,
+      "remaining": 1248,
       "pct": 61.6,
       "status": {
-        "Closed": 2001,
-        "Submitted": 1,
-        "To be completed": 1153,
-        "Other": 96
+        "Closed": 2003,
+        "Submitted": 2,
+        "To be completed": 1151,
+        "Other": 95
       }
     },
     {
@@ -392,6 +392,24 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-61-IDH-3100C-CC03",
+      "task": "T-00614-1074",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 4:49:09 P"
+    },
+    {
+      "tag": "PS5-61-IDH-3100C-CC02",
+      "task": "T-00614-1073",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 4:41:07 P"
+    },
     {
       "tag": "PS5-61-IDH-3100C-CC01",
       "task": "T-00614-1072",
@@ -1453,24 +1471,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/5/2026 9:13:02 P"
-    },
-    {
-      "tag": "PS5-28-FO-0006",
-      "task": "T-00070-0065",
-      "system": "PS5-28-08 - Open Drain Sump and Pumps",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 7:49:45 P"
-    },
-    {
-      "tag": "PS5-28-FO-0002B",
-      "task": "T-00070-0063",
-      "system": "PS5-28-08 - Open Drain Sump and Pumps",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 7:48:58 P"
     }
   ]
 }
