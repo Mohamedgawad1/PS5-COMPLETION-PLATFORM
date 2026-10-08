@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-08 09:36:18",
+  "updated": "2026-10-08 09:45:49",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6280,
-  "open": 4020,
-  "today_closed": 13,
+  "closed": 6284,
+  "open": 4016,
+  "today_closed": 17,
   "closed_by_discipline": {
     "I": 3149,
-    "E": 2836,
+    "E": 2840,
     "T": 295
   },
   "open_by_discipline": {
     "I": 1446,
-    "E": 1791,
+    "E": 1787,
     "T": 783
   },
   "daily": [
@@ -228,20 +228,20 @@
     },
     {
       "label": "2026-10-08",
-      "E": 4,
+      "E": 8,
       "I": 9,
       "T": 0,
-      "Total": 13
+      "Total": 17
     }
   ],
-  "closed_this_week": 153,
-  "closed_this_month": 447,
+  "closed_this_week": 157,
+  "closed_this_month": 451,
   "today_milestone": [
     {
       "milestone": "Milestone G",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 4
+      "count": 8
     },
     {
       "milestone": "Milestone H",
@@ -250,7 +250,7 @@
       "count": 9
     }
   ],
-  "today_milestone_total": 13,
+  "today_milestone_total": 17,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -340,14 +340,14 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 904,
-      "closed": 718,
-      "remaining": 186,
-      "pct": 79.4,
+      "closed": 722,
+      "remaining": 182,
+      "pct": 79.9,
       "status": {
-        "Closed": 718,
-        "Submitted": 1,
-        "To be completed": 179,
-        "Other": 6
+        "Closed": 722,
+        "Submitted": 0,
+        "To be completed": 175,
+        "Other": 7
       }
     },
     {
@@ -380,6 +380,42 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-28-IES-3600A-CD01",
+      "task": "T-00610-0209",
+      "system": "PS5-28-08 - Open Drain Sump and Pumps",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 6:45:10 A"
+    },
+    {
+      "tag": "PS5-28-IES-3500-CD01",
+      "task": "T-00610-0208",
+      "system": "PS5-28-08 - Open Drain Sump and Pumps",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 6:39:29 A"
+    },
+    {
+      "tag": "PS5-28-DM-3600B-CL02",
+      "task": "T-00608-0400",
+      "system": "PS5-28-08 - Open Drain Sump and Pumps",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 6:38:07 A"
+    },
+    {
+      "tag": "PS5-28-DM-3600B-CL01",
+      "task": "T-00608-0399",
+      "system": "PS5-28-08 - Open Drain Sump and Pumps",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 6:36:11 A"
+    },
     {
       "tag": "PS5-28-DM-3600A-CL02",
       "task": "T-00608-0398",
@@ -1423,42 +1459,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/5/2026 4:16:33 P"
-    },
-    {
-      "tag": "PS5-25-DM-6600B-CL01",
-      "task": "T-00608-0382",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 4:14:08 P"
-    },
-    {
-      "tag": "PS5-25-DM-6600A-CL01",
-      "task": "T-00608-0381",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 4:12:51 P"
-    },
-    {
-      "tag": "PS5-25-DM-6500B-CL01",
-      "task": "T-00608-0380",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 4:11:25 P"
-    },
-    {
-      "tag": "PS5-25-DM-6500A-CL01",
-      "task": "T-00608-0379",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 4:09:44 P"
     }
   ]
 }
