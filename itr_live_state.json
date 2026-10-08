@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-08 08:43:20",
+  "updated": "2026-10-08 08:50:54",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6267,
-  "open": 4033,
-  "today_closed": 0,
+  "closed": 6269,
+  "open": 4031,
+  "today_closed": 2,
   "closed_by_discipline": {
-    "I": 3140,
-    "E": 2832,
+    "I": 3141,
+    "E": 2833,
     "T": 295
   },
   "open_by_discipline": {
-    "I": 1455,
-    "E": 1795,
+    "I": 1454,
+    "E": 1794,
     "T": 783
   },
   "daily": [
@@ -228,16 +228,29 @@
     },
     {
       "label": "2026-10-08",
-      "E": 0,
-      "I": 0,
+      "E": 1,
+      "I": 1,
       "T": 0,
-      "Total": 0
+      "Total": 2
     }
   ],
-  "closed_this_week": 140,
-  "closed_this_month": 434,
-  "today_milestone": [],
-  "today_milestone_total": 0,
+  "closed_this_week": 142,
+  "closed_this_month": 436,
+  "today_milestone": [
+    {
+      "milestone": "Milestone G",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 1
+    },
+    {
+      "milestone": "Milestone H",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
+    }
+  ],
+  "today_milestone_total": 2,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -327,28 +340,28 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 904,
-      "closed": 714,
-      "remaining": 190,
-      "pct": 79.0,
+      "closed": 715,
+      "remaining": 189,
+      "pct": 79.1,
       "status": {
-        "Closed": 714,
+        "Closed": 715,
         "Submitted": 0,
         "To be completed": 183,
-        "Other": 7
+        "Other": 6
       }
     },
     {
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 1965,
-      "remaining": 1286,
-      "pct": 60.4,
+      "closed": 1966,
+      "remaining": 1285,
+      "pct": 60.5,
       "status": {
-        "Closed": 1965,
+        "Closed": 1966,
         "Submitted": 0,
-        "To be completed": 1219,
-        "Other": 67
+        "To be completed": 1216,
+        "Other": 69
       }
     },
     {
@@ -367,6 +380,24 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-25-TIT-0001",
+      "task": "T-00067-2164",
+      "system": "PS5-25-01 - Export Pipeline Pig Receiver",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 5:49:08 A"
+    },
+    {
+      "tag": "PS5-28-DM-3300",
+      "task": "T-00026-0155",
+      "system": "PS5-28-06 - Relief Drum and Pump",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 5:47:44 A"
+    },
     {
       "tag": "PS5-71-LIT-4101-CJ01",
       "task": "T-00069-5508",
@@ -1428,24 +1459,6 @@
       "disc": "T - Telecom",
       "cat": "PCOM - Precommissioning",
       "approved": "10/5/2026 3:55:59 P"
-    },
-    {
-      "tag": "PS5-60-IE-0004-CA01",
-      "task": "T-00171-4365",
-      "system": "PS5-60-22 - Power Gen Master UCP",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 3:55:18 P"
-    },
-    {
-      "tag": "PS5-71-FCV-0020-CC01",
-      "task": "T-00254-5455",
-      "system": "PS5-71-05 - CFO Transfer Pump A/B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 3:48:48 P"
     }
   ]
 }
