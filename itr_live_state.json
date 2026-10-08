@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-08 19:52:03",
+  "updated": "2026-10-08 20:05:00",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6319,
-  "open": 3981,
-  "today_closed": 52,
+  "closed": 6320,
+  "open": 3980,
+  "today_closed": 53,
   "closed_by_discipline": {
-    "I": 3173,
+    "I": 3174,
     "E": 2851,
     "T": 295
   },
   "open_by_discipline": {
-    "I": 1422,
+    "I": 1421,
     "E": 1776,
     "T": 783
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-10-08",
       "E": 19,
-      "I": 33,
+      "I": 34,
       "T": 0,
-      "Total": 52
+      "Total": 53
     }
   ],
-  "closed_this_week": 192,
-  "closed_this_month": 486,
+  "closed_this_week": 193,
+  "closed_this_month": 487,
   "today_milestone": [
     {
       "milestone": "Milestone E",
@@ -259,10 +259,10 @@
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 33
+      "count": 34
     }
   ],
-  "today_milestone_total": 52,
+  "today_milestone_total": 53,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -366,14 +366,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2003,
-      "remaining": 1248,
+      "closed": 2004,
+      "remaining": 1247,
       "pct": 61.6,
       "status": {
-        "Closed": 2003,
-        "Submitted": 2,
-        "To be completed": 1151,
-        "Other": 95
+        "Closed": 2004,
+        "Submitted": 1,
+        "To be completed": 1148,
+        "Other": 98
       }
     },
     {
@@ -392,6 +392,33 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-71-PDIT-0030-CJ01",
+      "task": "T-00069-5532",
+      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 4:59:39 P"
+    },
+    {
+      "tag": "PS5-83-EHO-0001C-CJ01",
+      "task": "T-00614-1154",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 4:52:32 P"
+    },
+    {
+      "tag": "PS5-83-EHO-0001C-CC01",
+      "task": "T-00614-1153",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 4:51:07 P"
+    },
     {
       "tag": "PS5-61-IDH-3100C-CC03",
       "task": "T-00614-1074",
@@ -463,24 +490,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/8/2026 4:29:28 P"
-    },
-    {
-      "tag": "PS5-71-BI-0001-CC01",
-      "task": "T-00614-1075",
-      "system": "PS5-71-02 - CFO Allocation Metering Package",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 4:28:01 P"
-    },
-    {
-      "tag": "PS5-25-BI-1803B-CC02",
-      "task": "T-00614-0977",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 4:26:27 P"
     },
     {
       "tag": "PS5-25-BI-1803B-CC01",
@@ -1462,15 +1471,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/5/2026 9:13:59 P"
-    },
-    {
-      "tag": "PS5-71-UN-7200",
-      "task": "T-00046-0399",
-      "system": "PS5-71-02 - CFO Allocation Metering Package",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 9:13:02 P"
     }
   ]
 }
