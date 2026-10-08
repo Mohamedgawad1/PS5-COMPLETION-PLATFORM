@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-08 12:18:09",
+  "updated": "2026-10-08 12:28:47",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6285,
-  "open": 4015,
-  "today_closed": 18,
+  "closed": 6289,
+  "open": 4011,
+  "today_closed": 22,
   "closed_by_discipline": {
-    "I": 3149,
+    "I": 3153,
     "E": 2841,
     "T": 295
   },
   "open_by_discipline": {
-    "I": 1446,
+    "I": 1442,
     "E": 1786,
     "T": 783
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-10-08",
       "E": 9,
-      "I": 9,
+      "I": 13,
       "T": 0,
-      "Total": 18
+      "Total": 22
     }
   ],
-  "closed_this_week": 158,
-  "closed_this_month": 452,
+  "closed_this_week": 162,
+  "closed_this_month": 456,
   "today_milestone": [
     {
       "milestone": "Milestone G",
@@ -247,10 +247,10 @@
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 9
+      "count": 13
     }
   ],
-  "today_milestone_total": 18,
+  "today_milestone_total": 22,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -354,14 +354,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 1974,
-      "remaining": 1277,
-      "pct": 60.7,
+      "closed": 1978,
+      "remaining": 1273,
+      "pct": 60.8,
       "status": {
-        "Closed": 1974,
+        "Closed": 1978,
         "Submitted": 1,
-        "To be completed": 1181,
-        "Other": 95
+        "To be completed": 1176,
+        "Other": 96
       }
     },
     {
@@ -380,6 +380,42 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-25-ZIT-0001",
+      "task": "T-00067-2049",
+      "system": "PS5-25-01 - Export Pipeline Pig Receiver",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 9:23:29 A"
+    },
+    {
+      "tag": "PS5-25-PDIT-0034C",
+      "task": "T-00067-2110",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 9:22:06 A"
+    },
+    {
+      "tag": "PS5-25-PDIT-0034B",
+      "task": "T-00067-2140",
+      "system": "PS5-25-03 - Crude Oil Export Pump B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 9:20:50 A"
+    },
+    {
+      "tag": "PS5-25-PDIT-0034A",
+      "task": "T-00067-2100",
+      "system": "PS5-25-02 - Crude Oil Export Pump A",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 9:19:28 A"
+    },
     {
       "tag": "PS5-28-IES-3600B-CD01",
       "task": "T-00610-0210",
@@ -1423,42 +1459,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/5/2026 4:23:50 P"
-    },
-    {
-      "tag": "PS5-61-IE-0003-CD03",
-      "task": "T-00610-0582",
-      "system": "PS5-61-08 - Electrical Control System",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 4:22:25 P"
-    },
-    {
-      "tag": "PS5-28-DM-3800C-CL01",
-      "task": "T-00608-0405",
-      "system": "PS5-28-15 - Seal Oil Drain Drum & Pump C",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 4:20:43 P"
-    },
-    {
-      "tag": "PS5-28-DM-3800B-CL01",
-      "task": "T-00608-0404",
-      "system": "PS5-28-14 - Seal Oil Drain Drum & Pump B",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 4:19:28 P"
-    },
-    {
-      "tag": "PS5-28-DM-3800A-CL01",
-      "task": "T-00608-0403",
-      "system": "PS5-28-13 - Seal Oil Drain Drum & Pump A",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 4:18:24 P"
     }
   ]
 }
