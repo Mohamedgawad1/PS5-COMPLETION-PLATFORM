@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-08 08:50:54",
+  "updated": "2026-10-08 08:58:44",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6269,
-  "open": 4031,
-  "today_closed": 2,
+  "closed": 6274,
+  "open": 4026,
+  "today_closed": 7,
   "closed_by_discipline": {
-    "I": 3141,
+    "I": 3146,
     "E": 2833,
     "T": 295
   },
   "open_by_discipline": {
-    "I": 1454,
+    "I": 1449,
     "E": 1794,
     "T": 783
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-10-08",
       "E": 1,
-      "I": 1,
+      "I": 6,
       "T": 0,
-      "Total": 2
+      "Total": 7
     }
   ],
-  "closed_this_week": 142,
-  "closed_this_month": 436,
+  "closed_this_week": 147,
+  "closed_this_month": 441,
   "today_milestone": [
     {
       "milestone": "Milestone G",
@@ -247,10 +247,10 @@
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 1
+      "count": 6
     }
   ],
-  "today_milestone_total": 2,
+  "today_milestone_total": 7,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -354,13 +354,13 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 1966,
-      "remaining": 1285,
-      "pct": 60.5,
+      "closed": 1971,
+      "remaining": 1280,
+      "pct": 60.6,
       "status": {
-        "Closed": 1966,
+        "Closed": 1971,
         "Submitted": 0,
-        "To be completed": 1216,
+        "To be completed": 1211,
         "Other": 69
       }
     },
@@ -380,6 +380,51 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-25-TIT-0003B",
+      "task": "T-00067-2151",
+      "system": "PS5-25-03 - Crude Oil Export Pump B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 5:56:19 A"
+    },
+    {
+      "tag": "PS5-25-TIT-0003A",
+      "task": "T-00067-2153",
+      "system": "PS5-25-02 - Crude Oil Export Pump A",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 5:55:01 A"
+    },
+    {
+      "tag": "PS5-25-TIT-0002C",
+      "task": "T-00067-2162",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 5:53:52 A"
+    },
+    {
+      "tag": "PS5-25-TIT-0002B",
+      "task": "T-00067-2149",
+      "system": "PS5-25-03 - Crude Oil Export Pump B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 5:52:46 A"
+    },
+    {
+      "tag": "PS5-25-TIT-0002A",
+      "task": "T-00067-2165",
+      "system": "PS5-25-02 - Crude Oil Export Pump A",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 5:50:45 A"
+    },
     {
       "tag": "PS5-25-TIT-0001",
       "task": "T-00067-2164",
@@ -1414,51 +1459,6 @@
       "disc": "T - Telecom",
       "cat": "PCOM - Precommissioning",
       "approved": "10/5/2026 4:00:54 P"
-    },
-    {
-      "tag": "PS5-60-IE-0004-CA21",
-      "task": "T-00171-4370",
-      "system": "PS5-60-22 - Power Gen Master UCP",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 4:00:01 P"
-    },
-    {
-      "tag": "PS5-60-IE-0004-CA15",
-      "task": "T-00171-4369",
-      "system": "PS5-60-22 - Power Gen Master UCP",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 3:58:59 P"
-    },
-    {
-      "tag": "PS5-60-IE-0004-CA14",
-      "task": "T-00171-4368",
-      "system": "PS5-60-22 - Power Gen Master UCP",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 3:58:04 P"
-    },
-    {
-      "tag": "PS5-60-IE-0004-CA08",
-      "task": "T-00171-4367",
-      "system": "PS5-60-22 - Power Gen Master UCP",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 3:57:16 P"
-    },
-    {
-      "tag": "PS5-60-IE-0004-CA07",
-      "task": "T-00171-4366",
-      "system": "PS5-60-22 - Power Gen Master UCP",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 3:55:59 P"
     }
   ]
 }
