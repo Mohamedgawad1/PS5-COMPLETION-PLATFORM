@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-08 12:39:18",
+  "updated": "2026-10-08 12:50:55",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6296,
-  "open": 4004,
-  "today_closed": 29,
+  "closed": 6298,
+  "open": 4002,
+  "today_closed": 31,
   "closed_by_discipline": {
-    "I": 3160,
+    "I": 3162,
     "E": 2841,
     "T": 295
   },
   "open_by_discipline": {
-    "I": 1435,
+    "I": 1433,
     "E": 1786,
     "T": 783
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-10-08",
       "E": 9,
-      "I": 20,
+      "I": 22,
       "T": 0,
-      "Total": 29
+      "Total": 31
     }
   ],
-  "closed_this_week": 169,
-  "closed_this_month": 463,
+  "closed_this_week": 171,
+  "closed_this_month": 465,
   "today_milestone": [
     {
       "milestone": "Milestone G",
@@ -247,10 +247,10 @@
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 20
+      "count": 22
     }
   ],
-  "today_milestone_total": 29,
+  "today_milestone_total": 31,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -354,14 +354,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 1985,
-      "remaining": 1266,
+      "closed": 1987,
+      "remaining": 1264,
       "pct": 61.1,
       "status": {
-        "Closed": 1985,
+        "Closed": 1987,
         "Submitted": 1,
         "To be completed": 1168,
-        "Other": 97
+        "Other": 95
       }
     },
     {
@@ -380,6 +380,24 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-25-FCV-0004",
+      "task": "T-00066-0060",
+      "system": "PS5-25-06 - Crude Oil Export Pumps Discharge",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 9:39:15 A"
+    },
+    {
+      "tag": "PS5-25-FCV-0004",
+      "task": "T-00079-0063",
+      "system": "PS5-25-06 - Crude Oil Export Pumps Discharge",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 9:37:42 A"
+    },
     {
       "tag": "PS5-25-FCV-0003C",
       "task": "T-00066-0070",
@@ -1441,24 +1459,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/5/2026 7:12:22 P"
-    },
-    {
-      "tag": "PS5-79-IV-0002",
-      "task": "T-00018-0238",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 7:09:46 P"
-    },
-    {
-      "tag": "PS5-79-IV-0001",
-      "task": "T-00018-0237",
-      "system": "PS5-79-01 - Electrical Heat Tracing Transformer/Distribution Board 1 (PS5-79-IG-0001)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 7:06:59 P"
     }
   ]
 }
