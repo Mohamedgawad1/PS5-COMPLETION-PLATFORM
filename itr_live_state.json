@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-08 15:55:55",
+  "updated": "2026-10-08 16:09:07",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6304,
-  "open": 3996,
-  "today_closed": 37,
+  "closed": 6308,
+  "open": 3992,
+  "today_closed": 41,
   "closed_by_discipline": {
     "I": 3162,
-    "E": 2847,
+    "E": 2851,
     "T": 295
   },
   "open_by_discipline": {
     "I": 1433,
-    "E": 1780,
+    "E": 1776,
     "T": 783
   },
   "daily": [
@@ -228,15 +228,21 @@
     },
     {
       "label": "2026-10-08",
-      "E": 15,
+      "E": 19,
       "I": 22,
       "T": 0,
-      "Total": 37
+      "Total": 41
     }
   ],
-  "closed_this_week": 177,
-  "closed_this_month": 471,
+  "closed_this_week": 181,
+  "closed_this_month": 475,
   "today_milestone": [
+    {
+      "milestone": "Milestone E",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 2
+    },
     {
       "milestone": "Milestone G",
       "disc": "E",
@@ -247,7 +253,7 @@
       "milestone": "Milestone H",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 3
+      "count": 5
     },
     {
       "milestone": "Milestone H",
@@ -256,7 +262,7 @@
       "count": 22
     }
   ],
-  "today_milestone_total": 37,
+  "today_milestone_total": 41,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -318,13 +324,13 @@
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1532,
-      "closed": 1342,
-      "remaining": 190,
-      "pct": 87.6,
+      "closed": 1344,
+      "remaining": 188,
+      "pct": 87.7,
       "status": {
-        "Closed": 1342,
+        "Closed": 1344,
         "Submitted": 0,
-        "To be completed": 185,
+        "To be completed": 183,
         "Other": 5
       }
     },
@@ -360,14 +366,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 1990,
-      "remaining": 1261,
-      "pct": 61.2,
+      "closed": 1992,
+      "remaining": 1259,
+      "pct": 61.3,
       "status": {
-        "Closed": 1990,
+        "Closed": 1992,
         "Submitted": 1,
-        "To be completed": 1164,
-        "Other": 96
+        "To be completed": 1163,
+        "Other": 95
       }
     },
     {
@@ -386,6 +392,42 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-53-DM-3100B",
+      "task": "T-00236-0168",
+      "system": "PS5-53-02 - Water Distribution Pump A/B",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 1:00:44 P"
+    },
+    {
+      "tag": "PS5-53-DM-3100A",
+      "task": "T-00236-0167",
+      "system": "PS5-53-02 - Water Distribution Pump A/B",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 12:58:52 "
+    },
+    {
+      "tag": "PS5-28-DM-3900B",
+      "task": "T-00236-0166",
+      "system": "PS5-28-17 - Reinjection Pump",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 12:56:46 "
+    },
+    {
+      "tag": "PS5-28-DM-3900A",
+      "task": "T-00236-0165",
+      "system": "PS5-28-17 - Reinjection Pump",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 12:55:13 "
+    },
     {
       "tag": "PS5-28-DM-3800C",
       "task": "T-00236-0164",
@@ -1429,42 +1471,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/5/2026 7:32:39 P"
-    },
-    {
-      "tag": "PS5-25-TW-0003B",
-      "task": "T-00072-0187",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 7:31:49 P"
-    },
-    {
-      "tag": "PS5-79-IV-0011",
-      "task": "T-00018-0247",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 7:28:12 P"
-    },
-    {
-      "tag": "PS5-79-IV-0010",
-      "task": "T-00018-0246",
-      "system": "PS5-79-10 - Electrical Heat Tracing Transformer/Distribution Board 10 (PS5-79-IG-0010)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 7:26:36 P"
-    },
-    {
-      "tag": "PS5-79-IV-0009",
-      "task": "T-00018-0245",
-      "system": "PS5-79-09 - Electrical Heat Tracing Transformer/Distribution Board 9 (PS5-79-IG-0009)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 7:24:49 P"
     }
   ]
 }
