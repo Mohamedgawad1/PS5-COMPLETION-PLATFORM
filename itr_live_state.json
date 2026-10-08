@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-08 09:27:34",
+  "updated": "2026-10-08 09:36:18",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6277,
-  "open": 4023,
-  "today_closed": 10,
+  "closed": 6280,
+  "open": 4020,
+  "today_closed": 13,
   "closed_by_discipline": {
     "I": 3149,
-    "E": 2833,
+    "E": 2836,
     "T": 295
   },
   "open_by_discipline": {
     "I": 1446,
-    "E": 1794,
+    "E": 1791,
     "T": 783
   },
   "daily": [
@@ -228,20 +228,20 @@
     },
     {
       "label": "2026-10-08",
-      "E": 1,
+      "E": 4,
       "I": 9,
       "T": 0,
-      "Total": 10
+      "Total": 13
     }
   ],
-  "closed_this_week": 150,
-  "closed_this_month": 444,
+  "closed_this_week": 153,
+  "closed_this_month": 447,
   "today_milestone": [
     {
       "milestone": "Milestone G",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 1
+      "count": 4
     },
     {
       "milestone": "Milestone H",
@@ -250,7 +250,7 @@
       "count": 9
     }
   ],
-  "today_milestone_total": 10,
+  "today_milestone_total": 13,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -340,13 +340,13 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 904,
-      "closed": 715,
-      "remaining": 189,
-      "pct": 79.1,
+      "closed": 718,
+      "remaining": 186,
+      "pct": 79.4,
       "status": {
-        "Closed": 715,
-        "Submitted": 0,
-        "To be completed": 183,
+        "Closed": 718,
+        "Submitted": 1,
+        "To be completed": 179,
         "Other": 6
       }
     },
@@ -380,6 +380,33 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-28-DM-3600A-CL02",
+      "task": "T-00608-0398",
+      "system": "PS5-28-08 - Open Drain Sump and Pumps",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 6:34:05 A"
+    },
+    {
+      "tag": "PS5-28-DM-3600A-CL01",
+      "task": "T-00608-0397",
+      "system": "PS5-28-08 - Open Drain Sump and Pumps",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 6:32:27 A"
+    },
+    {
+      "tag": "PS5-28-DM-3500-CL01",
+      "task": "T-00608-0396",
+      "system": "PS5-28-08 - Open Drain Sump and Pumps",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 6:30:33 A"
+    },
     {
       "tag": "PS5-25-TIT-1101",
       "task": "T-00067-2159",
@@ -1432,33 +1459,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/5/2026 4:09:44 P"
-    },
-    {
-      "tag": "PS5-09-LB-0008-CL01",
-      "task": "T-00023-4878",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 4:08:15 P"
-    },
-    {
-      "tag": "PS5-08-11CB-1901-CL03",
-      "task": "T-00023-4811",
-      "system": "PS5-08-11 - Corporate LAN  (SIE)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 4:07:21 P"
-    },
-    {
-      "tag": "PS5-08-11CB-1901-CL02",
-      "task": "T-00023-4810",
-      "system": "PS5-08-11 - Corporate LAN  (SIE)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/5/2026 4:06:16 P"
     }
   ]
 }
