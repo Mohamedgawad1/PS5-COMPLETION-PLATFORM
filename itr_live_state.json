@@ -1,223 +1,216 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-08 21:29:53",
-  "total_tasks_ps5": 14008,
-  "eit_total": 10300,
+  "updated": "2026-10-09 12:14:21",
+  "total_tasks_ps5": 8000,
+  "eit_total": 5215,
   "eit_by_discipline": {
-    "I": 4595,
-    "E": 4627,
-    "T": 1078
+    "I": 3167,
+    "E": 1910,
+    "T": 138
   },
-  "closed": 6340,
-  "open": 3960,
-  "today_closed": 73,
+  "closed": 4719,
+  "open": 496,
+  "today_closed": 8,
   "closed_by_discipline": {
-    "I": 3180,
-    "E": 2865,
-    "T": 295
+    "I": 2795,
+    "E": 1787,
+    "T": 137
   },
   "open_by_discipline": {
-    "I": 1415,
-    "E": 1762,
-    "T": 783
+    "I": 372,
+    "E": 123,
+    "T": 1
   },
   "daily": [
     {
-      "label": "2026-09-09",
-      "E": 4,
-      "I": 63,
-      "T": 0,
-      "Total": 67
-    },
-    {
       "label": "2026-09-10",
-      "E": 17,
+      "E": 15,
       "I": 107,
       "T": 0,
-      "Total": 124
+      "Total": 122
     },
     {
       "label": "2026-09-11",
-      "E": 32,
-      "I": 32,
-      "T": 0,
-      "Total": 64
-    },
-    {
-      "label": "2026-09-12",
       "E": 28,
       "I": 30,
       "T": 0,
       "Total": 58
     },
     {
-      "label": "2026-09-13",
-      "E": 42,
-      "I": 80,
+      "label": "2026-09-12",
+      "E": 20,
+      "I": 28,
       "T": 0,
-      "Total": 122
+      "Total": 48
+    },
+    {
+      "label": "2026-09-13",
+      "E": 23,
+      "I": 78,
+      "T": 0,
+      "Total": 101
     },
     {
       "label": "2026-09-14",
-      "E": 62,
+      "E": 41,
       "I": 16,
       "T": 0,
-      "Total": 78
+      "Total": 57
     },
     {
       "label": "2026-09-15",
-      "E": 31,
-      "I": 92,
+      "E": 11,
+      "I": 77,
       "T": 0,
-      "Total": 123
+      "Total": 88
     },
     {
       "label": "2026-09-16",
-      "E": 21,
-      "I": 74,
+      "E": 7,
+      "I": 68,
       "T": 0,
-      "Total": 95
+      "Total": 75
     },
     {
       "label": "2026-09-17",
-      "E": 41,
-      "I": 65,
-      "T": 0,
-      "Total": 106
-    },
-    {
-      "label": "2026-09-18",
-      "E": 49,
-      "I": 75,
-      "T": 0,
-      "Total": 124
-    },
-    {
-      "label": "2026-09-19",
-      "E": 1,
-      "I": 58,
+      "E": 7,
+      "I": 52,
       "T": 0,
       "Total": 59
     },
     {
-      "label": "2026-09-20",
-      "E": 17,
-      "I": 24,
+      "label": "2026-09-18",
+      "E": 36,
+      "I": 70,
       "T": 0,
-      "Total": 41
+      "Total": 106
+    },
+    {
+      "label": "2026-09-19",
+      "E": 0,
+      "I": 58,
+      "T": 0,
+      "Total": 58
+    },
+    {
+      "label": "2026-09-20",
+      "E": 16,
+      "I": 23,
+      "T": 0,
+      "Total": 39
     },
     {
       "label": "2026-09-21",
-      "E": 21,
-      "I": 64,
+      "E": 11,
+      "I": 60,
       "T": 0,
-      "Total": 85
+      "Total": 71
     },
     {
       "label": "2026-09-22",
-      "E": 37,
-      "I": 68,
+      "E": 19,
+      "I": 67,
       "T": 0,
-      "Total": 105
+      "Total": 86
     },
     {
       "label": "2026-09-23",
-      "E": 25,
-      "I": 70,
+      "E": 14,
+      "I": 52,
       "T": 6,
-      "Total": 101
-    },
-    {
-      "label": "2026-09-24",
-      "E": 38,
-      "I": 10,
-      "T": 33,
-      "Total": 81
-    },
-    {
-      "label": "2026-09-25",
-      "E": 26,
-      "I": 67,
-      "T": 33,
-      "Total": 126
-    },
-    {
-      "label": "2026-09-26",
-      "E": 10,
-      "I": 24,
-      "T": 30,
-      "Total": 64
-    },
-    {
-      "label": "2026-09-27",
-      "E": 42,
-      "I": 39,
-      "T": 12,
-      "Total": 93
-    },
-    {
-      "label": "2026-09-28",
-      "E": 61,
-      "I": 58,
-      "T": 0,
-      "Total": 119
-    },
-    {
-      "label": "2026-09-29",
-      "E": 46,
-      "I": 26,
-      "T": 0,
       "Total": 72
     },
     {
+      "label": "2026-09-24",
+      "E": 11,
+      "I": 2,
+      "T": 0,
+      "Total": 13
+    },
+    {
+      "label": "2026-09-25",
+      "E": 7,
+      "I": 58,
+      "T": 0,
+      "Total": 65
+    },
+    {
+      "label": "2026-09-26",
+      "E": 0,
+      "I": 22,
+      "T": 0,
+      "Total": 22
+    },
+    {
+      "label": "2026-09-27",
+      "E": 14,
+      "I": 36,
+      "T": 0,
+      "Total": 50
+    },
+    {
+      "label": "2026-09-28",
+      "E": 0,
+      "I": 50,
+      "T": 0,
+      "Total": 50
+    },
+    {
+      "label": "2026-09-29",
+      "E": 27,
+      "I": 22,
+      "T": 0,
+      "Total": 49
+    },
+    {
       "label": "2026-09-30",
-      "E": 46,
-      "I": 21,
-      "T": 39,
-      "Total": 106
+      "E": 8,
+      "I": 19,
+      "T": 28,
+      "Total": 55
     },
     {
       "label": "2026-10-01",
-      "E": 40,
-      "I": 58,
+      "E": 0,
+      "I": 47,
       "T": 5,
-      "Total": 103
+      "Total": 52
     },
     {
       "label": "2026-10-02",
-      "E": 10,
-      "I": 69,
+      "E": 4,
+      "I": 46,
       "T": 27,
-      "Total": 106
+      "Total": 77
     },
     {
       "label": "2026-10-03",
-      "E": 26,
-      "I": 52,
+      "E": 4,
+      "I": 51,
       "T": 0,
-      "Total": 78
+      "Total": 55
     },
     {
       "label": "2026-10-04",
       "E": 0,
-      "I": 7,
+      "I": 5,
       "T": 0,
-      "Total": 7
+      "Total": 5
     },
     {
       "label": "2026-10-05",
-      "E": 30,
-      "I": 36,
+      "E": 5,
+      "I": 34,
       "T": 8,
-      "Total": 74
+      "Total": 47
     },
     {
       "label": "2026-10-06",
-      "E": 27,
-      "I": 24,
+      "E": 9,
+      "I": 23,
       "T": 0,
-      "Total": 51
+      "Total": 32
     },
     {
       "label": "2026-10-07",
@@ -228,196 +221,356 @@
     },
     {
       "label": "2026-10-08",
-      "E": 33,
-      "I": 40,
+      "E": 6,
+      "I": 37,
       "T": 0,
-      "Total": 73
+      "Total": 43
+    },
+    {
+      "label": "2026-10-09",
+      "E": 4,
+      "I": 4,
+      "T": 0,
+      "Total": 8
     }
   ],
-  "closed_this_week": 213,
-  "closed_this_month": 507,
+  "closed_this_week": 145,
+  "closed_this_month": 334,
   "today_milestone": [
-    {
-      "milestone": "Milestone E",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 4
-    },
     {
       "milestone": "Milestone G",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 12
+      "count": 3
     },
     {
-      "milestone": "Milestone H",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 17
-    },
-    {
-      "milestone": "Milestone H",
+      "milestone": "Milestone G",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 40
+      "count": 3
+    },
+    {
+      "milestone": "Milestone I",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 1
+    },
+    {
+      "milestone": "Milestone I",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
     }
   ],
-  "today_milestone_total": 73,
+  "today_milestone_total": 8,
   "milestone_summary": [
     {
       "label": "Milestone A",
       "raw": "PS5 - Milestone A",
-      "total": 273,
-      "closed": 227,
-      "remaining": 46,
-      "pct": 83.2,
+      "total": 78,
+      "closed": 78,
+      "remaining": 0,
+      "pct": 100.0,
       "status": {
-        "Closed": 227,
-        "Submitted": 3,
-        "To be completed": 42,
-        "Other": 1
+        "Closed": 78,
+        "Submitted": 0,
+        "To be completed": 0,
+        "Other": 0
       }
     },
     {
       "label": "Milestone B",
       "raw": "PS5 - Milestone B",
-      "total": 1714,
-      "closed": 1616,
-      "remaining": 98,
-      "pct": 94.3,
+      "total": 1285,
+      "closed": 1262,
+      "remaining": 23,
+      "pct": 98.2,
       "status": {
-        "Closed": 1616,
+        "Closed": 1262,
         "Submitted": 0,
-        "To be completed": 96,
-        "Other": 2
+        "To be completed": 23,
+        "Other": 0
       }
     },
     {
       "label": "Milestone C",
       "raw": "PS5 - Milestone C",
-      "total": 963,
-      "closed": 600,
-      "remaining": 363,
-      "pct": 62.3,
+      "total": 525,
+      "closed": 509,
+      "remaining": 16,
+      "pct": 97.0,
       "status": {
-        "Closed": 600,
+        "Closed": 509,
         "Submitted": 0,
-        "To be completed": 362,
-        "Other": 1
+        "To be completed": 16,
+        "Other": 0
       }
     },
     {
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
-      "total": 3437,
-      "closed": 2332,
-      "remaining": 1105,
-      "pct": 67.8,
+      "total": 1896,
+      "closed": 1828,
+      "remaining": 68,
+      "pct": 96.4,
       "status": {
-        "Closed": 2332,
+        "Closed": 1828,
         "Submitted": 2,
-        "To be completed": 1097,
-        "Other": 6
+        "To be completed": 66,
+        "Other": 0
       }
     },
     {
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
-      "total": 1532,
-      "closed": 1346,
-      "remaining": 186,
-      "pct": 87.9,
+      "total": 1208,
+      "closed": 1080,
+      "remaining": 128,
+      "pct": 89.4,
       "status": {
-        "Closed": 1346,
+        "Closed": 1080,
         "Submitted": 0,
-        "To be completed": 181,
-        "Other": 5
+        "To be completed": 126,
+        "Other": 2
       }
     },
     {
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
-      "total": 1149,
-      "closed": 620,
-      "remaining": 529,
-      "pct": 54.0,
+      "total": 429,
+      "closed": 380,
+      "remaining": 49,
+      "pct": 88.6,
       "status": {
-        "Closed": 620,
+        "Closed": 380,
         "Submitted": 0,
-        "To be completed": 527,
-        "Other": 2
+        "To be completed": 49,
+        "Other": 0
       }
     },
     {
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
-      "total": 904,
-      "closed": 726,
-      "remaining": 178,
-      "pct": 80.3,
+      "total": 573,
+      "closed": 552,
+      "remaining": 21,
+      "pct": 96.3,
       "status": {
-        "Closed": 726,
+        "Closed": 552,
         "Submitted": 0,
-        "To be completed": 169,
-        "Other": 9
+        "To be completed": 19,
+        "Other": 2
       }
     },
     {
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
-      "total": 3251,
-      "closed": 2022,
-      "remaining": 1229,
-      "pct": 62.2,
+      "total": 1857,
+      "closed": 1559,
+      "remaining": 298,
+      "pct": 84.0,
       "status": {
-        "Closed": 2022,
-        "Submitted": 1,
-        "To be completed": 1131,
-        "Other": 97
+        "Closed": 1559,
+        "Submitted": 0,
+        "To be completed": 297,
+        "Other": 1
       }
     },
     {
       "label": "Milestone I",
       "raw": "PS5 - Milestone I",
-      "total": 785,
-      "closed": 134,
-      "remaining": 651,
-      "pct": 17.1,
+      "total": 149,
+      "closed": 70,
+      "remaining": 79,
+      "pct": 47.0,
       "status": {
-        "Closed": 134,
-        "Submitted": 2,
-        "To be completed": 643,
-        "Other": 6
+        "Closed": 70,
+        "Submitted": 0,
+        "To be completed": 76,
+        "Other": 3
       }
     }
   ],
   "recent_closed": [
     {
-      "tag": "PS5-61-IV-0006C-CL01",
-      "task": "T-00608-0448",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "tag": "PS5-75-UI-6200",
+      "task": "T-00090-0292",
+      "system": "PS5-75-01 - DRA Injection Package",
       "loop": "",
-      "disc": "E - Electrical",
+      "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 6:16:27 P"
+      "approved": "10/9/2026 6:30:58 A"
     },
     {
-      "tag": "PS5-61-IG-0012C-CL01",
-      "task": "T-00608-0425",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "tag": "PS5-75-UI-6200",
+      "task": "T-00046-0404",
+      "system": "PS5-75-01 - DRA Injection Package",
       "loop": "",
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 6:15:09 P"
+      "approved": "10/9/2026 6:23:23 A"
     },
     {
-      "tag": "PS5-60-ISO-62800G-CL01",
-      "task": "T-00023-10904",
-      "system": "PS5-60-21 - Power Gen Package G Generator Auxiliary MCCs & DBs",
+      "tag": "PS5-75-UI-6100",
+      "task": "T-00090-0291",
+      "system": "PS5-75-02 - Biocide Injection Package",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/9/2026 6:14:52 A"
+    },
+    {
+      "tag": "PS5-75-UI-6100",
+      "task": "T-00046-0403",
+      "system": "PS5-75-02 - Biocide Injection Package",
       "loop": "",
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 6:11:08 P"
+      "approved": "10/9/2026 6:14:06 A"
+    },
+    {
+      "tag": "PS5-75-UI-6300",
+      "task": "T-00090-0293",
+      "system": "PS5-75-03 - Corrosion Inhibitor Injection Package",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/9/2026 6:12:44 A"
+    },
+    {
+      "tag": "PS5-75-UI-6300",
+      "task": "T-00046-0405",
+      "system": "PS5-75-03 - Corrosion Inhibitor Injection Package",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/9/2026 6:11:56 A"
+    },
+    {
+      "tag": "PS5-82-UZ-8100",
+      "task": "T-00090-0295",
+      "system": "PS5-82-02 - Sewage Treatment Plant Package",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/9/2026 6:10:37 A"
+    },
+    {
+      "tag": "PS5-82-UZ-8100",
+      "task": "T-00046-0407",
+      "system": "PS5-82-02 - Sewage Treatment Plant Package",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/9/2026 6:09:31 A"
+    },
+    {
+      "tag": "PS5-71-TIT-2402BA-CJ01",
+      "task": "T-00069-5581",
+      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 7:38:08 P"
+    },
+    {
+      "tag": "PS5-71-TIT-0004-CJ01",
+      "task": "T-00069-5575",
+      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 7:36:49 P"
+    },
+    {
+      "tag": "PS5-71-XV-0090-CC02",
+      "task": "T-00254-5603",
+      "system": "PS5-71-12 - CFO Service Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 7:34:44 P"
+    },
+    {
+      "tag": "PS5-71-XV-0090-CC01",
+      "task": "T-00254-5602",
+      "system": "PS5-71-12 - CFO Service Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 7:33:17 P"
+    },
+    {
+      "tag": "PS5-71-TIT-4203-CJ01",
+      "task": "T-00254-5599",
+      "system": "PS5-71-12 - CFO Service Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 7:31:51 P"
+    },
+    {
+      "tag": "PS5-71-TIT-4202-CJ01",
+      "task": "T-00254-5598",
+      "system": "PS5-71-12 - CFO Service Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 7:30:29 P"
+    },
+    {
+      "tag": "PS5-71-TIT-2204-CJ01",
+      "task": "T-00254-5590",
+      "system": "PS5-71-12 - CFO Service Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 7:28:59 P"
+    },
+    {
+      "tag": "PS5-71-SDV-0039-CC01",
+      "task": "T-00254-5576",
+      "system": "PS5-71-12 - CFO Service Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 7:27:23 P"
+    },
+    {
+      "tag": "PS5-71-PIT-0090-CJ01",
+      "task": "T-00254-5556",
+      "system": "PS5-71-12 - CFO Service Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 7:25:53 P"
+    },
+    {
+      "tag": "PS5-71-LIT-4202-CJ01",
+      "task": "T-00254-5523",
+      "system": "PS5-71-12 - CFO Service Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 7:23:49 P"
+    },
+    {
+      "tag": "PS5-71-LIT-4201-CJ01",
+      "task": "T-00254-5522",
+      "system": "PS5-71-12 - CFO Service Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 7:21:48 P"
+    },
+    {
+      "tag": "PS5-71-LI-4201B-CJ01",
+      "task": "T-00254-5517",
+      "system": "PS5-71-12 - CFO Service Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/8/2026 7:19:52 P"
     },
     {
       "tag": "PS5-60-VS-9100G-CL01",
@@ -427,51 +580,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/8/2026 6:09:34 P"
-    },
-    {
-      "tag": "PS5-61-IJ-0001-CD25",
-      "task": "T-00610-0264",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 6:07:51 P"
-    },
-    {
-      "tag": "PS5-61-IDH-3100B-CD01",
-      "task": "T-00610-0247",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 6:06:24 P"
-    },
-    {
-      "tag": "PS5-61-IV-0006B-CL01",
-      "task": "T-00608-0447",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 6:04:09 P"
-    },
-    {
-      "tag": "PS5-61-IDH-3100B-CL01",
-      "task": "T-00608-0419",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 6:02:37 P"
-    },
-    {
-      "tag": "PS5-25-FIT-0003B-CL01",
-      "task": "T-00608-0385",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 6:00:52 P"
     },
     {
       "tag": "PS5-61-IU-3100B-CL01",
@@ -582,204 +690,6 @@
       "approved": "10/8/2026 4:59:39 P"
     },
     {
-      "tag": "PS5-83-EHO-0001C-CJ01",
-      "task": "T-00614-1154",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 4:52:32 P"
-    },
-    {
-      "tag": "PS5-83-EHO-0001C-CC01",
-      "task": "T-00614-1153",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 4:51:07 P"
-    },
-    {
-      "tag": "PS5-61-IDH-3100C-CC03",
-      "task": "T-00614-1074",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 4:49:09 P"
-    },
-    {
-      "tag": "PS5-61-IDH-3100C-CC02",
-      "task": "T-00614-1073",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 4:41:07 P"
-    },
-    {
-      "tag": "PS5-61-IDH-3100C-CC01",
-      "task": "T-00614-1072",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 4:38:33 P"
-    },
-    {
-      "tag": "PS5-25-MXS-3101CB-CJ01",
-      "task": "T-00614-1004",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 4:36:38 P"
-    },
-    {
-      "tag": "PS5-25-MXS-3101CA-CJ01",
-      "task": "T-00614-1003",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 4:35:21 P"
-    },
-    {
-      "tag": "PS5-83-EHO-0001B-CJ01",
-      "task": "T-00614-1152",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 4:32:44 P"
-    },
-    {
-      "tag": "PS5-83-EHO-0001B-CC01",
-      "task": "T-00614-1151",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 4:30:55 P"
-    },
-    {
-      "tag": "PS5-71-BI-0021-CC02",
-      "task": "T-00614-1077",
-      "system": "PS5-71-02 - CFO Allocation Metering Package",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 4:29:28 P"
-    },
-    {
-      "tag": "PS5-25-BI-1803B-CC01",
-      "task": "T-00614-0976",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 4:23:36 P"
-    },
-    {
-      "tag": "PS5-53-DM-3100B",
-      "task": "T-00236-0168",
-      "system": "PS5-53-02 - Water Distribution Pump A/B",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 1:00:44 P"
-    },
-    {
-      "tag": "PS5-53-DM-3100A",
-      "task": "T-00236-0167",
-      "system": "PS5-53-02 - Water Distribution Pump A/B",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 12:58:52 "
-    },
-    {
-      "tag": "PS5-28-DM-3900B",
-      "task": "T-00236-0166",
-      "system": "PS5-28-17 - Reinjection Pump",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 12:56:46 "
-    },
-    {
-      "tag": "PS5-28-DM-3900A",
-      "task": "T-00236-0165",
-      "system": "PS5-28-17 - Reinjection Pump",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 12:55:13 "
-    },
-    {
-      "tag": "PS5-28-DM-3800C",
-      "task": "T-00236-0164",
-      "system": "PS5-28-15 - Seal Oil Drain Drum & Pump C",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 12:52:54 "
-    },
-    {
-      "tag": "PS5-28-DM-3800B",
-      "task": "T-00236-0163",
-      "system": "PS5-28-14 - Seal Oil Drain Drum & Pump B",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 12:51:15 "
-    },
-    {
-      "tag": "PS5-28-DM-3800A",
-      "task": "T-00236-0162",
-      "system": "PS5-28-13 - Seal Oil Drain Drum & Pump A",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 12:49:35 "
-    },
-    {
-      "tag": "PS5-28-DM-3600B",
-      "task": "T-00236-0159",
-      "system": "PS5-28-08 - Open Drain Sump and Pumps",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 12:47:51 "
-    },
-    {
-      "tag": "PS5-28-DM-3600A",
-      "task": "T-00236-0158",
-      "system": "PS5-28-08 - Open Drain Sump and Pumps",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 12:46:08 "
-    },
-    {
-      "tag": "PS5-28-DM-3500",
-      "task": "T-00236-0157",
-      "system": "PS5-28-08 - Open Drain Sump and Pumps",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 12:44:23 "
-    },
-    {
-      "tag": "PS5-25-FCV-0004",
-      "task": "T-00066-0060",
-      "system": "PS5-25-06 - Crude Oil Export Pumps Discharge",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 9:39:15 A"
-    },
-    {
       "tag": "PS5-25-FCV-0004",
       "task": "T-00079-0063",
       "system": "PS5-25-06 - Crude Oil Export Pumps Discharge",
@@ -787,15 +697,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/8/2026 9:37:42 A"
-    },
-    {
-      "tag": "PS5-25-FCV-0003C",
-      "task": "T-00066-0070",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 9:36:10 A"
     },
     {
       "tag": "PS5-25-FCV-0003C",
@@ -808,30 +709,12 @@
     },
     {
       "tag": "PS5-25-FCV-0003B",
-      "task": "T-00066-0064",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 9:32:51 A"
-    },
-    {
-      "tag": "PS5-25-FCV-0003B",
       "task": "T-00079-0067",
       "system": "PS5-25-03 - Crude Oil Export Pump B",
       "loop": "",
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/8/2026 9:30:25 A"
-    },
-    {
-      "tag": "PS5-25-FCV-0003A",
-      "task": "T-00066-0069",
-      "system": "PS5-25-02 - Crude Oil Export Pump A",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 9:28:36 A"
     },
     {
       "tag": "PS5-25-FCV-0003A",
@@ -886,78 +769,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/8/2026 9:19:28 A"
-    },
-    {
-      "tag": "PS5-28-IES-3600B-CD01",
-      "task": "T-00610-0210",
-      "system": "PS5-28-08 - Open Drain Sump and Pumps",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 6:48:02 A"
-    },
-    {
-      "tag": "PS5-28-IES-3600A-CD01",
-      "task": "T-00610-0209",
-      "system": "PS5-28-08 - Open Drain Sump and Pumps",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 6:45:10 A"
-    },
-    {
-      "tag": "PS5-28-IES-3500-CD01",
-      "task": "T-00610-0208",
-      "system": "PS5-28-08 - Open Drain Sump and Pumps",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 6:39:29 A"
-    },
-    {
-      "tag": "PS5-28-DM-3600B-CL02",
-      "task": "T-00608-0400",
-      "system": "PS5-28-08 - Open Drain Sump and Pumps",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 6:38:07 A"
-    },
-    {
-      "tag": "PS5-28-DM-3600B-CL01",
-      "task": "T-00608-0399",
-      "system": "PS5-28-08 - Open Drain Sump and Pumps",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 6:36:11 A"
-    },
-    {
-      "tag": "PS5-28-DM-3600A-CL02",
-      "task": "T-00608-0398",
-      "system": "PS5-28-08 - Open Drain Sump and Pumps",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 6:34:05 A"
-    },
-    {
-      "tag": "PS5-28-DM-3600A-CL01",
-      "task": "T-00608-0397",
-      "system": "PS5-28-08 - Open Drain Sump and Pumps",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 6:32:27 A"
-    },
-    {
-      "tag": "PS5-28-DM-3500-CL01",
-      "task": "T-00608-0396",
-      "system": "PS5-28-08 - Open Drain Sump and Pumps",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 6:30:33 A"
     },
     {
       "tag": "PS5-25-TIT-1101",
@@ -1039,15 +850,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/8/2026 5:49:08 A"
-    },
-    {
-      "tag": "PS5-28-DM-3300",
-      "task": "T-00026-0155",
-      "system": "PS5-28-06 - Relief Drum and Pump",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 5:47:44 A"
     },
     {
       "tag": "PS5-71-LIT-4101-CJ01",
@@ -1201,24 +1003,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/6/2026 6:59:51 P"
-    },
-    {
-      "tag": "PS5-01-UZ-610",
-      "task": "T-00046-0549",
-      "system": "PS5-01-11 - Inergen for Power Gen Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/6/2026 6:58:06 P"
-    },
-    {
-      "tag": "PS5-01-UZ-610",
-      "task": "T-00090-0433",
-      "system": "PS5-01-11 - Inergen for Power Gen Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/6/2026 6:56:52 P"
     },
     {
       "tag": "PS5-25-PIT-0018-CJ01",
@@ -1383,33 +1167,6 @@
       "approved": "10/6/2026 5:05:57 P"
     },
     {
-      "tag": "PS5-25-FIT-0003A-CL01",
-      "task": "T-00608-0384",
-      "system": "PS5-25-02 - Crude Oil Export Pump A",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/6/2026 5:04:46 P"
-    },
-    {
-      "tag": "PS5-25-FIT-0001-CL01",
-      "task": "T-00608-0383",
-      "system": "PS5-25-01 - Export Pipeline Pig Receiver",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/6/2026 5:01:38 P"
-    },
-    {
-      "tag": "PS5-05-IG-0004-CL01",
-      "task": "T-00608-0369",
-      "system": "PS5-62-03 - Outdoor Emergency Lighting DB  - PS5-05-IG-0004",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/6/2026 4:59:51 P"
-    },
-    {
       "tag": "PS5-61-IG-0016-CL01",
       "task": "T-00023-5336",
       "system": "PS5-62-11 - CRO Generator Electrical Building Normal L&SP DB  - PS5-61-IG-0016",
@@ -1446,31 +1203,274 @@
       "approved": "10/6/2026 4:49:15 P"
     },
     {
-      "tag": "PS5-62-IE-0001-CL59",
-      "task": "T-00023-10073",
-      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "tag": "PS5-71-FIT-0011B",
+      "task": "T-00067-2058",
+      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
       "loop": "",
-      "disc": "E - Electrical",
+      "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
-      "approved": "10/6/2026 4:47:35 P"
+      "approved": "10/6/2026 4:25:34 P"
     },
     {
-      "tag": "PS5-62-IE-0001-CL58",
-      "task": "T-00023-10072",
-      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "tag": "PS5-71-FIT-0011A",
+      "task": "T-00067-2070",
+      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
       "loop": "",
-      "disc": "E - Electrical",
+      "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
-      "approved": "10/6/2026 4:46:47 P"
+      "approved": "10/6/2026 4:25:05 P"
     },
     {
-      "tag": "PS5-62-IE-0001-CL57",
-      "task": "T-00023-10071",
-      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "tag": "PS5-50-FIT-0001",
+      "task": "T-00067-2059",
+      "system": "PS5-50-03 - Water Pre-Treatment Package",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:23:11 P"
+    },
+    {
+      "tag": "PS5-25-FIT-0004",
+      "task": "T-00067-2065",
+      "system": "PS5-25-06 - Crude Oil Export Pumps Discharge",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:21:15 P"
+    },
+    {
+      "tag": "PS5-25-FIT-0003C",
+      "task": "T-00067-2066",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:20:18 P"
+    },
+    {
+      "tag": "PS5-25-FIT-0003A",
+      "task": "T-00067-2061",
+      "system": "PS5-25-02 - Crude Oil Export Pump A",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:20:09 P"
+    },
+    {
+      "tag": "PS5-25-FIT-0003B",
+      "task": "T-00067-2056",
+      "system": "PS5-25-03 - Crude Oil Export Pump B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:19:07 P"
+    },
+    {
+      "tag": "PS5-25-FIT-0001",
+      "task": "T-00067-2067",
+      "system": "PS5-25-01 - Export Pipeline Pig Receiver",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/6/2026 4:13:15 P"
+    },
+    {
+      "tag": "PS5-71-UN-7200",
+      "task": "T-00090-0287",
+      "system": "PS5-71-02 - CFO Allocation Metering Package",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 9:13:59 P"
+    },
+    {
+      "tag": "PS5-71-UN-7200",
+      "task": "T-00046-0399",
+      "system": "PS5-71-02 - CFO Allocation Metering Package",
       "loop": "",
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
-      "approved": "10/6/2026 4:45:56 P"
+      "approved": "10/5/2026 9:13:02 P"
+    },
+    {
+      "tag": "PS5-28-FO-0006",
+      "task": "T-00070-0065",
+      "system": "PS5-28-08 - Open Drain Sump and Pumps",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 7:49:45 P"
+    },
+    {
+      "tag": "PS5-28-FO-0002B",
+      "task": "T-00070-0063",
+      "system": "PS5-28-08 - Open Drain Sump and Pumps",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 7:48:58 P"
+    },
+    {
+      "tag": "PS5-28-FO-0002A",
+      "task": "T-00070-0062",
+      "system": "PS5-28-08 - Open Drain Sump and Pumps",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 7:48:00 P"
+    },
+    {
+      "tag": "PS5-25-FO-0008",
+      "task": "T-00070-0059",
+      "system": "PS5-25-05 - Crude Oil Export Pumps Bypass",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 7:40:34 P"
+    },
+    {
+      "tag": "PS5-25-TW-0002C",
+      "task": "T-00072-0203",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 7:38:02 P"
+    },
+    {
+      "tag": "PS5-25-TW-0004",
+      "task": "T-00072-0202",
+      "system": "PS5-25-06 - Crude Oil Export Pumps Discharge",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 7:37:06 P"
+    },
+    {
+      "tag": "PS5-25-TW-0001",
+      "task": "T-00072-0201",
+      "system": "PS5-25-01 - Export Pipeline Pig Receiver",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 7:36:10 P"
+    },
+    {
+      "tag": "PS5-25-TW-0002B",
+      "task": "T-00072-0200",
+      "system": "PS5-25-03 - Crude Oil Export Pump B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 7:35:14 P"
+    },
+    {
+      "tag": "PS5-25-TW-0003A",
+      "task": "T-00072-0195",
+      "system": "PS5-25-02 - Crude Oil Export Pump A",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 7:34:20 P"
+    },
+    {
+      "tag": "PS5-25-TW-0003C",
+      "task": "T-00072-0192",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 7:33:26 P"
+    },
+    {
+      "tag": "PS5-25-TW-0002A",
+      "task": "T-00072-0191",
+      "system": "PS5-25-02 - Crude Oil Export Pump A",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 7:32:39 P"
+    },
+    {
+      "tag": "PS5-25-TW-0003B",
+      "task": "T-00072-0187",
+      "system": "PS5-25-03 - Crude Oil Export Pump B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 7:31:49 P"
+    },
+    {
+      "tag": "PS5-09-LB-0008-CL01",
+      "task": "T-00023-4878",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:08:15 P"
+    },
+    {
+      "tag": "PS5-08-11CB-1901-CL03",
+      "task": "T-00023-4811",
+      "system": "PS5-08-11 - Corporate LAN  (SIE)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:07:21 P"
+    },
+    {
+      "tag": "PS5-08-11CB-1901-CL02",
+      "task": "T-00023-4810",
+      "system": "PS5-08-11 - Corporate LAN  (SIE)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:06:16 P"
+    },
+    {
+      "tag": "PS5-08-11CB-1901-CL01",
+      "task": "T-00023-4809",
+      "system": "PS5-08-11 - Corporate LAN  (SIE)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:05:20 P"
+    },
+    {
+      "tag": "PS5-71-IN-0002-CA01",
+      "task": "T-00171-4407",
+      "system": "PS5-71-09 - CFO Pre-Pressure Modules (UCP)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:01:54 P"
+    },
+    {
+      "tag": "PS5-60-SEA-0001-CA01",
+      "task": "T-00171-4404",
+      "system": "PS5-03-14 - FZ-14 - Power Generation Building - Switchgear Room",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:00:54 P"
+    },
+    {
+      "tag": "PS5-60-IE-0004-CA21",
+      "task": "T-00171-4370",
+      "system": "PS5-60-22 - Power Gen Master UCP",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 4:00:01 P"
+    },
+    {
+      "tag": "PS5-60-IE-0004-CA15",
+      "task": "T-00171-4369",
+      "system": "PS5-60-22 - Power Gen Master UCP",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/5/2026 3:58:59 P"
     }
   ]
 }
