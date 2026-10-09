@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-09 17:09:04",
+  "updated": "2026-10-09 17:16:02",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6374,
-  "open": 3926,
-  "today_closed": 22,
+  "closed": 6378,
+  "open": 3922,
+  "today_closed": 26,
   "closed_by_discipline": {
     "I": 3196,
-    "E": 2883,
+    "E": 2887,
     "T": 295
   },
   "open_by_discipline": {
     "I": 1399,
-    "E": 1744,
+    "E": 1740,
     "T": 783
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-10-09",
-      "E": 18,
+      "E": 22,
       "I": 4,
       "T": 0,
-      "Total": 22
+      "Total": 26
     }
   ],
-  "closed_this_week": 247,
-  "closed_this_month": 541,
+  "closed_this_week": 251,
+  "closed_this_month": 545,
   "today_milestone": [
     {
       "milestone": "Milestone D",
@@ -271,7 +271,7 @@
       "milestone": "Milestone H",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 6
+      "count": 10
     },
     {
       "milestone": "Milestone I",
@@ -286,7 +286,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 22,
+  "today_milestone_total": 26,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -390,14 +390,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2045,
-      "remaining": 1206,
-      "pct": 62.9,
+      "closed": 2049,
+      "remaining": 1202,
+      "pct": 63.0,
       "status": {
-        "Closed": 2045,
+        "Closed": 2049,
         "Submitted": 6,
         "To be completed": 1144,
-        "Other": 56
+        "Other": 52
       }
     },
     {
@@ -416,6 +416,42 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "",
+      "task": "T-00244-1641",
+      "system": "PS5-79-10 - Electrical Heat Tracing Transformer/Distribution Board 10 (PS5-79-IG-0010)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/9/2026 2:14:52 P"
+    },
+    {
+      "tag": "",
+      "task": "T-00244-1663",
+      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/9/2026 2:13:17 P"
+    },
+    {
+      "tag": "",
+      "task": "T-00244-1666",
+      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/9/2026 2:11:30 P"
+    },
+    {
+      "tag": "",
+      "task": "T-00244-1669",
+      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/9/2026 2:09:48 P"
+    },
     {
       "tag": "PS5-75-UI-6200",
       "task": "T-00090-0292",
@@ -1459,42 +1495,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/7/2026 1:03:42 P"
-    },
-    {
-      "tag": "PS5-25-SY-0035BB-CJ01",
-      "task": "T-00069-4771",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/7/2026 1:02:26 P"
-    },
-    {
-      "tag": "PS5-25-FCV-0004-CC01",
-      "task": "T-00069-4654",
-      "system": "PS5-25-06 - Crude Oil Export Pumps Discharge",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/7/2026 1:01:10 P"
-    },
-    {
-      "tag": "PS5-25-FCV-0003B-CC01",
-      "task": "T-00069-4652",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/7/2026 1:00:14 P"
-    },
-    {
-      "tag": "PS5-25-PDIT-0034C-CJ01",
-      "task": "T-00069-4698",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/7/2026 12:58:21 "
     }
   ]
 }
