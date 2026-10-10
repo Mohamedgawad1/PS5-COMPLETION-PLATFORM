@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-09 17:35:33",
+  "updated": "2026-10-10 08:20:08",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -11,7 +11,7 @@
   },
   "closed": 6381,
   "open": 3919,
-  "today_closed": 29,
+  "today_closed": 0,
   "closed_by_discipline": {
     "I": 3196,
     "E": 2890,
@@ -23,13 +23,6 @@
     "T": 783
   },
   "daily": [
-    {
-      "label": "2026-09-10",
-      "E": 17,
-      "I": 107,
-      "T": 0,
-      "Total": 124
-    },
     {
       "label": "2026-09-11",
       "E": 32,
@@ -232,61 +225,19 @@
       "I": 4,
       "T": 0,
       "Total": 29
+    },
+    {
+      "label": "2026-10-10",
+      "E": 0,
+      "I": 0,
+      "T": 0,
+      "Total": 0
     }
   ],
   "closed_this_week": 254,
   "closed_this_month": 548,
-  "today_milestone": [
-    {
-      "milestone": "Milestone D",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 2
-    },
-    {
-      "milestone": "Milestone E",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 1
-    },
-    {
-      "milestone": "Milestone F",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 1
-    },
-    {
-      "milestone": "Milestone G",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 7
-    },
-    {
-      "milestone": "Milestone G",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 3
-    },
-    {
-      "milestone": "Milestone H",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 13
-    },
-    {
-      "milestone": "Milestone I",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 1
-    },
-    {
-      "milestone": "Milestone I",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 1
-    }
-  ],
-  "today_milestone_total": 29,
+  "today_milestone": [],
+  "today_milestone_total": 0,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -396,8 +347,8 @@
       "status": {
         "Closed": 2052,
         "Submitted": 6,
-        "To be completed": 1144,
-        "Other": 49
+        "To be completed": 1143,
+        "Other": 50
       }
     },
     {
