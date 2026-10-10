@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-10 17:28:59",
+  "updated": "2026-10-10 18:30:39",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6415,
-  "open": 3885,
-  "today_closed": 34,
+  "closed": 6419,
+  "open": 3881,
+  "today_closed": 38,
   "closed_by_discipline": {
     "I": 3196,
-    "E": 2924,
+    "E": 2928,
     "T": 295
   },
   "open_by_discipline": {
     "I": 1399,
-    "E": 1703,
+    "E": 1699,
     "T": 783
   },
   "daily": [
@@ -228,20 +228,20 @@
     },
     {
       "label": "2026-10-10",
-      "E": 34,
+      "E": 38,
       "I": 0,
       "T": 0,
-      "Total": 34
+      "Total": 38
     }
   ],
-  "closed_this_week": 288,
-  "closed_this_month": 582,
+  "closed_this_week": 292,
+  "closed_this_month": 586,
   "today_milestone": [
     {
       "milestone": "Milestone C",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 2
+      "count": 6
     },
     {
       "milestone": "Milestone H",
@@ -250,7 +250,7 @@
       "count": 32
     }
   ],
-  "today_milestone_total": 34,
+  "today_milestone_total": 38,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -284,14 +284,14 @@
       "label": "Milestone C",
       "raw": "PS5 - Milestone C",
       "total": 963,
-      "closed": 603,
-      "remaining": 360,
-      "pct": 62.6,
+      "closed": 607,
+      "remaining": 356,
+      "pct": 63.0,
       "status": {
-        "Closed": 603,
-        "Submitted": 0,
-        "To be completed": 358,
-        "Other": 2
+        "Closed": 607,
+        "Submitted": 1,
+        "To be completed": 354,
+        "Other": 1
       }
     },
     {
@@ -360,8 +360,8 @@
       "status": {
         "Closed": 2084,
         "Submitted": 46,
-        "To be completed": 1064,
-        "Other": 57
+        "To be completed": 1063,
+        "Other": 58
       }
     },
     {
@@ -380,6 +380,42 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-61-IE-0003-CD11",
+      "task": "T-00610-0609",
+      "system": "PS5-61-08 - Electrical Control System",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/10/2026 2:34:20 "
+    },
+    {
+      "tag": "PS5-61-IE-0003-CD02",
+      "task": "T-00610-0581",
+      "system": "PS5-61-08 - Electrical Control System",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/10/2026 2:33:08 "
+    },
+    {
+      "tag": "PS5-61-IE-0002-CD44",
+      "task": "T-00610-0580",
+      "system": "PS5-61-08 - Electrical Control System",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/10/2026 2:31:13 "
+    },
+    {
+      "tag": "PS5-61-IE-0002-CD43",
+      "task": "T-00610-0579",
+      "system": "PS5-61-08 - Electrical Control System",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/10/2026 2:29:46 "
+    },
     {
       "tag": "PS5-61-IE-0002-CD42",
       "task": "T-00610-0578",
@@ -1423,42 +1459,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/8/2026 12:46:08 "
-    },
-    {
-      "tag": "PS5-28-DM-3500",
-      "task": "T-00236-0157",
-      "system": "PS5-28-08 - Open Drain Sump and Pumps",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 12:44:23 "
-    },
-    {
-      "tag": "PS5-25-FCV-0004",
-      "task": "T-00066-0060",
-      "system": "PS5-25-06 - Crude Oil Export Pumps Discharge",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 9:39:15 A"
-    },
-    {
-      "tag": "PS5-25-FCV-0004",
-      "task": "T-00079-0063",
-      "system": "PS5-25-06 - Crude Oil Export Pumps Discharge",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 9:37:42 A"
-    },
-    {
-      "tag": "PS5-25-FCV-0003C",
-      "task": "T-00066-0070",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 9:36:10 A"
     }
   ]
 }
