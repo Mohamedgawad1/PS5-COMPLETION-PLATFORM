@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-10 18:30:39",
+  "updated": "2026-10-10 18:38:06",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6419,
-  "open": 3881,
-  "today_closed": 38,
+  "closed": 6421,
+  "open": 3879,
+  "today_closed": 40,
   "closed_by_discipline": {
     "I": 3196,
-    "E": 2928,
+    "E": 2930,
     "T": 295
   },
   "open_by_discipline": {
     "I": 1399,
-    "E": 1699,
+    "E": 1697,
     "T": 783
   },
   "daily": [
@@ -228,29 +228,29 @@
     },
     {
       "label": "2026-10-10",
-      "E": 38,
+      "E": 40,
       "I": 0,
       "T": 0,
-      "Total": 38
+      "Total": 40
     }
   ],
-  "closed_this_week": 292,
-  "closed_this_month": 586,
+  "closed_this_week": 294,
+  "closed_this_month": 588,
   "today_milestone": [
     {
       "milestone": "Milestone C",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 6
+      "count": 7
     },
     {
       "milestone": "Milestone H",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 32
+      "count": 33
     }
   ],
-  "today_milestone_total": 38,
+  "today_milestone_total": 40,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -284,12 +284,12 @@
       "label": "Milestone C",
       "raw": "PS5 - Milestone C",
       "total": 963,
-      "closed": 607,
-      "remaining": 356,
-      "pct": 63.0,
+      "closed": 608,
+      "remaining": 355,
+      "pct": 63.1,
       "status": {
-        "Closed": 607,
-        "Submitted": 1,
+        "Closed": 608,
+        "Submitted": 0,
         "To be completed": 354,
         "Other": 1
       }
@@ -354,14 +354,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2084,
-      "remaining": 1167,
+      "closed": 2085,
+      "remaining": 1166,
       "pct": 64.1,
       "status": {
-        "Closed": 2084,
+        "Closed": 2085,
         "Submitted": 46,
-        "To be completed": 1063,
-        "Other": 58
+        "To be completed": 1061,
+        "Other": 59
       }
     },
     {
@@ -380,6 +380,24 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-25-FIT-0003C-CL01",
+      "task": "T-00608-0386",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/10/2026 3:37:35 "
+    },
+    {
+      "tag": "PS5-61-IE-0003-CD13",
+      "task": "T-00610-0611",
+      "system": "PS5-61-08 - Electrical Control System",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/10/2026 3:34:54 "
+    },
     {
       "tag": "PS5-61-IE-0003-CD11",
       "task": "T-00610-0609",
@@ -1441,24 +1459,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/8/2026 12:49:35 "
-    },
-    {
-      "tag": "PS5-28-DM-3600B",
-      "task": "T-00236-0159",
-      "system": "PS5-28-08 - Open Drain Sump and Pumps",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 12:47:51 "
-    },
-    {
-      "tag": "PS5-28-DM-3600A",
-      "task": "T-00236-0158",
-      "system": "PS5-28-08 - Open Drain Sump and Pumps",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 12:46:08 "
     }
   ]
 }
