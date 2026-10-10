@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-10 17:12:28",
+  "updated": "2026-10-10 17:28:59",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6413,
-  "open": 3887,
-  "today_closed": 32,
+  "closed": 6415,
+  "open": 3885,
+  "today_closed": 34,
   "closed_by_discipline": {
     "I": 3196,
-    "E": 2922,
+    "E": 2924,
     "T": 295
   },
   "open_by_discipline": {
     "I": 1399,
-    "E": 1705,
+    "E": 1703,
     "T": 783
   },
   "daily": [
@@ -228,15 +228,21 @@
     },
     {
       "label": "2026-10-10",
-      "E": 32,
+      "E": 34,
       "I": 0,
       "T": 0,
-      "Total": 32
+      "Total": 34
     }
   ],
-  "closed_this_week": 286,
-  "closed_this_month": 580,
+  "closed_this_week": 288,
+  "closed_this_month": 582,
   "today_milestone": [
+    {
+      "milestone": "Milestone C",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 2
+    },
     {
       "milestone": "Milestone H",
       "disc": "E",
@@ -244,7 +250,7 @@
       "count": 32
     }
   ],
-  "today_milestone_total": 32,
+  "today_milestone_total": 34,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -278,14 +284,14 @@
       "label": "Milestone C",
       "raw": "PS5 - Milestone C",
       "total": 963,
-      "closed": 601,
-      "remaining": 362,
-      "pct": 62.4,
+      "closed": 603,
+      "remaining": 360,
+      "pct": 62.6,
       "status": {
-        "Closed": 601,
+        "Closed": 603,
         "Submitted": 0,
-        "To be completed": 361,
-        "Other": 1
+        "To be completed": 358,
+        "Other": 2
       }
     },
     {
@@ -374,6 +380,24 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-61-IE-0002-CD42",
+      "task": "T-00610-0578",
+      "system": "PS5-61-08 - Electrical Control System",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/10/2026 2:28:08 "
+    },
+    {
+      "tag": "PS5-61-IE-0002-CD41",
+      "task": "T-00610-0577",
+      "system": "PS5-61-08 - Electrical Control System",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/10/2026 2:26:36 "
+    },
     {
       "tag": "",
       "task": "T-00244-1433",
@@ -1435,24 +1459,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/8/2026 9:36:10 A"
-    },
-    {
-      "tag": "PS5-25-FCV-0003C",
-      "task": "T-00079-0073",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 9:34:26 A"
-    },
-    {
-      "tag": "PS5-25-FCV-0003B",
-      "task": "T-00066-0064",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 9:32:51 A"
     }
   ]
 }
