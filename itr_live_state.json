@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-10 18:38:06",
+  "updated": "2026-10-10 18:44:17",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6421,
-  "open": 3879,
-  "today_closed": 40,
+  "closed": 6423,
+  "open": 3877,
+  "today_closed": 42,
   "closed_by_discipline": {
     "I": 3196,
-    "E": 2930,
+    "E": 2932,
     "T": 295
   },
   "open_by_discipline": {
     "I": 1399,
-    "E": 1697,
+    "E": 1695,
     "T": 783
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-10-10",
-      "E": 40,
+      "E": 42,
       "I": 0,
       "T": 0,
-      "Total": 40
+      "Total": 42
     }
   ],
-  "closed_this_week": 294,
-  "closed_this_month": 588,
+  "closed_this_week": 296,
+  "closed_this_month": 590,
   "today_milestone": [
     {
       "milestone": "Milestone C",
@@ -247,10 +247,10 @@
       "milestone": "Milestone H",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 33
+      "count": 35
     }
   ],
-  "today_milestone_total": 40,
+  "today_milestone_total": 42,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -354,14 +354,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2085,
-      "remaining": 1166,
-      "pct": 64.1,
+      "closed": 2087,
+      "remaining": 1164,
+      "pct": 64.2,
       "status": {
-        "Closed": 2085,
-        "Submitted": 46,
-        "To be completed": 1061,
-        "Other": 59
+        "Closed": 2087,
+        "Submitted": 47,
+        "To be completed": 1060,
+        "Other": 57
       }
     },
     {
@@ -380,6 +380,24 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-71-FIT-0011B-CL01",
+      "task": "T-00608-0459",
+      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/10/2026 3:40:52 "
+    },
+    {
+      "tag": "PS5-71-FIT-0011A-CL01",
+      "task": "T-00608-0458",
+      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/10/2026 3:39:37 "
+    },
     {
       "tag": "PS5-25-FIT-0003C-CL01",
       "task": "T-00608-0386",
@@ -1441,24 +1459,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/8/2026 12:52:54 "
-    },
-    {
-      "tag": "PS5-28-DM-3800B",
-      "task": "T-00236-0163",
-      "system": "PS5-28-14 - Seal Oil Drain Drum & Pump B",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 12:51:15 "
-    },
-    {
-      "tag": "PS5-28-DM-3800A",
-      "task": "T-00236-0162",
-      "system": "PS5-28-13 - Seal Oil Drain Drum & Pump A",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 12:49:35 "
     }
   ]
 }
