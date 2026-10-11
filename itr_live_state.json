@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-11 11:11:49",
+  "updated": "2026-10-11 11:18:01",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6443,
-  "open": 3857,
-  "today_closed": 2,
+  "closed": 6444,
+  "open": 3856,
+  "today_closed": 3,
   "closed_by_discipline": {
     "I": 3206,
-    "E": 2942,
+    "E": 2943,
     "T": 295
   },
   "open_by_discipline": {
     "I": 1389,
-    "E": 1685,
+    "E": 1684,
     "T": 783
   },
   "daily": [
@@ -228,23 +228,23 @@
     },
     {
       "label": "2026-10-11",
-      "E": 2,
+      "E": 3,
       "I": 0,
       "T": 0,
-      "Total": 2
+      "Total": 3
     }
   ],
-  "closed_this_week": 316,
-  "closed_this_month": 610,
+  "closed_this_week": 317,
+  "closed_this_month": 611,
   "today_milestone": [
     {
       "milestone": "Milestone H",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 2
+      "count": 3
     }
   ],
-  "today_milestone_total": 2,
+  "today_milestone_total": 3,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -348,13 +348,13 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2099,
-      "remaining": 1152,
+      "closed": 2100,
+      "remaining": 1151,
       "pct": 64.6,
       "status": {
-        "Closed": 2099,
+        "Closed": 2100,
         "Submitted": 46,
-        "To be completed": 1024,
+        "To be completed": 1023,
         "Other": 82
       }
     },
@@ -374,6 +374,15 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-79-IG-0012",
+      "task": "T-00238-0742",
+      "system": "PS5-79-12 - Electrical Heat Tracing Transformer/Distribution Board 12 (PS5-79-IG-0012)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/11/2026 8:15:41 "
+    },
     {
       "tag": "",
       "task": "T-00244-1420",
@@ -1444,15 +1453,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/8/2026 5:05:08 P"
-    },
-    {
-      "tag": "PS5-71-TIT-2402AA-CJ01",
-      "task": "T-00069-5580",
-      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 5:04:16 P"
     }
   ]
 }
