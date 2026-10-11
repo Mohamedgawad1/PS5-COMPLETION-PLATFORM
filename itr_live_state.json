@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-11 11:35:56",
+  "updated": "2026-10-11 11:43:46",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6446,
-  "open": 3854,
-  "today_closed": 5,
+  "closed": 6448,
+  "open": 3852,
+  "today_closed": 7,
   "closed_by_discipline": {
-    "I": 3206,
-    "E": 2945,
+    "I": 3207,
+    "E": 2946,
     "T": 295
   },
   "open_by_discipline": {
-    "I": 1389,
-    "E": 1682,
+    "I": 1388,
+    "E": 1681,
     "T": 783
   },
   "daily": [
@@ -228,20 +228,20 @@
     },
     {
       "label": "2026-10-11",
-      "E": 5,
-      "I": 0,
+      "E": 6,
+      "I": 1,
       "T": 0,
-      "Total": 5
+      "Total": 7
     }
   ],
-  "closed_this_week": 319,
-  "closed_this_month": 613,
+  "closed_this_week": 321,
+  "closed_this_month": 615,
   "today_milestone": [
     {
       "milestone": "Milestone D",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 1
+      "count": 2
     },
     {
       "milestone": "Milestone E",
@@ -254,9 +254,15 @@
       "disc": "E",
       "discipline": "Electrical (E)",
       "count": 3
+    },
+    {
+      "milestone": "Milestone H",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
     }
   ],
-  "today_milestone_total": 5,
+  "today_milestone_total": 7,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -304,14 +310,14 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3437,
-      "closed": 2339,
-      "remaining": 1098,
+      "closed": 2340,
+      "remaining": 1097,
       "pct": 68.1,
       "status": {
-        "Closed": 2339,
+        "Closed": 2340,
         "Submitted": 13,
         "To be completed": 1082,
-        "Other": 3
+        "Other": 2
       }
     },
     {
@@ -360,14 +366,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2100,
-      "remaining": 1151,
+      "closed": 2101,
+      "remaining": 1150,
       "pct": 64.6,
       "status": {
-        "Closed": 2100,
+        "Closed": 2101,
         "Submitted": 46,
-        "To be completed": 1021,
-        "Other": 84
+        "To be completed": 1018,
+        "Other": 86
       }
     },
     {
@@ -386,6 +392,24 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-60-IN-0004A-CC11",
+      "task": "T-00069-5283",
+      "system": "PS5-71-07 - Crude Fuel Separation Module (UCP)",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/11/2026 8:38:36 "
+    },
+    {
+      "tag": "PS5-60-IN-0002E-CG01",
+      "task": "T-00233-10540",
+      "system": "PS5-60-65 - Fuel Conditioning Module PS5-60-UZ-8900E (UCP)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/11/2026 8:34:59 "
+    },
     {
       "tag": "PS5-60-IN-0002F-CG01",
       "task": "T-00233-10541",
@@ -1447,24 +1471,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/8/2026 5:54:37 P"
-    },
-    {
-      "tag": "PS5-25-DM-3100B-CL02",
-      "task": "T-00023-4887",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 5:53:29 P"
-    },
-    {
-      "tag": "PS5-25-DM-3100B-CL01",
-      "task": "T-00023-4886",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 5:52:19 P"
     }
   ]
 }
