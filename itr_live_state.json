@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-11 11:18:01",
+  "updated": "2026-10-11 11:27:01",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6444,
-  "open": 3856,
-  "today_closed": 3,
+  "closed": 6445,
+  "open": 3855,
+  "today_closed": 4,
   "closed_by_discipline": {
     "I": 3206,
-    "E": 2943,
+    "E": 2944,
     "T": 295
   },
   "open_by_discipline": {
     "I": 1389,
-    "E": 1684,
+    "E": 1683,
     "T": 783
   },
   "daily": [
@@ -228,15 +228,21 @@
     },
     {
       "label": "2026-10-11",
-      "E": 3,
+      "E": 4,
       "I": 0,
       "T": 0,
-      "Total": 3
+      "Total": 4
     }
   ],
-  "closed_this_week": 317,
-  "closed_this_month": 611,
+  "closed_this_week": 318,
+  "closed_this_month": 612,
   "today_milestone": [
+    {
+      "milestone": "Milestone E",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 1
+    },
     {
       "milestone": "Milestone H",
       "disc": "E",
@@ -244,7 +250,7 @@
       "count": 3
     }
   ],
-  "today_milestone_total": 3,
+  "today_milestone_total": 4,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -298,21 +304,21 @@
       "status": {
         "Closed": 2338,
         "Submitted": 13,
-        "To be completed": 1084,
-        "Other": 2
+        "To be completed": 1083,
+        "Other": 3
       }
     },
     {
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1532,
-      "closed": 1347,
-      "remaining": 185,
-      "pct": 87.9,
+      "closed": 1348,
+      "remaining": 184,
+      "pct": 88.0,
       "status": {
-        "Closed": 1347,
+        "Closed": 1348,
         "Submitted": 0,
-        "To be completed": 180,
+        "To be completed": 179,
         "Other": 5
       }
     },
@@ -354,8 +360,8 @@
       "status": {
         "Closed": 2100,
         "Submitted": 46,
-        "To be completed": 1023,
-        "Other": 82
+        "To be completed": 1022,
+        "Other": 83
       }
     },
     {
@@ -374,6 +380,15 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-60-IN-0002G-CG01",
+      "task": "T-00233-10542",
+      "system": "PS5-60-69 - Fuel Conditioning Module PS5-60-UZ-8900G (UCP)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/11/2026 8:20:13 "
+    },
     {
       "tag": "PS5-79-IG-0012",
       "task": "T-00238-0742",
@@ -1444,15 +1459,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/8/2026 5:07:57 P"
-    },
-    {
-      "tag": "PS5-71-XY-0089-CJ01",
-      "task": "T-00069-5600",
-      "system": "PS5-71-04 - CFO Storage Tank",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 5:05:08 P"
     }
   ]
 }
