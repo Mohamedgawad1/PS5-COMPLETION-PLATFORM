@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-12 09:27:53",
+  "updated": "2026-10-12 09:34:14",
   "total_tasks_ps5": 14008,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6469,
-  "open": 3831,
-  "today_closed": 0,
+  "closed": 6472,
+  "open": 3828,
+  "today_closed": 3,
   "closed_by_discipline": {
-    "I": 3212,
+    "I": 3215,
     "E": 2962,
     "T": 295
   },
   "open_by_discipline": {
-    "I": 1383,
+    "I": 1380,
     "E": 1665,
     "T": 783
   },
@@ -229,15 +229,22 @@
     {
       "label": "2026-10-12",
       "E": 0,
-      "I": 0,
+      "I": 3,
       "T": 0,
-      "Total": 0
+      "Total": 3
     }
   ],
-  "closed_this_week": 0,
-  "closed_this_month": 636,
-  "today_milestone": [],
-  "today_milestone_total": 0,
+  "closed_this_week": 3,
+  "closed_this_month": 639,
+  "today_milestone": [
+    {
+      "milestone": "Milestone H",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 3
+    }
+  ],
+  "today_milestone_total": 3,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -341,14 +348,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2116,
-      "remaining": 1135,
-      "pct": 65.1,
+      "closed": 2119,
+      "remaining": 1132,
+      "pct": 65.2,
       "status": {
-        "Closed": 2116,
+        "Closed": 2119,
         "Submitted": 46,
-        "To be completed": 998,
-        "Other": 91
+        "To be completed": 996,
+        "Other": 90
       }
     },
     {
@@ -367,6 +374,33 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-25-PSV-1203",
+      "task": "T-00251-0117",
+      "system": "PS5-25-07 - Export Pipeline Pig Launcher",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/12/2026 6:30:32 "
+    },
+    {
+      "tag": "PS5-28-PSV-0064C",
+      "task": "T-00251-0116",
+      "system": "PS5-28-15 - Seal Oil Drain Drum & Pump C",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/12/2026 6:28:44 "
+    },
+    {
+      "tag": "PS5-25-PSV-1103",
+      "task": "T-00251-0115",
+      "system": "PS5-25-01 - Export Pipeline Pig Receiver",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/12/2026 6:26:02 "
+    },
     {
       "tag": "PS5-61-IE-0002-CD02",
       "task": "T-00606-0066",
@@ -1419,33 +1453,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/9/2026 5:43:40 A"
-    },
-    {
-      "tag": "PS5-71-TIT-2402BA-CJ01",
-      "task": "T-00069-5581",
-      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 7:38:08 P"
-    },
-    {
-      "tag": "PS5-71-TIT-0004-CJ01",
-      "task": "T-00069-5575",
-      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 7:36:49 P"
-    },
-    {
-      "tag": "PS5-71-XV-0090-CC02",
-      "task": "T-00254-5603",
-      "system": "PS5-71-12 - CFO Service Tank",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/8/2026 7:34:44 P"
     }
   ]
 }
