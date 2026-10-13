@@ -220,6 +220,9 @@ if dpr_files:
     for row in ws_dpr.iter_rows(min_row=4, values_only=True):
         vals = list(row[:81])
         sub = str(vals[0] or '').strip()
+        # stop if we hit junk/footer rows that aren't real subsystem ids
+        if sub and not re.match(r'PS5-\d{2}-\d{2}', sub) and 'GRAND' not in sub.upper() and len(vals) > 10 and str(vals[10] or '').strip().upper() in ('RFC STATUS COLUMN K','OLD NOTATIONS'):
+            break
         had_id = bool(re.match(r'PS5-\d{2}-\d{2}', sub))
         status10 = str(vals[10] or '').strip() if len(vals) > 10 else ''
 
