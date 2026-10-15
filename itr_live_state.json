@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-15 16:11:04",
+  "updated": "2026-10-15 16:19:55",
   "total_tasks_ps5": 14009,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6726,
-  "open": 3574,
-  "today_closed": 15,
+  "closed": 6731,
+  "open": 3569,
+  "today_closed": 20,
   "closed_by_discipline": {
-    "I": 3281,
+    "I": 3286,
     "E": 3150,
     "T": 295
   },
   "open_by_discipline": {
-    "I": 1314,
+    "I": 1309,
     "E": 1477,
     "T": 783
   },
@@ -229,14 +229,20 @@
     {
       "label": "2026-10-15",
       "E": 0,
-      "I": 15,
+      "I": 20,
       "T": 0,
-      "Total": 15
+      "Total": 20
     }
   ],
-  "closed_this_week": 255,
-  "closed_this_month": 893,
+  "closed_this_week": 260,
+  "closed_this_month": 898,
   "today_milestone": [
+    {
+      "milestone": "Milestone E",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 5
+    },
     {
       "milestone": "Milestone H",
       "disc": "I",
@@ -250,7 +256,7 @@
       "count": 3
     }
   ],
-  "today_milestone_total": 15,
+  "today_milestone_total": 20,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -312,14 +318,14 @@
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1532,
-      "closed": 1353,
-      "remaining": 179,
-      "pct": 88.3,
+      "closed": 1358,
+      "remaining": 174,
+      "pct": 88.6,
       "status": {
-        "Closed": 1353,
+        "Closed": 1358,
         "Submitted": 0,
-        "To be completed": 174,
-        "Other": 5
+        "To be completed": 167,
+        "Other": 7
       }
     },
     {
@@ -380,6 +386,51 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-01-NMRA-61001-CJ01",
+      "task": "T-00069-4263",
+      "system": "PS5-01-11 - Inergen for Power Gen Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/15/2026 1:17:18 "
+    },
+    {
+      "tag": "PS5-01-NMR-61004-CJ01",
+      "task": "T-00069-4262",
+      "system": "PS5-01-11 - Inergen for Power Gen Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/15/2026 1:15:33 "
+    },
+    {
+      "tag": "PS5-01-NMR-61003-CJ01",
+      "task": "T-00069-4261",
+      "system": "PS5-01-11 - Inergen for Power Gen Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/15/2026 1:14:22 "
+    },
+    {
+      "tag": "PS5-01-NMR-61002-CJ01",
+      "task": "T-00069-4260",
+      "system": "PS5-01-11 - Inergen for Power Gen Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/15/2026 1:13:22 "
+    },
+    {
+      "tag": "PS5-01-NMR-61001-CJ01",
+      "task": "T-00069-4259",
+      "system": "PS5-01-11 - Inergen for Power Gen Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/15/2026 1:11:56 "
+    },
     {
       "tag": "PS5-50-PSV-0004A",
       "task": "T-00065-0121",
@@ -1414,51 +1465,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/13/2026 7:21:55 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1393",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/13/2026 7:21:30 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1392",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/13/2026 7:20:18 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1391",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/13/2026 7:19:57 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1390",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/13/2026 7:19:28 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1389",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/13/2026 7:16:14 "
     }
   ]
 }
