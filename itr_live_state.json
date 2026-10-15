@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-15 14:51:50",
+  "updated": "2026-10-15 15:03:22",
   "total_tasks_ps5": 14009,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6723,
-  "open": 3577,
-  "today_closed": 12,
+  "closed": 6725,
+  "open": 3575,
+  "today_closed": 14,
   "closed_by_discipline": {
-    "I": 3278,
+    "I": 3280,
     "E": 3150,
     "T": 295
   },
   "open_by_discipline": {
-    "I": 1317,
+    "I": 1315,
     "E": 1477,
     "T": 783
   },
@@ -229,22 +229,28 @@
     {
       "label": "2026-10-15",
       "E": 0,
-      "I": 12,
+      "I": 14,
       "T": 0,
-      "Total": 12
+      "Total": 14
     }
   ],
-  "closed_this_week": 252,
-  "closed_this_month": 890,
+  "closed_this_week": 254,
+  "closed_this_month": 892,
   "today_milestone": [
     {
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
       "count": 12
+    },
+    {
+      "milestone": "Milestone I",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 2
     }
   ],
-  "today_milestone_total": 12,
+  "today_milestone_total": 14,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -362,18 +368,36 @@
       "label": "Milestone I",
       "raw": "PS5 - Milestone I",
       "total": 785,
-      "closed": 160,
-      "remaining": 625,
-      "pct": 20.4,
+      "closed": 162,
+      "remaining": 623,
+      "pct": 20.6,
       "status": {
-        "Closed": 160,
+        "Closed": 162,
         "Submitted": 1,
-        "To be completed": 615,
-        "Other": 9
+        "To be completed": 614,
+        "Other": 8
       }
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-50-PSV-0004A",
+      "task": "T-00251-0121",
+      "system": "PS5-50-01 - Water Well Submersible Pumps (3100)",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/15/2026 11:54:23"
+    },
+    {
+      "tag": "PS5-50-PSV-0004B",
+      "task": "T-00251-0144",
+      "system": "PS5-50-02 - Water Well Submersible Pumps (3200)",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/15/2026 11:52:04"
+    },
     {
       "tag": "PS5-28-PSV-0064B",
       "task": "T-00251-0142",
@@ -1435,24 +1459,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/13/2026 7:15:55 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1387",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/13/2026 7:15:29 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1386",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/13/2026 7:15:05 "
     }
   ]
 }
