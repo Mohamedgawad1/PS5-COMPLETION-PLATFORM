@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-16 18:57:03",
+  "updated": "2026-10-16 19:07:11",
   "total_tasks_ps5": 14009,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6783,
-  "open": 3517,
-  "today_closed": 40,
+  "closed": 6789,
+  "open": 3511,
+  "today_closed": 46,
   "closed_by_discipline": {
-    "I": 3331,
+    "I": 3337,
     "E": 3157,
     "T": 295
   },
   "open_by_discipline": {
-    "I": 1264,
+    "I": 1258,
     "E": 1470,
     "T": 783
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-10-16",
       "E": 6,
-      "I": 34,
+      "I": 40,
       "T": 0,
-      "Total": 40
+      "Total": 46
     }
   ],
-  "closed_this_week": 312,
-  "closed_this_month": 950,
+  "closed_this_week": 318,
+  "closed_this_month": 956,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -247,7 +247,7 @@
       "milestone": "Milestone E",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 15
+      "count": 21
     },
     {
       "milestone": "Milestone F",
@@ -268,7 +268,7 @@
       "count": 19
     }
   ],
-  "today_milestone_total": 40,
+  "today_milestone_total": 46,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -330,14 +330,14 @@
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1532,
-      "closed": 1384,
-      "remaining": 148,
-      "pct": 90.3,
+      "closed": 1390,
+      "remaining": 142,
+      "pct": 90.7,
       "status": {
-        "Closed": 1384,
+        "Closed": 1390,
         "Submitted": 0,
-        "To be completed": 143,
-        "Other": 5
+        "To be completed": 138,
+        "Other": 4
       }
     },
     {
@@ -398,6 +398,60 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-01-NMRA-61004",
+      "task": "T-00082-1240",
+      "system": "PS5-01-11 - Inergen for Power Gen Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/16/2026 4:01:51 "
+    },
+    {
+      "tag": "PS5-01-NMRA-61003",
+      "task": "T-00082-1239",
+      "system": "PS5-01-11 - Inergen for Power Gen Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/16/2026 4:00:58 "
+    },
+    {
+      "tag": "PS5-01-NMRA-61002",
+      "task": "T-00082-1238",
+      "system": "PS5-01-11 - Inergen for Power Gen Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/16/2026 4:00:15 "
+    },
+    {
+      "tag": "PS5-01-NMRA-61001",
+      "task": "T-00082-1237",
+      "system": "PS5-01-11 - Inergen for Power Gen Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/16/2026 3:57:21 "
+    },
+    {
+      "tag": "PS5-01-NMR-61004",
+      "task": "T-00082-1236",
+      "system": "PS5-01-11 - Inergen for Power Gen Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/16/2026 3:56:04 "
+    },
+    {
+      "tag": "PS5-01-NMR-61003",
+      "task": "T-00082-1235",
+      "system": "PS5-01-11 - Inergen for Power Gen Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/16/2026 3:55:21 "
+    },
     {
       "tag": "PS5-01-NMR-61002",
       "task": "T-00082-1234",
@@ -1423,60 +1477,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/14/2026 11:16:59"
-    },
-    {
-      "tag": "PS5-25-HE-2300",
-      "task": "T-00242-0070",
-      "system": "PS5-25-04 - Crude Oil Export Pump C",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:13:23"
-    },
-    {
-      "tag": "PS5-25-HE-2200",
-      "task": "T-00242-0069",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:11:07"
-    },
-    {
-      "tag": "PS5-25-HE-2100",
-      "task": "T-00242-0068",
-      "system": "PS5-25-02 - Crude Oil Export Pump A",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:08:47"
-    },
-    {
-      "tag": "PS5-28-HE-2200",
-      "task": "T-00242-0045",
-      "system": "PS5-28-04 - Closed Drain Drum and Pump 02",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:05:52"
-    },
-    {
-      "tag": "PS5-28-HE-2100",
-      "task": "T-00242-0044",
-      "system": "PS5-28-03 - Closed Drain Drum and Pump 01",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:03:33"
-    },
-    {
-      "tag": "PS5-71-HE-2400B",
-      "task": "T-00242-0049",
-      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 10:57:32"
     }
   ]
 }
