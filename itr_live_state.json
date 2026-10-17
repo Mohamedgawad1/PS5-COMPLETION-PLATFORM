@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-17 16:19:57",
+  "updated": "2026-10-17 16:30:21",
   "total_tasks_ps5": 14009,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6797,
-  "open": 3503,
-  "today_closed": 3,
+  "closed": 6799,
+  "open": 3501,
+  "today_closed": 5,
   "closed_by_discipline": {
     "I": 3337,
-    "E": 3164,
+    "E": 3166,
     "T": 296
   },
   "open_by_discipline": {
     "I": 1258,
-    "E": 1463,
+    "E": 1461,
     "T": 782
   },
   "daily": [
@@ -228,17 +228,23 @@
     },
     {
       "label": "2026-10-17",
-      "E": 3,
+      "E": 5,
       "I": 0,
       "T": 0,
-      "Total": 3
+      "Total": 5
     }
   ],
-  "closed_this_week": 326,
-  "closed_this_month": 964,
+  "closed_this_week": 328,
+  "closed_this_month": 966,
   "today_milestone": [
     {
       "milestone": "Milestone A",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 2
+    },
+    {
+      "milestone": "Milestone B",
       "disc": "E",
       "discipline": "Electrical (E)",
       "count": 2
@@ -250,7 +256,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 3,
+  "today_milestone_total": 5,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -270,14 +276,14 @@
       "label": "Milestone B",
       "raw": "PS5 - Milestone B",
       "total": 1714,
-      "closed": 1620,
-      "remaining": 94,
-      "pct": 94.5,
+      "closed": 1622,
+      "remaining": 92,
+      "pct": 94.6,
       "status": {
-        "Closed": 1620,
+        "Closed": 1622,
         "Submitted": 0,
-        "To be completed": 92,
-        "Other": 2
+        "To be completed": 91,
+        "Other": 1
       }
     },
     {
@@ -380,6 +386,24 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "",
+      "task": "T-00240-1338",
+      "system": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/17/2026 1:26:09 "
+    },
+    {
+      "tag": "",
+      "task": "T-00240-1339",
+      "system": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/17/2026 1:25:26 "
+    },
     {
       "tag": "PS5-01-BE-0001-CL01",
       "task": "T-00023-4695",
@@ -1441,24 +1465,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/14/2026 11:38:50"
-    },
-    {
-      "tag": "PS5-71-PRV-0018",
-      "task": "T-00065-0135",
-      "system": "PS5-71-12 - CFO Service Tank",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:37:04"
-    },
-    {
-      "tag": "PS5-28-PSV-0064B",
-      "task": "T-00065-0142",
-      "system": "PS5-28-14 - Seal Oil Drain Drum & Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:35:54"
     }
   ]
 }
