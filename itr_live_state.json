@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-16 19:19:36",
+  "updated": "2026-10-17 08:50:09",
   "total_tasks_ps5": 14009,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,27 +9,20 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6791,
-  "open": 3509,
-  "today_closed": 48,
+  "closed": 6796,
+  "open": 3504,
+  "today_closed": 2,
   "closed_by_discipline": {
     "I": 3337,
-    "E": 3159,
-    "T": 295
+    "E": 3163,
+    "T": 296
   },
   "open_by_discipline": {
     "I": 1258,
-    "E": 1468,
-    "T": 783
+    "E": 1464,
+    "T": 782
   },
   "daily": [
-    {
-      "label": "2026-09-17",
-      "E": 41,
-      "I": 65,
-      "T": 0,
-      "Total": 106
-    },
     {
       "label": "2026-09-18",
       "E": 49,
@@ -228,65 +221,42 @@
     },
     {
       "label": "2026-10-16",
-      "E": 8,
+      "E": 10,
       "I": 40,
+      "T": 1,
+      "Total": 51
+    },
+    {
+      "label": "2026-10-17",
+      "E": 2,
+      "I": 0,
       "T": 0,
-      "Total": 48
+      "Total": 2
     }
   ],
-  "closed_this_week": 320,
-  "closed_this_month": 958,
+  "closed_this_week": 325,
+  "closed_this_month": 963,
   "today_milestone": [
     {
       "milestone": "Milestone A",
       "disc": "E",
       "discipline": "Electrical (E)",
       "count": 2
-    },
-    {
-      "milestone": "Milestone B",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 2
-    },
-    {
-      "milestone": "Milestone E",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 21
-    },
-    {
-      "milestone": "Milestone F",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 1
-    },
-    {
-      "milestone": "Milestone H",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 3
-    },
-    {
-      "milestone": "Milestone H",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 19
     }
   ],
-  "today_milestone_total": 48,
+  "today_milestone_total": 2,
   "milestone_summary": [
     {
       "label": "Milestone A",
       "raw": "PS5 - Milestone A",
       "total": 273,
-      "closed": 235,
-      "remaining": 38,
-      "pct": 86.1,
+      "closed": 239,
+      "remaining": 34,
+      "pct": 87.5,
       "status": {
-        "Closed": 235,
-        "Submitted": 4,
-        "To be completed": 33,
+        "Closed": 239,
+        "Submitted": 3,
+        "To be completed": 30,
         "Other": 1
       }
     },
@@ -350,13 +320,13 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 597,
-      "closed": 488,
-      "remaining": 109,
-      "pct": 81.7,
+      "closed": 489,
+      "remaining": 108,
+      "pct": 81.9,
       "status": {
-        "Closed": 488,
+        "Closed": 489,
         "Submitted": 0,
-        "To be completed": 108,
+        "To be completed": 107,
         "Other": 1
       }
     },
@@ -404,6 +374,51 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5 - POWER DISTRIBUTION AREA_Earthing",
+      "task": "T-00247-0146",
+      "system": "PS5-63-01 - Electrical Earthing",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/17/2026 5:41:32 "
+    },
+    {
+      "tag": "PS5 - LAUNCHER/RECEIVER AREA_Earthing",
+      "task": "T-00247-0144",
+      "system": "PS5-63-01 - Electrical Earthing",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/17/2026 5:24:17 "
+    },
+    {
+      "tag": "PS5-71-IN-0001-CA11",
+      "task": "T-00171-4406",
+      "system": "PS5-71-19 - Diesel Separator Module (UCP)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/16/2026 7:40:44 "
+    },
+    {
+      "tag": "PS5 - EXPORT PUMP VSD AREA_Earthing",
+      "task": "T-00247-0138",
+      "system": "PS5-63-01 - Electrical Earthing",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/16/2026 4:25:39 "
+    },
+    {
+      "tag": "PS5 - OBSERVATION BASIN AREA_Earthing",
+      "task": "T-00247-0145",
+      "system": "PS5-63-01 - Electrical Earthing",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/16/2026 4:16:17 "
+    },
     {
       "tag": "PS5-86-OB-0001_Earthing",
       "task": "T-00247-0163",
@@ -1438,51 +1453,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/14/2026 11:34:57"
-    },
-    {
-      "tag": "PS5-28-PRV-0046C",
-      "task": "T-00065-0138",
-      "system": "PS5-28-15 - Seal Oil Drain Drum & Pump C",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:34:01"
-    },
-    {
-      "tag": "PS5-79-IG-0012",
-      "task": "T-00028-0490",
-      "system": "PS5-79-12 - Electrical Heat Tracing Transformer/Distribution Board 12 (PS5-79-IG-0012)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:32:02"
-    },
-    {
-      "tag": "PS5-79-IG-0011",
-      "task": "T-00028-0489",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:27:34"
-    },
-    {
-      "tag": "PS5-79-IG-0010",
-      "task": "T-00028-0488",
-      "system": "PS5-79-10 - Electrical Heat Tracing Transformer/Distribution Board 10 (PS5-79-IG-0010)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:23:20"
-    },
-    {
-      "tag": "PS5-79-IG-0009",
-      "task": "T-00028-0487",
-      "system": "PS5-79-09 - Electrical Heat Tracing Transformer/Distribution Board 9 (PS5-79-IG-0009)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:20:48"
     }
   ]
 }
