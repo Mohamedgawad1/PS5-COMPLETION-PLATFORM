@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-17 16:00:13",
+  "updated": "2026-10-17 16:19:57",
   "total_tasks_ps5": 14009,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6796,
-  "open": 3504,
-  "today_closed": 2,
+  "closed": 6797,
+  "open": 3503,
+  "today_closed": 3,
   "closed_by_discipline": {
     "I": 3337,
-    "E": 3163,
+    "E": 3164,
     "T": 296
   },
   "open_by_discipline": {
     "I": 1258,
-    "E": 1464,
+    "E": 1463,
     "T": 782
   },
   "daily": [
@@ -228,23 +228,29 @@
     },
     {
       "label": "2026-10-17",
-      "E": 2,
+      "E": 3,
       "I": 0,
       "T": 0,
-      "Total": 2
+      "Total": 3
     }
   ],
-  "closed_this_week": 325,
-  "closed_this_month": 963,
+  "closed_this_week": 326,
+  "closed_this_month": 964,
   "today_milestone": [
     {
       "milestone": "Milestone A",
       "disc": "E",
       "discipline": "Electrical (E)",
       "count": 2
+    },
+    {
+      "milestone": "Milestone F",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 1
     }
   ],
-  "today_milestone_total": 2,
+  "today_milestone_total": 3,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -270,8 +276,8 @@
       "status": {
         "Closed": 1620,
         "Submitted": 0,
-        "To be completed": 93,
-        "Other": 1
+        "To be completed": 92,
+        "Other": 2
       }
     },
     {
@@ -320,13 +326,13 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 597,
-      "closed": 489,
-      "remaining": 108,
-      "pct": 81.9,
+      "closed": 490,
+      "remaining": 107,
+      "pct": 82.1,
       "status": {
-        "Closed": 489,
+        "Closed": 490,
         "Submitted": 0,
-        "To be completed": 107,
+        "To be completed": 106,
         "Other": 1
       }
     },
@@ -374,6 +380,15 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-01-BE-0001-CL01",
+      "task": "T-00023-4695",
+      "system": "PS5-01-08 - PS5 Deluge Valve Skid (PS5-01-UK-6100)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/17/2026 1:11:59 "
+    },
     {
       "tag": "PS5 - POWER DISTRIBUTION AREA_Earthing",
       "task": "T-00247-0146",
@@ -1444,15 +1459,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/14/2026 11:35:54"
-    },
-    {
-      "tag": "PS5-28-PRV-0047C",
-      "task": "T-00065-0139",
-      "system": "PS5-28-15 - Seal Oil Drain Drum & Pump C",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:34:57"
     }
   ]
 }
