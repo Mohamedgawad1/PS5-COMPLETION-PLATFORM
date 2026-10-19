@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-17 17:26:55",
+  "updated": "2026-10-19 07:35:59",
   "total_tasks_ps5": 14009,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,34 +9,20 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6799,
-  "open": 3501,
-  "today_closed": 5,
+  "closed": 6807,
+  "open": 3493,
+  "today_closed": 0,
   "closed_by_discipline": {
-    "I": 3337,
-    "E": 3166,
+    "I": 3340,
+    "E": 3171,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 1258,
-    "E": 1461,
+    "I": 1255,
+    "E": 1456,
     "T": 782
   },
   "daily": [
-    {
-      "label": "2026-09-18",
-      "E": 49,
-      "I": 75,
-      "T": 0,
-      "Total": 124
-    },
-    {
-      "label": "2026-09-19",
-      "E": 1,
-      "I": 58,
-      "T": 0,
-      "Total": 59
-    },
     {
       "label": "2026-09-20",
       "E": 17,
@@ -228,35 +214,30 @@
     },
     {
       "label": "2026-10-17",
-      "E": 5,
+      "E": 10,
+      "I": 3,
+      "T": 0,
+      "Total": 13
+    },
+    {
+      "label": "2026-10-18",
+      "E": 0,
       "I": 0,
       "T": 0,
-      "Total": 5
-    }
-  ],
-  "closed_this_week": 328,
-  "closed_this_month": 966,
-  "today_milestone": [
-    {
-      "milestone": "Milestone A",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 2
+      "Total": 0
     },
     {
-      "milestone": "Milestone B",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 2
-    },
-    {
-      "milestone": "Milestone F",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 1
+      "label": "2026-10-19",
+      "E": 0,
+      "I": 0,
+      "T": 0,
+      "Total": 0
     }
   ],
-  "today_milestone_total": 5,
+  "closed_this_week": 0,
+  "closed_this_month": 974,
+  "today_milestone": [],
+  "today_milestone_total": 0,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -318,13 +299,13 @@
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1532,
-      "closed": 1390,
-      "remaining": 142,
-      "pct": 90.7,
+      "closed": 1392,
+      "remaining": 140,
+      "pct": 90.9,
       "status": {
-        "Closed": 1390,
+        "Closed": 1392,
         "Submitted": 0,
-        "To be completed": 138,
+        "To be completed": 136,
         "Other": 4
       }
     },
@@ -332,60 +313,132 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 597,
-      "closed": 490,
-      "remaining": 107,
-      "pct": 82.1,
+      "closed": 494,
+      "remaining": 103,
+      "pct": 82.7,
       "status": {
-        "Closed": 490,
+        "Closed": 494,
         "Submitted": 0,
-        "To be completed": 106,
-        "Other": 1
+        "To be completed": 103,
+        "Other": 0
       }
     },
     {
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 904,
-      "closed": 761,
-      "remaining": 143,
-      "pct": 84.2,
+      "closed": 762,
+      "remaining": 142,
+      "pct": 84.3,
       "status": {
-        "Closed": 761,
+        "Closed": 762,
         "Submitted": 1,
         "To be completed": 140,
-        "Other": 2
+        "Other": 1
       }
     },
     {
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2366,
-      "remaining": 885,
-      "pct": 72.8,
+      "closed": 2370,
+      "remaining": 881,
+      "pct": 72.9,
       "status": {
-        "Closed": 2366,
+        "Closed": 2370,
         "Submitted": 64,
-        "To be completed": 794,
-        "Other": 27
+        "To be completed": 792,
+        "Other": 25
       }
     },
     {
       "label": "Milestone I",
       "raw": "PS5 - Milestone I",
       "total": 785,
-      "closed": 163,
-      "remaining": 622,
-      "pct": 20.8,
+      "closed": 166,
+      "remaining": 619,
+      "pct": 21.1,
       "status": {
-        "Closed": 163,
+        "Closed": 166,
         "Submitted": 1,
-        "To be completed": 613,
-        "Other": 8
+        "To be completed": 612,
+        "Other": 6
       }
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-53-UT-8200",
+      "task": "T-00046-0326",
+      "system": "PS5-53-04 - Water Treatment Purification Package",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/17/2026 7:08:31 "
+    },
+    {
+      "tag": "PS5-53-UT-8100",
+      "task": "T-00046-0325",
+      "system": "PS5-50-03 - Water Pre-Treatment Package",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/17/2026 7:07:28 "
+    },
+    {
+      "tag": "PS5-83-EHO-0001C",
+      "task": "T-00046-0544",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/17/2026 7:06:34 "
+    },
+    {
+      "tag": "PS5-83-EHO-0001B",
+      "task": "T-00046-0543",
+      "system": "PS5-25-03 - Crude Oil Export Pump B",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/17/2026 7:05:41 "
+    },
+    {
+      "tag": "PS5-53-UT-8100",
+      "task": "T-00090-0213",
+      "system": "PS5-50-03 - Water Pre-Treatment Package",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/17/2026 7:04:40 "
+    },
+    {
+      "tag": "PS5-77-UZ-8200",
+      "task": "T-00090-0294",
+      "system": "PS5-53-03 - Water Softener Package",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/17/2026 6:56:55 "
+    },
+    {
+      "tag": "PS5-77-UZ-8200",
+      "task": "T-00046-0406",
+      "system": "PS5-53-03 - Water Softener Package",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/17/2026 6:55:47 "
+    },
+    {
+      "tag": "PS5-50-PSV-0004B",
+      "task": "T-00065-0144",
+      "system": "PS5-50-02 - Water Well Submersible Pumps (3200)",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/17/2026 6:53:03 "
+    },
     {
       "tag": "",
       "task": "T-00240-1338",
@@ -1393,78 +1446,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/14/2026 12:00:44"
-    },
-    {
-      "tag": "PS5-71-TW-0003",
-      "task": "T-00072-0168",
-      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:59:51"
-    },
-    {
-      "tag": "PS5-71-TW-0007",
-      "task": "T-00072-0167",
-      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:58:45"
-    },
-    {
-      "tag": "PS5-71-TW-4203",
-      "task": "T-00072-0166",
-      "system": "PS5-71-12 - CFO Service Tank",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:58:01"
-    },
-    {
-      "tag": "PS5-71-PVSV-4102",
-      "task": "T-00065-0126",
-      "system": "PS5-71-04 - CFO Storage Tank",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:43:16"
-    },
-    {
-      "tag": "PS5-71-PVSV-4202",
-      "task": "T-00065-0125",
-      "system": "PS5-71-12 - CFO Service Tank",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:42:30"
-    },
-    {
-      "tag": "PS5-71-PRV-0015",
-      "task": "T-00065-0134",
-      "system": "PS5-71-04 - CFO Storage Tank",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:41:17"
-    },
-    {
-      "tag": "PS5-71-PRV-0016",
-      "task": "T-00065-0132",
-      "system": "PS5-71-04 - CFO Storage Tank",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:40:24"
-    },
-    {
-      "tag": "PS5-71-PRV-0041",
-      "task": "T-00065-0136",
-      "system": "PS5-71-12 - CFO Service Tank",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 11:38:50"
     }
   ]
 }
