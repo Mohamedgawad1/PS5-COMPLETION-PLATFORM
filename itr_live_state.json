@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-19 17:18:21",
+  "updated": "2026-10-20 07:53:34",
   "total_tasks_ps5": 14009,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,27 +9,20 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6808,
-  "open": 3492,
-  "today_closed": 1,
+  "closed": 6812,
+  "open": 3488,
+  "today_closed": 0,
   "closed_by_discipline": {
-    "I": 3340,
-    "E": 3172,
+    "I": 3341,
+    "E": 3175,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 1255,
-    "E": 1455,
+    "I": 1254,
+    "E": 1452,
     "T": 782
   },
   "daily": [
-    {
-      "label": "2026-09-20",
-      "E": 17,
-      "I": 24,
-      "T": 0,
-      "Total": 41
-    },
     {
       "label": "2026-09-21",
       "E": 21,
@@ -228,23 +221,23 @@
     },
     {
       "label": "2026-10-19",
-      "E": 1,
+      "E": 4,
+      "I": 1,
+      "T": 0,
+      "Total": 5
+    },
+    {
+      "label": "2026-10-20",
+      "E": 0,
       "I": 0,
       "T": 0,
-      "Total": 1
+      "Total": 0
     }
   ],
-  "closed_this_week": 1,
-  "closed_this_month": 975,
-  "today_milestone": [
-    {
-      "milestone": "Milestone H",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 1
-    }
-  ],
-  "today_milestone_total": 1,
+  "closed_this_week": 5,
+  "closed_this_month": 979,
+  "today_milestone": [],
+  "today_milestone_total": 0,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -320,13 +313,13 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 597,
-      "closed": 494,
-      "remaining": 103,
-      "pct": 82.7,
+      "closed": 496,
+      "remaining": 101,
+      "pct": 83.1,
       "status": {
-        "Closed": 494,
+        "Closed": 496,
         "Submitted": 0,
-        "To be completed": 103,
+        "To be completed": 101,
         "Other": 0
       }
     },
@@ -348,13 +341,13 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2371,
-      "remaining": 880,
-      "pct": 72.9,
+      "closed": 2373,
+      "remaining": 878,
+      "pct": 73.0,
       "status": {
-        "Closed": 2371,
+        "Closed": 2373,
         "Submitted": 64,
-        "To be completed": 792,
+        "To be completed": 790,
         "Other": 24
       }
     },
@@ -374,6 +367,42 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-53-UT-8200",
+      "task": "T-00090-0214",
+      "system": "PS5-53-04 - Water Treatment Purification Package",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/19/2026 4:48:04 "
+    },
+    {
+      "tag": "PS5-87-IRF-0004",
+      "task": "T-00228-0111",
+      "system": "PS5-71-15 - Diesel Fuel Storage Tank",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/19/2026 4:31:58 "
+    },
+    {
+      "tag": "PS5-87-IRF-0003",
+      "task": "T-00228-0110",
+      "system": "PS5-71-12 - CFO Service Tank",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/19/2026 4:30:49 "
+    },
+    {
+      "tag": "PS5-87-IRF-0002",
+      "task": "T-00228-0109",
+      "system": "PS5-71-04 - CFO Storage Tank",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/19/2026 4:29:21 "
+    },
     {
       "tag": "PS5-28-DM-3800A",
       "task": "T-00026-0162",
@@ -1417,42 +1446,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/14/2026 2:29:09 "
-    },
-    {
-      "tag": "PS5-28-LB-8200-CJ01",
-      "task": "T-00614-1022",
-      "system": "PS5-28-11 - Open Drain Interceptor",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 2:26:44 "
-    },
-    {
-      "tag": "PS5-28-LB-8200-CC01",
-      "task": "T-00614-1021",
-      "system": "PS5-28-11 - Open Drain Interceptor",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 2:25:16 "
-    },
-    {
-      "tag": "PS5-71-FIT-0011B-CJ01",
-      "task": "T-00069-5446",
-      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 2:23:20 "
-    },
-    {
-      "tag": "PS5-71-FIT-0011A-CJ01",
-      "task": "T-00069-5445",
-      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 2:21:53 "
     }
   ]
 }
