@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-20 10:11:12",
+  "updated": "2026-10-20 12:47:14",
   "total_tasks_ps5": 14009,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6812,
-  "open": 3488,
-  "today_closed": 0,
+  "closed": 6819,
+  "open": 3481,
+  "today_closed": 7,
   "closed_by_discipline": {
-    "I": 3341,
+    "I": 3348,
     "E": 3175,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 1254,
+    "I": 1247,
     "E": 1452,
     "T": 782
   },
@@ -229,15 +229,22 @@
     {
       "label": "2026-10-20",
       "E": 0,
-      "I": 0,
+      "I": 7,
       "T": 0,
-      "Total": 0
+      "Total": 7
     }
   ],
-  "closed_this_week": 5,
-  "closed_this_month": 979,
-  "today_milestone": [],
-  "today_milestone_total": 0,
+  "closed_this_week": 12,
+  "closed_this_month": 986,
+  "today_milestone": [
+    {
+      "milestone": "Milestone E",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 7
+    }
+  ],
+  "today_milestone_total": 7,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -299,14 +306,14 @@
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1532,
-      "closed": 1392,
-      "remaining": 140,
-      "pct": 90.9,
+      "closed": 1399,
+      "remaining": 133,
+      "pct": 91.3,
       "status": {
-        "Closed": 1392,
+        "Closed": 1399,
         "Submitted": 0,
-        "To be completed": 136,
-        "Other": 4
+        "To be completed": 130,
+        "Other": 3
       }
     },
     {
@@ -355,18 +362,81 @@
       "label": "Milestone I",
       "raw": "PS5 - Milestone I",
       "total": 785,
-      "closed": 166,
-      "remaining": 619,
-      "pct": 21.1,
+      "closed": 167,
+      "remaining": 618,
+      "pct": 21.3,
       "status": {
-        "Closed": 166,
-        "Submitted": 3,
+        "Closed": 167,
+        "Submitted": 2,
         "To be completed": 610,
         "Other": 6
       }
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-01-LB-0004-CC03",
+      "task": "T-00614-0873",
+      "system": "PS5-01-11 - Inergen for Power Gen Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/20/2026 9:17:11 "
+    },
+    {
+      "tag": "PS5-01-LB-0004-CC02",
+      "task": "T-00614-0872",
+      "system": "PS5-01-11 - Inergen for Power Gen Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/20/2026 9:15:40 "
+    },
+    {
+      "tag": "PS5-01-LB-0004-CC01",
+      "task": "T-00614-0871",
+      "system": "PS5-01-11 - Inergen for Power Gen Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/20/2026 9:14:11 "
+    },
+    {
+      "tag": "PS5-01-LB-6104A-CC01",
+      "task": "T-00069-4255",
+      "system": "PS5-01-11 - Inergen for Power Gen Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/20/2026 9:11:36 "
+    },
+    {
+      "tag": "PS5-01-LB-6103A-CC01",
+      "task": "T-00069-4254",
+      "system": "PS5-01-11 - Inergen for Power Gen Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/20/2026 9:10:35 "
+    },
+    {
+      "tag": "PS5-01-LB-6102A-CC01",
+      "task": "T-00069-4253",
+      "system": "PS5-01-11 - Inergen for Power Gen Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/20/2026 9:09:39 "
+    },
+    {
+      "tag": "PS5-01-LB-6101A-CC01",
+      "task": "T-00069-4252",
+      "system": "PS5-01-11 - Inergen for Power Gen Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/20/2026 9:08:25 "
+    },
     {
       "tag": "PS5-53-UT-8200",
       "task": "T-00090-0214",
@@ -1383,69 +1453,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/14/2026 4:25:49 "
-    },
-    {
-      "tag": "PS5-71-BE-0001A-CL02",
-      "task": "T-00233-11254",
-      "system": "PS5-71-07 - Crude Fuel Separation Module (UCP)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 4:24:43 "
-    },
-    {
-      "tag": "PS5-71-BE-0001A-CL01",
-      "task": "T-00233-11253",
-      "system": "PS5-71-07 - Crude Fuel Separation Module (UCP)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 4:23:22 "
-    },
-    {
-      "tag": "PS5-61-IDH-3100B-CC03",
-      "task": "T-00614-1071",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 2:35:01 "
-    },
-    {
-      "tag": "PS5-61-IDH-3100B-CC02",
-      "task": "T-00614-1070",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 2:33:37 "
-    },
-    {
-      "tag": "PS5-61-IDH-3100B-CC01",
-      "task": "T-00614-1069",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 2:32:16 "
-    },
-    {
-      "tag": "PS5-25-MXS-3101BB-CJ01",
-      "task": "T-00614-1002",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 2:31:04 "
-    },
-    {
-      "tag": "PS5-25-MXS-3101BA-CJ01",
-      "task": "T-00614-1001",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/14/2026 2:29:09 "
     }
   ]
 }
