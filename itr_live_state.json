@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-21 10:02:16",
+  "updated": "2026-10-21 10:09:58",
   "total_tasks_ps5": 14009,
   "eit_total": 10300,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6841,
-  "open": 3459,
-  "today_closed": 0,
+  "closed": 6842,
+  "open": 3458,
+  "today_closed": 1,
   "closed_by_discipline": {
     "I": 3368,
-    "E": 3177,
+    "E": 3178,
     "T": 296
   },
   "open_by_discipline": {
     "I": 1227,
-    "E": 1450,
+    "E": 1449,
     "T": 782
   },
   "daily": [
@@ -228,16 +228,23 @@
     },
     {
       "label": "2026-10-21",
-      "E": 0,
+      "E": 1,
       "I": 0,
       "T": 0,
-      "Total": 0
+      "Total": 1
     }
   ],
-  "closed_this_week": 34,
-  "closed_this_month": 1008,
-  "today_milestone": [],
-  "today_milestone_total": 0,
+  "closed_this_week": 35,
+  "closed_this_month": 1009,
+  "today_milestone": [
+    {
+      "milestone": "Milestone H",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 1
+    }
+  ],
+  "today_milestone_total": 1,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -341,13 +348,13 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2389,
-      "remaining": 862,
+      "closed": 2390,
+      "remaining": 861,
       "pct": 73.5,
       "status": {
-        "Closed": 2389,
-        "Submitted": 65,
-        "To be completed": 775,
+        "Closed": 2390,
+        "Submitted": 66,
+        "To be completed": 773,
         "Other": 22
       }
     },
@@ -367,6 +374,15 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-71-HE-2400A",
+      "task": "T-00033-0048",
+      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/21/2026 7:03:44 "
+    },
     {
       "tag": "PS5-79-IG-0002-CJ01",
       "task": "T-00614-1138",
@@ -1437,15 +1453,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/15/2026 11:04:56"
-    },
-    {
-      "tag": "PS5-28-PSV-3901B",
-      "task": "T-00251-0123",
-      "system": "PS5-28-17 - Reinjection Pump",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/15/2026 11:02:29"
     }
   ]
 }
