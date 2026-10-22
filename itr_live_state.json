@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-22 10:41:44",
+  "updated": "2026-10-22 13:03:17",
   "total_tasks_ps5": 14007,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6888,
-  "open": 3410,
-  "today_closed": 23,
+  "closed": 6890,
+  "open": 3408,
+  "today_closed": 25,
   "closed_by_discipline": {
-    "I": 3368,
+    "I": 3370,
     "E": 3224,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 1225,
+    "I": 1223,
     "E": 1403,
     "T": 782
   },
@@ -229,22 +229,34 @@
     {
       "label": "2026-10-22",
       "E": 23,
-      "I": 0,
+      "I": 2,
       "T": 0,
-      "Total": 23
+      "Total": 25
     }
   ],
-  "closed_this_week": 81,
-  "closed_this_month": 1055,
+  "closed_this_week": 83,
+  "closed_this_month": 1057,
   "today_milestone": [
+    {
+      "milestone": "Milestone C",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
+    },
     {
       "milestone": "Milestone H",
       "disc": "E",
       "discipline": "Electrical (E)",
       "count": 23
+    },
+    {
+      "milestone": "Milestone H",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
     }
   ],
-  "today_milestone_total": 23,
+  "today_milestone_total": 25,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -278,13 +290,13 @@
       "label": "Milestone C",
       "raw": "PS5 - Milestone C",
       "total": 963,
-      "closed": 620,
-      "remaining": 343,
-      "pct": 64.4,
+      "closed": 621,
+      "remaining": 342,
+      "pct": 64.5,
       "status": {
-        "Closed": 620,
+        "Closed": 621,
         "Submitted": 0,
-        "To be completed": 342,
+        "To be completed": 341,
         "Other": 1
       }
     },
@@ -340,21 +352,21 @@
       "status": {
         "Closed": 765,
         "Submitted": 0,
-        "To be completed": 138,
-        "Other": 1
+        "To be completed": 136,
+        "Other": 3
       }
     },
     {
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2435,
-      "remaining": 816,
+      "closed": 2436,
+      "remaining": 815,
       "pct": 74.9,
       "status": {
-        "Closed": 2435,
+        "Closed": 2436,
         "Submitted": 80,
-        "To be completed": 714,
+        "To be completed": 713,
         "Other": 22
       }
     },
@@ -374,6 +386,24 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-71-SDV-0039-CC02",
+      "task": "T-00254-5577",
+      "system": "PS5-71-12 - CFO Service Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/22/2026 9:47:22 "
+    },
+    {
+      "tag": "PS5-01-PIT-0013-CJ01",
+      "task": "T-00254-4288",
+      "system": "PS5-01-07 - Fire Water Ring Main & Distribution",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/22/2026 9:45:33 "
+    },
     {
       "tag": "PS5-25-HE-2300",
       "task": "T-00033-0070",
@@ -1435,24 +1465,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/16/2026 3:38:42 "
-    },
-    {
-      "tag": "PS5-01-RAB-61001A",
-      "task": "T-00064-0412",
-      "system": "PS5-01-11 - Inergen for Power Gen Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/16/2026 3:37:37 "
-    },
-    {
-      "tag": "",
-      "task": "T-00031-1339",
-      "system": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/16/2026 2:19:10 "
     }
   ]
 }
