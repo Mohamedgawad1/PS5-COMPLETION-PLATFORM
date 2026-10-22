@@ -19,10 +19,68 @@ def fmt_dt(v):
     if not s or s == 'None': return ''
     return s[:10]
 
-# --- ITR from ovTasks_TestsPlanned_1369.xlsx ---
-print("\nReading ovTasks_TestsPlanned_1369.xlsx...")
-wb_itr = openpyxl.load_workbook('C:/Users/mylap/Downloads/PS5 - CPP AGI Completion Progress Dashboard_files/ovTasks_TestsPlanned_1369.xlsx', read_only=True, data_only=True)
-ws_itr = wb_itr['Exported from SC']
+# Smart Completions drops a fresh export in Downloads\ while the canonical
+# copy inside the saved-page folder can sit untouched for days. Reading the
+# canonical copy only is what made already-closed ITRs show "To be completed"
+# after every rebuild. Always build from the newest copy that actually loads.
+SOURCE_DIRS = [
+    'C:/Users/mylap/Downloads',
+    'C:/Users/mylap/Downloads/PS5 - CPP AGI Completion Progress Dashboard_files',
+    'C:/Users/mylap/Downloads/asset and punch',
+    'C:/Users/mylap/Downloads/asset and punch/PS5 - CPP AGI Completion Progress Dashboard_files',
+    'C:/Users/mylap/Downloads/subsystem and punch',
+    'C:/Users/mylap/Downloads/subsystem and punch/PS5 - CPP AGI Completion Progress Dashboard_files',
+]
+
+def pick_newest(pattern):
+    """Newest non-temp file matching pattern across SOURCE_DIRS, or None."""
+    import glob as _glob
+    best = None
+    for d in SOURCE_DIRS:
+        for p in _glob.glob(os.path.join(d, pattern)):
+            name = os.path.basename(p)
+            if name.startswith('~$') or 'BACKUP' in name.upper():
+                continue
+            try:
+                m = os.path.getmtime(p)
+            except OSError:
+                continue
+            if best is None or m > best[0]:
+                best = (m, p)
+    if best:
+        print("  Using: %s" % best[1])
+        print("  Modified: %s" % __import__('datetime').datetime.fromtimestamp(best[0]).strftime('%Y-%m-%d %H:%M'))
+    return best[1] if best else None
+
+def load_newest(pattern, prefer_sheet=None):
+    """Load the newest readable workbook for pattern; tries next-newest on failure."""
+    import glob as _glob
+    cands = []
+    for d in SOURCE_DIRS:
+        for p in _glob.glob(os.path.join(d, pattern)):
+            name = os.path.basename(p)
+            if name.startswith('~$') or 'BACKUP' in name.upper():
+                continue
+            try:
+                cands.append((os.path.getmtime(p), p))
+            except OSError:
+                pass
+    errs = []
+    for m, p in sorted(cands, reverse=True):
+        try:
+            wb = openpyxl.load_workbook(p, read_only=True, data_only=True)
+            ws = wb[prefer_sheet] if prefer_sheet else wb.active
+            print("  Using: %s" % p)
+            print("  Modified: %s" % __import__('datetime').datetime.fromtimestamp(m).strftime('%Y-%m-%d %H:%M'))
+            return wb, ws
+        except Exception as e:
+            errs.append('%s -> %s' % (p, e))
+            print("  SKIPPED unreadable copy: %s (%s)" % (p, e))
+    raise SystemExit('No readable workbook for %s\n%s' % (pattern, errs))
+
+# --- ITR from the newest ovTasks export ---
+print("\nReading newest ovTasks_TestsPlanned_*.xlsx ...")
+wb_itr, ws_itr = load_newest('ovTasks*.xlsx', prefer_sheet='Exported from SC')
 
 itr_raw = []
 disc_totals = defaultdict(lambda: {'total': 0, 'closed': 0})
@@ -75,10 +133,9 @@ for r in itr_raw:
         tag_to_sub[tag] = sid
 print(f"  Asset tag → subsystem map: {len(tag_to_sub)} entries")
 
-# --- Punch from ovPunchlist_1399.xlsx ---
-print("\nReading ovPunchlist_1399.xlsx...")
-wb_punch = openpyxl.load_workbook('C:/Users/mylap/Downloads/PS5 - CPP AGI Completion Progress Dashboard_files/ovPunchlist_1399.xlsx', data_only=True)
-ws_punch = wb_punch.active
+# --- Punch from the newest ovPunchlist export ---
+print("\nReading newest ovPunchlist_*.xlsx ...")
+wb_punch, ws_punch = load_newest('ovPunchlist*.xlsx')
 
 punch_raw = []
 punch_disc_cat = defaultdict(lambda: defaultdict(lambda: {'total': 0, 'closed': 0}))
