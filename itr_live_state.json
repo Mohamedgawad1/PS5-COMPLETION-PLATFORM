@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-22 09:47:12",
+  "updated": "2026-10-22 09:59:59",
   "total_tasks_ps5": 14007,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6886,
-  "open": 3412,
-  "today_closed": 21,
+  "closed": 6888,
+  "open": 3410,
+  "today_closed": 23,
   "closed_by_discipline": {
     "I": 3368,
-    "E": 3222,
+    "E": 3224,
     "T": 296
   },
   "open_by_discipline": {
     "I": 1225,
-    "E": 1405,
+    "E": 1403,
     "T": 782
   },
   "daily": [
@@ -228,23 +228,23 @@
     },
     {
       "label": "2026-10-22",
-      "E": 21,
+      "E": 23,
       "I": 0,
       "T": 0,
-      "Total": 21
+      "Total": 23
     }
   ],
-  "closed_this_week": 79,
-  "closed_this_month": 1053,
+  "closed_this_week": 81,
+  "closed_this_month": 1055,
   "today_milestone": [
     {
       "milestone": "Milestone H",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 21
+      "count": 23
     }
   ],
-  "today_milestone_total": 21,
+  "today_milestone_total": 23,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -348,14 +348,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2433,
-      "remaining": 818,
-      "pct": 74.8,
+      "closed": 2435,
+      "remaining": 816,
+      "pct": 74.9,
       "status": {
-        "Closed": 2433,
+        "Closed": 2435,
         "Submitted": 80,
-        "To be completed": 715,
-        "Other": 23
+        "To be completed": 714,
+        "Other": 22
       }
     },
     {
@@ -374,6 +374,24 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-25-HE-2300",
+      "task": "T-00033-0070",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/22/2026 6:42:57 "
+    },
+    {
+      "tag": "PS5-25-HE-2200",
+      "task": "T-00033-0069",
+      "system": "PS5-25-03 - Crude Oil Export Pump B",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/22/2026 6:41:39 "
+    },
     {
       "tag": "PS5-25-HE-2100",
       "task": "T-00033-0068",
@@ -1435,24 +1453,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/16/2026 2:19:10 "
-    },
-    {
-      "tag": "",
-      "task": "T-00031-1338",
-      "system": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/16/2026 2:11:12 "
-    },
-    {
-      "tag": "PS5-71-TW-4102",
-      "task": "T-00257-0204",
-      "system": "PS5-71-04 - CFO Storage Tank",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/16/2026 9:02:57 "
     }
   ]
 }
