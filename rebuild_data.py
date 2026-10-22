@@ -133,6 +133,48 @@ for r in itr_raw:
         tag_to_sub[tag] = sid
 print(f"  Asset tag → subsystem map: {len(tag_to_sub)} entries")
 
+# --- Guard: never publish ITR states older than the live Smart Completions pull ---
+# itr_online_sync.py refreshes tasks_by_tag_live.json every few minutes straight
+# from SC. If the Excel export we just read lags it badly (download forgotten,
+# stale copy picked up again, ...), every lagging task would go live as
+# "To be completed" although SC already closed it - the exact bug this catches.
+# Building still proceeds for small same-day lag; a big gap aborts the build so
+# update_platform.bat keeps the last good page instead of publishing wrong states.
+LIVE_IDX = ('C:/Users/mylap/OneDrive/Desktop/dashboard/sc_pull/data/'
+            'tasks_by_tag_live.json')
+LIVE_LAG_LIMIT = 200  # open-in-export but Closed-live tasks tolerated
+
+if os.path.exists(LIVE_IDX):
+    try:
+        with open(LIVE_IDX, encoding='utf-8') as f:
+            _live = json.load(f)
+        _lstate = {}
+        for _tag, _tasks in (_live.get('tags') or {}).items():
+            for _t in _tasks:
+                _id = str(_t.get('task_id') or '').strip()
+                if _id:
+                    _lstate[_id] = str(_t.get('state') or '').strip()
+        _lag = [r[0] for r in itr_raw
+                if r[5].strip().lower() != 'closed'
+                and _lstate.get(r[0], '').lower() == 'closed']
+        print("  Live cross-check vs Smart Completions (%s): %d ITR(s) still "
+              "open in this export although already Closed live"
+              % (_live.get('updated', '?'), len(_lag)))
+        if len(_lag) > LIVE_LAG_LIMIT:
+            print("  FATAL: the export is stale - Smart Completions already "
+                  "closed these ITRs:")
+            for _t in _lag[:10]:
+                print("    e.g. %s (also Closed live)" % _t)
+            sys.exit('refusing to build/publish stale ITR states '
+                     '(%d lagging tasks > limit %d)'
+                     % (len(_lag), LIVE_LAG_LIMIT))
+    except SystemExit:
+        raise
+    except Exception as e:
+        print("  Live cross-check skipped (%s)" % e)
+else:
+    print("  Live cross-check skipped (no tasks_by_tag_live.json)")
+
 # --- Punch from the newest ovPunchlist export ---
 print("\nReading newest ovPunchlist_*.xlsx ...")
 wb_punch, ws_punch = load_newest('ovPunchlist*.xlsx')
