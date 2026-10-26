@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-26 17:41:03",
+  "updated": "2026-10-26 17:48:17",
   "total_tasks_ps5": 14007,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6982,
-  "open": 3316,
-  "today_closed": 1,
+  "closed": 6989,
+  "open": 3309,
+  "today_closed": 8,
   "closed_by_discipline": {
-    "I": 3459,
+    "I": 3466,
     "E": 3227,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 1134,
+    "I": 1127,
     "E": 1400,
     "T": 782
   },
@@ -229,14 +229,20 @@
     {
       "label": "2026-10-26",
       "E": 1,
-      "I": 0,
+      "I": 7,
       "T": 0,
-      "Total": 1
+      "Total": 8
     }
   ],
-  "closed_this_week": 1,
-  "closed_this_month": 1150,
+  "closed_this_week": 8,
+  "closed_this_month": 1157,
   "today_milestone": [
+    {
+      "milestone": "Milestone D",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 7
+    },
     {
       "milestone": "Milestone G",
       "disc": "E",
@@ -244,7 +250,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 1,
+  "today_milestone_total": 8,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -292,14 +298,14 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3437,
-      "closed": 2421,
-      "remaining": 1016,
-      "pct": 70.4,
+      "closed": 2428,
+      "remaining": 1009,
+      "pct": 70.6,
       "status": {
-        "Closed": 2421,
+        "Closed": 2428,
         "Submitted": 2,
-        "To be completed": 1012,
-        "Other": 2
+        "To be completed": 1004,
+        "Other": 3
       }
     },
     {
@@ -374,6 +380,69 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-61-IH-0004B-CU03",
+      "task": "T-00069-11785",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/26/2026 2:47:33 "
+    },
+    {
+      "tag": "PS5-61-IH-0004B-CU02",
+      "task": "T-00069-11784",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/26/2026 2:46:38 "
+    },
+    {
+      "tag": "PS5-61-IH-0004B-CU01",
+      "task": "T-00069-11783",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/26/2026 2:45:49 "
+    },
+    {
+      "tag": "PS5-61-IH-0004A-CU04",
+      "task": "T-00069-11782",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/26/2026 2:45:00 "
+    },
+    {
+      "tag": "PS5-61-IH-0004A-CU03",
+      "task": "T-00069-11781",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/26/2026 2:44:11 "
+    },
+    {
+      "tag": "PS5-61-IH-0004A-CU02",
+      "task": "T-00069-11780",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/26/2026 2:43:26 "
+    },
+    {
+      "tag": "PS5-61-IH-0004A-CU01",
+      "task": "T-00069-11779",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/26/2026 2:42:29 "
+    },
     {
       "tag": "",
       "task": "T-00031-1311",
@@ -1390,69 +1459,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/22/2026 4:37:02 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1586",
-      "system": "PS5-79-08 - Electrical Heat Tracing Transformer/Distribution Board 8 (PS5-79-IG-0008)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 4:36:42 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1585",
-      "system": "PS5-79-08 - Electrical Heat Tracing Transformer/Distribution Board 8 (PS5-79-IG-0008)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 4:36:19 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1584",
-      "system": "PS5-79-08 - Electrical Heat Tracing Transformer/Distribution Board 8 (PS5-79-IG-0008)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 4:35:58 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1582",
-      "system": "PS5-79-08 - Electrical Heat Tracing Transformer/Distribution Board 8 (PS5-79-IG-0008)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 4:24:12 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1580",
-      "system": "PS5-79-08 - Electrical Heat Tracing Transformer/Distribution Board 8 (PS5-79-IG-0008)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 4:23:48 "
-    },
-    {
-      "tag": "PS5-28-ISO-2008",
-      "task": "T-00032-0166",
-      "system": "PS5-28-10 - Oil Skimmer Package",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/21/2026 2:31:20 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1579",
-      "system": "PS5-79-08 - Electrical Heat Tracing Transformer/Distribution Board 8 (PS5-79-IG-0008)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/21/2026 2:27:31 "
     }
   ]
 }
