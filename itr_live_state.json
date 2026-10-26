@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-26 18:57:19",
+  "updated": "2026-10-26 19:07:22",
   "total_tasks_ps5": 14007,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 6992,
-  "open": 3306,
-  "today_closed": 11,
+  "closed": 6999,
+  "open": 3299,
+  "today_closed": 18,
   "closed_by_discipline": {
-    "I": 3469,
+    "I": 3476,
     "E": 3227,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 1124,
+    "I": 1117,
     "E": 1400,
     "T": 782
   },
@@ -229,19 +229,19 @@
     {
       "label": "2026-10-26",
       "E": 1,
-      "I": 10,
+      "I": 17,
       "T": 0,
-      "Total": 11
+      "Total": 18
     }
   ],
-  "closed_this_week": 11,
-  "closed_this_month": 1160,
+  "closed_this_week": 18,
+  "closed_this_month": 1167,
   "today_milestone": [
     {
       "milestone": "Milestone D",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 10
+      "count": 17
     },
     {
       "milestone": "Milestone G",
@@ -250,7 +250,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 11,
+  "today_milestone_total": 18,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -298,14 +298,14 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3437,
-      "closed": 2431,
-      "remaining": 1006,
-      "pct": 70.7,
+      "closed": 2438,
+      "remaining": 999,
+      "pct": 70.9,
       "status": {
-        "Closed": 2431,
-        "Submitted": 3,
-        "To be completed": 1001,
-        "Other": 2
+        "Closed": 2438,
+        "Submitted": 2,
+        "To be completed": 994,
+        "Other": 3
       }
     },
     {
@@ -380,6 +380,69 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-09-LB-0008-CC08",
+      "task": "T-00614-0952",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/26/2026 4:05:19 "
+    },
+    {
+      "tag": "PS5-09-LB-0008-CC07",
+      "task": "T-00614-0951",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/26/2026 4:03:49 "
+    },
+    {
+      "tag": "PS5-09-LB-0008-CC06",
+      "task": "T-00614-0950",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/26/2026 4:02:27 "
+    },
+    {
+      "tag": "PS5-09-LB-0008-CC05",
+      "task": "T-00614-0949",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/26/2026 4:01:19 "
+    },
+    {
+      "tag": "PS5-09-LB-0008-CC04",
+      "task": "T-00614-0948",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/26/2026 3:59:56 "
+    },
+    {
+      "tag": "PS5-09-LB-0008-CC03",
+      "task": "T-00614-0947",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/26/2026 3:58:39 "
+    },
+    {
+      "tag": "PS5-09-LB-0008-CC02",
+      "task": "T-00614-0946",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/26/2026 3:56:54 "
+    },
     {
       "tag": "PS5-61-IH-0004C-CU02",
       "task": "T-00069-11788",
@@ -1396,69 +1459,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/22/2026 4:48:57 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1652",
-      "system": "PS5-79-10 - Electrical Heat Tracing Transformer/Distribution Board 10 (PS5-79-IG-0010)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 4:48:36 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1651",
-      "system": "PS5-79-10 - Electrical Heat Tracing Transformer/Distribution Board 10 (PS5-79-IG-0010)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 4:48:17 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1650",
-      "system": "PS5-79-10 - Electrical Heat Tracing Transformer/Distribution Board 10 (PS5-79-IG-0010)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 4:47:57 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1645",
-      "system": "PS5-79-10 - Electrical Heat Tracing Transformer/Distribution Board 10 (PS5-79-IG-0010)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 4:47:27 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1628",
-      "system": "PS5-79-10 - Electrical Heat Tracing Transformer/Distribution Board 10 (PS5-79-IG-0010)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 4:44:36 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1622",
-      "system": "PS5-79-09 - Electrical Heat Tracing Transformer/Distribution Board 9 (PS5-79-IG-0009)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 4:44:03 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1621",
-      "system": "PS5-79-09 - Electrical Heat Tracing Transformer/Distribution Board 9 (PS5-79-IG-0009)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 4:43:45 "
     }
   ]
 }
