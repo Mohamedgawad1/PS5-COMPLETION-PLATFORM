@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-26 19:30:30",
+  "updated": "2026-10-26 19:58:47",
   "total_tasks_ps5": 14007,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7007,
-  "open": 3291,
-  "today_closed": 26,
+  "closed": 7008,
+  "open": 3290,
+  "today_closed": 27,
   "closed_by_discipline": {
     "I": 3484,
-    "E": 3227,
+    "E": 3228,
     "T": 296
   },
   "open_by_discipline": {
     "I": 1109,
-    "E": 1400,
+    "E": 1399,
     "T": 782
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-10-26",
-      "E": 1,
+      "E": 2,
       "I": 25,
       "T": 0,
-      "Total": 26
+      "Total": 27
     }
   ],
-  "closed_this_week": 26,
-  "closed_this_month": 1175,
+  "closed_this_week": 27,
+  "closed_this_month": 1176,
   "today_milestone": [
     {
       "milestone": "Milestone D",
@@ -247,10 +247,10 @@
       "milestone": "Milestone G",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 1
+      "count": 2
     }
   ],
-  "today_milestone_total": 26,
+  "today_milestone_total": 27,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -340,13 +340,13 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 904,
-      "closed": 771,
-      "remaining": 133,
-      "pct": 85.3,
+      "closed": 772,
+      "remaining": 132,
+      "pct": 85.4,
       "status": {
-        "Closed": 771,
+        "Closed": 772,
         "Submitted": 2,
-        "To be completed": 130,
+        "To be completed": 129,
         "Other": 1
       }
     },
@@ -380,6 +380,15 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "",
+      "task": "T-00240-1311",
+      "system": "PS5-62-08 - Outdoor Normal Lighting  DB  - PS5-61-IG-0006",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/26/2026 4:39:29 "
+    },
     {
       "tag": "PS5-61-IH-0004D-CU02",
       "task": "T-00254-11833",
@@ -1450,15 +1459,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/22/2026 9:47:22 "
-    },
-    {
-      "tag": "PS5-01-PIT-0013-CJ01",
-      "task": "T-00254-4288",
-      "system": "PS5-01-07 - Fire Water Ring Main & Distribution",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 9:45:33 "
     }
   ]
 }
