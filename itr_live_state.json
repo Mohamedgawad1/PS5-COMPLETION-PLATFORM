@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-27 10:13:27",
+  "updated": "2026-10-27 10:21:52",
   "total_tasks_ps5": 14007,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7008,
-  "open": 3290,
-  "today_closed": 0,
+  "closed": 7011,
+  "open": 3287,
+  "today_closed": 3,
   "closed_by_discipline": {
-    "I": 3484,
+    "I": 3487,
     "E": 3228,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 1109,
+    "I": 1106,
     "E": 1399,
     "T": 782
   },
@@ -229,15 +229,22 @@
     {
       "label": "2026-10-27",
       "E": 0,
-      "I": 0,
+      "I": 3,
       "T": 0,
-      "Total": 0
+      "Total": 3
     }
   ],
-  "closed_this_week": 27,
-  "closed_this_month": 1176,
-  "today_milestone": [],
-  "today_milestone_total": 0,
+  "closed_this_week": 30,
+  "closed_this_month": 1179,
+  "today_milestone": [
+    {
+      "milestone": "Milestone H",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 3
+    }
+  ],
+  "today_milestone_total": 3,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -341,14 +348,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2483,
-      "remaining": 768,
-      "pct": 76.4,
+      "closed": 2486,
+      "remaining": 765,
+      "pct": 76.5,
       "status": {
-        "Closed": 2483,
+        "Closed": 2486,
         "Submitted": 64,
-        "To be completed": 682,
-        "Other": 22
+        "To be completed": 678,
+        "Other": 23
       }
     },
     {
@@ -367,6 +374,33 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-28-IES-3800C",
+      "task": "T-00067-2454",
+      "system": "PS5-28-15 - Seal Oil Drain Drum & Pump C",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/27/2026 7:19:54 "
+    },
+    {
+      "tag": "PS5-28-IES-3800B",
+      "task": "T-00067-2453",
+      "system": "PS5-28-14 - Seal Oil Drain Drum & Pump B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/27/2026 7:17:03 "
+    },
+    {
+      "tag": "PS5-28-IES-3800A",
+      "task": "T-00067-2452",
+      "system": "PS5-28-13 - Seal Oil Drain Drum & Pump A",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/27/2026 7:13:54 "
+    },
     {
       "tag": "",
       "task": "T-00240-1311",
@@ -1419,33 +1453,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/22/2026 10:02:20"
-    },
-    {
-      "tag": "PS5-28-TIT-1105",
-      "task": "T-00067-2160",
-      "system": "PS5-28-03 - Closed Drain Drum and Pump 01",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 9:59:40 "
-    },
-    {
-      "tag": "PS5-28-TIT-1104",
-      "task": "T-00067-2155",
-      "system": "PS5-28-03 - Closed Drain Drum and Pump 01",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 9:56:50 "
-    },
-    {
-      "tag": "PS5-71-SDV-0039-CC02",
-      "task": "T-00254-5577",
-      "system": "PS5-71-12 - CFO Service Tank",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 9:47:22 "
     }
   ]
 }
