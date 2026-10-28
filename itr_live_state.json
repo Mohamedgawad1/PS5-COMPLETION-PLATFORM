@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-27 17:38:48",
+  "updated": "2026-10-28 07:17:18",
   "total_tasks_ps5": 14007,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -11,7 +11,7 @@
   },
   "closed": 7013,
   "open": 3285,
-  "today_closed": 5,
+  "today_closed": 0,
   "closed_by_discipline": {
     "I": 3489,
     "E": 3228,
@@ -23,13 +23,6 @@
     "T": 782
   },
   "daily": [
-    {
-      "label": "2026-09-28",
-      "E": 61,
-      "I": 58,
-      "T": 0,
-      "Total": 119
-    },
     {
       "label": "2026-09-29",
       "E": 46,
@@ -232,25 +225,19 @@
       "I": 5,
       "T": 0,
       "Total": 5
+    },
+    {
+      "label": "2026-10-28",
+      "E": 0,
+      "I": 0,
+      "T": 0,
+      "Total": 0
     }
   ],
   "closed_this_week": 32,
   "closed_this_month": 1181,
-  "today_milestone": [
-    {
-      "milestone": "Milestone H",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 4
-    },
-    {
-      "milestone": "Milestone I",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 1
-    }
-  ],
-  "today_milestone_total": 5,
+  "today_milestone": [],
+  "today_milestone_total": 0,
   "milestone_summary": [
     {
       "label": "Milestone A",
