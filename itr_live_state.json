@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-28 17:32:50",
+  "updated": "2026-10-28 17:45:29",
   "total_tasks_ps5": 14007,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7020,
-  "open": 3278,
-  "today_closed": 7,
+  "closed": 7028,
+  "open": 3270,
+  "today_closed": 15,
   "closed_by_discipline": {
-    "I": 3493,
-    "E": 3231,
+    "I": 3495,
+    "E": 3237,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 1100,
-    "E": 1396,
+    "I": 1098,
+    "E": 1390,
     "T": 782
   },
   "daily": [
@@ -228,23 +228,41 @@
     },
     {
       "label": "2026-10-28",
-      "E": 3,
-      "I": 4,
+      "E": 9,
+      "I": 6,
       "T": 0,
-      "Total": 7
+      "Total": 15
     }
   ],
-  "closed_this_week": 39,
-  "closed_this_month": 1188,
+  "closed_this_week": 47,
+  "closed_this_month": 1196,
   "today_milestone": [
+    {
+      "milestone": "Milestone B",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
+    },
     {
       "milestone": "Milestone C",
       "disc": "I",
       "discipline": "Instrumentation (I)",
+      "count": 4
+    },
+    {
+      "milestone": "Milestone D",
+      "disc": "E",
+      "discipline": "Electrical (E)",
       "count": 3
     },
     {
       "milestone": "Milestone F",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 3
+    },
+    {
+      "milestone": "Milestone H",
       "disc": "E",
       "discipline": "Electrical (E)",
       "count": 3
@@ -256,7 +274,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 7,
+  "today_milestone_total": 15,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -276,12 +294,12 @@
       "label": "Milestone B",
       "raw": "PS5 - Milestone B",
       "total": 1714,
-      "closed": 1622,
-      "remaining": 92,
-      "pct": 94.6,
+      "closed": 1623,
+      "remaining": 91,
+      "pct": 94.7,
       "status": {
-        "Closed": 1622,
-        "Submitted": 1,
+        "Closed": 1623,
+        "Submitted": 0,
         "To be completed": 90,
         "Other": 1
       }
@@ -290,13 +308,13 @@
       "label": "Milestone C",
       "raw": "PS5 - Milestone C",
       "total": 958,
-      "closed": 624,
-      "remaining": 334,
-      "pct": 65.1,
+      "closed": 625,
+      "remaining": 333,
+      "pct": 65.2,
       "status": {
-        "Closed": 624,
+        "Closed": 625,
         "Submitted": 0,
-        "To be completed": 333,
+        "To be completed": 332,
         "Other": 1
       }
     },
@@ -304,14 +322,14 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3437,
-      "closed": 2446,
-      "remaining": 991,
-      "pct": 71.2,
+      "closed": 2449,
+      "remaining": 988,
+      "pct": 71.3,
       "status": {
-        "Closed": 2446,
+        "Closed": 2449,
         "Submitted": 2,
-        "To be completed": 987,
-        "Other": 2
+        "To be completed": 983,
+        "Other": 3
       }
     },
     {
@@ -360,13 +378,13 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2489,
-      "remaining": 762,
-      "pct": 76.6,
+      "closed": 2492,
+      "remaining": 759,
+      "pct": 76.7,
       "status": {
-        "Closed": 2489,
+        "Closed": 2492,
         "Submitted": 63,
-        "To be completed": 677,
+        "To be completed": 674,
         "Other": 22
       }
     },
@@ -386,6 +404,78 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-61-IH-0004C-CL01",
+      "task": "T-00023-9778",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/28/2026 2:42:05 "
+    },
+    {
+      "tag": "PS5-61-IH-0004B-CL01",
+      "task": "T-00023-9777",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/28/2026 2:40:13 "
+    },
+    {
+      "tag": "PS5-61-IH-0004A-CL01",
+      "task": "T-00023-9776",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/28/2026 2:38:56 "
+    },
+    {
+      "tag": "PS5-61-IDH-3100C-CD03",
+      "task": "T-00024-2239",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/28/2026 2:37:38 "
+    },
+    {
+      "tag": "PS5-61-IDH-3100B-CD03",
+      "task": "T-00024-2236",
+      "system": "PS5-25-03 - Crude Oil Export Pump B",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/28/2026 2:36:34 "
+    },
+    {
+      "tag": "PS5-87-IRF-0003-CL01",
+      "task": "T-00023-5642",
+      "system": "PS5-71-12 - CFO Service Tank",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/28/2026 2:36:17 "
+    },
+    {
+      "tag": "PS5-01-FCV-0004A",
+      "task": "T-00066-0068",
+      "system": "PS5-01-01 - Fire Water Jockey Pump A/B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/28/2026 2:32:31 "
+    },
+    {
+      "tag": "PS5-71-FCV-0019",
+      "task": "T-00066-0066",
+      "system": "PS5-71-21 - Diesel Transfer Pump A/B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/28/2026 2:30:50 "
+    },
     {
       "tag": "PS5-01-FCV-0003B",
       "task": "T-00066-0062",
@@ -1393,78 +1483,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/23/2026 5:03:46 "
-    },
-    {
-      "tag": "PS5-61-IH-0004-CU09",
-      "task": "T-00254-11811",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/23/2026 5:00:26 "
-    },
-    {
-      "tag": "PS5-61-IH-0004-CU08",
-      "task": "T-00254-11810",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/23/2026 4:57:16 "
-    },
-    {
-      "tag": "PS5-61-IH-0004-CU07",
-      "task": "T-00254-11809",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/23/2026 4:54:00 "
-    },
-    {
-      "tag": "PS5-61-IH-0004-CU06",
-      "task": "T-00254-11808",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/23/2026 4:51:52 "
-    },
-    {
-      "tag": "PS5-61-IH-0004-CU05",
-      "task": "T-00254-11807",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/23/2026 4:50:37 "
-    },
-    {
-      "tag": "PS5-61-IH-0004-CU04",
-      "task": "T-00254-11806",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/23/2026 4:49:33 "
-    },
-    {
-      "tag": "PS5-61-IH-0004-CU03",
-      "task": "T-00254-11805",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/23/2026 4:48:03 "
-    },
-    {
-      "tag": "PS5-61-IH-0004-CU02",
-      "task": "T-00254-11804",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/23/2026 4:46:19 "
     }
   ]
 }
