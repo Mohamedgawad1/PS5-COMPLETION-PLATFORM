@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-28 17:22:19",
+  "updated": "2026-10-28 17:32:50",
   "total_tasks_ps5": 14007,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7016,
-  "open": 3282,
-  "today_closed": 3,
+  "closed": 7020,
+  "open": 3278,
+  "today_closed": 7,
   "closed_by_discipline": {
-    "I": 3490,
-    "E": 3230,
+    "I": 3493,
+    "E": 3231,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 1103,
-    "E": 1397,
+    "I": 1100,
+    "E": 1396,
     "T": 782
   },
   "daily": [
@@ -228,20 +228,26 @@
     },
     {
       "label": "2026-10-28",
-      "E": 2,
-      "I": 1,
+      "E": 3,
+      "I": 4,
       "T": 0,
-      "Total": 3
+      "Total": 7
     }
   ],
-  "closed_this_week": 35,
-  "closed_this_month": 1184,
+  "closed_this_week": 39,
+  "closed_this_month": 1188,
   "today_milestone": [
+    {
+      "milestone": "Milestone C",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 3
+    },
     {
       "milestone": "Milestone F",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 2
+      "count": 3
     },
     {
       "milestone": "Milestone H",
@@ -250,7 +256,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 3,
+  "today_milestone_total": 7,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -275,8 +281,8 @@
       "pct": 94.6,
       "status": {
         "Closed": 1622,
-        "Submitted": 0,
-        "To be completed": 91,
+        "Submitted": 1,
+        "To be completed": 90,
         "Other": 1
       }
     },
@@ -284,13 +290,13 @@
       "label": "Milestone C",
       "raw": "PS5 - Milestone C",
       "total": 958,
-      "closed": 621,
-      "remaining": 337,
-      "pct": 64.8,
+      "closed": 624,
+      "remaining": 334,
+      "pct": 65.1,
       "status": {
-        "Closed": 621,
+        "Closed": 624,
         "Submitted": 0,
-        "To be completed": 336,
+        "To be completed": 333,
         "Other": 1
       }
     },
@@ -326,12 +332,12 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 597,
-      "closed": 511,
-      "remaining": 86,
-      "pct": 85.6,
+      "closed": 512,
+      "remaining": 85,
+      "pct": 85.8,
       "status": {
-        "Closed": 511,
-        "Submitted": 2,
+        "Closed": 512,
+        "Submitted": 1,
         "To be completed": 81,
         "Other": 3
       }
@@ -380,6 +386,42 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-01-FCV-0003B",
+      "task": "T-00066-0062",
+      "system": "PS5-01-03 - Fire Water Pump B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/28/2026 2:29:05 "
+    },
+    {
+      "tag": "PS5-01-FCV-0003A",
+      "task": "T-00066-0061",
+      "system": "PS5-01-02 - Fire Water Pump A",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/28/2026 2:27:29 "
+    },
+    {
+      "tag": "PS5-01-FCV-0004B",
+      "task": "T-00066-0059",
+      "system": "PS5-01-01 - Fire Water Jockey Pump A/B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/28/2026 2:26:07 "
+    },
+    {
+      "tag": "PS5-53-IN-0001-CL03",
+      "task": "T-00608-0944",
+      "system": "PS5-53-04 - Water Treatment Purification Package",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/28/2026 2:23:58 "
+    },
     {
       "tag": "PS5-53-IN-0001-CL02",
       "task": "T-00608-0943",
@@ -1423,42 +1465,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/23/2026 4:46:19 "
-    },
-    {
-      "tag": "PS5-61-IH-0004-CU01",
-      "task": "T-00254-11803",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/23/2026 4:43:56 "
-    },
-    {
-      "tag": "PS5-28-ISO-2008",
-      "task": "T-00241-0166",
-      "system": "PS5-28-10 - Oil Skimmer Package",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 2:12:35 "
-    },
-    {
-      "tag": "PS5-75-MOV-0001",
-      "task": "T-00078-0142",
-      "system": "PS5-28-07 - Open Drains (OD2)",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 10:20:33"
-    },
-    {
-      "tag": "PS5-71-PSE-2401B",
-      "task": "T-00076-0014",
-      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 10:14:46"
     }
   ]
 }
