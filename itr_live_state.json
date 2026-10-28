@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-28 11:41:04",
+  "updated": "2026-10-28 11:51:09",
   "total_tasks_ps5": 14007,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7013,
-  "open": 3285,
-  "today_closed": 0,
+  "closed": 7014,
+  "open": 3284,
+  "today_closed": 1,
   "closed_by_discipline": {
-    "I": 3489,
+    "I": 3490,
     "E": 3228,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 1104,
+    "I": 1103,
     "E": 1399,
     "T": 782
   },
@@ -229,15 +229,22 @@
     {
       "label": "2026-10-28",
       "E": 0,
-      "I": 0,
+      "I": 1,
       "T": 0,
-      "Total": 0
+      "Total": 1
     }
   ],
-  "closed_this_week": 32,
-  "closed_this_month": 1181,
-  "today_milestone": [],
-  "today_milestone_total": 0,
+  "closed_this_week": 33,
+  "closed_this_month": 1182,
+  "today_milestone": [
+    {
+      "milestone": "Milestone H",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
+    }
+  ],
+  "today_milestone_total": 1,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -341,14 +348,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2488,
-      "remaining": 763,
-      "pct": 76.5,
+      "closed": 2489,
+      "remaining": 762,
+      "pct": 76.6,
       "status": {
-        "Closed": 2488,
+        "Closed": 2489,
         "Submitted": 63,
         "To be completed": 677,
-        "Other": 23
+        "Other": 22
       }
     },
     {
@@ -367,6 +374,15 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-28-PIT-0015",
+      "task": "T-00067-2107",
+      "system": "PS5-28-17 - Reinjection Pump",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/28/2026 8:39:58 "
+    },
     {
       "tag": "PS5-28-IES-2008",
       "task": "T-00067-2444",
@@ -1437,15 +1453,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/22/2026 10:12:01"
-    },
-    {
-      "tag": "PS5-71-PDIT-0056A",
-      "task": "T-00067-2121",
-      "system": "PS5-71-05 - CFO Transfer Pump A/B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 10:10:03"
     }
   ]
 }
