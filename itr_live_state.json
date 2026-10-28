@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-28 15:48:45",
+  "updated": "2026-10-28 17:03:25",
   "total_tasks_ps5": 14007,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7014,
-  "open": 3284,
-  "today_closed": 1,
+  "closed": 7015,
+  "open": 3283,
+  "today_closed": 2,
   "closed_by_discipline": {
     "I": 3490,
-    "E": 3228,
+    "E": 3229,
     "T": 296
   },
   "open_by_discipline": {
     "I": 1103,
-    "E": 1399,
+    "E": 1398,
     "T": 782
   },
   "daily": [
@@ -228,15 +228,21 @@
     },
     {
       "label": "2026-10-28",
-      "E": 0,
+      "E": 1,
       "I": 1,
       "T": 0,
-      "Total": 1
+      "Total": 2
     }
   ],
-  "closed_this_week": 33,
-  "closed_this_month": 1182,
+  "closed_this_week": 34,
+  "closed_this_month": 1183,
   "today_milestone": [
+    {
+      "milestone": "Milestone F",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 1
+    },
     {
       "milestone": "Milestone H",
       "disc": "I",
@@ -244,7 +250,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 1,
+  "today_milestone_total": 2,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -320,14 +326,14 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 597,
-      "closed": 509,
-      "remaining": 88,
-      "pct": 85.3,
+      "closed": 510,
+      "remaining": 87,
+      "pct": 85.4,
       "status": {
-        "Closed": 509,
-        "Submitted": 0,
-        "To be completed": 86,
-        "Other": 2
+        "Closed": 510,
+        "Submitted": 1,
+        "To be completed": 82,
+        "Other": 4
       }
     },
     {
@@ -374,6 +380,15 @@
     }
   ],
   "recent_closed": [
+    {
+      "tag": "PS5-53-IN-0001-CL01",
+      "task": "T-00608-0415",
+      "system": "PS5-53-04 - Water Treatment Purification Package",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "10/28/2026 1:59:35 "
+    },
     {
       "tag": "PS5-28-PIT-0015",
       "task": "T-00067-2107",
@@ -1444,15 +1459,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/22/2026 10:13:32"
-    },
-    {
-      "tag": "PS5-71-PDIT-0056B",
-      "task": "T-00067-2116",
-      "system": "PS5-71-05 - CFO Transfer Pump A/B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/22/2026 10:12:01"
     }
   ]
 }
