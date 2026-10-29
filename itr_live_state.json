@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-10-28 21:40:49",
+  "updated": "2026-10-29 08:15:46",
   "total_tasks_ps5": 14007,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -11,7 +11,7 @@
   },
   "closed": 7036,
   "open": 3262,
-  "today_closed": 23,
+  "today_closed": 0,
   "closed_by_discipline": {
     "I": 3495,
     "E": 3245,
@@ -23,13 +23,6 @@
     "T": 782
   },
   "daily": [
-    {
-      "label": "2026-09-29",
-      "E": 46,
-      "I": 26,
-      "T": 0,
-      "Total": 72
-    },
     {
       "label": "2026-09-30",
       "E": 46,
@@ -232,55 +225,19 @@
       "I": 6,
       "T": 0,
       "Total": 23
+    },
+    {
+      "label": "2026-10-29",
+      "E": 0,
+      "I": 0,
+      "T": 0,
+      "Total": 0
     }
   ],
   "closed_this_week": 55,
   "closed_this_month": 1204,
-  "today_milestone": [
-    {
-      "milestone": "Milestone B",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 1
-    },
-    {
-      "milestone": "Milestone C",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 4
-    },
-    {
-      "milestone": "Milestone D",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 8
-    },
-    {
-      "milestone": "Milestone F",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 3
-    },
-    {
-      "milestone": "Milestone G",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 3
-    },
-    {
-      "milestone": "Milestone H",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 3
-    },
-    {
-      "milestone": "Milestone H",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 1
-    }
-  ],
-  "today_milestone_total": 23,
+  "today_milestone": [],
+  "today_milestone_total": 0,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -390,8 +347,8 @@
       "status": {
         "Closed": 2492,
         "Submitted": 63,
-        "To be completed": 660,
-        "Other": 36
+        "To be completed": 658,
+        "Other": 38
       }
     },
     {
