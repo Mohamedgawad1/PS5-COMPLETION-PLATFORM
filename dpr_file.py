@@ -86,15 +86,24 @@ def _scan(dirs):
 def find_dpr():
     """The single canonical DPR workbook, or None.
 
-    Prefers CANON_DIR and, when several files sit there, the newest one by the
+    Scans CANON_DIR *and* the Downloads root, then picks the newest one by the
     date in its filename (not by mtime - a file can be touched without being
-    newer).
+    newer). CANON_DIR wins a tie.
+
+    Searching only CANON_DIR was the second half of the drift described above:
+    a new daily workbook dropped straight into Downloads\\ was invisible here,
+    while apply_platform_edits_to_summery.py (with its own private finder)
+    picked it and wrote every platform edit into it. Writes and builds then
+    used two different workbooks, so the platform never moved.
     """
     in_canon = _scan((CANON_DIR,))
-    if in_canon:
-        return max(in_canon)[2]
-    found = _scan(FALLBACK_DIRS)
-    return max(found)[2] if found else None
+    in_home = _scan(FALLBACK_DIRS)
+    best_canon = max(in_canon) if in_canon else None
+    best_home = max(in_home) if in_home else None
+    if best_canon and best_home:
+        return (best_canon if best_canon[:2] >= best_home[:2] else best_home)[2]
+    pick = best_canon or best_home
+    return pick[2] if pick else None
 
 
 def warn_if_shadow_copies(path):
