@@ -35,6 +35,7 @@ from openpyxl.styles import Font, PatternFill
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import dpr_file
+import win_file
 
 HOME = os.path.join(os.path.expanduser('~'), 'Downloads')
 DL_SUB = os.path.join(HOME, 'PS5 - CPP AGI Completion Progress Dashboard_files')
@@ -44,6 +45,11 @@ STATE_URL = ('https://raw.githubusercontent.com/Mohamedgawad1/'
              'PS5-COMPLETION-PLATFORM/main/platform_state.json')
 SEEN_FILE = os.path.join(HERE, '_platform_sync_seen.json')
 REPORT_FILE = os.path.join(HERE, '_platform_sync_report.txt')
+
+# Set when the workbook could not be replaced because Excel holds it open.
+# main() turns this into exit code 2 so cloud_auto_update can retry the whole
+# build on the next cycle instead of reporting a failure.
+DEFERRED = False
 
 # ---------------------------------------------------------------- mapping --
 # platform column  -> exact Excel header text
@@ -345,6 +351,7 @@ def index_ids(ws, idc, start=2):
 
 
 def main():
+    global DEFERRED
     args = sys.argv[1:]
     force = '--force' in args
     watch = '--watch' in args
@@ -359,13 +366,15 @@ def main():
             run_once(force, state_file, target)
         except Exception as e:
             print('[sync] error:', e)
+            if win_file.is_lock_error(e):
+                DEFERRED = True
         if not watch:
-            return 0
+            return 2 if DEFERRED else 0
         time.sleep(300)
 
 
 def run_once(force, state_file=None, target=None):
-    global SEEN_FILE
+    global SEEN_FILE, DEFERRED
     st = fetch_state(state_file)
     if st is None:
         return
@@ -390,13 +399,18 @@ def run_once(force, state_file=None, target=None):
     backup = os.path.join(os.path.dirname(src),
                           os.path.splitext(os.path.basename(src))[0]
                           + ' -BACKUP.xlsx')
-    shutil.copy2(src, backup)
+    if not win_file.copy_with_retry(src, backup, attempts=6):
+        print('[sync] deferred - workbook is open in Excel, try again later')
+        DEFERRED = True
+        return
 
     try:
         wb = openpyxl.load_workbook(src)
     except Exception as e:
         print(f'[sync] cannot open "{os.path.basename(src)}" ({e}) - '
               f'close Excel / check the file. NOTHING was changed.')
+        if win_file.is_lock_error(e):
+            DEFERRED = True
         return
     rep = {'written': 0, 'notes': 0, 'colors': 0, 'skipped_formula': [],
            'skipped_derived': [], 'no_row': [], 'no_col': []}
@@ -688,6 +702,7 @@ def run_once(force, state_file=None, target=None):
         if os.path.exists(tmpf):
             os.remove(tmpf)
         print('[sync] file locked - nothing changed, try again later')
+        DEFERRED = True
         return
     try:
         _z = zipfile.ZipFile(tmpf)
@@ -778,6 +793,7 @@ def run_once(force, state_file=None, target=None):
             except OSError:
                 pass
         print('[sync] target stays locked - nothing changed, try again later')
+        DEFERRED = True
         return
 
     save_seen(h) if not state_file else None
