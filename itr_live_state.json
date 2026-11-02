@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-02 16:36:47",
+  "updated": "2026-11-02 17:11:11",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7202,
-  "open": 3096,
-  "today_closed": 3,
+  "closed": 7208,
+  "open": 3090,
+  "today_closed": 9,
   "closed_by_discipline": {
     "I": 3526,
-    "E": 3380,
+    "E": 3386,
     "T": 296
   },
   "open_by_discipline": {
     "I": 1067,
-    "E": 1247,
+    "E": 1241,
     "T": 782
   },
   "daily": [
@@ -228,23 +228,29 @@
     },
     {
       "label": "2026-11-02",
-      "E": 3,
+      "E": 9,
       "I": 0,
       "T": 0,
-      "Total": 3
+      "Total": 9
     }
   ],
-  "closed_this_week": 3,
-  "closed_this_month": 3,
+  "closed_this_week": 9,
+  "closed_this_month": 9,
   "today_milestone": [
+    {
+      "milestone": "Milestone F",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 5
+    },
     {
       "milestone": "Milestone H",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 3
+      "count": 4
     }
   ],
-  "today_milestone_total": 3,
+  "today_milestone_total": 9,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -320,13 +326,13 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 597,
-      "closed": 522,
-      "remaining": 75,
-      "pct": 87.4,
+      "closed": 527,
+      "remaining": 70,
+      "pct": 88.3,
       "status": {
-        "Closed": 522,
+        "Closed": 527,
         "Submitted": 2,
-        "To be completed": 72,
+        "To be completed": 67,
         "Other": 1
       }
     },
@@ -348,14 +354,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2603,
-      "remaining": 648,
+      "closed": 2604,
+      "remaining": 647,
       "pct": 80.1,
       "status": {
-        "Closed": 2603,
+        "Closed": 2604,
         "Submitted": 63,
-        "To be completed": 562,
-        "Other": 23
+        "To be completed": 560,
+        "Other": 24
       }
     },
     {
@@ -4311,9 +4317,9 @@
       "sid": "PS5-71-07",
       "name": "PS5-71-07 - Crude Fuel Separation Module (UCP)",
       "total": 112,
-      "closed": 83,
-      "open": 29,
-      "pct": 74.1,
+      "closed": 84,
+      "open": 28,
+      "pct": 75.0,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 64,
@@ -4321,7 +4327,7 @@
         "T": 4
       },
       "closed_by_discipline": {
-        "E": 35,
+        "E": 36,
         "I": 44,
         "T": 4
       }
@@ -4425,9 +4431,9 @@
       "sid": "PS5-71-15",
       "name": "PS5-71-15 - Diesel Fuel Storage Tank",
       "total": 35,
-      "closed": 27,
-      "open": 8,
-      "pct": 77.1,
+      "closed": 28,
+      "open": 7,
+      "pct": 80.0,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 8,
@@ -4435,7 +4441,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 5,
+        "E": 6,
         "I": 22,
         "T": 0
       }
@@ -4501,17 +4507,17 @@
       "sid": "PS5-71-19",
       "name": "PS5-71-19 - Diesel Separator Module (UCP)",
       "total": 37,
-      "closed": 33,
-      "open": 4,
-      "pct": 89.2,
-      "status": "IN PROGRESS",
+      "closed": 37,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 16,
         "I": 17,
         "T": 4
       },
       "closed_by_discipline": {
-        "E": 12,
+        "E": 16,
         "I": 17,
         "T": 4
       }
@@ -6494,7 +6500,7 @@
     "T-00023-5640": "Closed",
     "T-00023-5641": "Closed",
     "T-00023-5642": "Closed",
-    "T-00023-5643": "Open",
+    "T-00023-5643": "Closed",
     "T-00024-2028": "Closed",
     "T-00024-2029": "Closed",
     "T-00024-2030": "Closed",
@@ -15451,11 +15457,11 @@
     "T-00023-11270": "Open",
     "T-00023-11271": "Open",
     "T-00023-11272": "Closed",
-    "T-00023-11273": "Open",
-    "T-00023-11274": "Open",
-    "T-00023-11275": "Open",
-    "T-00023-11276": "Open",
-    "T-00023-11277": "Open",
+    "T-00023-11273": "Closed",
+    "T-00023-11274": "Closed",
+    "T-00023-11275": "Closed",
+    "T-00023-11276": "Closed",
+    "T-00023-11277": "Closed",
     "T-00233-11253": "Closed",
     "T-00233-11254": "Closed",
     "T-00233-11255": "Closed",
@@ -15521,6 +15527,60 @@
     "T-00233-12271": "Closed"
   },
   "recent_closed": [
+    {
+      "tag": "PS5-87-IRF-0004-CL01",
+      "task": "T-00023-5643",
+      "system": "PS5-71-15 - Diesel Fuel Storage Tank",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/2/2026 2:03:50 P"
+    },
+    {
+      "tag": "PS5-71-BE-0005-CL04",
+      "task": "T-00023-11277",
+      "system": "PS5-71-19 - Diesel Separator Module (UCP)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/2/2026 1:59:34 P"
+    },
+    {
+      "tag": "PS5-71-BE-0005-CL03",
+      "task": "T-00023-11276",
+      "system": "PS5-71-19 - Diesel Separator Module (UCP)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/2/2026 1:56:48 P"
+    },
+    {
+      "tag": "PS5-71-BE-0005-CL02",
+      "task": "T-00023-11275",
+      "system": "PS5-71-19 - Diesel Separator Module (UCP)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/2/2026 1:52:17 P"
+    },
+    {
+      "tag": "PS5-71-BE-0005-CL01",
+      "task": "T-00023-11274",
+      "system": "PS5-71-19 - Diesel Separator Module (UCP)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/2/2026 1:49:16 P"
+    },
+    {
+      "tag": "PS5-71-BE-0001B-CL12",
+      "task": "T-00023-11273",
+      "system": "PS5-71-07 - Crude Fuel Separation Module (UCP)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/2/2026 1:38:24 P"
+    },
     {
       "tag": "PS5-71-BE-0001B-CL11",
       "task": "T-00023-11272",
@@ -16546,60 +16606,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/29/2026 2:15:25 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1410",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/29/2026 2:15:00 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1406",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/29/2026 2:14:34 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1404",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/29/2026 2:14:14 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1403",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/29/2026 2:13:51 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1400",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/29/2026 2:13:28 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1390",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/29/2026 2:12:58 "
     }
   ]
 }
