@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-02 15:47:36",
+  "updated": "2026-11-02 16:36:47",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7199,
-  "open": 3099,
-  "today_closed": 0,
+  "closed": 7202,
+  "open": 3096,
+  "today_closed": 3,
   "closed_by_discipline": {
     "I": 3526,
-    "E": 3377,
+    "E": 3380,
     "T": 296
   },
   "open_by_discipline": {
     "I": 1067,
-    "E": 1250,
+    "E": 1247,
     "T": 782
   },
   "daily": [
@@ -228,16 +228,23 @@
     },
     {
       "label": "2026-11-02",
-      "E": 0,
+      "E": 3,
       "I": 0,
       "T": 0,
-      "Total": 0
+      "Total": 3
     }
   ],
-  "closed_this_week": 0,
-  "closed_this_month": 0,
-  "today_milestone": [],
-  "today_milestone_total": 0,
+  "closed_this_week": 3,
+  "closed_this_month": 3,
+  "today_milestone": [
+    {
+      "milestone": "Milestone H",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 3
+    }
+  ],
+  "today_milestone_total": 3,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -299,12 +306,12 @@
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1532,
-      "closed": 1400,
-      "remaining": 132,
+      "closed": 1401,
+      "remaining": 131,
       "pct": 91.4,
       "status": {
-        "Closed": 1400,
-        "Submitted": 2,
+        "Closed": 1401,
+        "Submitted": 1,
         "To be completed": 128,
         "Other": 2
       }
@@ -313,12 +320,12 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 597,
-      "closed": 520,
-      "remaining": 77,
-      "pct": 87.1,
+      "closed": 522,
+      "remaining": 75,
+      "pct": 87.4,
       "status": {
-        "Closed": 520,
-        "Submitted": 4,
+        "Closed": 522,
+        "Submitted": 2,
         "To be completed": 72,
         "Other": 1
       }
@@ -341,14 +348,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2600,
-      "remaining": 651,
-      "pct": 80.0,
+      "closed": 2603,
+      "remaining": 648,
+      "pct": 80.1,
       "status": {
-        "Closed": 2600,
+        "Closed": 2603,
         "Submitted": 63,
-        "To be completed": 566,
-        "Other": 22
+        "To be completed": 562,
+        "Other": 23
       }
     },
     {
@@ -4304,9 +4311,9 @@
       "sid": "PS5-71-07",
       "name": "PS5-71-07 - Crude Fuel Separation Module (UCP)",
       "total": 112,
-      "closed": 80,
-      "open": 32,
-      "pct": 71.4,
+      "closed": 83,
+      "open": 29,
+      "pct": 74.1,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 64,
@@ -4314,7 +4321,7 @@
         "T": 4
       },
       "closed_by_discipline": {
-        "E": 32,
+        "E": 35,
         "I": 44,
         "T": 4
       }
@@ -15434,16 +15441,16 @@
     "T-00023-11260": "Open",
     "T-00023-11261": "Open",
     "T-00023-11262": "Open",
-    "T-00023-11263": "Open",
+    "T-00023-11263": "Closed",
     "T-00023-11264": "Open",
-    "T-00023-11265": "Open",
+    "T-00023-11265": "Closed",
     "T-00023-11266": "Open",
     "T-00023-11267": "Open",
     "T-00023-11268": "Open",
     "T-00023-11269": "Open",
     "T-00023-11270": "Open",
     "T-00023-11271": "Open",
-    "T-00023-11272": "Open",
+    "T-00023-11272": "Closed",
     "T-00023-11273": "Open",
     "T-00023-11274": "Open",
     "T-00023-11275": "Open",
@@ -15514,6 +15521,33 @@
     "T-00233-12271": "Closed"
   },
   "recent_closed": [
+    {
+      "tag": "PS5-71-BE-0001B-CL11",
+      "task": "T-00023-11272",
+      "system": "PS5-71-07 - Crude Fuel Separation Module (UCP)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/2/2026 1:35:44 P"
+    },
+    {
+      "tag": "PS5-71-BE-0001B-CL04",
+      "task": "T-00023-11265",
+      "system": "PS5-71-07 - Crude Fuel Separation Module (UCP)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/2/2026 1:33:23 P"
+    },
+    {
+      "tag": "PS5-71-BE-0001B-CL02",
+      "task": "T-00023-11263",
+      "system": "PS5-71-07 - Crude Fuel Separation Module (UCP)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/2/2026 1:32:24 P"
+    },
     {
       "tag": "",
       "task": "T-00240-1310",
@@ -16566,33 +16600,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/29/2026 2:12:58 "
-    },
-    {
-      "tag": "PS5-09-FCU-8442A-CU01",
-      "task": "T-00254-11664",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/29/2026 10:49:25"
-    },
-    {
-      "tag": "PS5-09-FCU-8442A-CU02",
-      "task": "T-00254-11665",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/29/2026 10:48:32"
-    },
-    {
-      "tag": "PS5-09-FCU-8442B-CU01",
-      "task": "T-00254-11666",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/29/2026 10:47:35"
     }
   ]
 }
