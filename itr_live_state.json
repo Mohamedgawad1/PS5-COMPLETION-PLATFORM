@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-02 20:39:43",
+  "updated": "2026-11-02 20:48:32",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7223,
-  "open": 3075,
-  "today_closed": 24,
+  "closed": 7226,
+  "open": 3072,
+  "today_closed": 27,
   "closed_by_discipline": {
-    "I": 3529,
+    "I": 3532,
     "E": 3398,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 1064,
+    "I": 1061,
     "E": 1229,
     "T": 782
   },
@@ -229,19 +229,25 @@
     {
       "label": "2026-11-02",
       "E": 21,
-      "I": 3,
+      "I": 6,
       "T": 0,
-      "Total": 24
+      "Total": 27
     }
   ],
-  "closed_this_week": 24,
-  "closed_this_month": 24,
+  "closed_this_week": 27,
+  "closed_this_month": 27,
   "today_milestone": [
     {
       "milestone": "Milestone D",
       "disc": "E",
       "discipline": "Electrical (E)",
       "count": 6
+    },
+    {
+      "milestone": "Milestone E",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 2
     },
     {
       "milestone": "Milestone F",
@@ -259,10 +265,10 @@
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 3
+      "count": 4
     }
   ],
-  "today_milestone_total": 24,
+  "today_milestone_total": 27,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -288,8 +294,8 @@
       "status": {
         "Closed": 1631,
         "Submitted": 0,
-        "To be completed": 82,
-        "Other": 1
+        "To be completed": 81,
+        "Other": 2
       }
     },
     {
@@ -324,13 +330,13 @@
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1532,
-      "closed": 1401,
-      "remaining": 131,
-      "pct": 91.4,
+      "closed": 1403,
+      "remaining": 129,
+      "pct": 91.6,
       "status": {
-        "Closed": 1401,
+        "Closed": 1403,
         "Submitted": 1,
-        "To be completed": 128,
+        "To be completed": 126,
         "Other": 2
       }
     },
@@ -366,13 +372,13 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2613,
-      "remaining": 638,
+      "closed": 2614,
+      "remaining": 637,
       "pct": 80.4,
       "status": {
-        "Closed": 2613,
+        "Closed": 2614,
         "Submitted": 63,
-        "To be completed": 553,
+        "To be completed": 552,
         "Other": 22
       }
     },
@@ -2524,9 +2530,9 @@
       "sid": "PS5-60-24",
       "name": "PS5-60-24 - Cooling Water Tank & Pump",
       "total": 12,
-      "closed": 9,
-      "open": 3,
-      "pct": 75.0,
+      "closed": 10,
+      "open": 2,
+      "pct": 83.3,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 4,
@@ -2535,7 +2541,7 @@
       },
       "closed_by_discipline": {
         "E": 4,
-        "I": 5,
+        "I": 6,
         "T": 0
       }
     },
@@ -2543,9 +2549,9 @@
       "sid": "PS5-60-25",
       "name": "PS5-60-25 - Cooling Water Maintenance Tank & Return Pump",
       "total": 12,
-      "closed": 9,
-      "open": 3,
-      "pct": 75.0,
+      "closed": 10,
+      "open": 2,
+      "pct": 83.3,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 4,
@@ -2554,7 +2560,7 @@
       },
       "closed_by_discipline": {
         "E": 4,
-        "I": 5,
+        "I": 6,
         "T": 0
       }
     },
@@ -4291,9 +4297,9 @@
       "sid": "PS5-71-05",
       "name": "PS5-71-05 - CFO Transfer Pump A/B",
       "total": 45,
-      "closed": 39,
-      "open": 6,
-      "pct": 86.7,
+      "closed": 40,
+      "open": 5,
+      "pct": 88.9,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 10,
@@ -4302,7 +4308,7 @@
       },
       "closed_by_discipline": {
         "E": 10,
-        "I": 29,
+        "I": 30,
         "T": 0
       }
     },
@@ -8818,8 +8824,8 @@
     "T-00069-5303": "Closed",
     "T-00069-5304": "Closed",
     "T-00069-5305": "Closed",
-    "T-00069-5306": "Open",
-    "T-00069-5307": "Open",
+    "T-00069-5306": "Closed",
+    "T-00069-5307": "Closed",
     "T-00069-5308": "Closed",
     "T-00069-5309": "Closed",
     "T-00069-5310": "Closed",
@@ -8919,7 +8925,7 @@
     "T-00069-5447": "Closed",
     "T-00069-5448": "Open",
     "T-00069-5449": "Open",
-    "T-00069-5450": "Open",
+    "T-00069-5450": "Closed",
     "T-00069-5451": "Closed",
     "T-00069-5452": "Closed",
     "T-00069-5453": "Closed",
@@ -15540,6 +15546,33 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-60-LIT-4401-CJ01",
+      "task": "T-00069-5307",
+      "system": "PS5-60-25 - Cooling Water Maintenance Tank & Return Pump",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/2/2026 5:43:50 P"
+    },
+    {
+      "tag": "PS5-60-LIT-4301-CJ01",
+      "task": "T-00069-5306",
+      "system": "PS5-60-24 - Cooling Water Tank & Pump",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/2/2026 5:42:42 P"
+    },
+    {
+      "tag": "PS5-71-FIT-0020-CJ01",
+      "task": "T-00069-5450",
+      "system": "PS5-71-05 - CFO Transfer Pump A/B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/2/2026 5:41:44 P"
+    },
+    {
       "tag": "PS5-03-RMAC-0304",
       "task": "T-00067-0652",
       "system": "PS5-03-03 - FZ-03 - Buildings Area",
@@ -16591,33 +16624,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/30/2026 11:57:46"
-    },
-    {
-      "tag": "PS5-84-OB-0007_Lightning",
-      "task": "T-00040-0061",
-      "system": "PS5-63-01 - Electrical Earthing",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/30/2026 11:48:12"
-    },
-    {
-      "tag": "PS5-84-OB-0006_Lightning",
-      "task": "T-00040-0060",
-      "system": "PS5-63-01 - Electrical Earthing",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/30/2026 11:46:55"
-    },
-    {
-      "tag": "PS5-84-OB-0003_Lightning",
-      "task": "T-00040-0058",
-      "system": "PS5-63-01 - Electrical Earthing",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/30/2026 11:45:05"
     }
   ]
 }
