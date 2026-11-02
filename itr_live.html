@@ -41,6 +41,11 @@
   <div class="card"><div class="lbl">إجمالي E&amp;I&amp;T</div><div class="num" id="total">&hellip;</div></div>
 </div>
 <div class="meta" id="meta">جارٍ التحديث…</div>
+<h2 style="font-size:15px;color:#7dd3fc;margin-top:28px">ITR مغلق / مفتوح لكل Subsystem — مباشر</h2>
+<div class="wrap"><table id="subtbl">
+<thead><tr><th>Subsystem</th><th>Total</th><th>Closed</th><th>Open</th><th>%</th><th>Status</th></tr></thead>
+<tbody id="subrows"></tbody>
+</table></div>
 <h2 style="font-size:15px;color:#7dd3fc;margin-top:28px">آخر ITRs متقفلة — بالتفاصيل (باشر)</h2>
 <div class="wrap"><table id="tbl">
 <thead><tr><th>Task ID</th><th>Asset Tag</th><th>النظام (System)</th><th>Loop</th><th>Disc</th><th>التشغيل</th><th>تاريخ القفل</th></tr></thead>
@@ -59,6 +64,19 @@
       'آخر تحديث من المنصة: <b>' + (u.updated||'') + '</b><br>النطاق: ' + (u.scope||'') +
       '<br>يتحدث تلقائياً كل دقيقة. <span class="err" id="st"></span>';
     document.title = 'ITR Closed: ' + fmt(u.closed) + ' | PS5 CPP AGI';
+    const sb = document.getElementById('subrows');
+    if(sb){
+      const esc2 = s => String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+      const list = Array.isArray(u.subsystem_summary) ? u.subsystem_summary.slice() : [];
+      list.sort((a,b)=>String(a.sid).localeCompare(String(b.sid),'en',{numeric:true}));
+      sb.innerHTML = list.map(s=>{
+        const col = s.status==='COMPLETE' ? '#34d399' : (s.status==='OPEN' ? '#f87171' : '#fbbf24');
+        return '<tr><td><b>'+esc2(s.sid)+'</b> · '+esc2(String(s.name||'').replace(/^[^-]+ - /,''))+'</td>'+
+          '<td>'+fmt(s.total)+'</td><td style="color:#34d399;font-weight:700">'+fmt(s.closed)+'</td>'+
+          '<td style="color:#f87171;font-weight:700">'+fmt(s.open)+'</td><td>'+(s.pct==null?'':s.pct+'%')+'</td>'+
+          '<td style="color:'+col+';font-weight:700">'+esc2(s.status)+'</td></tr>';
+      }).join('') || '<tr><td colspan="6">لا توجد بيانات</td></tr>';
+    }
     const tb = document.getElementById('rows');
     if(tb && Array.isArray(u.recent_closed)){
       tb.innerHTML = u.recent_closed.map(r=>{
