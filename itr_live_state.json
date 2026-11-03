@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-03 20:39:19",
+  "updated": "2026-11-03 20:58:04",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7241,
-  "open": 3057,
-  "today_closed": 8,
+  "closed": 7249,
+  "open": 3049,
+  "today_closed": 16,
   "closed_by_discipline": {
-    "I": 3547,
+    "I": 3555,
     "E": 3398,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 1046,
+    "I": 1038,
     "E": 1229,
     "T": 782
   },
@@ -229,22 +229,34 @@
     {
       "label": "2026-11-03",
       "E": 0,
-      "I": 8,
+      "I": 16,
       "T": 0,
-      "Total": 8
+      "Total": 16
     }
   ],
-  "closed_this_week": 42,
-  "closed_this_month": 42,
+  "closed_this_week": 50,
+  "closed_this_month": 50,
   "today_milestone": [
     {
       "milestone": "Milestone D",
       "disc": "I",
       "discipline": "Instrumentation (I)",
       "count": 8
+    },
+    {
+      "milestone": "Milestone E",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 2
+    },
+    {
+      "milestone": "Milestone H",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 6
     }
   ],
-  "today_milestone_total": 8,
+  "today_milestone_total": 16,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -269,9 +281,9 @@
       "pct": 95.3,
       "status": {
         "Closed": 1633,
-        "Submitted": 0,
-        "To be completed": 80,
-        "Other": 1
+        "Submitted": 1,
+        "To be completed": 78,
+        "Other": 2
       }
     },
     {
@@ -306,13 +318,13 @@
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1532,
-      "closed": 1404,
-      "remaining": 128,
-      "pct": 91.6,
+      "closed": 1406,
+      "remaining": 126,
+      "pct": 91.8,
       "status": {
-        "Closed": 1404,
+        "Closed": 1406,
         "Submitted": 0,
-        "To be completed": 126,
+        "To be completed": 124,
         "Other": 2
       }
     },
@@ -348,14 +360,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2615,
-      "remaining": 636,
-      "pct": 80.4,
+      "closed": 2621,
+      "remaining": 630,
+      "pct": 80.6,
       "status": {
-        "Closed": 2615,
-        "Submitted": 63,
-        "To be completed": 547,
-        "Other": 26
+        "Closed": 2621,
+        "Submitted": 64,
+        "To be completed": 542,
+        "Other": 24
       }
     },
     {
@@ -1594,9 +1606,9 @@
       "sid": "PS5-25-02",
       "name": "PS5-25-02 - Crude Oil Export Pump A",
       "total": 190,
-      "closed": 163,
-      "open": 27,
-      "pct": 85.8,
+      "closed": 164,
+      "open": 26,
+      "pct": 86.3,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 95,
@@ -1605,7 +1617,7 @@
       },
       "closed_by_discipline": {
         "E": 78,
-        "I": 85,
+        "I": 86,
         "T": 0
       }
     },
@@ -1613,9 +1625,9 @@
       "sid": "PS5-25-03",
       "name": "PS5-25-03 - Crude Oil Export Pump B",
       "total": 187,
-      "closed": 180,
-      "open": 7,
-      "pct": 96.3,
+      "closed": 181,
+      "open": 6,
+      "pct": 96.8,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 92,
@@ -1624,7 +1636,7 @@
       },
       "closed_by_discipline": {
         "E": 89,
-        "I": 91,
+        "I": 92,
         "T": 0
       }
     },
@@ -1632,9 +1644,9 @@
       "sid": "PS5-25-04",
       "name": "PS5-25-04 - Crude Oil Export Pump C",
       "total": 187,
-      "closed": 180,
-      "open": 7,
-      "pct": 96.3,
+      "closed": 181,
+      "open": 6,
+      "pct": 96.8,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 92,
@@ -1643,7 +1655,7 @@
       },
       "closed_by_discipline": {
         "E": 89,
-        "I": 91,
+        "I": 92,
         "T": 0
       }
     },
@@ -1936,10 +1948,10 @@
       "sid": "PS5-28-17",
       "name": "PS5-28-17 - Reinjection Pump",
       "total": 53,
-      "closed": 52,
-      "open": 1,
-      "pct": 98.1,
-      "status": "IN PROGRESS",
+      "closed": 53,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 16,
         "I": 37,
@@ -1947,7 +1959,7 @@
       },
       "closed_by_discipline": {
         "E": 16,
-        "I": 36,
+        "I": 37,
         "T": 0
       }
     },
@@ -2506,9 +2518,9 @@
       "sid": "PS5-60-24",
       "name": "PS5-60-24 - Cooling Water Tank & Pump",
       "total": 12,
-      "closed": 10,
-      "open": 2,
-      "pct": 83.3,
+      "closed": 11,
+      "open": 1,
+      "pct": 91.7,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 4,
@@ -2517,7 +2529,7 @@
       },
       "closed_by_discipline": {
         "E": 4,
-        "I": 6,
+        "I": 7,
         "T": 0
       }
     },
@@ -2525,9 +2537,9 @@
       "sid": "PS5-60-25",
       "name": "PS5-60-25 - Cooling Water Maintenance Tank & Return Pump",
       "total": 12,
-      "closed": 10,
-      "open": 2,
-      "pct": 83.3,
+      "closed": 11,
+      "open": 1,
+      "pct": 91.7,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 4,
@@ -2536,7 +2548,7 @@
       },
       "closed_by_discipline": {
         "E": 4,
-        "I": 6,
+        "I": 7,
         "T": 0
       }
     },
@@ -4273,9 +4285,9 @@
       "sid": "PS5-71-05",
       "name": "PS5-71-05 - CFO Transfer Pump A/B",
       "total": 45,
-      "closed": 40,
-      "open": 5,
-      "pct": 88.9,
+      "closed": 41,
+      "open": 4,
+      "pct": 91.1,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 10,
@@ -4284,7 +4296,7 @@
       },
       "closed_by_discipline": {
         "E": 10,
-        "I": 30,
+        "I": 31,
         "T": 0
       }
     },
@@ -4387,9 +4399,9 @@
       "sid": "PS5-71-13",
       "name": "PS5-71-13 - CFO Service Pump A/B",
       "total": 37,
-      "closed": 31,
-      "open": 6,
-      "pct": 83.8,
+      "closed": 32,
+      "open": 5,
+      "pct": 86.5,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 10,
@@ -4398,7 +4410,7 @@
       },
       "closed_by_discipline": {
         "E": 9,
-        "I": 22,
+        "I": 23,
         "T": 0
       }
     },
@@ -7689,9 +7701,9 @@
     "T-00067-2059": "Closed",
     "T-00067-2060": "Closed",
     "T-00067-2061": "Closed",
-    "T-00067-2062": "Open",
+    "T-00067-2062": "Closed",
     "T-00067-2063": "Closed",
-    "T-00067-2064": "Open",
+    "T-00067-2064": "Closed",
     "T-00067-2065": "Closed",
     "T-00067-2066": "Closed",
     "T-00067-2067": "Closed",
@@ -7714,7 +7726,7 @@
     "T-00067-2078": "Open",
     "T-00067-2079": "Closed",
     "T-00067-2080": "Open",
-    "T-00067-2081": "Open",
+    "T-00067-2081": "Closed",
     "T-00067-2082": "Open",
     "T-00067-2083": "Open",
     "T-00067-2084": "Closed",
@@ -7723,7 +7735,7 @@
     "T-00067-2087": "Closed",
     "T-00067-2088": "Open",
     "T-00067-2089": "Closed",
-    "T-00067-2090": "Open",
+    "T-00067-2090": "Closed",
     "T-00067-2091": "Closed",
     "T-00067-2092": "Closed",
     "T-00067-2093": "Open",
@@ -7749,8 +7761,8 @@
     "T-00067-2105": "Closed",
     "T-00067-2106": "Open",
     "T-00067-2107": "Closed",
-    "T-00067-2108": "Open",
-    "T-00067-2109": "Open",
+    "T-00067-2108": "Closed",
+    "T-00067-2109": "Closed",
     "T-00067-2110": "Closed",
     "T-00067-2111": "Closed",
     "T-00067-2112": "Closed",
@@ -7760,14 +7772,14 @@
     "T-00067-2116": "Closed",
     "T-00067-2117": "Closed",
     "T-00067-2118": "Closed",
-    "T-00067-2119": "Open",
+    "T-00067-2119": "Closed",
     "T-00067-2120": "Closed",
     "T-00067-2121": "Closed",
     "T-00067-2122": "Closed",
     "T-00067-2123": "Closed",
     "T-00067-2124": "Closed",
     "T-00067-2125": "Closed",
-    "T-00067-2126": "Open",
+    "T-00067-2126": "Closed",
     "T-00067-2127": "Closed",
     "T-00067-2128": "Closed",
     "T-00067-2129": "Closed",
@@ -15522,6 +15534,78 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-60-LIT-4401",
+      "task": "T-00067-2081",
+      "system": "PS5-60-25 - Cooling Water Maintenance Tank & Return Pump",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/3/2026 5:56:29 P"
+    },
+    {
+      "tag": "PS5-60-LIT-4301",
+      "task": "T-00067-2090",
+      "system": "PS5-60-24 - Cooling Water Tank & Pump",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/3/2026 5:55:39 P"
+    },
+    {
+      "tag": "PS5-71-FIT-0020",
+      "task": "T-00067-2064",
+      "system": "PS5-71-05 - CFO Transfer Pump A/B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/3/2026 5:49:12 P"
+    },
+    {
+      "tag": "PS5-71-FIT-0018",
+      "task": "T-00067-2062",
+      "system": "PS5-71-13 - CFO Service Pump A/B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/3/2026 5:47:19 P"
+    },
+    {
+      "tag": "PS5-28-PIT-0041",
+      "task": "T-00067-2108",
+      "system": "PS5-28-17 - Reinjection Pump",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/3/2026 5:44:19 P"
+    },
+    {
+      "tag": "PS5-25-PIT-0004C",
+      "task": "T-00067-2109",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/3/2026 5:42:05 P"
+    },
+    {
+      "tag": "PS5-25-PIT-0004B",
+      "task": "T-00067-2126",
+      "system": "PS5-25-03 - Crude Oil Export Pump B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/3/2026 5:41:45 P"
+    },
+    {
+      "tag": "PS5-25-PIT-0004A",
+      "task": "T-00067-2119",
+      "system": "PS5-25-02 - Crude Oil Export Pump A",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/3/2026 5:37:47 P"
+    },
+    {
       "tag": "PS5-09-IES-8406H",
       "task": "T-00067-2783",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16528,78 +16612,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/30/2026 1:29:23 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1411",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/30/2026 1:27:23 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1402",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/30/2026 1:26:57 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1395",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/30/2026 1:25:33 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1392",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/30/2026 1:24:38 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1391",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/30/2026 1:24:14 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1388",
-      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/30/2026 1:23:16 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1382",
-      "system": "PS5-79-01 - Electrical Heat Tracing Transformer/Distribution Board 1 (PS5-79-IG-0001)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/30/2026 1:22:38 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1381",
-      "system": "PS5-79-01 - Electrical Heat Tracing Transformer/Distribution Board 1 (PS5-79-IG-0001)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/30/2026 1:22:19 "
     }
   ]
 }
