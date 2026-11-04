@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-04 19:29:11",
+  "updated": "2026-11-04 19:34:41",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7278,
-  "open": 3020,
-  "today_closed": 27,
+  "closed": 7280,
+  "open": 3018,
+  "today_closed": 29,
   "closed_by_discipline": {
     "I": 3564,
-    "E": 3418,
+    "E": 3420,
     "T": 296
   },
   "open_by_discipline": {
     "I": 1029,
-    "E": 1209,
+    "E": 1207,
     "T": 782
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-11-04",
-      "E": 20,
+      "E": 22,
       "I": 7,
       "T": 0,
-      "Total": 27
+      "Total": 29
     }
   ],
-  "closed_this_week": 79,
-  "closed_this_month": 79,
+  "closed_this_week": 81,
+  "closed_this_month": 81,
   "today_milestone": [
     {
       "milestone": "Milestone C",
@@ -265,7 +265,7 @@
       "milestone": "Milestone H",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 15
+      "count": 17
     },
     {
       "milestone": "Milestone H",
@@ -280,7 +280,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 27,
+  "today_milestone_total": 29,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -384,14 +384,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2640,
-      "remaining": 611,
-      "pct": 81.2,
+      "closed": 2642,
+      "remaining": 609,
+      "pct": 81.3,
       "status": {
-        "Closed": 2640,
+        "Closed": 2642,
         "Submitted": 64,
-        "To be completed": 513,
-        "Other": 34
+        "To be completed": 512,
+        "Other": 33
       }
     },
     {
@@ -4784,9 +4784,9 @@
       "sid": "PS5-79-01",
       "name": "PS5-79-01 - Electrical Heat Tracing Transformer/Distribution Board 1 (PS5-79-IG-0001)",
       "total": 68,
-      "closed": 59,
-      "open": 9,
-      "pct": 86.8,
+      "closed": 60,
+      "open": 8,
+      "pct": 88.2,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 67,
@@ -4794,7 +4794,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 58,
+        "E": 59,
         "I": 1,
         "T": 0
       }
@@ -4803,9 +4803,9 @@
       "sid": "PS5-79-02",
       "name": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
       "total": 70,
-      "closed": 62,
-      "open": 8,
-      "pct": 88.6,
+      "closed": 63,
+      "open": 7,
+      "pct": 90.0,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 69,
@@ -4813,7 +4813,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 61,
+        "E": 62,
         "I": 1,
         "T": 0
       }
@@ -11001,8 +11001,8 @@
     "T-00024-3297": "Open",
     "T-00024-3298": "Open",
     "T-00024-3299": "Open",
-    "T-00233-8829": "Open",
-    "T-00233-8830": "Open",
+    "T-00233-8829": "Closed",
+    "T-00233-8830": "Closed",
     "T-00233-8831": "Open",
     "T-00233-8832": "Open",
     "T-00233-8833": "Open",
@@ -15558,6 +15558,24 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-79-IG-0002-CL01",
+      "task": "T-00233-8830",
+      "system": "PS5-79-02 - Electrical Heat Tracing Transformer/Distribution Board 2 (PS5-79-IG-0002)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/4/2026 4:31:05 P"
+    },
+    {
+      "tag": "PS5-79-IG-0001-CL01",
+      "task": "T-00233-8829",
+      "system": "PS5-79-01 - Electrical Heat Tracing Transformer/Distribution Board 1 (PS5-79-IG-0001)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/4/2026 4:28:09 P"
+    },
+    {
       "tag": "PS5-09-LB-0008-CC01",
       "task": "T-00614-0945",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16618,24 +16636,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "10/31/2026 5:29:02 "
-    },
-    {
-      "tag": "PS5-28-IES-3900B-CD01",
-      "task": "T-00610-0217",
-      "system": "PS5-28-17 - Reinjection Pump",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/31/2026 5:14:52 "
-    },
-    {
-      "tag": "PS5-61-IG-0007-CD01",
-      "task": "T-00610-0253",
-      "system": "PS5-62-09 - Outdoor Normal Lighting DB  - PS5-61-IG-0007",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/31/2026 5:13:12 "
     }
   ]
 }
