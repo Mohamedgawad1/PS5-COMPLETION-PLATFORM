@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-04 13:42:01",
+  "updated": "2026-11-04 13:45:42",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7271,
-  "open": 3027,
-  "today_closed": 20,
+  "closed": 7272,
+  "open": 3026,
+  "today_closed": 21,
   "closed_by_discipline": {
     "I": 3558,
-    "E": 3417,
+    "E": 3418,
     "T": 296
   },
   "open_by_discipline": {
     "I": 1035,
-    "E": 1210,
+    "E": 1209,
     "T": 782
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-11-04",
-      "E": 19,
+      "E": 20,
       "I": 1,
       "T": 0,
-      "Total": 20
+      "Total": 21
     }
   ],
-  "closed_this_week": 72,
-  "closed_this_month": 72,
+  "closed_this_week": 73,
+  "closed_this_month": 73,
   "today_milestone": [
     {
       "milestone": "Milestone D",
@@ -247,7 +247,7 @@
       "milestone": "Milestone G",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 2
+      "count": 3
     },
     {
       "milestone": "Milestone H",
@@ -268,7 +268,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 20,
+  "today_milestone_total": 21,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -358,14 +358,14 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 905,
-      "closed": 790,
-      "remaining": 115,
-      "pct": 87.3,
+      "closed": 791,
+      "remaining": 114,
+      "pct": 87.4,
       "status": {
-        "Closed": 790,
+        "Closed": 791,
         "Submitted": 2,
         "To be completed": 112,
-        "Other": 1
+        "Other": 0
       }
     },
     {
@@ -3689,9 +3689,9 @@
       "sid": "PS5-61-09",
       "name": "PS5-61-09 - Outdoor Power Distribution Board - PS5-61-IG-0014",
       "total": 20,
-      "closed": 4,
-      "open": 16,
-      "pct": 20.0,
+      "closed": 5,
+      "open": 15,
+      "pct": 25.0,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 20,
@@ -3699,7 +3699,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 4,
+        "E": 5,
         "I": 0,
         "T": 0
       }
@@ -13508,7 +13508,7 @@
     "T-00241-0458": "Open",
     "T-00241-0459": "Open",
     "T-00241-0460": "Open",
-    "T-00241-0461": "Open",
+    "T-00241-0461": "Closed",
     "T-00241-0462": "Open",
     "T-00241-0463": "Open",
     "T-00241-0464": "Open",
@@ -15547,6 +15547,15 @@
   "recent_closed": [
     {
       "tag": "",
+      "task": "T-00241-0461",
+      "system": "PS5-61-09 - Outdoor Power Distribution Board - PS5-61-IG-0014",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/4/2026 10:39:55 "
+    },
+    {
+      "tag": "",
       "task": "T-00032-0461",
       "system": "PS5-61-09 - Outdoor Power Distribution Board - PS5-61-IG-0014",
       "loop": "",
@@ -16615,15 +16624,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/30/2026 2:11:57 "
-    },
-    {
-      "tag": "PS5-71-BE-0001A-CL03",
-      "task": "T-00023-11252",
-      "system": "PS5-71-07 - Crude Fuel Separation Module (UCP)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/30/2026 2:11:00 "
     }
   ]
 }
