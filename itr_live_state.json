@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-04 21:34:54",
+  "updated": "2026-11-04 21:58:18",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7284,
-  "open": 3014,
-  "today_closed": 33,
+  "closed": 7290,
+  "open": 3008,
+  "today_closed": 39,
   "closed_by_discipline": {
     "I": 3564,
-    "E": 3424,
+    "E": 3430,
     "T": 296
   },
   "open_by_discipline": {
     "I": 1029,
-    "E": 1203,
+    "E": 1197,
     "T": 782
   },
   "daily": [
@@ -228,15 +228,21 @@
     },
     {
       "label": "2026-11-04",
-      "E": 26,
+      "E": 32,
       "I": 7,
       "T": 0,
-      "Total": 33
+      "Total": 39
     }
   ],
-  "closed_this_week": 85,
-  "closed_this_month": 85,
+  "closed_this_week": 91,
+  "closed_this_month": 91,
   "today_milestone": [
+    {
+      "milestone": "Milestone B",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 6
+    },
     {
       "milestone": "Milestone C",
       "disc": "I",
@@ -280,7 +286,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 33,
+  "today_milestone_total": 39,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -300,13 +306,13 @@
       "label": "Milestone B",
       "raw": "PS5 - Milestone B",
       "total": 1714,
-      "closed": 1635,
-      "remaining": 79,
-      "pct": 95.4,
+      "closed": 1641,
+      "remaining": 73,
+      "pct": 95.7,
       "status": {
-        "Closed": 1635,
+        "Closed": 1641,
         "Submitted": 0,
-        "To be completed": 77,
+        "To be completed": 71,
         "Other": 2
       }
     },
@@ -3967,9 +3973,9 @@
       "sid": "PS5-62-10",
       "name": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
       "total": 39,
-      "closed": 23,
-      "open": 16,
-      "pct": 59.0,
+      "closed": 29,
+      "open": 10,
+      "pct": 74.4,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 39,
@@ -3977,7 +3983,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 23,
+        "E": 29,
         "I": 0,
         "T": 0
       }
@@ -13372,9 +13378,9 @@
     "T-00032-0464": "Open",
     "T-00032-0465": "Open",
     "T-00032-0466": "Open",
-    "T-00032-0467": "Open",
-    "T-00032-0468": "Open",
-    "T-00032-0469": "Open",
+    "T-00032-0467": "Closed",
+    "T-00032-0468": "Closed",
+    "T-00032-0469": "Closed",
     "T-00032-0470": "Open",
     "T-00032-0471": "Open",
     "T-00032-0472": "Open",
@@ -13526,9 +13532,9 @@
     "T-00241-0464": "Open",
     "T-00241-0465": "Open",
     "T-00241-0466": "Open",
-    "T-00241-0467": "Open",
-    "T-00241-0468": "Open",
-    "T-00241-0469": "Open",
+    "T-00241-0467": "Closed",
+    "T-00241-0468": "Closed",
+    "T-00241-0469": "Closed",
     "T-00241-0470": "Open",
     "T-00241-0471": "Open",
     "T-00241-0472": "Open",
@@ -15558,6 +15564,60 @@
   },
   "recent_closed": [
     {
+      "tag": "",
+      "task": "T-00241-0469",
+      "system": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/4/2026 6:52:55 P"
+    },
+    {
+      "tag": "",
+      "task": "T-00241-0468",
+      "system": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/4/2026 6:50:57 P"
+    },
+    {
+      "tag": "",
+      "task": "T-00241-0467",
+      "system": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/4/2026 6:48:29 P"
+    },
+    {
+      "tag": "",
+      "task": "T-00032-0469",
+      "system": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/4/2026 6:43:47 P"
+    },
+    {
+      "tag": "",
+      "task": "T-00032-0468",
+      "system": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/4/2026 6:42:01 P"
+    },
+    {
+      "tag": "",
+      "task": "T-00032-0467",
+      "system": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/4/2026 6:39:59 P"
+    },
+    {
       "tag": "PS5-79-IG-0007-CL01",
       "task": "T-00233-8835",
       "system": "PS5-79-07 - Electrical Heat Tracing Transformer/Distribution Board 7 (PS5-79-IG-0007)",
@@ -16582,60 +16642,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/31/2026 10:54:04"
-    },
-    {
-      "tag": "PS5-28-BE-0002A-CL01",
-      "task": "T-00608-0392",
-      "system": "PS5-28-17 - Reinjection Pump",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/31/2026 10:52:51"
-    },
-    {
-      "tag": "",
-      "task": "T-00240-1309",
-      "system": "PS5-62-08 - Outdoor Normal Lighting  DB  - PS5-61-IG-0006",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/31/2026 7:01:28 "
-    },
-    {
-      "tag": "",
-      "task": "T-00031-1309",
-      "system": "PS5-62-08 - Outdoor Normal Lighting  DB  - PS5-61-IG-0006",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/31/2026 6:56:13 "
-    },
-    {
-      "tag": "PS5-03-RMAC-0304-CJ01",
-      "task": "T-00069-4529",
-      "system": "PS5-03-03 - FZ-03 - Buildings Area",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/31/2026 5:38:50 "
-    },
-    {
-      "tag": "PS5-03-RMAC-0301-CJ01",
-      "task": "T-00069-4528",
-      "system": "PS5-03-03 - FZ-03 - Buildings Area",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/31/2026 5:37:24 "
-    },
-    {
-      "tag": "PS5-50-FIT-0001-CJ01",
-      "task": "T-00069-4874",
-      "system": "PS5-50-03 - Water Pre-Treatment Package",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/31/2026 5:36:18 "
     }
   ]
 }
