@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-04 18:58:30",
+  "updated": "2026-11-04 19:02:30",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7273,
-  "open": 3025,
-  "today_closed": 22,
+  "closed": 7276,
+  "open": 3022,
+  "today_closed": 25,
   "closed_by_discipline": {
-    "I": 3559,
+    "I": 3562,
     "E": 3418,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 1034,
+    "I": 1031,
     "E": 1209,
     "T": 782
   },
@@ -229,19 +229,19 @@
     {
       "label": "2026-11-04",
       "E": 20,
-      "I": 2,
+      "I": 5,
       "T": 0,
-      "Total": 22
+      "Total": 25
     }
   ],
-  "closed_this_week": 74,
-  "closed_this_month": 74,
+  "closed_this_week": 77,
+  "closed_this_month": 77,
   "today_milestone": [
     {
       "milestone": "Milestone C",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 1
+      "count": 2
     },
     {
       "milestone": "Milestone D",
@@ -265,7 +265,7 @@
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 1
+      "count": 3
     },
     {
       "milestone": "Milestone I",
@@ -274,7 +274,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 22,
+  "today_milestone_total": 25,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -308,14 +308,14 @@
       "label": "Milestone C",
       "raw": "PS5 - Milestone C",
       "total": 958,
-      "closed": 633,
-      "remaining": 325,
-      "pct": 66.1,
+      "closed": 634,
+      "remaining": 324,
+      "pct": 66.2,
       "status": {
-        "Closed": 633,
+        "Closed": 634,
         "Submitted": 0,
         "To be completed": 323,
-        "Other": 2
+        "Other": 1
       }
     },
     {
@@ -328,8 +328,8 @@
       "status": {
         "Closed": 2493,
         "Submitted": 2,
-        "To be completed": 940,
-        "Other": 2
+        "To be completed": 939,
+        "Other": 3
       }
     },
     {
@@ -378,13 +378,13 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2637,
-      "remaining": 614,
-      "pct": 81.1,
+      "closed": 2639,
+      "remaining": 612,
+      "pct": 81.2,
       "status": {
-        "Closed": 2637,
-        "Submitted": 64,
-        "To be completed": 517,
+        "Closed": 2639,
+        "Submitted": 65,
+        "To be completed": 514,
         "Other": 33
       }
     },
@@ -484,10 +484,10 @@
       "sid": "PS5-01-07",
       "name": "PS5-01-07 - Fire Water Ring Main & Distribution",
       "total": 16,
-      "closed": 15,
-      "open": 1,
-      "pct": 93.8,
-      "status": "IN PROGRESS",
+      "closed": 16,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 0,
         "I": 16,
@@ -495,7 +495,7 @@
       },
       "closed_by_discipline": {
         "E": 0,
-        "I": 15,
+        "I": 16,
         "T": 0
       }
     },
@@ -1643,9 +1643,9 @@
       "sid": "PS5-25-03",
       "name": "PS5-25-03 - Crude Oil Export Pump B",
       "total": 187,
-      "closed": 181,
-      "open": 6,
-      "pct": 96.8,
+      "closed": 182,
+      "open": 5,
+      "pct": 97.3,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 92,
@@ -1654,7 +1654,7 @@
       },
       "closed_by_discipline": {
         "E": 89,
-        "I": 92,
+        "I": 93,
         "T": 0
       }
     },
@@ -1662,9 +1662,9 @@
       "sid": "PS5-25-04",
       "name": "PS5-25-04 - Crude Oil Export Pump C",
       "total": 187,
-      "closed": 181,
-      "open": 6,
-      "pct": 96.8,
+      "closed": 182,
+      "open": 5,
+      "pct": 97.3,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 92,
@@ -1673,7 +1673,7 @@
       },
       "closed_by_discipline": {
         "E": 89,
-        "I": 92,
+        "I": 93,
         "T": 0
       }
     },
@@ -8293,8 +8293,8 @@
     "T-00069-4705": "Closed",
     "T-00069-4706": "Closed",
     "T-00069-4707": "Closed",
-    "T-00069-4708": "Open",
-    "T-00069-4709": "Open",
+    "T-00069-4708": "Closed",
+    "T-00069-4709": "Closed",
     "T-00069-4710": "Closed",
     "T-00069-4711": "Closed",
     "T-00069-4712": "Closed",
@@ -14074,7 +14074,7 @@
     "T-00614-0875": "Closed",
     "T-00614-0876": "Closed",
     "T-00614-0877": "Closed",
-    "T-00614-0878": "Open",
+    "T-00614-0878": "Closed",
     "T-00614-0879": "Closed",
     "T-00614-0880": "Closed",
     "T-00614-0881": "Closed",
@@ -15552,6 +15552,33 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-25-PIT-0004C-CJ01",
+      "task": "T-00069-4709",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/4/2026 4:00:45 P"
+    },
+    {
+      "tag": "PS5-25-PIT-0004B-CJ01",
+      "task": "T-00069-4708",
+      "system": "PS5-25-03 - Crude Oil Export Pump B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/4/2026 3:59:36 P"
+    },
+    {
+      "tag": "PS5-01-PIT-0017-CJ01",
+      "task": "T-00614-0878",
+      "system": "PS5-01-07 - Fire Water Ring Main & Distribution",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/4/2026 3:58:45 P"
+    },
+    {
       "tag": "PS5-01-PIT-0015-CJ01",
       "task": "T-00614-0876",
       "system": "PS5-01-07 - Fire Water Ring Main & Distribution",
@@ -16603,33 +16630,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/31/2026 5:09:18 "
-    },
-    {
-      "tag": "PS5-61-IG-0006-CL01",
-      "task": "T-00608-0421",
-      "system": "PS5-62-08 - Outdoor Normal Lighting  DB  - PS5-61-IG-0006",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/31/2026 5:07:18 "
-    },
-    {
-      "tag": "PS5-71-BE-0001A-CL10",
-      "task": "T-00023-11259",
-      "system": "PS5-71-07 - Crude Fuel Separation Module (UCP)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/31/2026 5:04:32 "
-    },
-    {
-      "tag": "PS5-71-BE-0001A-CL05",
-      "task": "T-00023-11254",
-      "system": "PS5-71-07 - Crude Fuel Separation Module (UCP)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/30/2026 2:13:08 "
     }
   ]
 }
