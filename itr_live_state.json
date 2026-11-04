@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-04 18:55:03",
+  "updated": "2026-11-04 18:58:30",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7272,
-  "open": 3026,
-  "today_closed": 21,
+  "closed": 7273,
+  "open": 3025,
+  "today_closed": 22,
   "closed_by_discipline": {
-    "I": 3558,
+    "I": 3559,
     "E": 3418,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 1035,
+    "I": 1034,
     "E": 1209,
     "T": 782
   },
@@ -229,14 +229,20 @@
     {
       "label": "2026-11-04",
       "E": 20,
-      "I": 1,
+      "I": 2,
       "T": 0,
-      "Total": 21
+      "Total": 22
     }
   ],
-  "closed_this_week": 73,
-  "closed_this_month": 73,
+  "closed_this_week": 74,
+  "closed_this_month": 74,
   "today_milestone": [
+    {
+      "milestone": "Milestone C",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
+    },
     {
       "milestone": "Milestone D",
       "disc": "E",
@@ -268,7 +274,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 21,
+  "today_milestone_total": 22,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -302,14 +308,14 @@
       "label": "Milestone C",
       "raw": "PS5 - Milestone C",
       "total": 958,
-      "closed": 632,
-      "remaining": 326,
-      "pct": 66.0,
+      "closed": 633,
+      "remaining": 325,
+      "pct": 66.1,
       "status": {
-        "Closed": 632,
+        "Closed": 633,
         "Submitted": 0,
-        "To be completed": 325,
-        "Other": 1
+        "To be completed": 323,
+        "Other": 2
       }
     },
     {
@@ -478,9 +484,9 @@
       "sid": "PS5-01-07",
       "name": "PS5-01-07 - Fire Water Ring Main & Distribution",
       "total": 16,
-      "closed": 14,
-      "open": 2,
-      "pct": 87.5,
+      "closed": 15,
+      "open": 1,
+      "pct": 93.8,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 0,
@@ -489,7 +495,7 @@
       },
       "closed_by_discipline": {
         "E": 0,
-        "I": 14,
+        "I": 15,
         "T": 0
       }
     },
@@ -14066,7 +14072,7 @@
     "T-00614-0873": "Closed",
     "T-00614-0874": "Closed",
     "T-00614-0875": "Closed",
-    "T-00614-0876": "Open",
+    "T-00614-0876": "Closed",
     "T-00614-0877": "Closed",
     "T-00614-0878": "Open",
     "T-00614-0879": "Closed",
@@ -15546,6 +15552,15 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-01-PIT-0015-CJ01",
+      "task": "T-00614-0876",
+      "system": "PS5-01-07 - Fire Water Ring Main & Distribution",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/4/2026 3:57:17 P"
+    },
+    {
       "tag": "",
       "task": "T-00241-0461",
       "system": "PS5-61-09 - Outdoor Power Distribution Board - PS5-61-IG-0014",
@@ -16615,15 +16630,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/30/2026 2:13:08 "
-    },
-    {
-      "tag": "PS5-71-BE-0001A-CL04",
-      "task": "T-00023-11253",
-      "system": "PS5-71-07 - Crude Fuel Separation Module (UCP)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/30/2026 2:11:57 "
     }
   ]
 }
