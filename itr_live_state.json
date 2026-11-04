@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-04 19:02:30",
+  "updated": "2026-11-04 19:05:43",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7276,
-  "open": 3022,
-  "today_closed": 25,
+  "closed": 7278,
+  "open": 3020,
+  "today_closed": 27,
   "closed_by_discipline": {
-    "I": 3562,
+    "I": 3564,
     "E": 3418,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 1031,
+    "I": 1029,
     "E": 1209,
     "T": 782
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-11-04",
       "E": 20,
-      "I": 5,
+      "I": 7,
       "T": 0,
-      "Total": 25
+      "Total": 27
     }
   ],
-  "closed_this_week": 77,
-  "closed_this_month": 77,
+  "closed_this_week": 79,
+  "closed_this_month": 79,
   "today_milestone": [
     {
       "milestone": "Milestone C",
@@ -247,6 +247,12 @@
       "milestone": "Milestone D",
       "disc": "E",
       "discipline": "Electrical (E)",
+      "count": 1
+    },
+    {
+      "milestone": "Milestone D",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
       "count": 1
     },
     {
@@ -265,7 +271,7 @@
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 3
+      "count": 4
     },
     {
       "milestone": "Milestone I",
@@ -274,7 +280,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 25,
+  "today_milestone_total": 27,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -322,14 +328,14 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3437,
-      "closed": 2493,
-      "remaining": 944,
-      "pct": 72.5,
+      "closed": 2494,
+      "remaining": 943,
+      "pct": 72.6,
       "status": {
-        "Closed": 2493,
+        "Closed": 2494,
         "Submitted": 2,
         "To be completed": 939,
-        "Other": 3
+        "Other": 2
       }
     },
     {
@@ -378,12 +384,12 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2639,
-      "remaining": 612,
+      "closed": 2640,
+      "remaining": 611,
       "pct": 81.2,
       "status": {
-        "Closed": 2639,
-        "Submitted": 65,
+        "Closed": 2640,
+        "Submitted": 64,
         "To be completed": 514,
         "Other": 33
       }
@@ -1567,9 +1573,9 @@
       "sid": "PS5-09-03",
       "name": "PS5-09-03 - HVAC for Generator Building",
       "total": 1004,
-      "closed": 182,
-      "open": 822,
-      "pct": 18.1,
+      "closed": 183,
+      "open": 821,
+      "pct": 18.2,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 380,
@@ -1578,7 +1584,7 @@
       },
       "closed_by_discipline": {
         "E": 57,
-        "I": 125,
+        "I": 126,
         "T": 0
       }
     },
@@ -4246,9 +4252,9 @@
       "sid": "PS5-71-01",
       "name": "PS5-71-01 - CFO Storage Tank Feed Heater",
       "total": 62,
-      "closed": 57,
-      "open": 5,
-      "pct": 91.9,
+      "closed": 58,
+      "open": 4,
+      "pct": 93.5,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 14,
@@ -4257,7 +4263,7 @@
       },
       "closed_by_discipline": {
         "E": 14,
-        "I": 43,
+        "I": 44,
         "T": 0
       }
     },
@@ -9014,7 +9020,7 @@
     "T-00069-5545": "Closed",
     "T-00069-5546": "Closed",
     "T-00069-5547": "Closed",
-    "T-00069-5548": "Open",
+    "T-00069-5548": "Closed",
     "T-00069-5549": "Closed",
     "T-00069-5550": "Closed",
     "T-00069-5551": "Closed",
@@ -14141,7 +14147,7 @@
     "T-00614-0942": "Open",
     "T-00614-0943": "Open",
     "T-00614-0944": "Open",
-    "T-00614-0945": "Open",
+    "T-00614-0945": "Closed",
     "T-00614-0946": "Closed",
     "T-00614-0947": "Closed",
     "T-00614-0948": "Closed",
@@ -15552,6 +15558,24 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-09-LB-0008-CC01",
+      "task": "T-00614-0945",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/4/2026 4:03:08 P"
+    },
+    {
+      "tag": "PS5-71-PIT-2402B-CJ01",
+      "task": "T-00069-5548",
+      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/4/2026 4:01:51 P"
+    },
+    {
       "tag": "PS5-25-PIT-0004C-CJ01",
       "task": "T-00069-4709",
       "system": "PS5-25-04 - Crude Oil Export Pump C",
@@ -16612,24 +16636,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "10/31/2026 5:13:12 "
-    },
-    {
-      "tag": "PS5-61-IG-0006-CD01",
-      "task": "T-00610-0252",
-      "system": "PS5-62-08 - Outdoor Normal Lighting  DB  - PS5-61-IG-0006",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/31/2026 5:11:16 "
-    },
-    {
-      "tag": "PS5-61-IG-0007-CL01",
-      "task": "T-00608-0422",
-      "system": "PS5-62-09 - Outdoor Normal Lighting DB  - PS5-61-IG-0007",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "10/31/2026 5:09:18 "
     }
   ]
 }
