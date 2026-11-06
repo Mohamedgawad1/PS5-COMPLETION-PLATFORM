@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-06 08:39:17",
+  "updated": "2026-11-06 09:02:19",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7383,
-  "open": 2915,
-  "today_closed": 12,
+  "closed": 7392,
+  "open": 2906,
+  "today_closed": 21,
   "closed_by_discipline": {
-    "I": 3600,
+    "I": 3609,
     "E": 3487,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 993,
+    "I": 984,
     "E": 1140,
     "T": 782
   },
@@ -229,19 +229,31 @@
     {
       "label": "2026-11-06",
       "E": 8,
-      "I": 4,
+      "I": 13,
       "T": 0,
-      "Total": 12
+      "Total": 21
     }
   ],
-  "closed_this_week": 184,
-  "closed_this_month": 184,
+  "closed_this_week": 193,
+  "closed_this_month": 193,
   "today_milestone": [
+    {
+      "milestone": "Milestone D",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 3
+    },
+    {
+      "milestone": "Milestone E",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
+    },
     {
       "milestone": "Milestone F",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 1
+      "count": 2
     },
     {
       "milestone": "Milestone H",
@@ -253,10 +265,10 @@
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 3
+      "count": 7
     }
   ],
-  "today_milestone_total": 12,
+  "today_milestone_total": 21,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -304,13 +316,13 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3437,
-      "closed": 2514,
-      "remaining": 923,
-      "pct": 73.1,
+      "closed": 2517,
+      "remaining": 920,
+      "pct": 73.2,
       "status": {
-        "Closed": 2514,
+        "Closed": 2517,
         "Submitted": 2,
-        "To be completed": 919,
+        "To be completed": 916,
         "Other": 2
       }
     },
@@ -318,13 +330,13 @@
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1532,
-      "closed": 1408,
-      "remaining": 124,
-      "pct": 91.9,
+      "closed": 1409,
+      "remaining": 123,
+      "pct": 92.0,
       "status": {
-        "Closed": 1408,
+        "Closed": 1409,
         "Submitted": 0,
-        "To be completed": 122,
+        "To be completed": 121,
         "Other": 2
       }
     },
@@ -332,13 +344,13 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 597,
-      "closed": 535,
-      "remaining": 62,
-      "pct": 89.6,
+      "closed": 536,
+      "remaining": 61,
+      "pct": 89.8,
       "status": {
-        "Closed": 535,
+        "Closed": 536,
         "Submitted": 0,
-        "To be completed": 61,
+        "To be completed": 60,
         "Other": 1
       }
     },
@@ -360,14 +372,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2709,
-      "remaining": 542,
-      "pct": 83.3,
+      "closed": 2713,
+      "remaining": 538,
+      "pct": 83.5,
       "status": {
-        "Closed": 2709,
+        "Closed": 2713,
         "Submitted": 64,
-        "To be completed": 449,
-        "Other": 29
+        "To be completed": 444,
+        "Other": 30
       }
     },
     {
@@ -580,9 +592,9 @@
       "sid": "PS5-03-03",
       "name": "PS5-03-03 - FZ-03 - Buildings Area",
       "total": 16,
-      "closed": 7,
-      "open": 9,
-      "pct": 43.8,
+      "closed": 9,
+      "open": 7,
+      "pct": 56.2,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 0,
@@ -591,7 +603,7 @@
       },
       "closed_by_discipline": {
         "E": 0,
-        "I": 7,
+        "I": 9,
         "T": 0
       }
     },
@@ -2214,10 +2226,10 @@
       "sid": "PS5-60-07",
       "name": "PS5-60-07 - Power Generation Package C",
       "total": 139,
-      "closed": 138,
-      "open": 1,
-      "pct": 99.3,
-      "status": "IN PROGRESS",
+      "closed": 139,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 89,
         "I": 50,
@@ -2225,7 +2237,7 @@
       },
       "closed_by_discipline": {
         "E": 89,
-        "I": 49,
+        "I": 50,
         "T": 0
       }
     },
@@ -2271,9 +2283,9 @@
       "sid": "PS5-60-10",
       "name": "PS5-60-10 - Power Generation Package D",
       "total": 168,
-      "closed": 166,
-      "open": 2,
-      "pct": 98.8,
+      "closed": 167,
+      "open": 1,
+      "pct": 99.4,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 93,
@@ -2282,7 +2294,7 @@
       },
       "closed_by_discipline": {
         "E": 93,
-        "I": 61,
+        "I": 62,
         "T": 12
       }
     },
@@ -2385,10 +2397,10 @@
       "sid": "PS5-60-16",
       "name": "PS5-60-16 - Power Generation Package F",
       "total": 168,
-      "closed": 167,
-      "open": 1,
-      "pct": 99.4,
-      "status": "IN PROGRESS",
+      "closed": 168,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 93,
         "I": 63,
@@ -2396,7 +2408,7 @@
       },
       "closed_by_discipline": {
         "E": 93,
-        "I": 62,
+        "I": 63,
         "T": 12
       }
     },
@@ -2442,9 +2454,9 @@
       "sid": "PS5-60-19",
       "name": "PS5-60-19 - Power Generation Package G",
       "total": 139,
-      "closed": 137,
-      "open": 2,
-      "pct": 98.6,
+      "closed": 138,
+      "open": 1,
+      "pct": 99.3,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 89,
@@ -2453,7 +2465,7 @@
       },
       "closed_by_discipline": {
         "E": 89,
-        "I": 48,
+        "I": 49,
         "T": 0
       }
     },
@@ -4304,9 +4316,9 @@
       "sid": "PS5-71-06",
       "name": "PS5-71-06 - Crude Fuel Separation Module",
       "total": 36,
-      "closed": 14,
-      "open": 22,
-      "pct": 38.9,
+      "closed": 15,
+      "open": 21,
+      "pct": 41.7,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 2,
@@ -4315,7 +4327,7 @@
       },
       "closed_by_discipline": {
         "E": 2,
-        "I": 12,
+        "I": 13,
         "T": 0
       }
     },
@@ -4342,9 +4354,9 @@
       "sid": "PS5-71-08",
       "name": "PS5-71-08 - CFO Pre-Pressure Modules",
       "total": 56,
-      "closed": 52,
-      "open": 4,
-      "pct": 92.9,
+      "closed": 53,
+      "open": 3,
+      "pct": 94.6,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 25,
@@ -4353,7 +4365,7 @@
       },
       "closed_by_discipline": {
         "E": 25,
-        "I": 27,
+        "I": 28,
         "T": 0
       }
     },
@@ -4494,9 +4506,9 @@
       "sid": "PS5-71-18",
       "name": "PS5-71-18 - Diesel Separator Module",
       "total": 31,
-      "closed": 28,
-      "open": 3,
-      "pct": 90.3,
+      "closed": 29,
+      "open": 2,
+      "pct": 93.5,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 3,
@@ -4505,7 +4517,7 @@
       },
       "closed_by_discipline": {
         "E": 3,
-        "I": 25,
+        "I": 26,
         "T": 0
       }
     },
@@ -9500,8 +9512,8 @@
     "T-00254-4536": "Closed",
     "T-00254-4537": "Closed",
     "T-00254-4538": "Closed",
-    "T-00254-4540": "Open",
-    "T-00254-4541": "Open",
+    "T-00254-4540": "Closed",
+    "T-00254-4541": "Closed",
     "T-00254-4542": "Closed",
     "T-00254-4543": "Closed",
     "T-00254-4544": "Closed",
@@ -9875,11 +9887,11 @@
     "T-00254-5028": "Closed",
     "T-00254-5029": "Closed",
     "T-00254-5030": "Closed",
-    "T-00254-5031": "Open",
+    "T-00254-5031": "Closed",
     "T-00254-5032": "Closed",
     "T-00254-5033": "Closed",
     "T-00254-5034": "Closed",
-    "T-00254-5035": "Open",
+    "T-00254-5035": "Closed",
     "T-00254-5036": "Closed",
     "T-00254-5037": "Closed",
     "T-00254-5038": "Closed",
@@ -9887,11 +9899,11 @@
     "T-00254-5040": "Closed",
     "T-00254-5041": "Closed",
     "T-00254-5042": "Closed",
-    "T-00254-5043": "Open",
+    "T-00254-5043": "Closed",
     "T-00254-5044": "Closed",
     "T-00254-5045": "Closed",
     "T-00254-5046": "Closed",
-    "T-00254-5047": "Open",
+    "T-00254-5047": "Closed",
     "T-00254-5048": "Closed",
     "T-00254-5049": "Closed",
     "T-00254-5050": "Closed",
@@ -10194,12 +10206,12 @@
     "T-00254-5388": "Closed",
     "T-00254-5389": "Closed",
     "T-00254-5390": "Open",
-    "T-00254-5391": "Open",
-    "T-00254-5393": "Open",
+    "T-00254-5391": "Closed",
+    "T-00254-5393": "Closed",
     "T-00254-5394": "Closed",
     "T-00254-5395": "Closed",
     "T-00254-5396": "Closed",
-    "T-00254-5397": "Open",
+    "T-00254-5397": "Closed",
     "T-00254-5398": "Open",
     "T-00254-5399": "Open",
     "T-00254-5400": "Closed",
@@ -15534,6 +15546,87 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-71-BI-0003-CC04",
+      "task": "T-00254-5397",
+      "system": "PS5-71-08 - CFO Pre-Pressure Modules",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/6/2026 5:53:32 A"
+    },
+    {
+      "tag": "PS5-71-BI-0002-CC01",
+      "task": "T-00254-5393",
+      "system": "PS5-71-18 - Diesel Separator Module",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/6/2026 5:51:53 A"
+    },
+    {
+      "tag": "PS5-71-BI-0001B-CC01",
+      "task": "T-00254-5391",
+      "system": "PS5-71-06 - Crude Fuel Separation Module",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/6/2026 5:50:28 A"
+    },
+    {
+      "tag": "PS5-60-BI-0016G-CC04",
+      "task": "T-00254-5047",
+      "system": "PS5-60-19 - Power Generation Package G",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/6/2026 5:48:25 A"
+    },
+    {
+      "tag": "PS5-60-BI-0016F-CC04",
+      "task": "T-00254-5043",
+      "system": "PS5-60-16 - Power Generation Package F",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/6/2026 5:46:51 A"
+    },
+    {
+      "tag": "PS5-60-BI-0016D-CC04",
+      "task": "T-00254-5035",
+      "system": "PS5-60-10 - Power Generation Package D",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/6/2026 5:45:25 A"
+    },
+    {
+      "tag": "PS5-60-BI-0016C-CC04",
+      "task": "T-00254-5031",
+      "system": "PS5-60-07 - Power Generation Package C",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/6/2026 5:43:58 A"
+    },
+    {
+      "tag": "PS5-03-RMAC-0304-CJ01",
+      "task": "T-00254-4541",
+      "system": "PS5-03-03 - FZ-03 - Buildings Area",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/6/2026 5:42:41 A"
+    },
+    {
+      "tag": "PS5-03-RMAC-0301-CJ01",
+      "task": "T-00254-4540",
+      "system": "PS5-03-03 - FZ-03 - Buildings Area",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/6/2026 5:41:22 A"
+    },
+    {
       "tag": "PS5-71-BI-0011A-CC02",
       "task": "T-00254-5412",
       "system": "PS5-71-06 - Crude Fuel Separation Module",
@@ -16531,87 +16624,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/4/2026 3:57:17 P"
-    },
-    {
-      "tag": "",
-      "task": "T-00241-0461",
-      "system": "PS5-61-09 - Outdoor Power Distribution Board - PS5-61-IG-0014",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/4/2026 10:39:55 "
-    },
-    {
-      "tag": "",
-      "task": "T-00032-0461",
-      "system": "PS5-61-09 - Outdoor Power Distribution Board - PS5-61-IG-0014",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/4/2026 10:33:33 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1516",
-      "system": "PS5-79-06 - Electrical Heat Tracing Transformer/Distribution Board 6 (PS5-79-IG-0006)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/4/2026 7:47:58 A"
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1509",
-      "system": "PS5-79-06 - Electrical Heat Tracing Transformer/Distribution Board 6 (PS5-79-IG-0006)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/4/2026 7:47:32 A"
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1508",
-      "system": "PS5-79-06 - Electrical Heat Tracing Transformer/Distribution Board 6 (PS5-79-IG-0006)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/4/2026 7:46:13 A"
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1504",
-      "system": "PS5-79-06 - Electrical Heat Tracing Transformer/Distribution Board 6 (PS5-79-IG-0006)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/4/2026 7:45:51 A"
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1501",
-      "system": "PS5-79-06 - Electrical Heat Tracing Transformer/Distribution Board 6 (PS5-79-IG-0006)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/4/2026 7:41:30 A"
-    },
-    {
-      "tag": "PS5-71-PIT-2402B",
-      "task": "T-00067-2137",
-      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/4/2026 7:19:42 A"
-    },
-    {
-      "tag": "PS5-79-IG-0004-CD01",
-      "task": "T-00024-3291",
-      "system": "PS5-79-04 - Electrical Heat Tracing Transformer/Distribution Board 4 (PS5-79-IG-0004)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/4/2026 4:53:33 A"
     }
   ]
 }
