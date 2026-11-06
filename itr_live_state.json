@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-05 19:19:48",
+  "updated": "2026-11-06 07:26:54",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,27 +9,20 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7367,
-  "open": 2931,
-  "today_closed": 54,
+  "closed": 7371,
+  "open": 2927,
+  "today_closed": 0,
   "closed_by_discipline": {
-    "I": 3592,
+    "I": 3596,
     "E": 3479,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 1001,
+    "I": 997,
     "E": 1148,
     "T": 782
   },
   "daily": [
-    {
-      "label": "2026-10-07",
-      "E": 0,
-      "I": 15,
-      "T": 0,
-      "Total": 15
-    },
     {
       "label": "2026-10-08",
       "E": 33,
@@ -229,40 +222,22 @@
     {
       "label": "2026-11-05",
       "E": 35,
-      "I": 19,
+      "I": 23,
       "T": 0,
-      "Total": 54
+      "Total": 58
+    },
+    {
+      "label": "2026-11-06",
+      "E": 0,
+      "I": 0,
+      "T": 0,
+      "Total": 0
     }
   ],
-  "closed_this_week": 168,
-  "closed_this_month": 168,
-  "today_milestone": [
-    {
-      "milestone": "Milestone D",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 16
-    },
-    {
-      "milestone": "Milestone F",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 2
-    },
-    {
-      "milestone": "Milestone H",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 35
-    },
-    {
-      "milestone": "Milestone H",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 1
-    }
-  ],
-  "today_milestone_total": 54,
+  "closed_this_week": 172,
+  "closed_this_month": 172,
+  "today_milestone": [],
+  "today_milestone_total": 0,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -310,13 +285,13 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3437,
-      "closed": 2510,
-      "remaining": 927,
-      "pct": 73.0,
+      "closed": 2514,
+      "remaining": 923,
+      "pct": 73.1,
       "status": {
-        "Closed": 2510,
-        "Submitted": 3,
-        "To be completed": 922,
+        "Closed": 2514,
+        "Submitted": 2,
+        "To be completed": 919,
         "Other": 2
       }
     },
@@ -1555,9 +1530,9 @@
       "sid": "PS5-09-03",
       "name": "PS5-09-03 - HVAC for Generator Building",
       "total": 1004,
-      "closed": 197,
-      "open": 807,
-      "pct": 19.6,
+      "closed": 201,
+      "open": 803,
+      "pct": 20.0,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 380,
@@ -1566,7 +1541,7 @@
       },
       "closed_by_discipline": {
         "E": 57,
-        "I": 140,
+        "I": 144,
         "T": 0
       }
     },
@@ -13148,11 +13123,11 @@
     "T-00067-2759": "Closed",
     "T-00067-2760": "Closed",
     "T-00067-2761": "Open",
-    "T-00067-2762": "Open",
-    "T-00067-2763": "Open",
+    "T-00067-2762": "Closed",
+    "T-00067-2763": "Closed",
     "T-00067-2764": "Open",
-    "T-00067-2765": "Open",
-    "T-00067-2766": "Open",
+    "T-00067-2765": "Closed",
+    "T-00067-2766": "Closed",
     "T-00067-2767": "Open",
     "T-00067-2768": "Open",
     "T-00067-2769": "Open",
@@ -15540,6 +15515,42 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-09-IES-8324",
+      "task": "T-00067-2766",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/5/2026 4:22:35 P"
+    },
+    {
+      "tag": "PS5-09-IES-8323",
+      "task": "T-00067-2765",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/5/2026 4:21:34 P"
+    },
+    {
+      "tag": "PS5-09-IES-8321",
+      "task": "T-00067-2763",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/5/2026 4:20:35 P"
+    },
+    {
+      "tag": "PS5-09-IES-8319",
+      "task": "T-00067-2762",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/5/2026 4:19:30 P"
+    },
+    {
       "tag": "PS5-09-IES-8317",
       "task": "T-00067-2760",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16582,42 +16593,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/4/2026 4:23:08 A"
-    },
-    {
-      "tag": "PS5-71-LIT-1202",
-      "task": "T-00067-2073",
-      "system": "PS5-71-20 - Diesel Fuel Day Tank",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/3/2026 5:59:11 P"
-    },
-    {
-      "tag": "PS5-71-LIT-1201",
-      "task": "T-00067-2093",
-      "system": "PS5-71-20 - Diesel Fuel Day Tank",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/3/2026 5:58:52 P"
-    },
-    {
-      "tag": "PS5-60-LIT-4401",
-      "task": "T-00067-2081",
-      "system": "PS5-60-25 - Cooling Water Maintenance Tank & Return Pump",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/3/2026 5:56:29 P"
-    },
-    {
-      "tag": "PS5-60-LIT-4301",
-      "task": "T-00067-2090",
-      "system": "PS5-60-24 - Cooling Water Tank & Pump",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/3/2026 5:55:39 P"
     }
   ]
 }
