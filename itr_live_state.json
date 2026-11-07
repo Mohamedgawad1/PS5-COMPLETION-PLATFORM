@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-07 14:59:14",
+  "updated": "2026-11-07 15:04:36",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7483,
-  "open": 2815,
-  "today_closed": 50,
+  "closed": 7484,
+  "open": 2814,
+  "today_closed": 51,
   "closed_by_discipline": {
     "I": 3631,
-    "E": 3556,
+    "E": 3557,
     "T": 296
   },
   "open_by_discipline": {
     "I": 962,
-    "E": 1071,
+    "E": 1070,
     "T": 782
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-11-07",
-      "E": 38,
+      "E": 39,
       "I": 12,
       "T": 0,
-      "Total": 50
+      "Total": 51
     }
   ],
-  "closed_this_week": 284,
-  "closed_this_month": 284,
+  "closed_this_week": 285,
+  "closed_this_month": 285,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -269,6 +269,12 @@
     },
     {
       "milestone": "Milestone G",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 1
+    },
+    {
+      "milestone": "Milestone G",
       "disc": "I",
       "discipline": "Instrumentation (I)",
       "count": 1
@@ -286,7 +292,7 @@
       "count": 6
     }
   ],
-  "today_milestone_total": 50,
+  "today_milestone_total": 51,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -376,14 +382,14 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 905,
-      "closed": 794,
-      "remaining": 111,
-      "pct": 87.7,
+      "closed": 795,
+      "remaining": 110,
+      "pct": 87.8,
       "status": {
-        "Closed": 794,
+        "Closed": 795,
         "Submitted": 1,
         "To be completed": 108,
-        "Other": 2
+        "Other": 1
       }
     },
     {
@@ -3707,9 +3713,9 @@
       "sid": "PS5-61-09",
       "name": "PS5-61-09 - Outdoor Power Distribution Board - PS5-61-IG-0014",
       "total": 20,
-      "closed": 6,
-      "open": 14,
-      "pct": 30.0,
+      "closed": 7,
+      "open": 13,
+      "pct": 35.0,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 20,
@@ -3717,7 +3723,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 6,
+        "E": 7,
         "I": 0,
         "T": 0
       }
@@ -13524,7 +13530,7 @@
     "T-00241-0456": "Open",
     "T-00241-0457": "Open",
     "T-00241-0458": "Open",
-    "T-00241-0459": "Open",
+    "T-00241-0459": "Closed",
     "T-00241-0460": "Open",
     "T-00241-0461": "Closed",
     "T-00241-0462": "Open",
@@ -15565,6 +15571,15 @@
   "recent_closed": [
     {
       "tag": "",
+      "task": "T-00241-0459",
+      "system": "PS5-61-09 - Outdoor Power Distribution Board - PS5-61-IG-0014",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/7/2026 11:58:51 "
+    },
+    {
+      "tag": "",
       "task": "T-00244-1719",
       "system": "PS5-79-12 - Electrical Heat Tracing Transformer/Distribution Board 12 (PS5-79-IG-0012)",
       "loop": "",
@@ -16633,15 +16648,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/5/2026 4:14:47 P"
-    },
-    {
-      "tag": "PS5-60-BI-0016F-CC04",
-      "task": "T-00069-5031",
-      "system": "PS5-60-16 - Power Generation Package F",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/5/2026 4:13:35 P"
     }
   ]
 }
