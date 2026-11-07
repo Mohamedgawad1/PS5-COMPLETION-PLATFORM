@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-07 08:29:48",
+  "updated": "2026-11-07 08:35:48",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7444,
-  "open": 2854,
-  "today_closed": 11,
+  "closed": 7445,
+  "open": 2853,
+  "today_closed": 12,
   "closed_by_discipline": {
-    "I": 3630,
+    "I": 3631,
     "E": 3518,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 963,
+    "I": 962,
     "E": 1109,
     "T": 782
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-11-07",
       "E": 0,
-      "I": 11,
+      "I": 12,
       "T": 0,
-      "Total": 11
+      "Total": 12
     }
   ],
-  "closed_this_week": 245,
-  "closed_this_month": 245,
+  "closed_this_week": 246,
+  "closed_this_month": 246,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -271,10 +271,10 @@
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 5
+      "count": 6
     }
   ],
-  "today_milestone_total": 11,
+  "today_milestone_total": 12,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -378,14 +378,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2756,
-      "remaining": 495,
+      "closed": 2757,
+      "remaining": 494,
       "pct": 84.8,
       "status": {
-        "Closed": 2756,
+        "Closed": 2757,
         "Submitted": 64,
         "To be completed": 406,
-        "Other": 25
+        "Other": 24
       }
     },
     {
@@ -4322,9 +4322,9 @@
       "sid": "PS5-71-06",
       "name": "PS5-71-06 - Crude Fuel Separation Module",
       "total": 36,
-      "closed": 20,
-      "open": 16,
-      "pct": 55.6,
+      "closed": 21,
+      "open": 15,
+      "pct": 58.3,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 2,
@@ -4333,7 +4333,7 @@
       },
       "closed_by_discipline": {
         "E": 2,
-        "I": 18,
+        "I": 19,
         "T": 0
       }
     },
@@ -10224,7 +10224,7 @@
     "T-00254-5401": "Closed",
     "T-00254-5402": "Closed",
     "T-00254-5403": "Closed",
-    "T-00254-5404": "Open",
+    "T-00254-5404": "Closed",
     "T-00254-5405": "Closed",
     "T-00254-5406": "Closed",
     "T-00254-5407": "Closed",
@@ -15552,6 +15552,15 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-71-BI-0008B-CC01",
+      "task": "T-00254-5404",
+      "system": "PS5-71-06 - Crude Fuel Separation Module",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/7/2026 5:28:51 A"
+    },
+    {
       "tag": "PS5-71-LIT-4401-CJ01",
       "task": "T-00069-5512",
       "system": "PS5-71-15 - Diesel Fuel Storage Tank",
@@ -16621,15 +16630,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/5/2026 7:02:49 A"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1445",
-      "system": "PS5-79-04 - Electrical Heat Tracing Transformer/Distribution Board 4 (PS5-79-IG-0004)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/5/2026 7:02:18 A"
     }
   ]
 }
