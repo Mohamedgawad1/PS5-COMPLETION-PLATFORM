@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-07 09:46:36",
+  "updated": "2026-11-07 09:53:22",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7459,
-  "open": 2839,
-  "today_closed": 26,
+  "closed": 7460,
+  "open": 2838,
+  "today_closed": 27,
   "closed_by_discipline": {
     "I": 3631,
-    "E": 3532,
+    "E": 3533,
     "T": 296
   },
   "open_by_discipline": {
     "I": 962,
-    "E": 1095,
+    "E": 1094,
     "T": 782
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-11-07",
-      "E": 14,
+      "E": 15,
       "I": 12,
       "T": 0,
-      "Total": 26
+      "Total": 27
     }
   ],
-  "closed_this_week": 260,
-  "closed_this_month": 260,
+  "closed_this_week": 261,
+  "closed_this_month": 261,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -253,6 +253,12 @@
       "milestone": "Milestone E",
       "disc": "I",
       "discipline": "Instrumentation (I)",
+      "count": 1
+    },
+    {
+      "milestone": "Milestone F",
+      "disc": "E",
+      "discipline": "Electrical (E)",
       "count": 1
     },
     {
@@ -280,7 +286,7 @@
       "count": 6
     }
   ],
-  "today_milestone_total": 26,
+  "today_milestone_total": 27,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -356,14 +362,14 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 597,
-      "closed": 537,
-      "remaining": 60,
-      "pct": 89.9,
+      "closed": 538,
+      "remaining": 59,
+      "pct": 90.1,
       "status": {
-        "Closed": 537,
+        "Closed": 538,
         "Submitted": 0,
         "To be completed": 58,
-        "Other": 2
+        "Other": 1
       }
     },
     {
@@ -390,8 +396,8 @@
       "status": {
         "Closed": 2771,
         "Submitted": 64,
-        "To be completed": 373,
-        "Other": 43
+        "To be completed": 372,
+        "Other": 44
       }
     },
     {
@@ -4651,9 +4657,9 @@
       "sid": "PS5-74-02",
       "name": "PS5-74-02 - N2 Generation Skid (UCP)",
       "total": 10,
-      "closed": 7,
-      "open": 3,
-      "pct": 70.0,
+      "closed": 8,
+      "open": 2,
+      "pct": 80.0,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 5,
@@ -4661,7 +4667,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 4,
+        "E": 5,
         "I": 3,
         "T": 0
       }
@@ -13897,7 +13903,7 @@
     "T-00608-0459": "Closed",
     "T-00608-0460": "Open",
     "T-00608-0461": "Open",
-    "T-00608-0462": "Open",
+    "T-00608-0462": "Closed",
     "T-00608-0463": "Closed",
     "T-00608-0464": "Closed",
     "T-00608-0465": "Closed",
@@ -15558,6 +15564,15 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-74-IG-5101-CL01",
+      "task": "T-00608-0462",
+      "system": "PS5-74-02 - N2 Generation Skid (UCP)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/7/2026 6:44:41 A"
+    },
+    {
       "tag": "PS5-02-SWSI-0001-CL01",
       "task": "T-00023-9120",
       "system": "PS5-02-01 - Miscellaneous Safety equipment",
@@ -16627,15 +16642,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/5/2026 7:10:21 A"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1460",
-      "system": "PS5-79-04 - Electrical Heat Tracing Transformer/Distribution Board 4 (PS5-79-IG-0004)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/5/2026 7:10:03 A"
     }
   ]
 }
