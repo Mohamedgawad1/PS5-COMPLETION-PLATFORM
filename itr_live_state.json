@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-08 08:13:39",
+  "updated": "2026-11-08 08:17:20",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -238,10 +238,16 @@
   "closed_this_month": 289,
   "today_milestone": [
     {
+      "milestone": "Milestone C",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 2
+    },
+    {
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 3
+      "count": 1
     }
   ],
   "today_milestone_total": 3,
@@ -278,14 +284,14 @@
       "label": "Milestone C",
       "raw": "PS5 - Milestone C",
       "total": 958,
-      "closed": 634,
-      "remaining": 324,
-      "pct": 66.2,
+      "closed": 636,
+      "remaining": 322,
+      "pct": 66.4,
       "status": {
-        "Closed": 634,
+        "Closed": 636,
         "Submitted": 0,
-        "To be completed": 322,
-        "Other": 2
+        "To be completed": 321,
+        "Other": 1
       }
     },
     {
@@ -348,14 +354,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2798,
-      "remaining": 453,
-      "pct": 86.1,
+      "closed": 2796,
+      "remaining": 455,
+      "pct": 86.0,
       "status": {
-        "Closed": 2798,
-        "Submitted": 64,
+        "Closed": 2796,
+        "Submitted": 63,
         "To be completed": 365,
-        "Other": 24
+        "Other": 27
       }
     },
     {
@@ -397,9 +403,9 @@
       "sid": "PS5-01-02",
       "name": "PS5-01-02 - Fire Water Pump A",
       "total": 33,
-      "closed": 31,
-      "open": 2,
-      "pct": 93.9,
+      "closed": 32,
+      "open": 1,
+      "pct": 97.0,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 6,
@@ -408,7 +414,7 @@
       },
       "closed_by_discipline": {
         "E": 6,
-        "I": 25,
+        "I": 26,
         "T": 0
       }
     },
@@ -416,9 +422,9 @@
       "sid": "PS5-01-03",
       "name": "PS5-01-03 - Fire Water Pump B",
       "total": 29,
-      "closed": 27,
-      "open": 2,
-      "pct": 93.1,
+      "closed": 28,
+      "open": 1,
+      "pct": 96.6,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 6,
@@ -427,7 +433,7 @@
       },
       "closed_by_discipline": {
         "E": 6,
-        "I": 21,
+        "I": 22,
         "T": 0
       }
     },
@@ -568,9 +574,9 @@
       "sid": "PS5-03-03",
       "name": "PS5-03-03 - FZ-03 - Buildings Area",
       "total": 16,
-      "closed": 11,
-      "open": 5,
-      "pct": 68.8,
+      "closed": 10,
+      "open": 6,
+      "pct": 62.5,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 0,
@@ -579,7 +585,7 @@
       },
       "closed_by_discipline": {
         "E": 0,
-        "I": 11,
+        "I": 10,
         "T": 0
       }
     },
@@ -4330,9 +4336,9 @@
       "sid": "PS5-71-08",
       "name": "PS5-71-08 - CFO Pre-Pressure Modules",
       "total": 56,
-      "closed": 54,
-      "open": 2,
-      "pct": 96.4,
+      "closed": 53,
+      "open": 3,
+      "pct": 94.6,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 25,
@@ -4341,7 +4347,7 @@
       },
       "closed_by_discipline": {
         "E": 25,
-        "I": 29,
+        "I": 28,
         "T": 0
       }
     },
@@ -9255,8 +9261,8 @@
     "T-00254-4248": "Closed",
     "T-00254-4249": "Closed",
     "T-00254-4250": "Closed",
-    "T-00254-4251": "Open",
-    "T-00254-4252": "Open",
+    "T-00254-4251": "Closed",
+    "T-00254-4252": "Closed",
     "T-00254-4264": "Closed",
     "T-00254-4265": "Closed",
     "T-00254-4266": "Closed",
@@ -9343,7 +9349,7 @@
     "T-00254-4378": "Closed",
     "T-00254-4379": "Closed",
     "T-00254-4393": "Closed",
-    "T-00254-4394": "Closed",
+    "T-00254-4394": "Open",
     "T-00254-4395": "Closed",
     "T-00254-4396": "Closed",
     "T-00254-4397": "Closed",
@@ -10188,7 +10194,7 @@
     "T-00254-5395": "Closed",
     "T-00254-5396": "Closed",
     "T-00254-5397": "Closed",
-    "T-00254-5398": "Closed",
+    "T-00254-5398": "Open",
     "T-00254-5399": "Closed",
     "T-00254-5400": "Closed",
     "T-00254-5401": "Closed",
@@ -15522,22 +15528,22 @@
   },
   "recent_closed": [
     {
-      "tag": "PS5-71-BI-0004-CC01",
-      "task": "T-00254-5398",
-      "system": "PS5-71-08 - CFO Pre-Pressure Modules",
+      "tag": "PS5-01-HS-3108BB-CJ01",
+      "task": "T-00254-4252",
+      "system": "PS5-01-03 - Fire Water Pump B",
       "loop": "",
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 5:11:23 A"
+      "approved": "11/8/2026 5:14:34 A"
     },
     {
-      "tag": "PS5-03-RDH-0303-CJ01",
-      "task": "T-00254-4394",
-      "system": "PS5-03-03 - FZ-03 - Buildings Area",
+      "tag": "PS5-01-HS-3108AB-CJ01",
+      "task": "T-00254-4251",
+      "system": "PS5-01-02 - Fire Water Pump A",
       "loop": "",
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 5:09:54 A"
+      "approved": "11/8/2026 5:13:34 A"
     },
     {
       "tag": "PS5-03-RDH-0302-CJ01",
