@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-08 08:09:33",
+  "updated": "2026-11-08 08:13:39",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7486,
-  "open": 2812,
-  "today_closed": 1,
+  "closed": 7488,
+  "open": 2810,
+  "today_closed": 3,
   "closed_by_discipline": {
-    "I": 3632,
+    "I": 3634,
     "E": 3558,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 961,
+    "I": 959,
     "E": 1069,
     "T": 782
   },
@@ -229,22 +229,22 @@
     {
       "label": "2026-11-08",
       "E": 0,
-      "I": 1,
+      "I": 3,
       "T": 0,
-      "Total": 1
+      "Total": 3
     }
   ],
-  "closed_this_week": 287,
-  "closed_this_month": 287,
+  "closed_this_week": 289,
+  "closed_this_month": 289,
   "today_milestone": [
     {
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 1
+      "count": 3
     }
   ],
-  "today_milestone_total": 1,
+  "today_milestone_total": 3,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -348,13 +348,13 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2796,
-      "remaining": 455,
-      "pct": 86.0,
+      "closed": 2798,
+      "remaining": 453,
+      "pct": 86.1,
       "status": {
-        "Closed": 2796,
-        "Submitted": 63,
-        "To be completed": 368,
+        "Closed": 2798,
+        "Submitted": 64,
+        "To be completed": 365,
         "Other": 24
       }
     },
@@ -568,9 +568,9 @@
       "sid": "PS5-03-03",
       "name": "PS5-03-03 - FZ-03 - Buildings Area",
       "total": 16,
-      "closed": 10,
-      "open": 6,
-      "pct": 62.5,
+      "closed": 11,
+      "open": 5,
+      "pct": 68.8,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 0,
@@ -579,7 +579,7 @@
       },
       "closed_by_discipline": {
         "E": 0,
-        "I": 10,
+        "I": 11,
         "T": 0
       }
     },
@@ -4330,9 +4330,9 @@
       "sid": "PS5-71-08",
       "name": "PS5-71-08 - CFO Pre-Pressure Modules",
       "total": 56,
-      "closed": 53,
-      "open": 3,
-      "pct": 94.6,
+      "closed": 54,
+      "open": 2,
+      "pct": 96.4,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 25,
@@ -4341,7 +4341,7 @@
       },
       "closed_by_discipline": {
         "E": 25,
-        "I": 28,
+        "I": 29,
         "T": 0
       }
     },
@@ -9343,7 +9343,7 @@
     "T-00254-4378": "Closed",
     "T-00254-4379": "Closed",
     "T-00254-4393": "Closed",
-    "T-00254-4394": "Open",
+    "T-00254-4394": "Closed",
     "T-00254-4395": "Closed",
     "T-00254-4396": "Closed",
     "T-00254-4397": "Closed",
@@ -10188,7 +10188,7 @@
     "T-00254-5395": "Closed",
     "T-00254-5396": "Closed",
     "T-00254-5397": "Closed",
-    "T-00254-5398": "Open",
+    "T-00254-5398": "Closed",
     "T-00254-5399": "Closed",
     "T-00254-5400": "Closed",
     "T-00254-5401": "Closed",
@@ -15522,6 +15522,24 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-71-BI-0004-CC01",
+      "task": "T-00254-5398",
+      "system": "PS5-71-08 - CFO Pre-Pressure Modules",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/8/2026 5:11:23 A"
+    },
+    {
+      "tag": "PS5-03-RDH-0303-CJ01",
+      "task": "T-00254-4394",
+      "system": "PS5-03-03 - FZ-03 - Buildings Area",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/8/2026 5:09:54 A"
+    },
+    {
       "tag": "PS5-03-RDH-0302-CJ01",
       "task": "T-00254-4393",
       "system": "PS5-03-03 - FZ-03 - Buildings Area",
@@ -16582,24 +16600,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/5/2026 4:19:30 P"
-    },
-    {
-      "tag": "PS5-09-IES-8317",
-      "task": "T-00067-2760",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/5/2026 4:18:27 P"
-    },
-    {
-      "tag": "PS5-09-IES-8316",
-      "task": "T-00067-2759",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/5/2026 4:17:28 P"
     }
   ]
 }
