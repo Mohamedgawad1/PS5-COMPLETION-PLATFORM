@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-08 08:05:56",
+  "updated": "2026-11-08 08:09:33",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7485,
-  "open": 2813,
-  "today_closed": 0,
+  "closed": 7486,
+  "open": 2812,
+  "today_closed": 1,
   "closed_by_discipline": {
-    "I": 3631,
+    "I": 3632,
     "E": 3558,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 962,
+    "I": 961,
     "E": 1069,
     "T": 782
   },
@@ -229,15 +229,22 @@
     {
       "label": "2026-11-08",
       "E": 0,
-      "I": 0,
+      "I": 1,
       "T": 0,
-      "Total": 0
+      "Total": 1
     }
   ],
-  "closed_this_week": 286,
-  "closed_this_month": 286,
-  "today_milestone": [],
-  "today_milestone_total": 0,
+  "closed_this_week": 287,
+  "closed_this_month": 287,
+  "today_milestone": [
+    {
+      "milestone": "Milestone H",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
+    }
+  ],
+  "today_milestone_total": 1,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -341,14 +348,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2795,
-      "remaining": 456,
+      "closed": 2796,
+      "remaining": 455,
       "pct": 86.0,
       "status": {
-        "Closed": 2795,
+        "Closed": 2796,
         "Submitted": 63,
         "To be completed": 368,
-        "Other": 25
+        "Other": 24
       }
     },
     {
@@ -561,9 +568,9 @@
       "sid": "PS5-03-03",
       "name": "PS5-03-03 - FZ-03 - Buildings Area",
       "total": 16,
-      "closed": 9,
-      "open": 7,
-      "pct": 56.2,
+      "closed": 10,
+      "open": 6,
+      "pct": 62.5,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 0,
@@ -572,7 +579,7 @@
       },
       "closed_by_discipline": {
         "E": 0,
-        "I": 9,
+        "I": 10,
         "T": 0
       }
     },
@@ -9335,7 +9342,7 @@
     "T-00254-4377": "Closed",
     "T-00254-4378": "Closed",
     "T-00254-4379": "Closed",
-    "T-00254-4393": "Open",
+    "T-00254-4393": "Closed",
     "T-00254-4394": "Open",
     "T-00254-4395": "Closed",
     "T-00254-4396": "Closed",
@@ -15515,6 +15522,15 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-03-RDH-0302-CJ01",
+      "task": "T-00254-4393",
+      "system": "PS5-03-03 - FZ-03 - Buildings Area",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/8/2026 5:08:41 A"
+    },
+    {
       "tag": "",
       "task": "T-00031-1376",
       "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
@@ -16584,15 +16600,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/5/2026 4:17:28 P"
-    },
-    {
-      "tag": "PS5-09-IES-8314",
-      "task": "T-00067-2757",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/5/2026 4:16:28 P"
     }
   ]
 }
