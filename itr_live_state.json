@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-08 09:27:32",
+  "updated": "2026-11-08 09:31:44",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7489,
-  "open": 2809,
-  "today_closed": 4,
+  "closed": 7490,
+  "open": 2808,
+  "today_closed": 5,
   "closed_by_discipline": {
     "I": 3634,
-    "E": 3559,
+    "E": 3560,
     "T": 296
   },
   "open_by_discipline": {
     "I": 959,
-    "E": 1068,
+    "E": 1067,
     "T": 782
   },
   "daily": [
@@ -228,15 +228,21 @@
     },
     {
       "label": "2026-11-08",
-      "E": 1,
+      "E": 2,
       "I": 3,
       "T": 0,
-      "Total": 4
+      "Total": 5
     }
   ],
-  "closed_this_week": 290,
-  "closed_this_month": 290,
+  "closed_this_week": 291,
+  "closed_this_month": 291,
   "today_milestone": [
+    {
+      "milestone": "Milestone B",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 1
+    },
     {
       "milestone": "Milestone C",
       "disc": "I",
@@ -256,7 +262,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 4,
+  "today_milestone_total": 5,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -276,13 +282,13 @@
       "label": "Milestone B",
       "raw": "PS5 - Milestone B",
       "total": 1714,
-      "closed": 1646,
-      "remaining": 68,
-      "pct": 96.0,
+      "closed": 1647,
+      "remaining": 67,
+      "pct": 96.1,
       "status": {
-        "Closed": 1646,
+        "Closed": 1647,
         "Submitted": 0,
-        "To be completed": 66,
+        "To be completed": 65,
         "Other": 2
       }
     },
@@ -366,8 +372,8 @@
       "status": {
         "Closed": 2796,
         "Submitted": 63,
-        "To be completed": 342,
-        "Other": 50
+        "To be completed": 341,
+        "Other": 51
       }
     },
     {
@@ -3943,9 +3949,9 @@
       "sid": "PS5-62-10",
       "name": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
       "total": 39,
-      "closed": 29,
-      "open": 10,
-      "pct": 74.4,
+      "closed": 30,
+      "open": 9,
+      "pct": 76.9,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 39,
@@ -3953,7 +3959,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 29,
+        "E": 30,
         "I": 0,
         "T": 0
       }
@@ -13267,7 +13273,7 @@
     "T-00031-1325": "Open",
     "T-00031-1326": "Open",
     "T-00031-1327": "Open",
-    "T-00031-1328": "Open",
+    "T-00031-1328": "Closed",
     "T-00031-1329": "Open",
     "T-00031-1330": "Open",
     "T-00031-1331": "Open",
@@ -15535,6 +15541,15 @@
   "recent_closed": [
     {
       "tag": "",
+      "task": "T-00031-1328",
+      "system": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/8/2026 6:27:19 A"
+    },
+    {
+      "tag": "",
       "task": "T-00032-0459",
       "system": "PS5-61-09 - Outdoor Power Distribution Board - PS5-61-IG-0014",
       "loop": "",
@@ -16603,15 +16618,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/5/2026 4:21:34 P"
-    },
-    {
-      "tag": "PS5-09-IES-8321",
-      "task": "T-00067-2763",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/5/2026 4:20:35 P"
     }
   ]
 }
