@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-10 19:29:19",
+  "updated": "2026-11-10 19:32:55",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7607,
-  "open": 2691,
-  "today_closed": 68,
+  "closed": 7609,
+  "open": 2689,
+  "today_closed": 70,
   "closed_by_discipline": {
-    "I": 3656,
+    "I": 3658,
     "E": 3655,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 937,
+    "I": 935,
     "E": 972,
     "T": 782
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-11-10",
       "E": 49,
-      "I": 19,
+      "I": 21,
       "T": 0,
-      "Total": 68
+      "Total": 70
     }
   ],
-  "closed_this_week": 84,
-  "closed_this_month": 408,
+  "closed_this_week": 86,
+  "closed_this_month": 410,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -253,7 +253,7 @@
       "milestone": "Milestone D",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 3
+      "count": 5
     },
     {
       "milestone": "Milestone E",
@@ -280,7 +280,7 @@
       "count": 14
     }
   ],
-  "today_milestone_total": 68,
+  "today_milestone_total": 70,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -328,14 +328,14 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3437,
-      "closed": 2549,
-      "remaining": 888,
+      "closed": 2551,
+      "remaining": 886,
       "pct": 74.2,
       "status": {
-        "Closed": 2549,
+        "Closed": 2551,
         "Submitted": 2,
         "To be completed": 881,
-        "Other": 5
+        "Other": 3
       }
     },
     {
@@ -1573,9 +1573,9 @@
       "sid": "PS5-09-03",
       "name": "PS5-09-03 - HVAC for Generator Building",
       "total": 1004,
-      "closed": 232,
-      "open": 772,
-      "pct": 23.1,
+      "closed": 234,
+      "open": 770,
+      "pct": 23.3,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 380,
@@ -1584,7 +1584,7 @@
       },
       "closed_by_discipline": {
         "E": 84,
-        "I": 148,
+        "I": 150,
         "T": 0
       }
     },
@@ -13137,7 +13137,7 @@
     "T-00067-2730": "Open",
     "T-00067-2731": "Open",
     "T-00067-2732": "Open",
-    "T-00067-2733": "Open",
+    "T-00067-2733": "Closed",
     "T-00067-2734": "Open",
     "T-00067-2735": "Closed",
     "T-00067-2736": "Open",
@@ -13145,7 +13145,7 @@
     "T-00067-2738": "Open",
     "T-00067-2739": "Closed",
     "T-00067-2740": "Closed",
-    "T-00067-2741": "Open",
+    "T-00067-2741": "Closed",
     "T-00067-2742": "Open",
     "T-00067-2743": "Open",
     "T-00067-2744": "Open",
@@ -15558,6 +15558,24 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-09-IES-8102A",
+      "task": "T-00067-2733",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/10/2026 4:32:20 "
+    },
+    {
+      "tag": "PS5-09-IES-8202D",
+      "task": "T-00067-2741",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/10/2026 4:29:31 "
+    },
+    {
       "tag": "PS5-09-IES-8202C",
       "task": "T-00067-2740",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16618,24 +16636,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/8/2026 5:13:34 A"
-    },
-    {
-      "tag": "PS5-03-RDH-0302-CJ01",
-      "task": "T-00254-4393",
-      "system": "PS5-03-03 - FZ-03 - Buildings Area",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 5:08:41 A"
-    },
-    {
-      "tag": "PS5-03-RDH-0303-CJ01",
-      "task": "T-00254-4394",
-      "system": "PS5-03-03 - FZ-03 - Buildings Area",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/7/2026 9:00:00 P"
     }
   ]
 }
