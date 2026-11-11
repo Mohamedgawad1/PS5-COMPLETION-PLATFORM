@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-10 19:48:45",
+  "updated": "2026-11-11 07:15:46",
   "total_tasks_ps5": 14008,
   "eit_total": 10298,
   "eit_by_discipline": {
@@ -9,27 +9,20 @@
     "E": 4627,
     "T": 1078
   },
-  "closed": 7610,
-  "open": 2688,
-  "today_closed": 71,
+  "closed": 7626,
+  "open": 2672,
+  "today_closed": 0,
   "closed_by_discipline": {
-    "I": 3659,
-    "E": 3655,
+    "I": 3660,
+    "E": 3670,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 934,
-    "E": 972,
+    "I": 933,
+    "E": 957,
     "T": 782
   },
   "daily": [
-    {
-      "label": "2026-10-12",
-      "E": 19,
-      "I": 25,
-      "T": 0,
-      "Total": 44
-    },
     {
       "label": "2026-10-13",
       "E": 135,
@@ -228,59 +221,23 @@
     },
     {
       "label": "2026-11-10",
-      "E": 49,
-      "I": 22,
+      "E": 64,
+      "I": 23,
       "T": 0,
-      "Total": 71
+      "Total": 87
+    },
+    {
+      "label": "2026-11-11",
+      "E": 0,
+      "I": 0,
+      "T": 0,
+      "Total": 0
     }
   ],
-  "closed_this_week": 87,
-  "closed_this_month": 411,
-  "today_milestone": [
-    {
-      "milestone": "Milestone B",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 1
-    },
-    {
-      "milestone": "Milestone D",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 13
-    },
-    {
-      "milestone": "Milestone D",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 6
-    },
-    {
-      "milestone": "Milestone E",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 1
-    },
-    {
-      "milestone": "Milestone G",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 2
-    },
-    {
-      "milestone": "Milestone H",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 34
-    },
-    {
-      "milestone": "Milestone H",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 14
-    }
-  ],
-  "today_milestone_total": 71,
+  "closed_this_week": 103,
+  "closed_this_month": 427,
+  "today_milestone": [],
+  "today_milestone_total": 0,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -314,13 +271,13 @@
       "label": "Milestone C",
       "raw": "PS5 - Milestone C",
       "total": 958,
-      "closed": 636,
-      "remaining": 322,
-      "pct": 66.4,
+      "closed": 637,
+      "remaining": 321,
+      "pct": 66.5,
       "status": {
-        "Closed": 636,
+        "Closed": 637,
         "Submitted": 0,
-        "To be completed": 321,
+        "To be completed": 320,
         "Other": 1
       }
     },
@@ -328,13 +285,13 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3437,
-      "closed": 2552,
-      "remaining": 885,
-      "pct": 74.3,
+      "closed": 2564,
+      "remaining": 873,
+      "pct": 74.6,
       "status": {
-        "Closed": 2552,
+        "Closed": 2564,
         "Submitted": 2,
-        "To be completed": 881,
+        "To be completed": 869,
         "Other": 2
       }
     },
@@ -370,13 +327,13 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 905,
-      "closed": 799,
-      "remaining": 106,
-      "pct": 88.3,
+      "closed": 801,
+      "remaining": 104,
+      "pct": 88.5,
       "status": {
-        "Closed": 799,
+        "Closed": 801,
         "Submitted": 0,
-        "To be completed": 106,
+        "To be completed": 104,
         "Other": 0
       }
     },
@@ -398,13 +355,13 @@
       "label": "Milestone I",
       "raw": "PS5 - Milestone I",
       "total": 788,
-      "closed": 183,
-      "remaining": 605,
-      "pct": 23.2,
+      "closed": 184,
+      "remaining": 604,
+      "pct": 23.4,
       "status": {
-        "Closed": 183,
+        "Closed": 184,
         "Submitted": 4,
-        "To be completed": 594,
+        "To be completed": 593,
         "Other": 7
       }
     }
@@ -1573,9 +1530,9 @@
       "sid": "PS5-09-03",
       "name": "PS5-09-03 - HVAC for Generator Building",
       "total": 1004,
-      "closed": 235,
-      "open": 769,
-      "pct": 23.4,
+      "closed": 247,
+      "open": 757,
+      "pct": 24.6,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 380,
@@ -1583,8 +1540,8 @@
         "T": 4
       },
       "closed_by_discipline": {
-        "E": 84,
-        "I": 151,
+        "E": 95,
+        "I": 152,
         "T": 0
       }
     },
@@ -3682,17 +3639,17 @@
       "sid": "PS5-61-08",
       "name": "PS5-61-08 - Electrical Control System",
       "total": 23,
-      "closed": 22,
-      "open": 1,
-      "pct": 95.7,
-      "status": "IN PROGRESS",
+      "closed": 23,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 23,
         "I": 0,
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 22,
+        "E": 23,
         "I": 0,
         "T": 0
       }
@@ -3796,9 +3753,9 @@
       "sid": "PS5-62-01",
       "name": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
       "total": 64,
-      "closed": 33,
-      "open": 31,
-      "pct": 51.6,
+      "closed": 34,
+      "open": 30,
+      "pct": 53.1,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 64,
@@ -3806,7 +3763,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 33,
+        "E": 34,
         "I": 0,
         "T": 0
       }
@@ -3815,9 +3772,9 @@
       "sid": "PS5-62-02",
       "name": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
       "total": 67,
-      "closed": 38,
-      "open": 29,
-      "pct": 56.7,
+      "closed": 39,
+      "open": 28,
+      "pct": 58.2,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 67,
@@ -3825,7 +3782,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 38,
+        "E": 39,
         "I": 0,
         "T": 0
       }
@@ -5012,17 +4969,17 @@
       "sid": "PS5-82-02",
       "name": "PS5-82-02 - Sewage Treatment Plant Package",
       "total": 3,
-      "closed": 2,
-      "open": 1,
-      "pct": 66.7,
-      "status": "IN PROGRESS",
+      "closed": 3,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 2,
         "I": 1,
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 1,
+        "E": 2,
         "I": 1,
         "T": 0
       }
@@ -6626,7 +6583,7 @@
     "T-00024-2233": "Open",
     "T-00024-2236": "Closed",
     "T-00024-2239": "Closed",
-    "T-00024-2288": "Open",
+    "T-00024-2288": "Closed",
     "T-00232-0952": "Closed",
     "T-00232-0953": "Closed",
     "T-00232-0954": "Closed",
@@ -12753,9 +12710,9 @@
     "T-00233-9733": "Open",
     "T-00233-9734": "Open",
     "T-00233-9735": "Open",
-    "T-00233-9736": "Open",
-    "T-00233-9737": "Open",
-    "T-00233-9738": "Open",
+    "T-00233-9736": "Closed",
+    "T-00233-9737": "Closed",
+    "T-00233-9738": "Closed",
     "T-00233-9739": "Open",
     "T-00233-9740": "Open",
     "T-00233-9741": "Open",
@@ -12842,14 +12799,14 @@
     "T-00234-3676": "Open",
     "T-00234-3677": "Open",
     "T-00234-3678": "Open",
-    "T-00234-3679": "Open",
-    "T-00234-3680": "Open",
-    "T-00234-3681": "Open",
-    "T-00234-3682": "Open",
-    "T-00234-3683": "Open",
-    "T-00234-3684": "Open",
-    "T-00234-3685": "Open",
-    "T-00234-3686": "Open",
+    "T-00234-3679": "Closed",
+    "T-00234-3680": "Closed",
+    "T-00234-3681": "Closed",
+    "T-00234-3682": "Closed",
+    "T-00234-3683": "Closed",
+    "T-00234-3684": "Closed",
+    "T-00234-3685": "Closed",
+    "T-00234-3686": "Closed",
     "T-00234-3687": "Open",
     "T-00254-11586": "Open",
     "T-00254-11587": "Open",
@@ -13142,7 +13099,7 @@
     "T-00067-2735": "Closed",
     "T-00067-2736": "Open",
     "T-00067-2737": "Open",
-    "T-00067-2738": "Open",
+    "T-00067-2738": "Closed",
     "T-00067-2739": "Closed",
     "T-00067-2740": "Closed",
     "T-00067-2741": "Closed",
@@ -13916,7 +13873,7 @@
     "T-00608-0478": "Closed",
     "T-00608-0479": "Closed",
     "T-00608-0480": "Closed",
-    "T-00608-0481": "Open",
+    "T-00608-0481": "Closed",
     "T-00608-0943": "Closed",
     "T-00608-0944": "Closed",
     "T-00610-0177": "Closed",
@@ -13993,7 +13950,7 @@
     "T-00610-0248": "Closed",
     "T-00610-0249": "Closed",
     "T-00610-0250": "Closed",
-    "T-00610-0251": "Open",
+    "T-00610-0251": "Closed",
     "T-00610-0252": "Closed",
     "T-00610-0253": "Closed",
     "T-00610-0254": "Closed",
@@ -14016,7 +13973,7 @@
     "T-00610-0271": "Open",
     "T-00610-0272": "Open",
     "T-00610-0273": "Open",
-    "T-00610-0274": "Open",
+    "T-00610-0274": "Closed",
     "T-00610-0275": "Open",
     "T-00610-0276": "Open",
     "T-00610-0277": "Closed",
@@ -15558,6 +15515,150 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-09-IES-8406H-CD01",
+      "task": "T-00234-3686",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/10/2026 7:17:11 "
+    },
+    {
+      "tag": "PS5-09-IES-8406G-CD01",
+      "task": "T-00234-3685",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/10/2026 7:10:43 "
+    },
+    {
+      "tag": "PS5-09-IES-8406F-CD01",
+      "task": "T-00234-3684",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/10/2026 7:08:38 "
+    },
+    {
+      "tag": "PS5-09-IES-8406E-CD01",
+      "task": "T-00234-3683",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/10/2026 7:06:41 "
+    },
+    {
+      "tag": "PS5-09-IES-8406D-CD01",
+      "task": "T-00234-3682",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/10/2026 7:04:26 "
+    },
+    {
+      "tag": "PS5-09-IES-8406C-CD01",
+      "task": "T-00234-3681",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/10/2026 7:02:32 "
+    },
+    {
+      "tag": "PS5-09-IES-8406B-CD01",
+      "task": "T-00234-3680",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/10/2026 7:00:53 "
+    },
+    {
+      "tag": "PS5-09-IES-8406A-CD01",
+      "task": "T-00234-3679",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/10/2026 6:58:27 "
+    },
+    {
+      "tag": "PS5-09-RF-83600A-CL01",
+      "task": "T-00233-9738",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/10/2026 6:55:52 "
+    },
+    {
+      "tag": "PS5-09-RF-83500P-CL01",
+      "task": "T-00233-9737",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/10/2026 6:53:37 "
+    },
+    {
+      "tag": "PS5-09-RF-83500N-CL01",
+      "task": "T-00233-9736",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/10/2026 6:51:11 "
+    },
+    {
+      "tag": "PS5-62-IE-0002-CD01",
+      "task": "T-00610-0274",
+      "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/10/2026 6:46:46 "
+    },
+    {
+      "tag": "PS5-61-IE-0003-CD01",
+      "task": "T-00610-0251",
+      "system": "PS5-61-08 - Electrical Control System",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/10/2026 6:45:01 "
+    },
+    {
+      "tag": "PS5-82-IN-0001-CL01",
+      "task": "T-00608-0481",
+      "system": "PS5-82-02 - Sewage Treatment Plant Package",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/10/2026 6:43:01 "
+    },
+    {
+      "tag": "PS5-62-IE-0001-CD01",
+      "task": "T-00024-2288",
+      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/10/2026 6:37:34 "
+    },
+    {
+      "tag": "PS5-09-IES-8202A",
+      "task": "T-00067-2738",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/10/2026 6:35:33 "
+    },
+    {
       "tag": "PS5-09-IES-8102B",
       "task": "T-00067-2734",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16492,150 +16593,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/8/2026 8:03:23 A"
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1496",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 8:02:33 A"
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1495",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 8:01:55 A"
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1493",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 8:01:19 A"
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1491",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 8:00:45 A"
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1489",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 7:59:22 A"
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1488",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 7:58:28 A"
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1487",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 7:57:02 A"
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1482",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 7:56:40 A"
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1477",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 7:56:06 A"
-    },
-    {
-      "tag": "PS5-78-JC-9100D-CL01",
-      "task": "T-00023-5626",
-      "system": "PS5-78-01 - Lifting and handling equipment",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 6:44:48 A"
-    },
-    {
-      "tag": "PS5-78-JC-9100C-CL01",
-      "task": "T-00023-5625",
-      "system": "PS5-78-01 - Lifting and handling equipment",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 6:41:40 A"
-    },
-    {
-      "tag": "PS5-78-JC-9100B-CL01",
-      "task": "T-00023-5624",
-      "system": "PS5-78-01 - Lifting and handling equipment",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 6:40:41 A"
-    },
-    {
-      "tag": "",
-      "task": "T-00031-1329",
-      "system": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 6:30:01 A"
-    },
-    {
-      "tag": "",
-      "task": "T-00031-1328",
-      "system": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 6:27:19 A"
-    },
-    {
-      "tag": "",
-      "task": "T-00032-0459",
-      "system": "PS5-61-09 - Outdoor Power Distribution Board - PS5-61-IG-0014",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 6:22:21 A"
-    },
-    {
-      "tag": "PS5-01-HS-3108BB-CJ01",
-      "task": "T-00254-4252",
-      "system": "PS5-01-03 - Fire Water Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/8/2026 5:14:34 A"
     }
   ]
 }
