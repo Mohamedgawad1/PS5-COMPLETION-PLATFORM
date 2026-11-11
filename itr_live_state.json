@@ -1,16 +1,16 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-11 11:14:01",
-  "total_tasks_ps5": 14008,
-  "eit_total": 10298,
+  "updated": "2026-11-11 11:19:59",
+  "total_tasks_ps5": 14010,
+  "eit_total": 10300,
   "eit_by_discipline": {
-    "I": 4593,
+    "I": 4595,
     "E": 4627,
     "T": 1078
   },
   "closed": 7626,
-  "open": 2672,
+  "open": 2674,
   "today_closed": 0,
   "closed_by_discipline": {
     "I": 3660,
@@ -18,7 +18,7 @@
     "T": 296
   },
   "open_by_discipline": {
-    "I": 933,
+    "I": 935,
     "E": 957,
     "T": 782
   },
@@ -354,14 +354,14 @@
     {
       "label": "Milestone I",
       "raw": "PS5 - Milestone I",
-      "total": 788,
+      "total": 790,
       "closed": 184,
-      "remaining": 604,
-      "pct": 23.4,
+      "remaining": 606,
+      "pct": 23.3,
       "status": {
         "Closed": 184,
         "Submitted": 4,
-        "To be completed": 593,
+        "To be completed": 595,
         "Other": 7
       }
     }
@@ -1947,14 +1947,14 @@
     {
       "sid": "PS5-50-01",
       "name": "PS5-50-01 - Water Well Submersible Pumps (3100)",
-      "total": 11,
+      "total": 12,
       "closed": 3,
-      "open": 8,
-      "pct": 27.3,
+      "open": 9,
+      "pct": 25.0,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 5,
-        "I": 6,
+        "I": 7,
         "T": 0
       },
       "closed_by_discipline": {
@@ -1966,14 +1966,14 @@
     {
       "sid": "PS5-50-02",
       "name": "PS5-50-02 - Water Well Submersible Pumps (3200)",
-      "total": 11,
+      "total": 12,
       "closed": 3,
-      "open": 8,
-      "pct": 27.3,
+      "open": 9,
+      "pct": 25.0,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 5,
-        "I": 6,
+        "I": 7,
         "T": 0
       },
       "closed_by_discipline": {
@@ -14187,6 +14187,8 @@
     "T-00614-1025": "Open",
     "T-00614-1026": "Open",
     "T-00614-1027": "Open",
+    "T-00614-1028": "Open",
+    "T-00614-1029": "Open",
     "T-00614-1030": "Closed",
     "T-00614-1031": "Closed",
     "T-00614-1032": "Closed",
