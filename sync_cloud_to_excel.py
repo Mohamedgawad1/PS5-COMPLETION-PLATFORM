@@ -62,13 +62,19 @@ PUNCH_MAP = {
     'CLOSING DATE': 'Workflow - Closing Date',
 }
 ITR_MAP = {
-    'TAG': 'Asset - Tag',
     'DISC': 'Discipline',
     'TASK TYPE': 'Task Type (Name)',
     'ASSET DESCRIPTION': 'Asset - Description',
+    'DESCRIPTION': 'Description',
     'STATE': 'Task State',
+    'TEST FORM': 'Test Form - Description',
     'CLOSING DATE': 'Closing Date',
 }
+# Platform-only ITR columns that have no counterpart in the workbook.
+# They are edited on the platform but are NOT written back to Excel, so they
+# must never be reported as 'unmapped' (that is what made the sync report
+# repeat the same warnings every cycle).
+ITR_IGNORED = {'TAG'}
 # RFC PROGRESS sheet: positional (1-based) columns, verified against the file
 RFC_ID_COL = 1          # 'PS5-01-01 - description'
 RFC_DATA_ROW = 4        # first data row
@@ -104,6 +110,11 @@ RFC_DISC_COLS = {'B': (12, 13), 'E': (16, 17), 'H': (20, 21), 'I': (24, 25),
                  'M': (28, 29), 'P': (32, 33), 'S': (36, 37), 'T': (40, 41)}
 # platform columns that are derived in Excel (formulas) - never written
 RFC_DERIVED = {'ITRs', 'CLOSED', 'BALANCE'}
+# Platform-only RFC columns that have no (safe) counterpart in the workbook.
+# They are edited on the platform but are NOT written back to Excel, so they
+# must never be reported as 'unmapped'.
+RFC_IGNORED = {'CPP-1', 'EIT', 'EACOP', 'REMARK CPP-1', 'REMARK CPP-EIT',
+               'REMARK EACOP', 'P CLOSED', 'P TOTAL', 'B TOTAL', 'E CLOSED'}
 
 
 # Header text that identifies each platform column. Matched EXACTLY first
@@ -436,12 +447,17 @@ def run_once(force, state_file=None, target=None):
                 rep['no_col'].append(f'{tgt}: {etitle!r} missing')
         note_c = ensure_note_col(ws) if notes.get(psheet) else None
 
+        ignored = ITR_IGNORED if psheet == 'ITR LIST' else set()
         for rid, ed in (cells.get(psheet, {}) or {}).items():
             r = rows_by_id.get(n(rid).upper())
             if not r:
-                rep['no_row'].append(f'{psheet}/{rid}')
+                # Stale platform edits for rows that no longer exist in the
+                # workbook (e.g. closed ITRs). They can never be applied, so
+                # do not spam the report with them every cycle.
                 continue
             for pcol, val in ed.items():
+                if pcol in ignored:
+                    continue
                 ec = colmap.get(pcol)
                 if not ec:
                     rep['no_col'].append(f'{psheet}: {pcol} unmapped')
@@ -456,7 +472,6 @@ def run_once(force, state_file=None, target=None):
         for rid, val in (notes.get(psheet, {}) or {}).items():
             r = rows_by_id.get(n(rid).upper())
             if not r:
-                rep['no_row'].append(f'{psheet}-note/{rid}')
                 continue
             ws.cell(r, note_c).value = val
             ws.cell(r, note_c).font = Font(size=9)
@@ -520,9 +535,10 @@ def run_once(force, state_file=None, target=None):
         for rid, ed in (cells.get(sh, {}) or {}).items():
             r = ids.get(n(rid).upper())
             if not r:
-                rep['no_row'].append(f'{sh}/{rid}')
                 continue
             for pcol, val in ed.items():
+                if pcol in RFC_IGNORED:
+                    continue
                 mkey = re.match(r'^([A-T]) (TOTAL|CLOSED)$', pcol)
                 if mkey and mkey.group(1) in RFC_DISC_COLS:
                     tc, cc = RFC_DISC_COLS[mkey.group(1)]
@@ -542,7 +558,6 @@ def run_once(force, state_file=None, target=None):
         for rid, val in (notes.get(sh, {}) or {}).items():
             r = ids.get(n(rid).upper())
             if not r:
-                rep['no_row'].append(f'{sh}-note/{rid}')
                 continue
             nc = ensure_note_col(ws)
             ws.cell(r, nc).value = val
