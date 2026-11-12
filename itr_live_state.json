@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-12 19:31:33",
+  "updated": "2026-11-12 19:35:23",
   "total_tasks_ps5": 14064,
   "eit_total": 10354,
   "eit_by_discipline": {
@@ -9,18 +9,18 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7734,
-  "open": 2620,
-  "today_closed": 48,
+  "closed": 7738,
+  "open": 2616,
+  "today_closed": 52,
   "closed_by_discipline": {
-    "I": 3662,
+    "I": 3664,
     "E": 3774,
-    "T": 298
+    "T": 300
   },
   "open_by_discipline": {
-    "I": 933,
+    "I": 931,
     "E": 907,
-    "T": 780
+    "T": 778
   },
   "daily": [
     {
@@ -229,13 +229,13 @@
     {
       "label": "2026-11-12",
       "E": 44,
-      "I": 2,
-      "T": 2,
-      "Total": 48
+      "I": 4,
+      "T": 4,
+      "Total": 52
     }
   ],
-  "closed_this_week": 211,
-  "closed_this_month": 535,
+  "closed_this_week": 215,
+  "closed_this_month": 539,
   "today_milestone": [
     {
       "milestone": "Milestone A",
@@ -265,7 +265,7 @@
       "milestone": "Milestone F",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 2
+      "count": 4
     },
     {
       "milestone": "Milestone G",
@@ -286,7 +286,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 46,
+  "today_milestone_total": 48,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -362,14 +362,14 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 597,
-      "closed": 542,
-      "remaining": 55,
-      "pct": 90.8,
+      "closed": 544,
+      "remaining": 53,
+      "pct": 91.1,
       "status": {
-        "Closed": 542,
-        "Submitted": 1,
+        "Closed": 544,
+        "Submitted": 0,
         "To be completed": 53,
-        "Other": 1
+        "Other": 0
       }
     },
     {
@@ -1484,9 +1484,9 @@
       "sid": "PS5-08-85a",
       "name": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
       "total": 92,
-      "closed": 20,
-      "open": 72,
-      "pct": 21.7,
+      "closed": 22,
+      "open": 70,
+      "pct": 23.9,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 0,
@@ -1496,7 +1496,7 @@
       "closed_by_discipline": {
         "E": 0,
         "I": 0,
-        "T": 20
+        "T": 22
       }
     },
     {
@@ -4467,9 +4467,9 @@
       "sid": "PS5-71-15",
       "name": "PS5-71-15 - Diesel Fuel Storage Tank",
       "total": 35,
-      "closed": 31,
-      "open": 4,
-      "pct": 88.6,
+      "closed": 33,
+      "open": 2,
+      "pct": 94.3,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 8,
@@ -4478,7 +4478,7 @@
       },
       "closed_by_discipline": {
         "E": 6,
-        "I": 25,
+        "I": 27,
         "T": 0
       }
     },
@@ -7758,7 +7758,7 @@
     "T-00067-2080": "Open",
     "T-00067-2081": "Closed",
     "T-00067-2082": "Open",
-    "T-00067-2083": "Open",
+    "T-00067-2083": "Closed",
     "T-00067-2084": "Closed",
     "T-00067-2085": "Closed",
     "T-00067-2086": "Closed",
@@ -7769,7 +7769,7 @@
     "T-00067-2091": "Closed",
     "T-00067-2092": "Closed",
     "T-00067-2093": "Closed",
-    "T-00067-2094": "Open",
+    "T-00067-2094": "Closed",
     "T-00067-2095": "Closed",
     "T-00067-2096": "Closed",
     "T-00067-2097": "Closed",
@@ -15078,8 +15078,8 @@
     "T-00621-3454": "Open",
     "T-00621-3455": "Open",
     "T-00621-3456": "Open",
-    "T-00621-3457": "Open",
-    "T-00621-3458": "Open",
+    "T-00621-3457": "Closed",
+    "T-00621-3458": "Closed",
     "T-00621-3459": "Open",
     "T-00621-3460": "Open",
     "T-00621-3461": "Open",
@@ -15619,6 +15619,42 @@
     "T-00233-12634": "Open"
   },
   "recent_closed": [
+    {
+      "tag": "PS5-71-LIT-4402",
+      "task": "T-00067-2094",
+      "system": "PS5-71-15 - Diesel Fuel Storage Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/12/2026 4:32:20 "
+    },
+    {
+      "tag": "PS5-08-85DC-1902-CJ01",
+      "task": "T-00621-3458",
+      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/12/2026 4:32:20 "
+    },
+    {
+      "tag": "PS5-71-LIT-4401",
+      "task": "T-00067-2083",
+      "system": "PS5-71-15 - Diesel Fuel Storage Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/12/2026 4:30:37 "
+    },
+    {
+      "tag": "PS5-08-85DC-1901-CJ01",
+      "task": "T-00621-3457",
+      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/12/2026 4:29:58 "
+    },
     {
       "tag": "PS5-08-85BG-1902-CC01",
       "task": "T-00621-3297",
@@ -16662,42 +16698,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/10/2026 6:58:27 "
-    },
-    {
-      "tag": "PS5-09-RF-83600A-CL01",
-      "task": "T-00233-9738",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/10/2026 6:55:52 "
-    },
-    {
-      "tag": "PS5-09-RF-83500P-CL01",
-      "task": "T-00233-9737",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/10/2026 6:53:37 "
-    },
-    {
-      "tag": "PS5-09-RF-83500N-CL01",
-      "task": "T-00233-9736",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/10/2026 6:51:11 "
-    },
-    {
-      "tag": "PS5-62-IE-0002-CD01",
-      "task": "T-00610-0274",
-      "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/10/2026 6:46:46 "
     }
   ]
 }
