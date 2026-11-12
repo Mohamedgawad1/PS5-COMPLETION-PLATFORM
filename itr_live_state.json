@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-12 17:21:24",
+  "updated": "2026-11-12 17:30:50",
   "total_tasks_ps5": 14064,
   "eit_total": 10354,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7716,
-  "open": 2638,
-  "today_closed": 30,
+  "closed": 7718,
+  "open": 2636,
+  "today_closed": 32,
   "closed_by_discipline": {
-    "I": 3660,
+    "I": 3662,
     "E": 3760,
     "T": 296
   },
   "open_by_discipline": {
-    "I": 935,
+    "I": 933,
     "E": 921,
     "T": 782
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-11-12",
       "E": 30,
-      "I": 0,
+      "I": 2,
       "T": 0,
-      "Total": 30
+      "Total": 32
     }
   ],
-  "closed_this_week": 193,
-  "closed_this_month": 517,
+  "closed_this_week": 195,
+  "closed_this_month": 519,
   "today_milestone": [
     {
       "milestone": "Milestone A",
@@ -247,6 +247,12 @@
       "milestone": "Milestone D",
       "disc": "E",
       "discipline": "Electrical (E)",
+      "count": 2
+    },
+    {
+      "milestone": "Milestone F",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
       "count": 2
     },
     {
@@ -268,7 +274,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 30,
+  "today_milestone_total": 32,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -294,8 +300,8 @@
       "status": {
         "Closed": 1651,
         "Submitted": 0,
-        "To be completed": 74,
-        "Other": 1
+        "To be completed": 73,
+        "Other": 2
       }
     },
     {
@@ -344,13 +350,13 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 597,
-      "closed": 540,
-      "remaining": 57,
-      "pct": 90.5,
+      "closed": 542,
+      "remaining": 55,
+      "pct": 90.8,
       "status": {
-        "Closed": 540,
+        "Closed": 542,
         "Submitted": 0,
-        "To be completed": 57,
+        "To be completed": 55,
         "Other": 0
       }
     },
@@ -4506,10 +4512,10 @@
       "sid": "PS5-71-18",
       "name": "PS5-71-18 - Diesel Separator Module",
       "total": 31,
-      "closed": 29,
-      "open": 2,
-      "pct": 93.5,
-      "status": "IN PROGRESS",
+      "closed": 31,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 3,
         "I": 28,
@@ -4517,7 +4523,7 @@
       },
       "closed_by_discipline": {
         "E": 3,
-        "I": 26,
+        "I": 28,
         "T": 0
       }
     },
@@ -8888,7 +8894,7 @@
     "T-00069-5377": "Closed",
     "T-00069-5378": "Closed",
     "T-00069-5379": "Closed",
-    "T-00069-5381": "Open",
+    "T-00069-5381": "Closed",
     "T-00069-5382": "Closed",
     "T-00069-5383": "Closed",
     "T-00069-5384": "Closed",
@@ -8901,7 +8907,7 @@
     "T-00069-5391": "Closed",
     "T-00069-5392": "Closed",
     "T-00069-5393": "Closed",
-    "T-00069-5394": "Open",
+    "T-00069-5394": "Closed",
     "T-00069-5395": "Closed",
     "T-00069-5396": "Closed",
     "T-00069-5397": "Closed",
@@ -15602,6 +15608,24 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-71-BI-0002-CC01",
+      "task": "T-00069-5381",
+      "system": "PS5-71-18 - Diesel Separator Module",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/12/2026 2:23:58 "
+    },
+    {
+      "tag": "PS5-71-BI-0009-CC01",
+      "task": "T-00069-5394",
+      "system": "PS5-71-18 - Diesel Separator Module",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/12/2026 2:22:38 "
+    },
+    {
       "tag": "",
       "task": "T-00035-1537",
       "system": "PS5-79-07 - Electrical Heat Tracing Transformer/Distribution Board 7 (PS5-79-IG-0007)",
@@ -16662,24 +16686,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/10/2026 4:03:10 "
-    },
-    {
-      "tag": "PS5-71-BI-0011B-CC02",
-      "task": "T-00069-5405",
-      "system": "PS5-71-06 - Crude Fuel Separation Module",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/10/2026 4:02:16 "
-    },
-    {
-      "tag": "PS5-71-BI-0011B-CC01",
-      "task": "T-00069-5404",
-      "system": "PS5-71-06 - Crude Fuel Separation Module",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/10/2026 4:01:28 "
     }
   ]
 }
