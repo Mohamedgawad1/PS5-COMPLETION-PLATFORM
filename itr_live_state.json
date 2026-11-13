@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-13 19:47:04",
+  "updated": "2026-11-13 19:50:56",
   "total_tasks_ps5": 14064,
   "eit_total": 10354,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7805,
-  "open": 2549,
-  "today_closed": 58,
+  "closed": 7807,
+  "open": 2547,
+  "today_closed": 60,
   "closed_by_discipline": {
     "I": 3664,
-    "E": 3823,
+    "E": 3825,
     "T": 318
   },
   "open_by_discipline": {
     "I": 931,
-    "E": 858,
+    "E": 856,
     "T": 760
   },
   "daily": [
@@ -228,20 +228,20 @@
     },
     {
       "label": "2026-11-13",
-      "E": 45,
+      "E": 47,
       "I": 0,
       "T": 13,
-      "Total": 58
+      "Total": 60
     }
   ],
-  "closed_this_week": 282,
-  "closed_this_month": 606,
+  "closed_this_week": 284,
+  "closed_this_month": 608,
   "today_milestone": [
     {
       "milestone": "Milestone B",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 4
+      "count": 6
     },
     {
       "milestone": "Milestone D",
@@ -268,7 +268,7 @@
       "count": 9
     }
   ],
-  "today_milestone_total": 45,
+  "today_milestone_total": 47,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -288,14 +288,14 @@
       "label": "Milestone B",
       "raw": "PS5 - Milestone B",
       "total": 1726,
-      "closed": 1659,
-      "remaining": 67,
-      "pct": 96.1,
+      "closed": 1661,
+      "remaining": 65,
+      "pct": 96.2,
       "status": {
-        "Closed": 1659,
+        "Closed": 1661,
         "Submitted": 0,
-        "To be completed": 65,
-        "Other": 2
+        "To be completed": 64,
+        "Other": 1
       }
     },
     {
@@ -2112,17 +2112,17 @@
       "sid": "PS5-60-01",
       "name": "PS5-60-01 - Power Generation Package A",
       "total": 164,
-      "closed": 163,
-      "open": 1,
-      "pct": 99.4,
-      "status": "IN PROGRESS",
+      "closed": 164,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 97,
         "I": 67,
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 96,
+        "E": 97,
         "I": 67,
         "T": 0
       }
@@ -2169,17 +2169,17 @@
       "sid": "PS5-60-04",
       "name": "PS5-60-04 - Power Generation Package B",
       "total": 143,
-      "closed": 142,
-      "open": 1,
-      "pct": 99.3,
-      "status": "IN PROGRESS",
+      "closed": 143,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 93,
         "I": 50,
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 92,
+        "E": 93,
         "I": 50,
         "T": 0
       }
@@ -15588,8 +15588,8 @@
     "T-00233-12621": "Closed",
     "T-00233-12622": "Closed",
     "T-00233-12623": "Closed",
-    "T-00233-12624": "Open",
-    "T-00233-12625": "Open",
+    "T-00233-12624": "Closed",
+    "T-00233-12625": "Closed",
     "T-00233-12626": "Open",
     "T-00233-12627": "Open",
     "T-00233-12628": "Open",
@@ -15601,6 +15601,24 @@
     "T-00233-12634": "Open"
   },
   "recent_closed": [
+    {
+      "tag": "PS5-60-IE-0001B-CL01",
+      "task": "T-00233-12625",
+      "system": "PS5-60-04 - Power Generation Package B",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/13/2026 4:50:31 "
+    },
+    {
+      "tag": "PS5-60-IE-0001A-CL01",
+      "task": "T-00233-12624",
+      "system": "PS5-60-01 - Power Generation Package A",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/13/2026 4:48:12 "
+    },
     {
       "tag": "PS5-60-BI-0015G-CL04",
       "task": "T-00233-12623",
@@ -16662,24 +16680,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/12/2026 5:54:39 "
-    },
-    {
-      "tag": "",
-      "task": "T-00032-0464",
-      "system": "PS5-61-09 - Outdoor Power Distribution Board - PS5-61-IG-0014",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/12/2026 5:40:35 "
-    },
-    {
-      "tag": "PS5-09-FCU-8442D-CL01",
-      "task": "T-00233-9705",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/11/2026 7:02:39 "
     }
   ]
 }
