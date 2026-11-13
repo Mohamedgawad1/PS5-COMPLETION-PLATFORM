@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-12 20:20:34",
+  "updated": "2026-11-13 11:16:24",
   "total_tasks_ps5": 14064,
   "eit_total": 10354,
   "eit_by_discipline": {
@@ -9,27 +9,20 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7747,
-  "open": 2607,
-  "today_closed": 61,
+  "closed": 7762,
+  "open": 2592,
+  "today_closed": 15,
   "closed_by_discipline": {
     "I": 3664,
-    "E": 3778,
-    "T": 305
+    "E": 3780,
+    "T": 318
   },
   "open_by_discipline": {
     "I": 931,
-    "E": 903,
-    "T": 773
+    "E": 901,
+    "T": 760
   },
   "daily": [
-    {
-      "label": "2026-10-14",
-      "E": 34,
-      "I": 22,
-      "T": 0,
-      "Total": 56
-    },
     {
       "label": "2026-10-15",
       "E": 1,
@@ -232,61 +225,26 @@
       "I": 4,
       "T": 9,
       "Total": 61
+    },
+    {
+      "label": "2026-11-13",
+      "E": 2,
+      "I": 0,
+      "T": 13,
+      "Total": 15
     }
   ],
-  "closed_this_week": 224,
-  "closed_this_month": 548,
+  "closed_this_week": 239,
+  "closed_this_month": 563,
   "today_milestone": [
-    {
-      "milestone": "Milestone A",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 2
-    },
-    {
-      "milestone": "Milestone B",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 4
-    },
-    {
-      "milestone": "Milestone D",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 14
-    },
-    {
-      "milestone": "Milestone E",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 2
-    },
-    {
-      "milestone": "Milestone F",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 4
-    },
     {
       "milestone": "Milestone G",
       "disc": "E",
       "discipline": "Electrical (E)",
       "count": 2
-    },
-    {
-      "milestone": "Milestone H",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 23
-    },
-    {
-      "milestone": "Milestone I",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 1
     }
   ],
-  "today_milestone_total": 52,
+  "today_milestone_total": 2,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -376,13 +334,13 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 905,
-      "closed": 803,
-      "remaining": 102,
-      "pct": 88.7,
+      "closed": 805,
+      "remaining": 100,
+      "pct": 89.0,
       "status": {
-        "Closed": 803,
+        "Closed": 805,
         "Submitted": 0,
-        "To be completed": 102,
+        "To be completed": 100,
         "Other": 0
       }
     },
@@ -1484,9 +1442,9 @@
       "sid": "PS5-08-85a",
       "name": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
       "total": 92,
-      "closed": 27,
-      "open": 65,
-      "pct": 29.3,
+      "closed": 40,
+      "open": 52,
+      "pct": 43.5,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 0,
@@ -1496,7 +1454,7 @@
       "closed_by_discipline": {
         "E": 0,
         "I": 0,
-        "T": 27
+        "T": 40
       }
     },
     {
@@ -3707,9 +3665,9 @@
       "sid": "PS5-61-09",
       "name": "PS5-61-09 - Outdoor Power Distribution Board - PS5-61-IG-0014",
       "total": 20,
-      "closed": 10,
-      "open": 10,
-      "pct": 50.0,
+      "closed": 12,
+      "open": 8,
+      "pct": 60.0,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 20,
@@ -3717,7 +3675,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 10,
+        "E": 12,
         "I": 0,
         "T": 0
       }
@@ -13373,7 +13331,7 @@
     "T-00032-0459": "Closed",
     "T-00032-0460": "Open",
     "T-00032-0461": "Closed",
-    "T-00032-0462": "Open",
+    "T-00032-0462": "Closed",
     "T-00032-0463": "Open",
     "T-00032-0464": "Closed",
     "T-00032-0465": "Open",
@@ -13527,7 +13485,7 @@
     "T-00241-0459": "Closed",
     "T-00241-0460": "Open",
     "T-00241-0461": "Closed",
-    "T-00241-0462": "Open",
+    "T-00241-0462": "Closed",
     "T-00241-0463": "Open",
     "T-00241-0464": "Closed",
     "T-00241-0465": "Open",
@@ -15083,17 +15041,17 @@
     "T-00621-3459": "Closed",
     "T-00621-3460": "Closed",
     "T-00621-3461": "Closed",
-    "T-00621-3462": "Open",
+    "T-00621-3462": "Closed",
     "T-00621-3463": "Closed",
     "T-00621-3464": "Closed",
-    "T-00621-3465": "Open",
-    "T-00621-3466": "Open",
-    "T-00621-3467": "Open",
-    "T-00621-3468": "Open",
-    "T-00621-3469": "Open",
-    "T-00621-3470": "Open",
-    "T-00621-3471": "Open",
-    "T-00621-3472": "Open",
+    "T-00621-3465": "Closed",
+    "T-00621-3466": "Closed",
+    "T-00621-3467": "Closed",
+    "T-00621-3468": "Closed",
+    "T-00621-3469": "Closed",
+    "T-00621-3470": "Closed",
+    "T-00621-3471": "Closed",
+    "T-00621-3472": "Closed",
     "T-00621-3473": "Open",
     "T-00621-3474": "Open",
     "T-00621-3475": "Open",
@@ -15105,8 +15063,8 @@
     "T-00621-3481": "Open",
     "T-00621-3482": "Open",
     "T-00621-3483": "Open",
-    "T-00621-3484": "Open",
-    "T-00621-3485": "Open",
+    "T-00621-3484": "Closed",
+    "T-00621-3485": "Closed",
     "T-00621-3486": "Open",
     "T-00621-3487": "Open",
     "T-00621-3488": "Open",
@@ -15118,8 +15076,8 @@
     "T-00621-3494": "Open",
     "T-00621-3495": "Open",
     "T-00621-3496": "Open",
-    "T-00621-3497": "Open",
-    "T-00621-3498": "Open",
+    "T-00621-3497": "Closed",
+    "T-00621-3498": "Closed",
     "T-00621-3499": "Open",
     "T-00621-3500": "Open",
     "T-00621-3501": "Open",
@@ -15619,6 +15577,141 @@
     "T-00233-12634": "Open"
   },
   "recent_closed": [
+    {
+      "tag": "",
+      "task": "T-00241-0462",
+      "system": "PS5-61-09 - Outdoor Power Distribution Board - PS5-61-IG-0014",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/13/2026 7:04:15 "
+    },
+    {
+      "tag": "",
+      "task": "T-00032-0462",
+      "system": "PS5-61-09 - Outdoor Power Distribution Board - PS5-61-IG-0014",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/13/2026 7:01:28 "
+    },
+    {
+      "tag": "PS5-08-85PB-1902-CJ01",
+      "task": "T-00621-3498",
+      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/13/2026 6:32:34 "
+    },
+    {
+      "tag": "PS5-08-85PB-1901-CJ01",
+      "task": "T-00621-3497",
+      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/13/2026 6:30:22 "
+    },
+    {
+      "tag": "PS5-08-85ML-1902-CN01",
+      "task": "T-00621-3485",
+      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/13/2026 6:28:05 "
+    },
+    {
+      "tag": "PS5-08-85ML-1901-CN01",
+      "task": "T-00621-3484",
+      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/13/2026 6:26:23 "
+    },
+    {
+      "tag": "PS5-08-85DC-1916-CJ01",
+      "task": "T-00621-3472",
+      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/13/2026 6:23:16 "
+    },
+    {
+      "tag": "PS5-08-85DC-1915-CJ01",
+      "task": "T-00621-3471",
+      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/13/2026 6:21:06 "
+    },
+    {
+      "tag": "PS5-08-85DC-1914-CJ01",
+      "task": "T-00621-3470",
+      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/13/2026 6:16:44 "
+    },
+    {
+      "tag": "PS5-08-85DC-1913-CJ01",
+      "task": "T-00621-3469",
+      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/13/2026 6:14:55 "
+    },
+    {
+      "tag": "PS5-08-85DC-1912-CJ01",
+      "task": "T-00621-3468",
+      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/13/2026 6:09:40 "
+    },
+    {
+      "tag": "PS5-08-85DC-1911-CJ01",
+      "task": "T-00621-3467",
+      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/13/2026 6:07:43 "
+    },
+    {
+      "tag": "PS5-08-85DC-1910-CJ01",
+      "task": "T-00621-3466",
+      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/13/2026 5:59:09 "
+    },
+    {
+      "tag": "PS5-08-85DC-1909-CJ01",
+      "task": "T-00621-3465",
+      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/13/2026 5:47:13 "
+    },
+    {
+      "tag": "PS5-08-85DC-1906-CJ01",
+      "task": "T-00621-3462",
+      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/13/2026 5:44:59 "
+    },
     {
       "tag": "PS5-61-IH-0004D",
       "task": "T-00044-0269",
@@ -16563,141 +16656,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/11/2026 2:15:29 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1494",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/11/2026 2:15:06 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1492",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/11/2026 2:12:23 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1490",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/11/2026 2:11:08 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1486",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/11/2026 2:09:17 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1485",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/11/2026 2:07:33 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1484",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/11/2026 2:07:06 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1483",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/11/2026 2:06:48 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1481",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/11/2026 2:05:29 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1480",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/11/2026 2:05:10 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1479",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/11/2026 2:04:39 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1478",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/11/2026 2:04:20 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1476",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/11/2026 2:03:58 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1475",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/11/2026 1:59:07 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1474",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/11/2026 1:58:48 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1473",
-      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/11/2026 1:58:28 "
     }
   ]
 }
