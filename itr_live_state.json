@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-13 19:03:52",
+  "updated": "2026-11-13 19:07:04",
   "total_tasks_ps5": 14064,
   "eit_total": 10354,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7771,
-  "open": 2583,
-  "today_closed": 24,
+  "closed": 7772,
+  "open": 2582,
+  "today_closed": 25,
   "closed_by_discipline": {
     "I": 3664,
-    "E": 3789,
+    "E": 3790,
     "T": 318
   },
   "open_by_discipline": {
     "I": 931,
-    "E": 892,
+    "E": 891,
     "T": 760
   },
   "daily": [
@@ -228,15 +228,21 @@
     },
     {
       "label": "2026-11-13",
-      "E": 11,
+      "E": 12,
       "I": 0,
       "T": 13,
-      "Total": 24
+      "Total": 25
     }
   ],
-  "closed_this_week": 248,
-  "closed_this_month": 572,
+  "closed_this_week": 249,
+  "closed_this_month": 573,
   "today_milestone": [
+    {
+      "milestone": "Milestone B",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 1
+    },
     {
       "milestone": "Milestone G",
       "disc": "E",
@@ -250,7 +256,7 @@
       "count": 9
     }
   ],
-  "today_milestone_total": 11,
+  "today_milestone_total": 12,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -270,13 +276,13 @@
       "label": "Milestone B",
       "raw": "PS5 - Milestone B",
       "total": 1726,
-      "closed": 1655,
-      "remaining": 71,
+      "closed": 1656,
+      "remaining": 70,
       "pct": 95.9,
       "status": {
-        "Closed": 1655,
+        "Closed": 1656,
         "Submitted": 0,
-        "To be completed": 69,
+        "To be completed": 68,
         "Other": 2
       }
     },
@@ -304,8 +310,8 @@
       "status": {
         "Closed": 2600,
         "Submitted": 2,
-        "To be completed": 857,
-        "Other": 2
+        "To be completed": 856,
+        "Other": 3
       }
     },
     {
@@ -2721,9 +2727,9 @@
       "sid": "PS5-60-35",
       "name": "PS5-60-35 - Injector Tip Cooling Module A",
       "total": 14,
-      "closed": 12,
-      "open": 2,
-      "pct": 85.7,
+      "closed": 13,
+      "open": 1,
+      "pct": 92.9,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 11,
@@ -2731,7 +2737,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 9,
+        "E": 10,
         "I": 3,
         "T": 0
       }
@@ -15556,7 +15562,7 @@
     "T-00043-0076": "Open",
     "T-00043-0077": "Open",
     "T-00043-0078": "Open",
-    "T-00233-12610": "Open",
+    "T-00233-12610": "Closed",
     "T-00233-12611": "Open",
     "T-00233-12612": "Open",
     "T-00233-12613": "Open",
@@ -15583,6 +15589,15 @@
     "T-00233-12634": "Open"
   },
   "recent_closed": [
+    {
+      "tag": "PS5-60-BE-0025A-CL02",
+      "task": "T-00233-12610",
+      "system": "PS5-60-35 - Injector Tip Cooling Module A",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/13/2026 4:03:34 "
+    },
     {
       "tag": "",
       "task": "T-00035-1625",
@@ -16653,15 +16668,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/11/2026 2:22:28 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1525",
-      "system": "PS5-79-06 - Electrical Heat Tracing Transformer/Distribution Board 6 (PS5-79-IG-0006)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/11/2026 2:22:09 "
     }
   ]
 }
