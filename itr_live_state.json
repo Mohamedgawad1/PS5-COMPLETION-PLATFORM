@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-14 11:41:35",
+  "updated": "2026-11-14 11:44:44",
   "total_tasks_ps5": 14064,
   "eit_total": 10354,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7820,
-  "open": 2534,
-  "today_closed": 13,
+  "closed": 7822,
+  "open": 2532,
+  "today_closed": 15,
   "closed_by_discipline": {
     "I": 3664,
-    "E": 3838,
+    "E": 3840,
     "T": 318
   },
   "open_by_discipline": {
     "I": 931,
-    "E": 843,
+    "E": 841,
     "T": 760
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-11-14",
-      "E": 13,
+      "E": 15,
       "I": 0,
       "T": 0,
-      "Total": 13
+      "Total": 15
     }
   ],
-  "closed_this_week": 297,
-  "closed_this_month": 621,
+  "closed_this_week": 299,
+  "closed_this_month": 623,
   "today_milestone": [
     {
       "milestone": "Milestone D",
@@ -259,10 +259,10 @@
       "milestone": "Milestone H",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 6
+      "count": 8
     }
   ],
-  "today_milestone_total": 13,
+  "today_milestone_total": 15,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -366,13 +366,13 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2949,
-      "remaining": 302,
-      "pct": 90.7,
+      "closed": 2951,
+      "remaining": 300,
+      "pct": 90.8,
       "status": {
-        "Closed": 2949,
-        "Submitted": 63,
-        "To be completed": 199,
+        "Closed": 2951,
+        "Submitted": 62,
+        "To be completed": 198,
         "Other": 40
       }
     },
@@ -1612,9 +1612,9 @@
       "sid": "PS5-25-02",
       "name": "PS5-25-02 - Crude Oil Export Pump A",
       "total": 190,
-      "closed": 166,
-      "open": 24,
-      "pct": 87.4,
+      "closed": 168,
+      "open": 22,
+      "pct": 88.4,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 95,
@@ -1622,7 +1622,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 79,
+        "E": 81,
         "I": 87,
         "T": 0
       }
@@ -10779,9 +10779,9 @@
     "T-00228-0109": "Closed",
     "T-00228-0110": "Closed",
     "T-00228-0111": "Closed",
-    "T-00032-0165": "Open",
+    "T-00032-0165": "Closed",
     "T-00032-0166": "Closed",
-    "T-00241-0165": "Open",
+    "T-00241-0165": "Closed",
     "T-00241-0166": "Closed",
     "T-00046-0549": "Closed",
     "T-00090-0433": "Closed",
@@ -15596,6 +15596,24 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-25-UD-3100A",
+      "task": "T-00241-0165",
+      "system": "PS5-25-02 - Crude Oil Export Pump A",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/14/2026 8:40:51 "
+    },
+    {
+      "tag": "PS5-25-UD-3100A",
+      "task": "T-00032-0165",
+      "system": "PS5-25-02 - Crude Oil Export Pump A",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/14/2026 8:38:21 "
+    },
+    {
       "tag": "",
       "task": "T-00035-1491",
       "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
@@ -16656,24 +16674,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/12/2026 10:07:57"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1613",
-      "system": "PS5-79-09 - Electrical Heat Tracing Transformer/Distribution Board 9 (PS5-79-IG-0009)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/12/2026 10:07:39"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1612",
-      "system": "PS5-79-09 - Electrical Heat Tracing Transformer/Distribution Board 9 (PS5-79-IG-0009)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/12/2026 10:07:21"
     }
   ]
 }
