@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-14 16:37:21",
+  "updated": "2026-11-14 16:43:05",
   "total_tasks_ps5": 14064,
   "eit_total": 10354,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7852,
-  "open": 2502,
-  "today_closed": 45,
+  "closed": 7855,
+  "open": 2499,
+  "today_closed": 48,
   "closed_by_discipline": {
-    "I": 3664,
+    "I": 3667,
     "E": 3870,
     "T": 318
   },
   "open_by_discipline": {
-    "I": 931,
+    "I": 928,
     "E": 811,
     "T": 760
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-11-14",
       "E": 45,
-      "I": 0,
+      "I": 3,
       "T": 0,
-      "Total": 45
+      "Total": 48
     }
   ],
-  "closed_this_week": 329,
-  "closed_this_month": 653,
+  "closed_this_week": 332,
+  "closed_this_month": 656,
   "today_milestone": [
     {
       "milestone": "Milestone D",
@@ -256,13 +256,25 @@
       "count": 2
     },
     {
+      "milestone": "Milestone G",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
+    },
+    {
       "milestone": "Milestone H",
       "disc": "E",
       "discipline": "Electrical (E)",
       "count": 38
+    },
+    {
+      "milestone": "Milestone H",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 2
     }
   ],
-  "today_milestone_total": 45,
+  "today_milestone_total": 48,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -352,27 +364,27 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 905,
-      "closed": 807,
-      "remaining": 98,
-      "pct": 89.2,
+      "closed": 808,
+      "remaining": 97,
+      "pct": 89.3,
       "status": {
-        "Closed": 807,
+        "Closed": 808,
         "Submitted": 0,
-        "To be completed": 98,
-        "Other": 0
+        "To be completed": 96,
+        "Other": 1
       }
     },
     {
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3251,
-      "closed": 2981,
-      "remaining": 270,
-      "pct": 91.7,
+      "closed": 2983,
+      "remaining": 268,
+      "pct": 91.8,
       "status": {
-        "Closed": 2981,
+        "Closed": 2983,
         "Submitted": 62,
-        "To be completed": 198,
+        "To be completed": 196,
         "Other": 10
       }
     },
@@ -4310,10 +4322,10 @@
       "sid": "PS5-71-06",
       "name": "PS5-71-06 - Crude Fuel Separation Module",
       "total": 36,
-      "closed": 34,
-      "open": 2,
-      "pct": 94.4,
-      "status": "IN PROGRESS",
+      "closed": 36,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 2,
         "I": 34,
@@ -4321,7 +4333,7 @@
       },
       "closed_by_discipline": {
         "E": 2,
-        "I": 32,
+        "I": 34,
         "T": 0
       }
     },
@@ -4690,9 +4702,9 @@
       "sid": "PS5-75-01",
       "name": "PS5-75-01 - DRA Injection Package",
       "total": 14,
-      "closed": 4,
-      "open": 10,
-      "pct": 28.6,
+      "closed": 5,
+      "open": 9,
+      "pct": 35.7,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 7,
@@ -4701,7 +4713,7 @@
       },
       "closed_by_discipline": {
         "E": 3,
-        "I": 1,
+        "I": 2,
         "T": 0
       }
     },
@@ -8903,12 +8915,12 @@
     "T-00069-5399": "Closed",
     "T-00069-5400": "Closed",
     "T-00069-5401": "Closed",
-    "T-00069-5402": "Open",
+    "T-00069-5402": "Closed",
     "T-00069-5403": "Closed",
     "T-00069-5404": "Closed",
     "T-00069-5405": "Closed",
     "T-00069-5406": "Closed",
-    "T-00069-5407": "Open",
+    "T-00069-5407": "Closed",
     "T-00069-5408": "Closed",
     "T-00069-5441": "Closed",
     "T-00069-5442": "Closed",
@@ -14315,7 +14327,7 @@
     "T-00614-1128": "Closed",
     "T-00614-1129": "Closed",
     "T-00614-1130": "Closed",
-    "T-00614-1131": "Open",
+    "T-00614-1131": "Closed",
     "T-00614-1132": "Open",
     "T-00614-1133": "Open",
     "T-00614-1134": "Open",
@@ -15596,6 +15608,33 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-75-BI-0001-CC01",
+      "task": "T-00614-1131",
+      "system": "PS5-75-01 - DRA Injection Package",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/14/2026 1:42:21 "
+    },
+    {
+      "tag": "PS5-71-BI-0011B-CC04",
+      "task": "T-00069-5407",
+      "system": "PS5-71-06 - Crude Fuel Separation Module",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/14/2026 1:41:03 "
+    },
+    {
+      "tag": "PS5-71-BI-0011A-CC04",
+      "task": "T-00069-5402",
+      "system": "PS5-71-06 - Crude Fuel Separation Module",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/14/2026 1:39:48 "
+    },
+    {
       "tag": "",
       "task": "T-00035-1715",
       "system": "PS5-79-12 - Electrical Heat Tracing Transformer/Distribution Board 12 (PS5-79-IG-0012)",
@@ -16647,33 +16686,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/12/2026 4:30:37 "
-    },
-    {
-      "tag": "PS5-08-85DC-1901-CJ01",
-      "task": "T-00621-3457",
-      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/12/2026 4:29:58 "
-    },
-    {
-      "tag": "PS5-08-85BG-1902-CC01",
-      "task": "T-00621-3297",
-      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/12/2026 4:27:44 "
-    },
-    {
-      "tag": "PS5-08-85BG-1901-CC01",
-      "task": "T-00621-3296",
-      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/12/2026 4:23:59 "
     }
   ]
 }
