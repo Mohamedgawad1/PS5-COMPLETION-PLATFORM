@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-14 16:43:05",
+  "updated": "2026-11-14 16:49:47",
   "total_tasks_ps5": 14064,
   "eit_total": 10354,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7855,
-  "open": 2499,
-  "today_closed": 48,
+  "closed": 7858,
+  "open": 2496,
+  "today_closed": 51,
   "closed_by_discipline": {
-    "I": 3667,
+    "I": 3670,
     "E": 3870,
     "T": 318
   },
   "open_by_discipline": {
-    "I": 928,
+    "I": 925,
     "E": 811,
     "T": 760
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-11-14",
       "E": 45,
-      "I": 3,
+      "I": 6,
       "T": 0,
-      "Total": 48
+      "Total": 51
     }
   ],
-  "closed_this_week": 332,
-  "closed_this_month": 656,
+  "closed_this_week": 335,
+  "closed_this_month": 659,
   "today_milestone": [
     {
       "milestone": "Milestone D",
@@ -259,7 +259,7 @@
       "milestone": "Milestone G",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 1
+      "count": 4
     },
     {
       "milestone": "Milestone H",
@@ -274,7 +274,7 @@
       "count": 2
     }
   ],
-  "today_milestone_total": 48,
+  "today_milestone_total": 51,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -355,8 +355,8 @@
       "pct": 91.1,
       "status": {
         "Closed": 544,
-        "Submitted": 0,
-        "To be completed": 53,
+        "Submitted": 1,
+        "To be completed": 52,
         "Other": 0
       }
     },
@@ -364,14 +364,14 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 905,
-      "closed": 808,
-      "remaining": 97,
-      "pct": 89.3,
+      "closed": 811,
+      "remaining": 94,
+      "pct": 89.6,
       "status": {
-        "Closed": 808,
+        "Closed": 811,
         "Submitted": 0,
-        "To be completed": 96,
-        "Other": 1
+        "To be completed": 94,
+        "Other": 0
       }
     },
     {
@@ -383,8 +383,8 @@
       "pct": 91.8,
       "status": {
         "Closed": 2983,
-        "Submitted": 62,
-        "To be completed": 196,
+        "Submitted": 64,
+        "To be completed": 194,
         "Other": 10
       }
     },
@@ -4702,9 +4702,9 @@
       "sid": "PS5-75-01",
       "name": "PS5-75-01 - DRA Injection Package",
       "total": 14,
-      "closed": 5,
-      "open": 9,
-      "pct": 35.7,
+      "closed": 8,
+      "open": 6,
+      "pct": 57.1,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 7,
@@ -4713,7 +4713,7 @@
       },
       "closed_by_discipline": {
         "E": 3,
-        "I": 2,
+        "I": 5,
         "T": 0
       }
     },
@@ -14328,9 +14328,9 @@
     "T-00614-1129": "Closed",
     "T-00614-1130": "Closed",
     "T-00614-1131": "Closed",
-    "T-00614-1132": "Open",
-    "T-00614-1133": "Open",
-    "T-00614-1134": "Open",
+    "T-00614-1132": "Closed",
+    "T-00614-1133": "Closed",
+    "T-00614-1134": "Closed",
     "T-00614-1135": "Closed",
     "T-00614-1136": "Closed",
     "T-00614-1137": "Closed",
@@ -15608,6 +15608,33 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-75-BI-0002-CC03",
+      "task": "T-00614-1134",
+      "system": "PS5-75-01 - DRA Injection Package",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/14/2026 1:46:50 "
+    },
+    {
+      "tag": "PS5-75-BI-0002-CC02",
+      "task": "T-00614-1133",
+      "system": "PS5-75-01 - DRA Injection Package",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/14/2026 1:45:16 "
+    },
+    {
+      "tag": "PS5-75-BI-0002-CC01",
+      "task": "T-00614-1132",
+      "system": "PS5-75-01 - DRA Injection Package",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/14/2026 1:43:45 "
+    },
+    {
       "tag": "PS5-75-BI-0001-CC01",
       "task": "T-00614-1131",
       "system": "PS5-75-01 - DRA Injection Package",
@@ -16659,33 +16686,6 @@
       "disc": "T - Telecom",
       "cat": "PCOM - Precommissioning",
       "approved": "11/12/2026 4:34:09 "
-    },
-    {
-      "tag": "PS5-71-LIT-4402",
-      "task": "T-00067-2094",
-      "system": "PS5-71-15 - Diesel Fuel Storage Tank",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/12/2026 4:32:20 "
-    },
-    {
-      "tag": "PS5-08-85DC-1902-CJ01",
-      "task": "T-00621-3458",
-      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/12/2026 4:32:20 "
-    },
-    {
-      "tag": "PS5-71-LIT-4401",
-      "task": "T-00067-2083",
-      "system": "PS5-71-15 - Diesel Fuel Storage Tank",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/12/2026 4:30:37 "
     }
   ]
 }
