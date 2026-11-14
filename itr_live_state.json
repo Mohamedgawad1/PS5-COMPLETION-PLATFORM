@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-14 17:00:11",
+  "updated": "2026-11-14 17:18:45",
   "total_tasks_ps5": 14064,
   "eit_total": 10354,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7864,
-  "open": 2490,
-  "today_closed": 57,
+  "closed": 7871,
+  "open": 2483,
+  "today_closed": 64,
   "closed_by_discipline": {
     "I": 3672,
-    "E": 3874,
+    "E": 3881,
     "T": 318
   },
   "open_by_discipline": {
     "I": 923,
-    "E": 807,
+    "E": 800,
     "T": 760
   },
   "daily": [
@@ -228,20 +228,20 @@
     },
     {
       "label": "2026-11-14",
-      "E": 49,
+      "E": 56,
       "I": 8,
       "T": 0,
-      "Total": 57
+      "Total": 64
     }
   ],
-  "closed_this_week": 341,
-  "closed_this_month": 665,
+  "closed_this_week": 348,
+  "closed_this_month": 672,
   "today_milestone": [
     {
       "milestone": "Milestone D",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 8
+      "count": 15
     },
     {
       "milestone": "Milestone E",
@@ -274,7 +274,7 @@
       "count": 4
     }
   ],
-  "today_milestone_total": 57,
+  "today_milestone_total": 64,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -322,14 +322,14 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3461,
-      "closed": 2632,
-      "remaining": 829,
-      "pct": 76.0,
+      "closed": 2639,
+      "remaining": 822,
+      "pct": 76.2,
       "status": {
-        "Closed": 2632,
+        "Closed": 2639,
         "Submitted": 2,
-        "To be completed": 824,
-        "Other": 3
+        "To be completed": 818,
+        "Other": 2
       }
     },
     {
@@ -1567,9 +1567,9 @@
       "sid": "PS5-09-03",
       "name": "PS5-09-03 - HVAC for Generator Building",
       "total": 1004,
-      "closed": 295,
-      "open": 709,
-      "pct": 29.4,
+      "closed": 302,
+      "open": 702,
+      "pct": 30.1,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 380,
@@ -1577,7 +1577,7 @@
         "T": 4
       },
       "closed_by_discipline": {
-        "E": 143,
+        "E": 150,
         "I": 152,
         "T": 0
       }
@@ -12799,22 +12799,22 @@
     "T-00234-3639": "Open",
     "T-00234-3640": "Closed",
     "T-00234-3641": "Closed",
-    "T-00234-3642": "Open",
-    "T-00234-3643": "Open",
+    "T-00234-3642": "Closed",
+    "T-00234-3643": "Closed",
     "T-00234-3644": "Open",
     "T-00234-3645": "Open",
-    "T-00234-3646": "Open",
+    "T-00234-3646": "Closed",
     "T-00234-3647": "Open",
     "T-00234-3648": "Open",
     "T-00234-3649": "Open",
-    "T-00234-3650": "Open",
+    "T-00234-3650": "Closed",
     "T-00234-3651": "Closed",
     "T-00234-3652": "Closed",
     "T-00234-3653": "Open",
-    "T-00234-3654": "Open",
+    "T-00234-3654": "Closed",
     "T-00234-3655": "Closed",
-    "T-00234-3656": "Open",
-    "T-00234-3657": "Open",
+    "T-00234-3656": "Closed",
+    "T-00234-3657": "Closed",
     "T-00234-3658": "Open",
     "T-00234-3659": "Open",
     "T-00234-3660": "Open",
@@ -15608,6 +15608,69 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-09-IES-8311A-CD01",
+      "task": "T-00234-3657",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/14/2026 2:06:14 "
+    },
+    {
+      "tag": "PS5-09-IES-8301B-CD01",
+      "task": "T-00234-3646",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/14/2026 2:05:16 "
+    },
+    {
+      "tag": "PS5-09-IES-8304B-CD01",
+      "task": "T-00234-3650",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/14/2026 2:03:39 "
+    },
+    {
+      "tag": "PS5-09-IES-8308B-CD01",
+      "task": "T-00234-3656",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/14/2026 2:02:46 "
+    },
+    {
+      "tag": "PS5-09-IES-8307B-CD01",
+      "task": "T-00234-3654",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/14/2026 2:01:50 "
+    },
+    {
+      "tag": "PS5-09-IES-8202C-CD01",
+      "task": "T-00234-3643",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/14/2026 2:00:52 "
+    },
+    {
+      "tag": "PS5-09-IES-8202B-CD01",
+      "task": "T-00234-3642",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/14/2026 1:59:49 "
+    },
+    {
       "tag": "PS5-09-IES-8308A-CD01",
       "task": "T-00234-3655",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16623,69 +16686,6 @@
       "disc": "T - Telecom",
       "cat": "PCOM - Precommissioning",
       "approved": "11/13/2026 6:09:40 "
-    },
-    {
-      "tag": "PS5-08-85DC-1911-CJ01",
-      "task": "T-00621-3467",
-      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/13/2026 6:07:43 "
-    },
-    {
-      "tag": "PS5-08-85DC-1910-CJ01",
-      "task": "T-00621-3466",
-      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/13/2026 5:59:09 "
-    },
-    {
-      "tag": "PS5-08-85DC-1909-CJ01",
-      "task": "T-00621-3465",
-      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/13/2026 5:47:13 "
-    },
-    {
-      "tag": "PS5-08-85DC-1906-CJ01",
-      "task": "T-00621-3462",
-      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/13/2026 5:44:59 "
-    },
-    {
-      "tag": "PS5-61-IH-0004D",
-      "task": "T-00044-0269",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/12/2026 4:42:22 "
-    },
-    {
-      "tag": "PS5-61-IH-0004C",
-      "task": "T-00044-0268",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/12/2026 4:41:05 "
-    },
-    {
-      "tag": "PS5-08-85DC-1908-CJ01",
-      "task": "T-00621-3464",
-      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/12/2026 4:41:00 "
     }
   ]
 }
