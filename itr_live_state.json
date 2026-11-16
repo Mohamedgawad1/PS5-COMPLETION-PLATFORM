@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-14 17:23:31",
+  "updated": "2026-11-16 09:27:27",
   "total_tasks_ps5": 14064,
   "eit_total": 10354,
   "eit_by_discipline": {
@@ -11,7 +11,7 @@
   },
   "closed": 7871,
   "open": 2483,
-  "today_closed": 64,
+  "today_closed": 0,
   "closed_by_discipline": {
     "I": 3672,
     "E": 3881,
@@ -23,20 +23,6 @@
     "T": 760
   },
   "daily": [
-    {
-      "label": "2026-10-16",
-      "E": 10,
-      "I": 40,
-      "T": 1,
-      "Total": 51
-    },
-    {
-      "label": "2026-10-17",
-      "E": 10,
-      "I": 3,
-      "T": 0,
-      "Total": 13
-    },
     {
       "label": "2026-10-18",
       "E": 0,
@@ -232,49 +218,26 @@
       "I": 8,
       "T": 0,
       "Total": 64
+    },
+    {
+      "label": "2026-11-15",
+      "E": 0,
+      "I": 0,
+      "T": 0,
+      "Total": 0
+    },
+    {
+      "label": "2026-11-16",
+      "E": 0,
+      "I": 0,
+      "T": 0,
+      "Total": 0
     }
   ],
-  "closed_this_week": 348,
+  "closed_this_week": 0,
   "closed_this_month": 672,
-  "today_milestone": [
-    {
-      "milestone": "Milestone D",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 15
-    },
-    {
-      "milestone": "Milestone E",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 1
-    },
-    {
-      "milestone": "Milestone G",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 2
-    },
-    {
-      "milestone": "Milestone G",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 4
-    },
-    {
-      "milestone": "Milestone H",
-      "disc": "E",
-      "discipline": "Electrical (E)",
-      "count": 38
-    },
-    {
-      "milestone": "Milestone H",
-      "disc": "I",
-      "discipline": "Instrumentation (I)",
-      "count": 4
-    }
-  ],
-  "today_milestone_total": 64,
+  "today_milestone": [],
+  "today_milestone_total": 0,
   "milestone_summary": [
     {
       "label": "Milestone A",
