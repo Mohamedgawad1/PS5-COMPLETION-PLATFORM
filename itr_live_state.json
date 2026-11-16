@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-16 18:45:31",
+  "updated": "2026-11-16 18:49:02",
   "total_tasks_ps5": 14064,
   "eit_total": 10354,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7918,
-  "open": 2436,
-  "today_closed": 47,
+  "closed": 7920,
+  "open": 2434,
+  "today_closed": 49,
   "closed_by_discipline": {
     "I": 3672,
-    "E": 3928,
+    "E": 3930,
     "T": 318
   },
   "open_by_discipline": {
     "I": 923,
-    "E": 753,
+    "E": 751,
     "T": 760
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-11-16",
-      "E": 47,
+      "E": 49,
       "I": 0,
       "T": 0,
-      "Total": 47
+      "Total": 49
     }
   ],
-  "closed_this_week": 47,
-  "closed_this_month": 719,
+  "closed_this_week": 49,
+  "closed_this_month": 721,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -247,13 +247,13 @@
       "milestone": "Milestone D",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 27
+      "count": 28
     },
     {
       "milestone": "Milestone E",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 12
+      "count": 13
     },
     {
       "milestone": "Milestone G",
@@ -268,7 +268,7 @@
       "count": 4
     }
   ],
-  "today_milestone_total": 47,
+  "today_milestone_total": 49,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -316,28 +316,28 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3461,
-      "closed": 2666,
-      "remaining": 795,
-      "pct": 77.0,
+      "closed": 2667,
+      "remaining": 794,
+      "pct": 77.1,
       "status": {
-        "Closed": 2666,
+        "Closed": 2667,
         "Submitted": 0,
-        "To be completed": 793,
-        "Other": 2
+        "To be completed": 791,
+        "Other": 3
       }
     },
     {
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1550,
-      "closed": 1435,
-      "remaining": 115,
+      "closed": 1436,
+      "remaining": 114,
       "pct": 92.6,
       "status": {
-        "Closed": 1435,
+        "Closed": 1436,
         "Submitted": 0,
         "To be completed": 112,
-        "Other": 3
+        "Other": 2
       }
     },
     {
@@ -1561,9 +1561,9 @@
       "sid": "PS5-09-03",
       "name": "PS5-09-03 - HVAC for Generator Building",
       "total": 1004,
-      "closed": 308,
-      "open": 696,
-      "pct": 30.7,
+      "closed": 309,
+      "open": 695,
+      "pct": 30.8,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 380,
@@ -1571,7 +1571,7 @@
         "T": 4
       },
       "closed_by_discipline": {
-        "E": 156,
+        "E": 157,
         "I": 152,
         "T": 0
       }
@@ -4753,17 +4753,17 @@
       "sid": "PS5-78-01",
       "name": "PS5-78-01 - Lifting and handling equipment",
       "total": 20,
-      "closed": 19,
-      "open": 1,
-      "pct": 95.0,
-      "status": "IN PROGRESS",
+      "closed": 20,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 20,
         "I": 0,
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 19,
+        "E": 20,
         "I": 0,
         "T": 0
       }
@@ -12694,7 +12694,7 @@
     "T-00233-9686": "Open",
     "T-00233-9687": "Open",
     "T-00233-9688": "Open",
-    "T-00233-9689": "Open",
+    "T-00233-9689": "Closed",
     "T-00233-9690": "Open",
     "T-00233-9691": "Open",
     "T-00233-9692": "Open",
@@ -15598,9 +15598,27 @@
     "T-00233-12631": "Closed",
     "T-00233-12632": "Closed",
     "T-00233-12633": "Closed",
-    "T-00233-12634": "Open"
+    "T-00233-12634": "Closed"
   },
   "recent_closed": [
+    {
+      "tag": "PS5-09-AHU-8321A-CL02",
+      "task": "T-00233-9689",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/16/2026 3:48:13 "
+    },
+    {
+      "tag": "PS5-78-BE-9100D-CL01",
+      "task": "T-00233-12634",
+      "system": "PS5-78-01 - Lifting and handling equipment",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/16/2026 3:46:31 "
+    },
     {
       "tag": "PS5-78-BE-9100C-CL01",
       "task": "T-00233-12633",
@@ -16662,24 +16680,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/13/2026 4:30:47 "
-    },
-    {
-      "tag": "PS5-78-BE-9100B",
-      "task": "T-00043-0076",
-      "system": "PS5-78-01 - Lifting and handling equipment",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/13/2026 4:29:38 "
-    },
-    {
-      "tag": "PS5-78-BE-9100A",
-      "task": "T-00043-0075",
-      "system": "PS5-78-01 - Lifting and handling equipment",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/13/2026 4:28:38 "
     }
   ]
 }
