@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-16 10:32:39",
+  "updated": "2026-11-16 10:35:29",
   "total_tasks_ps5": 14064,
   "eit_total": 10354,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7872,
-  "open": 2482,
-  "today_closed": 1,
+  "closed": 7874,
+  "open": 2480,
+  "today_closed": 3,
   "closed_by_discipline": {
     "I": 3672,
-    "E": 3882,
+    "E": 3884,
     "T": 318
   },
   "open_by_discipline": {
     "I": 923,
-    "E": 799,
+    "E": 797,
     "T": 760
   },
   "daily": [
@@ -228,23 +228,29 @@
     },
     {
       "label": "2026-11-16",
-      "E": 1,
+      "E": 3,
       "I": 0,
       "T": 0,
-      "Total": 1
+      "Total": 3
     }
   ],
-  "closed_this_week": 1,
-  "closed_this_month": 673,
+  "closed_this_week": 3,
+  "closed_this_month": 675,
   "today_milestone": [
     {
       "milestone": "Milestone B",
       "disc": "E",
       "discipline": "Electrical (E)",
+      "count": 2
+    },
+    {
+      "milestone": "Milestone D",
+      "disc": "E",
+      "discipline": "Electrical (E)",
       "count": 1
     }
   ],
-  "today_milestone_total": 1,
+  "today_milestone_total": 3,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -264,14 +270,14 @@
       "label": "Milestone B",
       "raw": "PS5 - Milestone B",
       "total": 1726,
-      "closed": 1662,
-      "remaining": 64,
+      "closed": 1663,
+      "remaining": 63,
       "pct": 96.3,
       "status": {
-        "Closed": 1662,
+        "Closed": 1663,
         "Submitted": 0,
         "To be completed": 62,
-        "Other": 2
+        "Other": 1
       }
     },
     {
@@ -292,14 +298,14 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3461,
-      "closed": 2639,
-      "remaining": 822,
-      "pct": 76.2,
+      "closed": 2640,
+      "remaining": 821,
+      "pct": 76.3,
       "status": {
-        "Closed": 2639,
+        "Closed": 2640,
         "Submitted": 2,
-        "To be completed": 818,
-        "Other": 2
+        "To be completed": 816,
+        "Other": 3
       }
     },
     {
@@ -2734,17 +2740,17 @@
       "sid": "PS5-60-36",
       "name": "PS5-60-36 - Injector Tip Cooling Module B",
       "total": 14,
-      "closed": 13,
-      "open": 1,
-      "pct": 92.9,
-      "status": "IN PROGRESS",
+      "closed": 14,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 11,
         "I": 3,
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 10,
+        "E": 11,
         "I": 3,
         "T": 0
       }
@@ -2753,17 +2759,17 @@
       "sid": "PS5-60-37",
       "name": "PS5-60-37 - Injector Tip Cooling Module C",
       "total": 14,
-      "closed": 13,
-      "open": 1,
-      "pct": 92.9,
-      "status": "IN PROGRESS",
+      "closed": 14,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 11,
         "I": 3,
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 10,
+        "E": 11,
         "I": 3,
         "T": 0
       }
@@ -15522,8 +15528,8 @@
     "T-00233-12270": "Closed",
     "T-00233-12271": "Closed",
     "T-00023-12607": "Closed",
-    "T-00023-12608": "Open",
-    "T-00023-12609": "Open",
+    "T-00023-12608": "Closed",
+    "T-00023-12609": "Closed",
     "T-00023-12610": "Open",
     "T-00023-12611": "Open",
     "T-00023-12612": "Open",
@@ -15577,6 +15583,24 @@
     "T-00233-12634": "Open"
   },
   "recent_closed": [
+    {
+      "tag": "PS5-60-BE-0025C-CL02",
+      "task": "T-00023-12609",
+      "system": "PS5-60-37 - Injector Tip Cooling Module C",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/16/2026 7:31:28 "
+    },
+    {
+      "tag": "PS5-60-BE-0025B-CL02",
+      "task": "T-00023-12608",
+      "system": "PS5-60-36 - Injector Tip Cooling Module B",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/16/2026 7:30:23 "
+    },
     {
       "tag": "PS5-60-BE-0025A-CL02",
       "task": "T-00023-12607",
@@ -16638,24 +16662,6 @@
       "disc": "T - Telecom",
       "cat": "PCOM - Precommissioning",
       "approved": "11/13/2026 6:21:06 "
-    },
-    {
-      "tag": "PS5-08-85DC-1914-CJ01",
-      "task": "T-00621-3470",
-      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/13/2026 6:16:44 "
-    },
-    {
-      "tag": "PS5-08-85DC-1913-CJ01",
-      "task": "T-00621-3469",
-      "system": "PS5-08-85a - Access Control, POB & e-Mustering (Required for SU)",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/13/2026 6:14:55 "
     }
   ]
 }
