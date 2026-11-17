@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-17 18:49:01",
+  "updated": "2026-11-17 19:10:53",
   "total_tasks_ps5": 14064,
   "eit_total": 10354,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7941,
-  "open": 2413,
-  "today_closed": 10,
+  "closed": 7960,
+  "open": 2394,
+  "today_closed": 29,
   "closed_by_discipline": {
-    "I": 3672,
-    "E": 3951,
+    "I": 3678,
+    "E": 3964,
     "T": 318
   },
   "open_by_discipline": {
-    "I": 923,
-    "E": 730,
+    "I": 917,
+    "E": 717,
     "T": 760
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-11-17",
-      "E": 10,
-      "I": 0,
+      "E": 23,
+      "I": 6,
       "T": 0,
-      "Total": 10
+      "Total": 29
     }
   ],
-  "closed_this_week": 70,
-  "closed_this_month": 742,
+  "closed_this_week": 89,
+  "closed_this_month": 761,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -244,13 +244,25 @@
       "count": 3
     },
     {
+      "milestone": "Milestone D",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 13
+    },
+    {
+      "milestone": "Milestone D",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 6
+    },
+    {
       "milestone": "Milestone H",
       "disc": "E",
       "discipline": "Electrical (E)",
       "count": 7
     }
   ],
-  "today_milestone_total": 10,
+  "today_milestone_total": 29,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -298,14 +310,14 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3461,
-      "closed": 2678,
-      "remaining": 783,
-      "pct": 77.4,
+      "closed": 2697,
+      "remaining": 764,
+      "pct": 77.9,
       "status": {
-        "Closed": 2678,
+        "Closed": 2697,
         "Submitted": 0,
-        "To be completed": 779,
-        "Other": 4
+        "To be completed": 762,
+        "Other": 2
       }
     },
     {
@@ -1543,9 +1555,9 @@
       "sid": "PS5-09-03",
       "name": "PS5-09-03 - HVAC for Generator Building",
       "total": 1004,
-      "closed": 320,
-      "open": 684,
-      "pct": 31.9,
+      "closed": 326,
+      "open": 678,
+      "pct": 32.5,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 380,
@@ -1554,7 +1566,7 @@
       },
       "closed_by_discipline": {
         "E": 168,
-        "I": 152,
+        "I": 158,
         "T": 0
       }
     },
@@ -3614,9 +3626,9 @@
       "sid": "PS5-61-06",
       "name": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
       "total": 94,
-      "closed": 79,
-      "open": 15,
-      "pct": 84.0,
+      "closed": 92,
+      "open": 2,
+      "pct": 97.9,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 94,
@@ -3624,7 +3636,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 79,
+        "E": 92,
         "I": 0,
         "T": 0
       }
@@ -6407,20 +6419,20 @@
     "T-00023-5485": "Closed",
     "T-00023-5486": "Closed",
     "T-00023-5487": "Open",
-    "T-00023-5492": "Open",
-    "T-00023-5493": "Open",
-    "T-00023-5494": "Open",
-    "T-00023-5495": "Open",
+    "T-00023-5492": "Closed",
+    "T-00023-5493": "Closed",
+    "T-00023-5494": "Closed",
+    "T-00023-5495": "Closed",
     "T-00023-5496": "Open",
-    "T-00023-5497": "Open",
-    "T-00023-5498": "Open",
-    "T-00023-5499": "Open",
-    "T-00023-5500": "Open",
-    "T-00023-5501": "Open",
-    "T-00023-5502": "Open",
-    "T-00023-5503": "Open",
-    "T-00023-5504": "Open",
-    "T-00023-5505": "Open",
+    "T-00023-5497": "Closed",
+    "T-00023-5498": "Closed",
+    "T-00023-5499": "Closed",
+    "T-00023-5500": "Closed",
+    "T-00023-5501": "Closed",
+    "T-00023-5502": "Closed",
+    "T-00023-5503": "Closed",
+    "T-00023-5504": "Closed",
+    "T-00023-5505": "Closed",
     "T-00023-5506": "Closed",
     "T-00023-5507": "Closed",
     "T-00023-5508": "Closed",
@@ -12883,12 +12895,12 @@
     "T-00254-11645": "Open",
     "T-00254-11646": "Open",
     "T-00254-11647": "Open",
-    "T-00254-11648": "Open",
-    "T-00254-11649": "Open",
-    "T-00254-11650": "Open",
-    "T-00254-11651": "Open",
-    "T-00254-11652": "Open",
-    "T-00254-11653": "Open",
+    "T-00254-11648": "Closed",
+    "T-00254-11649": "Closed",
+    "T-00254-11650": "Closed",
+    "T-00254-11651": "Closed",
+    "T-00254-11652": "Closed",
+    "T-00254-11653": "Closed",
     "T-00254-11654": "Open",
     "T-00254-11655": "Open",
     "T-00254-11656": "Open",
@@ -15584,6 +15596,177 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-61-IK-0006-CL14",
+      "task": "T-00023-5505",
+      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 4:09:21 "
+    },
+    {
+      "tag": "PS5-61-IK-0006-CL13",
+      "task": "T-00023-5504",
+      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 4:08:32 "
+    },
+    {
+      "tag": "PS5-61-IK-0006-CL12",
+      "task": "T-00023-5503",
+      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 4:07:45 "
+    },
+    {
+      "tag": "PS5-61-IK-0006-CL11",
+      "task": "T-00023-5502",
+      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 4:06:56 "
+    },
+    {
+      "tag": "PS5-61-IK-0006-CL10",
+      "task": "T-00023-5501",
+      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 4:06:08 "
+    },
+    {
+      "tag": "PS5-61-IK-0006-CL09",
+      "task": "T-00023-5500",
+      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 4:05:21 "
+    },
+    {
+      "tag": "PS5-61-IK-0006-CL08",
+      "task": "T-00023-5499",
+      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 4:04:31 "
+    },
+    {
+      "tag": "PS5-61-IK-0006-CL07",
+      "task": "T-00023-5498",
+      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 4:03:07 "
+    },
+    {
+      "tag": "PS5-61-IK-0006-CL06",
+      "task": "T-00023-5497",
+      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 4:02:17 "
+    },
+    {
+      "tag": "PS5-61-IK-0006-CL04",
+      "task": "T-00023-5495",
+      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 4:01:27 "
+    },
+    {
+      "tag": "PS5-61-IK-0006-CL03",
+      "task": "T-00023-5494",
+      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 3:59:52 "
+    },
+    {
+      "tag": "PS5-61-IK-0006-CL02",
+      "task": "T-00023-5493",
+      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 3:58:57 "
+    },
+    {
+      "tag": "PS5-61-IK-0006-CL01",
+      "task": "T-00023-5492",
+      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 3:57:56 "
+    },
+    {
+      "tag": "PS5-09-BI-8321A-B-CU01",
+      "task": "T-00254-11653",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 3:55:27 "
+    },
+    {
+      "tag": "PS5-09-BI-8311B-B-CU01",
+      "task": "T-00254-11651",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 3:54:33 "
+    },
+    {
+      "tag": "PS5-09-BI-8311A-B-CU01",
+      "task": "T-00254-11649",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 3:53:01 "
+    },
+    {
+      "tag": "PS5-09-BI-8321A-A-CU01",
+      "task": "T-00254-11652",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 3:51:53 "
+    },
+    {
+      "tag": "PS5-09-BI-8311B-A-CU01",
+      "task": "T-00254-11650",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 3:50:46 "
+    },
+    {
+      "tag": "PS5-09-BI-8311A-A-CU01",
+      "task": "T-00254-11648",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 3:49:36 "
+    },
+    {
       "tag": "",
       "task": "T-00035-1719",
       "system": "PS5-79-12 - Electrical Heat Tracing Transformer/Distribution Board 12 (PS5-79-IG-0012)",
@@ -16491,177 +16674,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/14/2026 10:32:30"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1670",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:32:07"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1679",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:31:45"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1678",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:31:27"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1677",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:31:09"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1676",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:30:51"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1675",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:30:34"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1674",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:30:16"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1673",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:29:57"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1671",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:29:38"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1667",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:20:18"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1666",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:20:01"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1664",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:16:35"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1660",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:16:05"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1659",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:15:27"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1658",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:15:09"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1623",
-      "system": "PS5-79-09 - Electrical Heat Tracing Transformer/Distribution Board 9 (PS5-79-IG-0009)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:14:39"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1600",
-      "system": "PS5-79-09 - Electrical Heat Tracing Transformer/Distribution Board 9 (PS5-79-IG-0009)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:12:23"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1597",
-      "system": "PS5-79-09 - Electrical Heat Tracing Transformer/Distribution Board 9 (PS5-79-IG-0009)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:11:57"
-    },
-    {
-      "tag": "PS5-25-UD-3100A",
-      "task": "T-00241-0165",
-      "system": "PS5-25-02 - Crude Oil Export Pump A",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 8:40:51 "
     }
   ]
 }
