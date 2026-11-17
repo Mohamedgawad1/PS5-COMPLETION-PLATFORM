@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-17 08:59:56",
+  "updated": "2026-11-17 09:03:55",
   "total_tasks_ps5": 14064,
   "eit_total": 10354,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7931,
-  "open": 2423,
-  "today_closed": 0,
+  "closed": 7932,
+  "open": 2422,
+  "today_closed": 1,
   "closed_by_discipline": {
     "I": 3672,
-    "E": 3941,
+    "E": 3942,
     "T": 318
   },
   "open_by_discipline": {
     "I": 923,
-    "E": 740,
+    "E": 739,
     "T": 760
   },
   "daily": [
@@ -228,16 +228,23 @@
     },
     {
       "label": "2026-11-17",
-      "E": 0,
+      "E": 1,
       "I": 0,
       "T": 0,
-      "Total": 0
+      "Total": 1
     }
   ],
-  "closed_this_week": 60,
-  "closed_this_month": 732,
-  "today_milestone": [],
-  "today_milestone_total": 0,
+  "closed_this_week": 61,
+  "closed_this_month": 733,
+  "today_milestone": [
+    {
+      "milestone": "Milestone B",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 1
+    }
+  ],
+  "today_milestone_total": 1,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -257,14 +264,14 @@
       "label": "Milestone B",
       "raw": "PS5 - Milestone B",
       "total": 1726,
-      "closed": 1663,
-      "remaining": 63,
-      "pct": 96.3,
+      "closed": 1664,
+      "remaining": 62,
+      "pct": 96.4,
       "status": {
-        "Closed": 1663,
+        "Closed": 1664,
         "Submitted": 0,
         "To be completed": 61,
-        "Other": 2
+        "Other": 1
       }
     },
     {
@@ -3848,9 +3855,9 @@
       "sid": "PS5-62-06",
       "name": "PS5-62-06 - CRO Generator Building Emergency Lighting DB  - PS5-05-IG-0025",
       "total": 19,
-      "closed": 5,
-      "open": 14,
-      "pct": 26.3,
+      "closed": 6,
+      "open": 13,
+      "pct": 31.6,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 19,
@@ -3858,7 +3865,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 5,
+        "E": 6,
         "I": 0,
         "T": 0
       }
@@ -13201,7 +13208,7 @@
     "T-00031-1278": "Open",
     "T-00031-1279": "Open",
     "T-00031-1280": "Open",
-    "T-00031-1281": "Open",
+    "T-00031-1281": "Closed",
     "T-00031-1282": "Open",
     "T-00031-1283": "Open",
     "T-00031-1284": "Open",
@@ -15571,6 +15578,15 @@
   },
   "recent_closed": [
     {
+      "tag": "",
+      "task": "T-00031-1281",
+      "system": "PS5-62-06 - CRO Generator Building Emergency Lighting DB  - PS5-05-IG-0025",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 6:00:18 "
+    },
+    {
       "tag": "PS5-09-IES-8405B-CD01",
       "task": "T-00234-3678",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16640,15 +16656,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/14/2026 6:43:52 "
-    },
-    {
-      "tag": "PS5-60-IE-0001C-CL01",
-      "task": "T-00233-12626",
-      "system": "PS5-60-07 - Power Generation Package C",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 4:45:46 "
     }
   ]
 }
