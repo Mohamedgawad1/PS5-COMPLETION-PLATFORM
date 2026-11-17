@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-17 09:26:37",
+  "updated": "2026-11-17 09:46:59",
   "total_tasks_ps5": 14064,
   "eit_total": 10354,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7932,
-  "open": 2422,
-  "today_closed": 1,
+  "closed": 7934,
+  "open": 2420,
+  "today_closed": 3,
   "closed_by_discipline": {
     "I": 3672,
-    "E": 3942,
+    "E": 3944,
     "T": 318
   },
   "open_by_discipline": {
     "I": 923,
-    "E": 739,
+    "E": 737,
     "T": 760
   },
   "daily": [
@@ -228,23 +228,23 @@
     },
     {
       "label": "2026-11-17",
-      "E": 1,
+      "E": 3,
       "I": 0,
       "T": 0,
-      "Total": 1
+      "Total": 3
     }
   ],
-  "closed_this_week": 61,
-  "closed_this_month": 733,
+  "closed_this_week": 63,
+  "closed_this_month": 735,
   "today_milestone": [
     {
       "milestone": "Milestone B",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 1
+      "count": 3
     }
   ],
-  "today_milestone_total": 1,
+  "today_milestone_total": 3,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -264,13 +264,13 @@
       "label": "Milestone B",
       "raw": "PS5 - Milestone B",
       "total": 1726,
-      "closed": 1664,
-      "remaining": 62,
-      "pct": 96.4,
+      "closed": 1666,
+      "remaining": 60,
+      "pct": 96.5,
       "status": {
-        "Closed": 1664,
+        "Closed": 1666,
         "Submitted": 0,
-        "To be completed": 61,
+        "To be completed": 59,
         "Other": 1
       }
     },
@@ -3855,9 +3855,9 @@
       "sid": "PS5-62-06",
       "name": "PS5-62-06 - CRO Generator Building Emergency Lighting DB  - PS5-05-IG-0025",
       "total": 19,
-      "closed": 6,
-      "open": 13,
-      "pct": 31.6,
+      "closed": 8,
+      "open": 11,
+      "pct": 42.1,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 19,
@@ -3865,7 +3865,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 6,
+        "E": 8,
         "I": 0,
         "T": 0
       }
@@ -13211,7 +13211,7 @@
     "T-00031-1281": "Closed",
     "T-00031-1282": "Open",
     "T-00031-1283": "Open",
-    "T-00031-1284": "Open",
+    "T-00031-1284": "Closed",
     "T-00031-1285": "Open",
     "T-00031-1286": "Open",
     "T-00031-1287": "Open",
@@ -13365,7 +13365,7 @@
     "T-00240-1281": "Open",
     "T-00240-1282": "Open",
     "T-00240-1283": "Open",
-    "T-00240-1284": "Open",
+    "T-00240-1284": "Closed",
     "T-00240-1285": "Open",
     "T-00240-1286": "Open",
     "T-00240-1287": "Open",
@@ -15579,6 +15579,24 @@
   "recent_closed": [
     {
       "tag": "",
+      "task": "T-00240-1284",
+      "system": "PS5-62-06 - CRO Generator Building Emergency Lighting DB  - PS5-05-IG-0025",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 6:33:15 "
+    },
+    {
+      "tag": "",
+      "task": "T-00031-1284",
+      "system": "PS5-62-06 - CRO Generator Building Emergency Lighting DB  - PS5-05-IG-0025",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/17/2026 6:30:47 "
+    },
+    {
+      "tag": "",
       "task": "T-00031-1281",
       "system": "PS5-62-06 - CRO Generator Building Emergency Lighting DB  - PS5-05-IG-0025",
       "loop": "",
@@ -16638,24 +16656,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/14/2026 8:33:33 "
-    },
-    {
-      "tag": "",
-      "task": "T-00241-0463",
-      "system": "PS5-61-09 - Outdoor Power Distribution Board - PS5-61-IG-0014",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 6:47:09 "
-    },
-    {
-      "tag": "",
-      "task": "T-00032-0463",
-      "system": "PS5-61-09 - Outdoor Power Distribution Board - PS5-61-IG-0014",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 6:43:52 "
     }
   ]
 }
