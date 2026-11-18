@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-18 15:52:54",
+  "updated": "2026-11-18 15:56:36",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7965,
-  "open": 2403,
-  "today_closed": 1,
+  "closed": 7966,
+  "open": 2402,
+  "today_closed": 2,
   "closed_by_discipline": {
-    "I": 3678,
+    "I": 3679,
     "E": 3969,
     "T": 318
   },
   "open_by_discipline": {
-    "I": 931,
+    "I": 930,
     "E": 712,
     "T": 760
   },
@@ -229,22 +229,28 @@
     {
       "label": "2026-11-18",
       "E": 1,
-      "I": 0,
+      "I": 1,
       "T": 0,
-      "Total": 1
+      "Total": 2
     }
   ],
-  "closed_this_week": 94,
-  "closed_this_month": 766,
+  "closed_this_week": 95,
+  "closed_this_month": 767,
   "today_milestone": [
     {
       "milestone": "Milestone D",
       "disc": "E",
       "discipline": "Electrical (E)",
       "count": 1
+    },
+    {
+      "milestone": "Milestone H",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
     }
   ],
-  "today_milestone_total": 1,
+  "today_milestone_total": 2,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -348,14 +354,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3261,
-      "closed": 2998,
-      "remaining": 263,
-      "pct": 91.9,
+      "closed": 2999,
+      "remaining": 262,
+      "pct": 92.0,
       "status": {
-        "Closed": 2998,
+        "Closed": 2999,
         "Submitted": 62,
         "To be completed": 187,
-        "Other": 14
+        "Other": 13
       }
     },
     {
@@ -1670,9 +1676,9 @@
       "sid": "PS5-25-06",
       "name": "PS5-25-06 - Crude Oil Export Pumps Discharge",
       "total": 37,
-      "closed": 34,
-      "open": 3,
-      "pct": 91.9,
+      "closed": 35,
+      "open": 2,
+      "pct": 94.6,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 5,
@@ -1681,7 +1687,7 @@
       },
       "closed_by_discipline": {
         "E": 5,
-        "I": 29,
+        "I": 30,
         "T": 0
       }
     },
@@ -11744,7 +11750,7 @@
     "T-00066-0069": "Closed",
     "T-00066-0070": "Closed",
     "T-00284-0179": "Closed",
-    "T-00284-0180": "Open",
+    "T-00284-0180": "Closed",
     "T-00284-0181": "Closed",
     "T-00284-0182": "Closed",
     "T-00284-0183": "Open",
@@ -15592,6 +15598,15 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-25-FCV-0004",
+      "task": "T-00284-0180",
+      "system": "PS5-25-06 - Crude Oil Export Pumps Discharge",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/18/2026 12:51:47"
+    },
+    {
       "tag": "PS5-61-IV-0007B",
       "task": "T-00018-0124",
       "system": "PS5-61-01 - 33kV Switchboard EITS Building (PS5-61-IJ-0001)",
@@ -16661,15 +16676,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/14/2026 10:34:42"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1684",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:34:15"
     }
   ]
 }
