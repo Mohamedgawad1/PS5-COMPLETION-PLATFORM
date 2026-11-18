@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-18 17:39:13",
+  "updated": "2026-11-18 18:33:25",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7975,
-  "open": 2393,
-  "today_closed": 11,
+  "closed": 7978,
+  "open": 2390,
+  "today_closed": 14,
   "closed_by_discipline": {
-    "I": 3688,
+    "I": 3691,
     "E": 3969,
     "T": 318
   },
   "open_by_discipline": {
-    "I": 921,
+    "I": 918,
     "E": 712,
     "T": 760
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-11-18",
       "E": 1,
-      "I": 10,
+      "I": 13,
       "T": 0,
-      "Total": 11
+      "Total": 14
     }
   ],
-  "closed_this_week": 104,
-  "closed_this_month": 776,
+  "closed_this_week": 107,
+  "closed_this_month": 779,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -250,13 +250,19 @@
       "count": 1
     },
     {
+      "milestone": "Milestone F",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
+    },
+    {
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 9
+      "count": 11
     }
   ],
-  "today_milestone_total": 11,
+  "today_milestone_total": 14,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -332,13 +338,13 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 599,
-      "closed": 545,
-      "remaining": 54,
-      "pct": 91.0,
+      "closed": 546,
+      "remaining": 53,
+      "pct": 91.2,
       "status": {
-        "Closed": 545,
+        "Closed": 546,
         "Submitted": 0,
-        "To be completed": 54,
+        "To be completed": 53,
         "Other": 0
       }
     },
@@ -360,13 +366,13 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3261,
-      "closed": 3008,
-      "remaining": 253,
-      "pct": 92.2,
+      "closed": 3010,
+      "remaining": 251,
+      "pct": 92.3,
       "status": {
-        "Closed": 3008,
+        "Closed": 3010,
         "Submitted": 62,
-        "To be completed": 178,
+        "To be completed": 176,
         "Other": 13
       }
     },
@@ -4266,9 +4272,9 @@
       "sid": "PS5-71-04",
       "name": "PS5-71-04 - CFO Storage Tank",
       "total": 82,
-      "closed": 65,
-      "open": 17,
-      "pct": 79.3,
+      "closed": 67,
+      "open": 15,
+      "pct": 81.7,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 22,
@@ -4277,7 +4283,7 @@
       },
       "closed_by_discipline": {
         "E": 15,
-        "I": 50,
+        "I": 52,
         "T": 0
       }
     },
@@ -4437,9 +4443,9 @@
       "sid": "PS5-71-15",
       "name": "PS5-71-15 - Diesel Fuel Storage Tank",
       "total": 36,
-      "closed": 33,
-      "open": 3,
-      "pct": 91.7,
+      "closed": 34,
+      "open": 2,
+      "pct": 94.4,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 8,
@@ -4448,7 +4454,7 @@
       },
       "closed_by_discipline": {
         "E": 6,
-        "I": 27,
+        "I": 28,
         "T": 0
       }
     },
@@ -15589,9 +15595,9 @@
     "T-00233-12634": "Closed",
     "T-00284-0292": "Closed",
     "T-00284-0293": "Closed",
-    "T-00284-0294": "Open",
-    "T-00284-0295": "Open",
-    "T-00284-0296": "Open",
+    "T-00284-0294": "Closed",
+    "T-00284-0295": "Closed",
+    "T-00284-0296": "Closed",
     "T-00284-0297": "Open",
     "T-00284-0298": "Open",
     "T-00284-0299": "Open",
@@ -15603,6 +15609,33 @@
     "T-00284-0305": "Open"
   },
   "recent_closed": [
+    {
+      "tag": "PS5-71-XV-0089",
+      "task": "T-00284-0296",
+      "system": "PS5-71-04 - CFO Storage Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/18/2026 2:39:41 "
+    },
+    {
+      "tag": "PS5-71-SDV-0022",
+      "task": "T-00284-0295",
+      "system": "PS5-71-04 - CFO Storage Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/18/2026 2:38:19 "
+    },
+    {
+      "tag": "PS5-71-SDV-0029",
+      "task": "T-00284-0294",
+      "system": "PS5-71-15 - Diesel Fuel Storage Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/18/2026 2:37:08 "
+    },
     {
       "tag": "PS5-71-SDV-0039",
       "task": "T-00284-0293",
@@ -16655,33 +16688,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/14/2026 1:47:44 "
-    },
-    {
-      "tag": "PS5-75-BI-0002-CC03",
-      "task": "T-00614-1134",
-      "system": "PS5-75-01 - DRA Injection Package",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 1:46:50 "
-    },
-    {
-      "tag": "PS5-75-BI-0002-CC02",
-      "task": "T-00614-1133",
-      "system": "PS5-75-01 - DRA Injection Package",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 1:45:16 "
-    },
-    {
-      "tag": "PS5-75-BI-0002-CC01",
-      "task": "T-00614-1132",
-      "system": "PS5-75-01 - DRA Injection Package",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 1:43:45 "
     }
   ]
 }
