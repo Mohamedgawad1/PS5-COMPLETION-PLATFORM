@@ -1,16 +1,16 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-18 08:04:50",
-  "total_tasks_ps5": 14064,
-  "eit_total": 10354,
+  "updated": "2026-11-18 08:08:20",
+  "total_tasks_ps5": 14071,
+  "eit_total": 10361,
   "eit_by_discipline": {
-    "I": 4595,
+    "I": 4602,
     "E": 4681,
     "T": 1078
   },
   "closed": 7964,
-  "open": 2390,
+  "open": 2397,
   "today_closed": 0,
   "closed_by_discipline": {
     "I": 3678,
@@ -18,7 +18,7 @@
     "T": 318
   },
   "open_by_discipline": {
-    "I": 917,
+    "I": 924,
     "E": 713,
     "T": 760
   },
@@ -312,14 +312,14 @@
     {
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
-      "total": 597,
+      "total": 598,
       "closed": 545,
-      "remaining": 52,
-      "pct": 91.3,
+      "remaining": 53,
+      "pct": 91.1,
       "status": {
         "Closed": 545,
         "Submitted": 0,
-        "To be completed": 52,
+        "To be completed": 53,
         "Other": 0
       }
     },
@@ -340,14 +340,14 @@
     {
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
-      "total": 3251,
+      "total": 3257,
       "closed": 2997,
-      "remaining": 254,
-      "pct": 92.2,
+      "remaining": 260,
+      "pct": 92.0,
       "status": {
         "Closed": 2997,
         "Submitted": 63,
-        "To be completed": 178,
+        "To be completed": 184,
         "Other": 13
       }
     },
@@ -1567,14 +1567,14 @@
     {
       "sid": "PS5-25-01",
       "name": "PS5-25-01 - Export Pipeline Pig Receiver",
-      "total": 99,
+      "total": 100,
       "closed": 95,
-      "open": 4,
-      "pct": 96.0,
+      "open": 5,
+      "pct": 95.0,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 15,
-        "I": 84,
+        "I": 85,
         "T": 0
       },
       "closed_by_discipline": {
@@ -1928,14 +1928,14 @@
     {
       "sid": "PS5-28-17",
       "name": "PS5-28-17 - Reinjection Pump",
-      "total": 53,
+      "total": 54,
       "closed": 53,
-      "open": 0,
-      "pct": 100.0,
-      "status": "COMPLETE",
+      "open": 1,
+      "pct": 98.1,
+      "status": "IN PROGRESS",
       "by_discipline": {
         "E": 16,
-        "I": 37,
+        "I": 38,
         "T": 0
       },
       "closed_by_discipline": {
@@ -4246,14 +4246,14 @@
     {
       "sid": "PS5-71-04",
       "name": "PS5-71-04 - CFO Storage Tank",
-      "total": 80,
+      "total": 82,
       "closed": 64,
-      "open": 16,
-      "pct": 80.0,
+      "open": 18,
+      "pct": 78.0,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 22,
-        "I": 58,
+        "I": 60,
         "T": 0
       },
       "closed_by_discipline": {
@@ -4360,14 +4360,14 @@
     {
       "sid": "PS5-71-12",
       "name": "PS5-71-12 - CFO Service Tank",
-      "total": 93,
+      "total": 95,
       "closed": 77,
-      "open": 16,
-      "pct": 82.8,
+      "open": 18,
+      "pct": 81.1,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 24,
-        "I": 69,
+        "I": 71,
         "T": 0
       },
       "closed_by_discipline": {
@@ -4417,14 +4417,14 @@
     {
       "sid": "PS5-71-15",
       "name": "PS5-71-15 - Diesel Fuel Storage Tank",
-      "total": 35,
+      "total": 36,
       "closed": 33,
-      "open": 2,
-      "pct": 94.3,
+      "open": 3,
+      "pct": 91.7,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 8,
-        "I": 27,
+        "I": 28,
         "T": 0
       },
       "closed_by_discipline": {
@@ -15567,7 +15567,14 @@
     "T-00233-12631": "Closed",
     "T-00233-12632": "Closed",
     "T-00233-12633": "Closed",
-    "T-00233-12634": "Closed"
+    "T-00233-12634": "Closed",
+    "T-00284-0292": "Open",
+    "T-00284-0293": "Open",
+    "T-00284-0294": "Open",
+    "T-00284-0295": "Open",
+    "T-00284-0296": "Open",
+    "T-00284-0297": "Open",
+    "T-00284-0298": "Open"
   },
   "recent_closed": [
     {
