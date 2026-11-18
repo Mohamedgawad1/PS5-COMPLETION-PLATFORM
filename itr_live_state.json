@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-18 17:30:49",
+  "updated": "2026-11-18 17:39:13",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7973,
-  "open": 2395,
-  "today_closed": 9,
+  "closed": 7975,
+  "open": 2393,
+  "today_closed": 11,
   "closed_by_discipline": {
-    "I": 3686,
+    "I": 3688,
     "E": 3969,
     "T": 318
   },
   "open_by_discipline": {
-    "I": 923,
+    "I": 921,
     "E": 712,
     "T": 760
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-11-18",
       "E": 1,
-      "I": 8,
+      "I": 10,
       "T": 0,
-      "Total": 9
+      "Total": 11
     }
   ],
-  "closed_this_week": 102,
-  "closed_this_month": 774,
+  "closed_this_week": 104,
+  "closed_this_month": 776,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -253,10 +253,10 @@
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 7
+      "count": 9
     }
   ],
-  "today_milestone_total": 9,
+  "today_milestone_total": 11,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -360,13 +360,13 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3261,
-      "closed": 3006,
-      "remaining": 255,
+      "closed": 3008,
+      "remaining": 253,
       "pct": 92.2,
       "status": {
-        "Closed": 3006,
+        "Closed": 3008,
         "Submitted": 62,
-        "To be completed": 180,
+        "To be completed": 178,
         "Other": 13
       }
     },
@@ -4380,9 +4380,9 @@
       "sid": "PS5-71-12",
       "name": "PS5-71-12 - CFO Service Tank",
       "total": 95,
-      "closed": 77,
-      "open": 18,
-      "pct": 81.1,
+      "closed": 79,
+      "open": 16,
+      "pct": 83.2,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 24,
@@ -4391,7 +4391,7 @@
       },
       "closed_by_discipline": {
         "E": 18,
-        "I": 59,
+        "I": 61,
         "T": 0
       }
     },
@@ -15587,8 +15587,8 @@
     "T-00233-12632": "Closed",
     "T-00233-12633": "Closed",
     "T-00233-12634": "Closed",
-    "T-00284-0292": "Open",
-    "T-00284-0293": "Open",
+    "T-00284-0292": "Closed",
+    "T-00284-0293": "Closed",
     "T-00284-0294": "Open",
     "T-00284-0295": "Open",
     "T-00284-0296": "Open",
@@ -15603,6 +15603,24 @@
     "T-00284-0305": "Open"
   },
   "recent_closed": [
+    {
+      "tag": "PS5-71-SDV-0039",
+      "task": "T-00284-0293",
+      "system": "PS5-71-12 - CFO Service Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/18/2026 2:32:21 "
+    },
+    {
+      "tag": "PS5-71-XV-0090",
+      "task": "T-00284-0292",
+      "system": "PS5-71-12 - CFO Service Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/18/2026 2:30:42 "
+    },
     {
       "tag": "PS5-25-FCV-0003C",
       "task": "T-00284-0190",
@@ -16664,24 +16682,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/14/2026 1:43:45 "
-    },
-    {
-      "tag": "PS5-75-BI-0001-CC01",
-      "task": "T-00614-1131",
-      "system": "PS5-75-01 - DRA Injection Package",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 1:42:21 "
-    },
-    {
-      "tag": "PS5-71-BI-0011B-CC04",
-      "task": "T-00069-5407",
-      "system": "PS5-71-06 - Crude Fuel Separation Module",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 1:41:03 "
     }
   ]
 }
