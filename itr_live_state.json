@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-18 16:00:14",
+  "updated": "2026-11-18 16:04:03",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7967,
-  "open": 2401,
-  "today_closed": 3,
+  "closed": 7970,
+  "open": 2398,
+  "today_closed": 6,
   "closed_by_discipline": {
-    "I": 3680,
+    "I": 3683,
     "E": 3969,
     "T": 318
   },
   "open_by_discipline": {
-    "I": 929,
+    "I": 926,
     "E": 712,
     "T": 760
   },
@@ -229,14 +229,20 @@
     {
       "label": "2026-11-18",
       "E": 1,
-      "I": 2,
+      "I": 5,
       "T": 0,
-      "Total": 3
+      "Total": 6
     }
   ],
-  "closed_this_week": 96,
-  "closed_this_month": 768,
+  "closed_this_week": 99,
+  "closed_this_month": 771,
   "today_milestone": [
+    {
+      "milestone": "Milestone B",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
+    },
     {
       "milestone": "Milestone D",
       "disc": "E",
@@ -247,10 +253,10 @@
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 2
+      "count": 4
     }
   ],
-  "today_milestone_total": 3,
+  "today_milestone_total": 6,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -270,13 +276,13 @@
       "label": "Milestone B",
       "raw": "PS5 - Milestone B",
       "total": 1728,
-      "closed": 1669,
-      "remaining": 59,
+      "closed": 1670,
+      "remaining": 58,
       "pct": 96.6,
       "status": {
-        "Closed": 1669,
+        "Closed": 1670,
         "Submitted": 0,
-        "To be completed": 58,
+        "To be completed": 57,
         "Other": 1
       }
     },
@@ -354,13 +360,13 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3261,
-      "closed": 3000,
-      "remaining": 261,
-      "pct": 92.0,
+      "closed": 3002,
+      "remaining": 259,
+      "pct": 92.1,
       "status": {
-        "Closed": 3000,
+        "Closed": 3002,
         "Submitted": 62,
-        "To be completed": 184,
+        "To be completed": 182,
         "Other": 15
       }
     },
@@ -1619,9 +1625,9 @@
       "sid": "PS5-25-03",
       "name": "PS5-25-03 - Crude Oil Export Pump B",
       "total": 187,
-      "closed": 185,
-      "open": 2,
-      "pct": 98.9,
+      "closed": 186,
+      "open": 1,
+      "pct": 99.5,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 92,
@@ -1630,7 +1636,7 @@
       },
       "closed_by_discipline": {
         "E": 91,
-        "I": 94,
+        "I": 95,
         "T": 0
       }
     },
@@ -4260,9 +4266,9 @@
       "sid": "PS5-71-04",
       "name": "PS5-71-04 - CFO Storage Tank",
       "total": 82,
-      "closed": 64,
-      "open": 18,
-      "pct": 78.0,
+      "closed": 65,
+      "open": 17,
+      "pct": 79.3,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 22,
@@ -4271,7 +4277,7 @@
       },
       "closed_by_discipline": {
         "E": 15,
-        "I": 49,
+        "I": 50,
         "T": 0
       }
     },
@@ -4545,9 +4551,9 @@
       "sid": "PS5-71-21",
       "name": "PS5-71-21 - Diesel Transfer Pump A/B",
       "total": 35,
-      "closed": 33,
-      "open": 2,
-      "pct": 94.3,
+      "closed": 34,
+      "open": 1,
+      "pct": 97.1,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 10,
@@ -4556,7 +4562,7 @@
       },
       "closed_by_discipline": {
         "E": 10,
-        "I": 23,
+        "I": 24,
         "T": 0
       }
     },
@@ -11754,9 +11760,9 @@
     "T-00284-0181": "Closed",
     "T-00284-0182": "Closed",
     "T-00284-0183": "Closed",
-    "T-00284-0184": "Open",
-    "T-00284-0185": "Open",
-    "T-00284-0186": "Open",
+    "T-00284-0184": "Closed",
+    "T-00284-0185": "Closed",
+    "T-00284-0186": "Closed",
     "T-00284-0187": "Open",
     "T-00284-0188": "Closed",
     "T-00284-0189": "Open",
@@ -15598,6 +15604,33 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-71-FCV-0019",
+      "task": "T-00284-0186",
+      "system": "PS5-71-21 - Diesel Transfer Pump A/B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/18/2026 1:00:22 "
+    },
+    {
+      "tag": "PS5-71-LCV-4101",
+      "task": "T-00284-0185",
+      "system": "PS5-71-04 - CFO Storage Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/18/2026 12:58:53"
+    },
+    {
+      "tag": "PS5-25-FCV-0003B",
+      "task": "T-00284-0184",
+      "system": "PS5-25-03 - Crude Oil Export Pump B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/18/2026 12:57:48"
+    },
+    {
       "tag": "PS5-71-FCV-0018",
       "task": "T-00284-0183",
       "system": "PS5-71-13 - CFO Service Pump A/B",
@@ -16649,33 +16682,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/14/2026 10:40:42"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1709",
-      "system": "PS5-79-12 - Electrical Heat Tracing Transformer/Distribution Board 12 (PS5-79-IG-0012)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:39:55"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1708",
-      "system": "PS5-79-12 - Electrical Heat Tracing Transformer/Distribution Board 12 (PS5-79-IG-0012)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:39:38"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1705",
-      "system": "PS5-79-12 - Electrical Heat Tracing Transformer/Distribution Board 12 (PS5-79-IG-0012)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:36:50"
     }
   ]
 }
