@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-18 18:56:48",
+  "updated": "2026-11-18 19:00:00",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7987,
-  "open": 2381,
-  "today_closed": 23,
+  "closed": 7989,
+  "open": 2379,
+  "today_closed": 25,
   "closed_by_discipline": {
     "I": 3697,
-    "E": 3972,
+    "E": 3974,
     "T": 318
   },
   "open_by_discipline": {
     "I": 912,
-    "E": 709,
+    "E": 707,
     "T": 760
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-11-18",
-      "E": 4,
+      "E": 6,
       "I": 19,
       "T": 0,
-      "Total": 23
+      "Total": 25
     }
   ],
-  "closed_this_week": 116,
-  "closed_this_month": 788,
+  "closed_this_week": 118,
+  "closed_this_month": 790,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -247,7 +247,7 @@
       "milestone": "Milestone D",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 4
+      "count": 6
     },
     {
       "milestone": "Milestone D",
@@ -268,7 +268,7 @@
       "count": 11
     }
   ],
-  "today_milestone_total": 23,
+  "today_milestone_total": 25,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -316,13 +316,13 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3461,
-      "closed": 2708,
-      "remaining": 753,
-      "pct": 78.2,
+      "closed": 2710,
+      "remaining": 751,
+      "pct": 78.3,
       "status": {
-        "Closed": 2708,
+        "Closed": 2710,
         "Submitted": 1,
-        "To be completed": 748,
+        "To be completed": 746,
         "Other": 4
       }
     },
@@ -1561,9 +1561,9 @@
       "sid": "PS5-09-03",
       "name": "PS5-09-03 - HVAC for Generator Building",
       "total": 1004,
-      "closed": 335,
-      "open": 669,
-      "pct": 33.4,
+      "closed": 337,
+      "open": 667,
+      "pct": 33.6,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 380,
@@ -1571,7 +1571,7 @@
         "T": 4
       },
       "closed_by_discipline": {
-        "E": 171,
+        "E": 173,
         "I": 164,
         "T": 0
       }
@@ -12687,8 +12687,8 @@
     "T-00171-9469": "Open",
     "T-00233-9680": "Open",
     "T-00233-9681": "Closed",
-    "T-00233-9682": "Open",
-    "T-00233-9683": "Open",
+    "T-00233-9682": "Closed",
+    "T-00233-9683": "Closed",
     "T-00233-9684": "Open",
     "T-00233-9685": "Open",
     "T-00233-9686": "Open",
@@ -15616,6 +15616,24 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-09-AHU-8211B-CL01",
+      "task": "T-00233-9683",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/18/2026 3:58:53 "
+    },
+    {
+      "tag": "PS5-09-AHU-8211A-CL01",
+      "task": "T-00233-9682",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/18/2026 3:57:34 "
+    },
+    {
       "tag": "PS5-09-AHU-8111B-CL01",
       "task": "T-00233-9681",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16676,24 +16694,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/14/2026 2:05:16 "
-    },
-    {
-      "tag": "PS5-09-IES-8304B-CD01",
-      "task": "T-00234-3650",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 2:03:39 "
-    },
-    {
-      "tag": "PS5-09-IES-8308B-CD01",
-      "task": "T-00234-3656",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 2:02:46 "
     }
   ]
 }
