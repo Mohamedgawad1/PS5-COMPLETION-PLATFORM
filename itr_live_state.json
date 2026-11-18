@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-18 15:56:36",
+  "updated": "2026-11-18 16:00:14",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7966,
-  "open": 2402,
-  "today_closed": 2,
+  "closed": 7967,
+  "open": 2401,
+  "today_closed": 3,
   "closed_by_discipline": {
-    "I": 3679,
+    "I": 3680,
     "E": 3969,
     "T": 318
   },
   "open_by_discipline": {
-    "I": 930,
+    "I": 929,
     "E": 712,
     "T": 760
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-11-18",
       "E": 1,
-      "I": 1,
+      "I": 2,
       "T": 0,
-      "Total": 2
+      "Total": 3
     }
   ],
-  "closed_this_week": 95,
-  "closed_this_month": 767,
+  "closed_this_week": 96,
+  "closed_this_month": 768,
   "today_milestone": [
     {
       "milestone": "Milestone D",
@@ -247,10 +247,10 @@
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 1
+      "count": 2
     }
   ],
-  "today_milestone_total": 2,
+  "today_milestone_total": 3,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -354,14 +354,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3261,
-      "closed": 2999,
-      "remaining": 262,
+      "closed": 3000,
+      "remaining": 261,
       "pct": 92.0,
       "status": {
-        "Closed": 2999,
+        "Closed": 3000,
         "Submitted": 62,
-        "To be completed": 187,
-        "Other": 13
+        "To be completed": 184,
+        "Other": 15
       }
     },
     {
@@ -4393,10 +4393,10 @@
       "sid": "PS5-71-13",
       "name": "PS5-71-13 - CFO Service Pump A/B",
       "total": 37,
-      "closed": 36,
-      "open": 1,
-      "pct": 97.3,
-      "status": "IN PROGRESS",
+      "closed": 37,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 10,
         "I": 27,
@@ -4404,7 +4404,7 @@
       },
       "closed_by_discipline": {
         "E": 10,
-        "I": 26,
+        "I": 27,
         "T": 0
       }
     },
@@ -11753,7 +11753,7 @@
     "T-00284-0180": "Closed",
     "T-00284-0181": "Closed",
     "T-00284-0182": "Closed",
-    "T-00284-0183": "Open",
+    "T-00284-0183": "Closed",
     "T-00284-0184": "Open",
     "T-00284-0185": "Open",
     "T-00284-0186": "Open",
@@ -15598,6 +15598,15 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-71-FCV-0018",
+      "task": "T-00284-0183",
+      "system": "PS5-71-13 - CFO Service Pump A/B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/18/2026 12:55:02"
+    },
+    {
       "tag": "PS5-25-FCV-0004",
       "task": "T-00284-0180",
       "system": "PS5-25-06 - Crude Oil Export Pumps Discharge",
@@ -16667,15 +16676,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/14/2026 10:36:50"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1698",
-      "system": "PS5-79-12 - Electrical Heat Tracing Transformer/Distribution Board 12 (PS5-79-IG-0012)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:34:42"
     }
   ]
 }
