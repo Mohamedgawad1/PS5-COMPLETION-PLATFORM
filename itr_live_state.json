@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-18 16:04:03",
+  "updated": "2026-11-18 16:07:50",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 7970,
-  "open": 2398,
-  "today_closed": 6,
+  "closed": 7973,
+  "open": 2395,
+  "today_closed": 9,
   "closed_by_discipline": {
-    "I": 3683,
+    "I": 3686,
     "E": 3969,
     "T": 318
   },
   "open_by_discipline": {
-    "I": 926,
+    "I": 923,
     "E": 712,
     "T": 760
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-11-18",
       "E": 1,
-      "I": 5,
+      "I": 8,
       "T": 0,
-      "Total": 6
+      "Total": 9
     }
   ],
-  "closed_this_week": 99,
-  "closed_this_month": 771,
+  "closed_this_week": 102,
+  "closed_this_month": 774,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -253,10 +253,10 @@
       "milestone": "Milestone H",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 4
+      "count": 7
     }
   ],
-  "today_milestone_total": 6,
+  "today_milestone_total": 9,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -360,14 +360,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3261,
-      "closed": 3002,
-      "remaining": 259,
+      "closed": 3005,
+      "remaining": 256,
       "pct": 92.1,
       "status": {
-        "Closed": 3002,
+        "Closed": 3005,
         "Submitted": 62,
-        "To be completed": 182,
-        "Other": 15
+        "To be completed": 180,
+        "Other": 14
       }
     },
     {
@@ -1606,9 +1606,9 @@
       "sid": "PS5-25-02",
       "name": "PS5-25-02 - Crude Oil Export Pump A",
       "total": 190,
-      "closed": 168,
-      "open": 22,
-      "pct": 88.4,
+      "closed": 169,
+      "open": 21,
+      "pct": 88.9,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 95,
@@ -1617,7 +1617,7 @@
       },
       "closed_by_discipline": {
         "E": 81,
-        "I": 87,
+        "I": 88,
         "T": 0
       }
     },
@@ -1644,9 +1644,9 @@
       "sid": "PS5-25-04",
       "name": "PS5-25-04 - Crude Oil Export Pump C",
       "total": 187,
-      "closed": 185,
-      "open": 2,
-      "pct": 98.9,
+      "closed": 186,
+      "open": 1,
+      "pct": 99.5,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 92,
@@ -1655,7 +1655,7 @@
       },
       "closed_by_discipline": {
         "E": 91,
-        "I": 94,
+        "I": 95,
         "T": 0
       }
     },
@@ -4285,10 +4285,10 @@
       "sid": "PS5-71-05",
       "name": "PS5-71-05 - CFO Transfer Pump A/B",
       "total": 45,
-      "closed": 44,
-      "open": 1,
-      "pct": 97.8,
-      "status": "IN PROGRESS",
+      "closed": 45,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 10,
         "I": 35,
@@ -4296,7 +4296,7 @@
       },
       "closed_by_discipline": {
         "E": 10,
-        "I": 34,
+        "I": 35,
         "T": 0
       }
     },
@@ -11763,10 +11763,10 @@
     "T-00284-0184": "Closed",
     "T-00284-0185": "Closed",
     "T-00284-0186": "Closed",
-    "T-00284-0187": "Open",
+    "T-00284-0187": "Closed",
     "T-00284-0188": "Closed",
-    "T-00284-0189": "Open",
-    "T-00284-0190": "Open",
+    "T-00284-0189": "Closed",
+    "T-00284-0190": "Closed",
     "T-00041-0026": "Open",
     "T-00041-0027": "Open",
     "T-00041-0028": "Open",
@@ -15604,6 +15604,33 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-25-FCV-0003C",
+      "task": "T-00284-0190",
+      "system": "PS5-25-04 - Crude Oil Export Pump C",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/18/2026 1:04:08 "
+    },
+    {
+      "tag": "PS5-25-FCV-0003A",
+      "task": "T-00284-0189",
+      "system": "PS5-25-02 - Crude Oil Export Pump A",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/18/2026 1:03:05 "
+    },
+    {
+      "tag": "PS5-71-FCV-0020",
+      "task": "T-00284-0187",
+      "system": "PS5-71-05 - CFO Transfer Pump A/B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/18/2026 1:01:47 "
+    },
+    {
       "tag": "PS5-71-FCV-0019",
       "task": "T-00284-0186",
       "system": "PS5-71-21 - Diesel Transfer Pump A/B",
@@ -16655,33 +16682,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/14/2026 1:41:03 "
-    },
-    {
-      "tag": "PS5-71-BI-0011A-CC04",
-      "task": "T-00069-5402",
-      "system": "PS5-71-06 - Crude Fuel Separation Module",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 1:39:48 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1715",
-      "system": "PS5-79-12 - Electrical Heat Tracing Transformer/Distribution Board 12 (PS5-79-IG-0012)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:41:00"
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1710",
-      "system": "PS5-79-12 - Electrical Heat Tracing Transformer/Distribution Board 12 (PS5-79-IG-0012)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/14/2026 10:40:42"
     }
   ]
 }
