@@ -1,16 +1,16 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-18 12:50:21",
-  "total_tasks_ps5": 14071,
-  "eit_total": 10361,
+  "updated": "2026-11-18 12:53:53",
+  "total_tasks_ps5": 14078,
+  "eit_total": 10368,
   "eit_by_discipline": {
-    "I": 4602,
+    "I": 4609,
     "E": 4681,
     "T": 1078
   },
   "closed": 7964,
-  "open": 2397,
+  "open": 2404,
   "today_closed": 0,
   "closed_by_discipline": {
     "I": 3678,
@@ -18,7 +18,7 @@
     "T": 318
   },
   "open_by_discipline": {
-    "I": 924,
+    "I": 931,
     "E": 713,
     "T": 760
   },
@@ -256,14 +256,14 @@
     {
       "label": "Milestone B",
       "raw": "PS5 - Milestone B",
-      "total": 1726,
+      "total": 1728,
       "closed": 1669,
-      "remaining": 57,
-      "pct": 96.7,
+      "remaining": 59,
+      "pct": 96.6,
       "status": {
         "Closed": 1669,
         "Submitted": 0,
-        "To be completed": 56,
+        "To be completed": 58,
         "Other": 1
       }
     },
@@ -312,14 +312,14 @@
     {
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
-      "total": 598,
+      "total": 599,
       "closed": 545,
-      "remaining": 53,
-      "pct": 91.1,
+      "remaining": 54,
+      "pct": 91.0,
       "status": {
         "Closed": 545,
         "Submitted": 0,
-        "To be completed": 53,
+        "To be completed": 54,
         "Other": 0
       }
     },
@@ -340,14 +340,14 @@
     {
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
-      "total": 3257,
+      "total": 3261,
       "closed": 2997,
-      "remaining": 260,
-      "pct": 92.0,
+      "remaining": 264,
+      "pct": 91.9,
       "status": {
         "Closed": 2997,
         "Submitted": 63,
-        "To be completed": 184,
+        "To be completed": 188,
         "Other": 13
       }
     },
@@ -1643,14 +1643,14 @@
     {
       "sid": "PS5-25-05",
       "name": "PS5-25-05 - Crude Oil Export Pumps Bypass",
-      "total": 39,
+      "total": 40,
       "closed": 39,
-      "open": 0,
-      "pct": 100.0,
-      "status": "COMPLETE",
+      "open": 1,
+      "pct": 97.5,
+      "status": "IN PROGRESS",
       "by_discipline": {
         "E": 6,
-        "I": 33,
+        "I": 34,
         "T": 0
       },
       "closed_by_discipline": {
@@ -1852,14 +1852,14 @@
     {
       "sid": "PS5-28-13",
       "name": "PS5-28-13 - Seal Oil Drain Drum & Pump A",
-      "total": 30,
+      "total": 31,
       "closed": 30,
-      "open": 0,
-      "pct": 100.0,
-      "status": "COMPLETE",
+      "open": 1,
+      "pct": 96.8,
+      "status": "IN PROGRESS",
       "by_discipline": {
         "E": 6,
-        "I": 24,
+        "I": 25,
         "T": 0
       },
       "closed_by_discipline": {
@@ -1871,14 +1871,14 @@
     {
       "sid": "PS5-28-14",
       "name": "PS5-28-14 - Seal Oil Drain Drum & Pump B",
-      "total": 30,
+      "total": 31,
       "closed": 30,
-      "open": 0,
-      "pct": 100.0,
-      "status": "COMPLETE",
+      "open": 1,
+      "pct": 96.8,
+      "status": "IN PROGRESS",
       "by_discipline": {
         "E": 6,
-        "I": 24,
+        "I": 25,
         "T": 0
       },
       "closed_by_discipline": {
@@ -1890,14 +1890,14 @@
     {
       "sid": "PS5-28-15",
       "name": "PS5-28-15 - Seal Oil Drain Drum & Pump C",
-      "total": 30,
+      "total": 31,
       "closed": 30,
-      "open": 0,
-      "pct": 100.0,
-      "status": "COMPLETE",
+      "open": 1,
+      "pct": 96.8,
+      "status": "IN PROGRESS",
       "by_discipline": {
         "E": 6,
-        "I": 24,
+        "I": 25,
         "T": 0
       },
       "closed_by_discipline": {
@@ -4474,14 +4474,14 @@
     {
       "sid": "PS5-71-18",
       "name": "PS5-71-18 - Diesel Separator Module",
-      "total": 31,
+      "total": 32,
       "closed": 31,
-      "open": 0,
-      "pct": 100.0,
-      "status": "COMPLETE",
+      "open": 1,
+      "pct": 96.9,
+      "status": "IN PROGRESS",
       "by_discipline": {
         "E": 3,
-        "I": 28,
+        "I": 29,
         "T": 0
       },
       "closed_by_discipline": {
@@ -4512,14 +4512,14 @@
     {
       "sid": "PS5-71-20",
       "name": "PS5-71-20 - Diesel Fuel Day Tank",
-      "total": 34,
+      "total": 36,
       "closed": 34,
-      "open": 0,
-      "pct": 100.0,
-      "status": "COMPLETE",
+      "open": 2,
+      "pct": 94.4,
+      "status": "IN PROGRESS",
       "by_discipline": {
         "E": 4,
-        "I": 30,
+        "I": 32,
         "T": 0
       },
       "closed_by_discipline": {
@@ -15574,7 +15574,14 @@
     "T-00284-0295": "Open",
     "T-00284-0296": "Open",
     "T-00284-0297": "Open",
-    "T-00284-0298": "Open"
+    "T-00284-0298": "Open",
+    "T-00284-0299": "Open",
+    "T-00284-0300": "Open",
+    "T-00284-0301": "Open",
+    "T-00284-0302": "Open",
+    "T-00284-0303": "Open",
+    "T-00284-0304": "Open",
+    "T-00284-0305": "Open"
   },
   "recent_closed": [
     {
