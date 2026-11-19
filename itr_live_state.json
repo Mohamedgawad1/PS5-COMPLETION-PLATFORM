@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-19 16:46:23",
+  "updated": "2026-11-19 16:53:29",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 8075,
-  "open": 2293,
-  "today_closed": 44,
+  "closed": 8078,
+  "open": 2290,
+  "today_closed": 47,
   "closed_by_discipline": {
-    "I": 3751,
-    "E": 4006,
+    "I": 3752,
+    "E": 4008,
     "T": 318
   },
   "open_by_discipline": {
-    "I": 858,
-    "E": 675,
+    "I": 857,
+    "E": 673,
     "T": 760
   },
   "daily": [
@@ -228,20 +228,20 @@
     },
     {
       "label": "2026-11-19",
-      "E": 21,
-      "I": 23,
+      "E": 23,
+      "I": 24,
       "T": 0,
-      "Total": 44
+      "Total": 47
     }
   ],
-  "closed_this_week": 204,
-  "closed_this_month": 876,
+  "closed_this_week": 207,
+  "closed_this_month": 879,
   "today_milestone": [
     {
       "milestone": "Milestone D",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 18
+      "count": 20
     },
     {
       "milestone": "Milestone D",
@@ -250,13 +250,19 @@
       "count": 23
     },
     {
+      "milestone": "Milestone F",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
+    },
+    {
       "milestone": "Milestone H",
       "disc": "E",
       "discipline": "Electrical (E)",
       "count": 3
     }
   ],
-  "today_milestone_total": 44,
+  "today_milestone_total": 47,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -304,13 +310,13 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3461,
-      "closed": 2780,
-      "remaining": 681,
-      "pct": 80.3,
+      "closed": 2782,
+      "remaining": 679,
+      "pct": 80.4,
       "status": {
-        "Closed": 2780,
-        "Submitted": 1,
-        "To be completed": 678,
+        "Closed": 2782,
+        "Submitted": 0,
+        "To be completed": 677,
         "Other": 2
       }
     },
@@ -332,14 +338,14 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 599,
-      "closed": 547,
-      "remaining": 52,
-      "pct": 91.3,
+      "closed": 548,
+      "remaining": 51,
+      "pct": 91.5,
       "status": {
-        "Closed": 547,
+        "Closed": 548,
         "Submitted": 0,
-        "To be completed": 52,
-        "Other": 0
+        "To be completed": 50,
+        "Other": 1
       }
     },
     {
@@ -1549,9 +1555,9 @@
       "sid": "PS5-09-03",
       "name": "PS5-09-03 - HVAC for Generator Building",
       "total": 1004,
-      "closed": 407,
-      "open": 597,
-      "pct": 40.5,
+      "closed": 409,
+      "open": 595,
+      "pct": 40.7,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 380,
@@ -1559,7 +1565,7 @@
         "T": 4
       },
       "closed_by_discipline": {
-        "E": 200,
+        "E": 202,
         "I": 207,
         "T": 0
       }
@@ -4475,9 +4481,9 @@
       "sid": "PS5-71-17",
       "name": "PS5-71-17 - Diesel Fuel Distribution Header",
       "total": 13,
-      "closed": 11,
-      "open": 2,
-      "pct": 84.6,
+      "closed": 12,
+      "open": 1,
+      "pct": 92.3,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 0,
@@ -4486,7 +4492,7 @@
       },
       "closed_by_discipline": {
         "E": 0,
-        "I": 11,
+        "I": 12,
         "T": 0
       }
     },
@@ -7717,7 +7723,7 @@
     "T-00284-0087": "Closed",
     "T-00284-0088": "Closed",
     "T-00284-0089": "Open",
-    "T-00284-0090": "Open",
+    "T-00284-0090": "Closed",
     "T-00067-2073": "Closed",
     "T-00067-2074": "Open",
     "T-00067-2075": "Closed",
@@ -12412,8 +12418,8 @@
     "T-00024-3674": "Open",
     "T-00024-3675": "Open",
     "T-00024-3676": "Closed",
-    "T-00024-3677": "Open",
-    "T-00024-3678": "Open",
+    "T-00024-3677": "Closed",
+    "T-00024-3678": "Closed",
     "T-00024-3679": "Closed",
     "T-00024-3680": "Closed",
     "T-00024-3681": "Closed",
@@ -15604,6 +15610,33 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-71-FIT-0005",
+      "task": "T-00284-0090",
+      "system": "PS5-71-17 - Diesel Fuel Distribution Header",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/19/2026 1:49:25 "
+    },
+    {
+      "tag": "PS5-09-IES-8405B-CD01",
+      "task": "T-00024-3678",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/19/2026 1:45:34 "
+    },
+    {
+      "tag": "PS5-09-IES-8405A-CD01",
+      "task": "T-00024-3677",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/19/2026 1:44:32 "
+    },
+    {
       "tag": "PS5-09-IES-8324-CD01",
       "task": "T-00024-3669",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16655,33 +16688,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/17/2026 4:08:32 "
-    },
-    {
-      "tag": "PS5-61-IK-0006-CL12",
-      "task": "T-00023-5503",
-      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/17/2026 4:07:45 "
-    },
-    {
-      "tag": "PS5-61-IK-0006-CL11",
-      "task": "T-00023-5502",
-      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/17/2026 4:06:56 "
-    },
-    {
-      "tag": "PS5-61-IK-0006-CL10",
-      "task": "T-00023-5501",
-      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/17/2026 4:06:08 "
     }
   ]
 }
