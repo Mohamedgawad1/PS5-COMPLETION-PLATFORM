@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-19 11:10:34",
+  "updated": "2026-11-19 11:13:50",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 8040,
-  "open": 2328,
-  "today_closed": 9,
+  "closed": 8042,
+  "open": 2326,
+  "today_closed": 11,
   "closed_by_discipline": {
-    "I": 3734,
+    "I": 3736,
     "E": 3988,
     "T": 318
   },
   "open_by_discipline": {
-    "I": 875,
+    "I": 873,
     "E": 693,
     "T": 760
   },
@@ -229,19 +229,19 @@
     {
       "label": "2026-11-19",
       "E": 3,
-      "I": 6,
+      "I": 8,
       "T": 0,
-      "Total": 9
+      "Total": 11
     }
   ],
-  "closed_this_week": 169,
-  "closed_this_month": 841,
+  "closed_this_week": 171,
+  "closed_this_month": 843,
   "today_milestone": [
     {
       "milestone": "Milestone D",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 6
+      "count": 8
     },
     {
       "milestone": "Milestone H",
@@ -250,7 +250,7 @@
       "count": 3
     }
   ],
-  "today_milestone_total": 9,
+  "today_milestone_total": 11,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -298,14 +298,14 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3461,
-      "closed": 2745,
-      "remaining": 716,
-      "pct": 79.3,
+      "closed": 2747,
+      "remaining": 714,
+      "pct": 79.4,
       "status": {
-        "Closed": 2745,
-        "Submitted": 1,
-        "To be completed": 713,
-        "Other": 2
+        "Closed": 2747,
+        "Submitted": 0,
+        "To be completed": 711,
+        "Other": 3
       }
     },
     {
@@ -1543,9 +1543,9 @@
       "sid": "PS5-09-03",
       "name": "PS5-09-03 - HVAC for Generator Building",
       "total": 1004,
-      "closed": 372,
-      "open": 632,
-      "pct": 37.1,
+      "closed": 374,
+      "open": 630,
+      "pct": 37.3,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 380,
@@ -1554,7 +1554,7 @@
       },
       "closed_by_discipline": {
         "E": 182,
-        "I": 190,
+        "I": 192,
         "T": 0
       }
     },
@@ -13144,8 +13144,8 @@
     "T-00067-2767": "Closed",
     "T-00067-2768": "Closed",
     "T-00067-2769": "Closed",
-    "T-00067-2770": "Open",
-    "T-00067-2771": "Open",
+    "T-00067-2770": "Closed",
+    "T-00067-2771": "Closed",
     "T-00067-2772": "Open",
     "T-00067-2773": "Open",
     "T-00067-2774": "Open",
@@ -15598,6 +15598,24 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-09-IES-8403B",
+      "task": "T-00067-2771",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/19/2026 8:09:17 "
+    },
+    {
+      "tag": "PS5-09-IES-8403A",
+      "task": "T-00067-2770",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/19/2026 8:07:32 "
+    },
+    {
       "tag": "PS5-09-IES-8401B",
       "task": "T-00067-2769",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16658,24 +16676,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/16/2026 3:53:06 "
-    },
-    {
-      "tag": "PS5-09-IES-8301A-CD01",
-      "task": "T-00234-3645",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/16/2026 3:51:56 "
-    },
-    {
-      "tag": "PS5-09-RF-84200A-CL01",
-      "task": "T-00233-9773",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/16/2026 3:50:04 "
     }
   ]
 }
