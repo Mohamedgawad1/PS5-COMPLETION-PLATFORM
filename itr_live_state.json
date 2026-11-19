@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-19 16:53:29",
+  "updated": "2026-11-19 17:00:12",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 8078,
-  "open": 2290,
-  "today_closed": 47,
+  "closed": 8079,
+  "open": 2289,
+  "today_closed": 48,
   "closed_by_discipline": {
-    "I": 3752,
+    "I": 3753,
     "E": 4008,
     "T": 318
   },
   "open_by_discipline": {
-    "I": 857,
+    "I": 856,
     "E": 673,
     "T": 760
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-11-19",
       "E": 23,
-      "I": 24,
+      "I": 25,
       "T": 0,
-      "Total": 47
+      "Total": 48
     }
   ],
-  "closed_this_week": 207,
-  "closed_this_month": 879,
+  "closed_this_week": 208,
+  "closed_this_month": 880,
   "today_milestone": [
     {
       "milestone": "Milestone D",
@@ -253,7 +253,7 @@
       "milestone": "Milestone F",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 1
+      "count": 2
     },
     {
       "milestone": "Milestone H",
@@ -262,7 +262,7 @@
       "count": 3
     }
   ],
-  "today_milestone_total": 47,
+  "today_milestone_total": 48,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -288,8 +288,8 @@
       "status": {
         "Closed": 1674,
         "Submitted": 0,
-        "To be completed": 54,
-        "Other": 0
+        "To be completed": 53,
+        "Other": 1
       }
     },
     {
@@ -338,14 +338,14 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 599,
-      "closed": 548,
-      "remaining": 51,
-      "pct": 91.5,
+      "closed": 549,
+      "remaining": 50,
+      "pct": 91.7,
       "status": {
-        "Closed": 548,
+        "Closed": 549,
         "Submitted": 0,
         "To be completed": 50,
-        "Other": 1
+        "Other": 0
       }
     },
     {
@@ -4481,10 +4481,10 @@
       "sid": "PS5-71-17",
       "name": "PS5-71-17 - Diesel Fuel Distribution Header",
       "total": 13,
-      "closed": 12,
-      "open": 1,
-      "pct": 92.3,
-      "status": "IN PROGRESS",
+      "closed": 13,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 0,
         "I": 13,
@@ -4492,7 +4492,7 @@
       },
       "closed_by_discipline": {
         "E": 0,
-        "I": 12,
+        "I": 13,
         "T": 0
       }
     },
@@ -7722,7 +7722,7 @@
     "T-00284-0086": "Open",
     "T-00284-0087": "Closed",
     "T-00284-0088": "Closed",
-    "T-00284-0089": "Open",
+    "T-00284-0089": "Closed",
     "T-00284-0090": "Closed",
     "T-00067-2073": "Closed",
     "T-00067-2074": "Open",
@@ -15610,6 +15610,15 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-71-FIT-0012",
+      "task": "T-00284-0089",
+      "system": "PS5-71-17 - Diesel Fuel Distribution Header",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/19/2026 1:50:51 "
+    },
+    {
       "tag": "PS5-71-FIT-0005",
       "task": "T-00284-0090",
       "system": "PS5-71-17 - Diesel Fuel Distribution Header",
@@ -16679,15 +16688,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/17/2026 4:09:21 "
-    },
-    {
-      "tag": "PS5-61-IK-0006-CL13",
-      "task": "T-00023-5504",
-      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/17/2026 4:08:32 "
     }
   ]
 }
