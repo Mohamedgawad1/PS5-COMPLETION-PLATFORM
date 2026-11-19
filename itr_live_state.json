@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-19 17:00:12",
+  "updated": "2026-11-19 17:06:21",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 8079,
-  "open": 2289,
-  "today_closed": 48,
+  "closed": 8081,
+  "open": 2287,
+  "today_closed": 50,
   "closed_by_discipline": {
     "I": 3753,
-    "E": 4008,
+    "E": 4010,
     "T": 318
   },
   "open_by_discipline": {
     "I": 856,
-    "E": 673,
+    "E": 671,
     "T": 760
   },
   "daily": [
@@ -228,15 +228,21 @@
     },
     {
       "label": "2026-11-19",
-      "E": 23,
+      "E": 25,
       "I": 25,
       "T": 0,
-      "Total": 48
+      "Total": 50
     }
   ],
-  "closed_this_week": 208,
-  "closed_this_month": 880,
+  "closed_this_week": 210,
+  "closed_this_month": 882,
   "today_milestone": [
+    {
+      "milestone": "Milestone B",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 2
+    },
     {
       "milestone": "Milestone D",
       "disc": "E",
@@ -262,7 +268,7 @@
       "count": 3
     }
   ],
-  "today_milestone_total": 48,
+  "today_milestone_total": 50,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -282,14 +288,14 @@
       "label": "Milestone B",
       "raw": "PS5 - Milestone B",
       "total": 1728,
-      "closed": 1674,
-      "remaining": 54,
-      "pct": 96.9,
+      "closed": 1676,
+      "remaining": 52,
+      "pct": 97.0,
       "status": {
-        "Closed": 1674,
+        "Closed": 1676,
         "Submitted": 0,
-        "To be completed": 53,
-        "Other": 1
+        "To be completed": 52,
+        "Other": 0
       }
     },
     {
@@ -3873,9 +3879,9 @@
       "sid": "PS5-62-06",
       "name": "PS5-62-06 - CRO Generator Building Emergency Lighting DB  - PS5-05-IG-0025",
       "total": 19,
-      "closed": 13,
-      "open": 6,
-      "pct": 68.4,
+      "closed": 15,
+      "open": 4,
+      "pct": 78.9,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 19,
@@ -3883,7 +3889,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 13,
+        "E": 15,
         "I": 0,
         "T": 0
       }
@@ -13230,7 +13236,7 @@
     "T-00031-1282": "Closed",
     "T-00031-1283": "Open",
     "T-00031-1284": "Closed",
-    "T-00031-1285": "Open",
+    "T-00031-1285": "Closed",
     "T-00031-1286": "Open",
     "T-00031-1287": "Closed",
     "T-00031-1288": "Open",
@@ -13384,7 +13390,7 @@
     "T-00240-1282": "Closed",
     "T-00240-1283": "Open",
     "T-00240-1284": "Closed",
-    "T-00240-1285": "Open",
+    "T-00240-1285": "Closed",
     "T-00240-1286": "Open",
     "T-00240-1287": "Closed",
     "T-00240-1288": "Open",
@@ -15610,6 +15616,24 @@
   },
   "recent_closed": [
     {
+      "tag": "",
+      "task": "T-00240-1285",
+      "system": "PS5-62-06 - CRO Generator Building Emergency Lighting DB  - PS5-05-IG-0025",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/19/2026 2:02:33 "
+    },
+    {
+      "tag": "",
+      "task": "T-00031-1285",
+      "system": "PS5-62-06 - CRO Generator Building Emergency Lighting DB  - PS5-05-IG-0025",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/19/2026 1:59:27 "
+    },
+    {
       "tag": "PS5-71-FIT-0012",
       "task": "T-00284-0089",
       "system": "PS5-71-17 - Diesel Fuel Distribution Header",
@@ -16670,24 +16694,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/17/2026 4:58:41 "
-    },
-    {
-      "tag": "PS5-61-IK-0006-CL05",
-      "task": "T-00023-5496",
-      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/17/2026 4:12:03 "
-    },
-    {
-      "tag": "PS5-61-IK-0006-CL14",
-      "task": "T-00023-5505",
-      "system": "PS5-61-06 - 0.4kV Switchboard Power Generator Building (PS5-61-IK-0006)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/17/2026 4:09:21 "
     }
   ]
 }
