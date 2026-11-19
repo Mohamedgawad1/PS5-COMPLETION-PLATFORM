@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-19 08:10:54",
+  "updated": "2026-11-19 08:26:32",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 8031,
-  "open": 2337,
-  "today_closed": 0,
+  "closed": 8034,
+  "open": 2334,
+  "today_closed": 3,
   "closed_by_discipline": {
     "I": 3728,
-    "E": 3985,
+    "E": 3988,
     "T": 318
   },
   "open_by_discipline": {
     "I": 881,
-    "E": 696,
+    "E": 693,
     "T": 760
   },
   "daily": [
@@ -228,16 +228,23 @@
     },
     {
       "label": "2026-11-19",
-      "E": 0,
+      "E": 3,
       "I": 0,
       "T": 0,
-      "Total": 0
+      "Total": 3
     }
   ],
-  "closed_this_week": 160,
-  "closed_this_month": 832,
-  "today_milestone": [],
-  "today_milestone_total": 0,
+  "closed_this_week": 163,
+  "closed_this_month": 835,
+  "today_milestone": [
+    {
+      "milestone": "Milestone H",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 3
+    }
+  ],
+  "today_milestone_total": 3,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -341,14 +348,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3261,
-      "closed": 3018,
-      "remaining": 243,
-      "pct": 92.5,
+      "closed": 3021,
+      "remaining": 240,
+      "pct": 92.6,
       "status": {
-        "Closed": 3018,
+        "Closed": 3021,
         "Submitted": 62,
         "To be completed": 168,
-        "Other": 13
+        "Other": 10
       }
     },
     {
@@ -4817,9 +4824,9 @@
       "sid": "PS5-79-05",
       "name": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
       "total": 66,
-      "closed": 60,
-      "open": 6,
-      "pct": 90.9,
+      "closed": 61,
+      "open": 5,
+      "pct": 92.4,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 65,
@@ -4827,7 +4834,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 59,
+        "E": 60,
         "I": 1,
         "T": 0
       }
@@ -4836,9 +4843,9 @@
       "sid": "PS5-79-06",
       "name": "PS5-79-06 - Electrical Heat Tracing Transformer/Distribution Board 6 (PS5-79-IG-0006)",
       "total": 74,
-      "closed": 67,
-      "open": 7,
-      "pct": 90.5,
+      "closed": 68,
+      "open": 6,
+      "pct": 91.9,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 73,
@@ -4846,7 +4853,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 66,
+        "E": 67,
         "I": 1,
         "T": 0
       }
@@ -4950,9 +4957,9 @@
       "sid": "PS5-79-12",
       "name": "PS5-79-12 - Electrical Heat Tracing Transformer/Distribution Board 12 (PS5-79-IG-0012)",
       "total": 80,
-      "closed": 72,
-      "open": 8,
-      "pct": 90.0,
+      "closed": 73,
+      "open": 7,
+      "pct": 91.2,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 79,
@@ -4960,7 +4967,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 71,
+        "E": 72,
         "I": 1,
         "T": 0
       }
@@ -11121,7 +11128,7 @@
     "T-00035-1493": "Open",
     "T-00035-1494": "Closed",
     "T-00035-1495": "Open",
-    "T-00035-1496": "Open",
+    "T-00035-1496": "Closed",
     "T-00035-1497": "Closed",
     "T-00035-1498": "Closed",
     "T-00035-1499": "Open",
@@ -11152,7 +11159,7 @@
     "T-00035-1524": "Closed",
     "T-00035-1525": "Closed",
     "T-00035-1526": "Closed",
-    "T-00035-1527": "Open",
+    "T-00035-1527": "Closed",
     "T-00035-1528": "Closed",
     "T-00035-1529": "Closed",
     "T-00035-1530": "Closed",
@@ -11346,7 +11353,7 @@
     "T-00035-1718": "Closed",
     "T-00035-1719": "Closed",
     "T-00035-1720": "Closed",
-    "T-00035-1721": "Open",
+    "T-00035-1721": "Closed",
     "T-00035-1722": "Open",
     "T-00244-1357": "Closed",
     "T-00244-1358": "Closed",
@@ -15585,6 +15592,33 @@
   },
   "recent_closed": [
     {
+      "tag": "",
+      "task": "T-00035-1721",
+      "system": "PS5-79-12 - Electrical Heat Tracing Transformer/Distribution Board 12 (PS5-79-IG-0012)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/19/2026 5:16:21 "
+    },
+    {
+      "tag": "",
+      "task": "T-00035-1527",
+      "system": "PS5-79-06 - Electrical Heat Tracing Transformer/Distribution Board 6 (PS5-79-IG-0006)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/19/2026 5:15:52 "
+    },
+    {
+      "tag": "",
+      "task": "T-00035-1496",
+      "system": "PS5-79-05 - Electrical Heat Tracing Transformer/Distribution Board 5 (PS5-79-IG-0005)",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/19/2026 5:15:24 "
+    },
+    {
       "tag": "PS5-09-IES-8311B",
       "task": "T-00067-2755",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16636,33 +16670,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/16/2026 2:41:03 "
-    },
-    {
-      "tag": "PS5-61-IH-0004-CL20",
-      "task": "T-00023-5362",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/16/2026 2:39:46 "
-    },
-    {
-      "tag": "PS5-61-IH-0004-CL19",
-      "task": "T-00023-5361",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/16/2026 2:38:55 "
-    },
-    {
-      "tag": "PS5-61-IH-0004-CL18",
-      "task": "T-00023-5360",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/16/2026 2:37:56 "
     }
   ]
 }
