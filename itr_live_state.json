@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-20 16:45:31",
+  "updated": "2026-11-20 17:10:18",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 8107,
-  "open": 2261,
-  "today_closed": 26,
+  "closed": 8115,
+  "open": 2253,
+  "today_closed": 34,
   "closed_by_discipline": {
-    "I": 3761,
+    "I": 3769,
     "E": 4028,
     "T": 318
   },
   "open_by_discipline": {
-    "I": 848,
+    "I": 840,
     "E": 653,
     "T": 760
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-11-20",
       "E": 18,
-      "I": 8,
+      "I": 16,
       "T": 0,
-      "Total": 26
+      "Total": 34
     }
   ],
-  "closed_this_week": 236,
-  "closed_this_month": 908,
+  "closed_this_week": 244,
+  "closed_this_month": 916,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -253,7 +253,7 @@
       "milestone": "Milestone D",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 4
+      "count": 12
     },
     {
       "milestone": "Milestone F",
@@ -274,7 +274,7 @@
       "count": 2
     }
   ],
-  "today_milestone_total": 26,
+  "today_milestone_total": 34,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -322,14 +322,14 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3461,
-      "closed": 2790,
-      "remaining": 671,
-      "pct": 80.6,
+      "closed": 2798,
+      "remaining": 663,
+      "pct": 80.8,
       "status": {
-        "Closed": 2790,
+        "Closed": 2798,
         "Submitted": 0,
-        "To be completed": 668,
-        "Other": 3
+        "To be completed": 661,
+        "Other": 2
       }
     },
     {
@@ -383,9 +383,9 @@
       "pct": 93.1,
       "status": {
         "Closed": 3037,
-        "Submitted": 61,
+        "Submitted": 60,
         "To be completed": 154,
-        "Other": 9
+        "Other": 10
       }
     },
     {
@@ -1567,9 +1567,9 @@
       "sid": "PS5-09-03",
       "name": "PS5-09-03 - HVAC for Generator Building",
       "total": 1004,
-      "closed": 417,
-      "open": 587,
-      "pct": 41.5,
+      "closed": 425,
+      "open": 579,
+      "pct": 42.3,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 380,
@@ -1578,7 +1578,7 @@
       },
       "closed_by_discipline": {
         "E": 206,
-        "I": 211,
+        "I": 219,
         "T": 0
       }
     },
@@ -12979,16 +12979,16 @@
     "T-00254-11717": "Open",
     "T-00254-11718": "Closed",
     "T-00254-11719": "Closed",
-    "T-00254-11720": "Open",
-    "T-00254-11721": "Open",
+    "T-00254-11720": "Closed",
+    "T-00254-11721": "Closed",
     "T-00254-11722": "Closed",
     "T-00254-11723": "Closed",
-    "T-00254-11724": "Open",
-    "T-00254-11725": "Open",
-    "T-00254-11726": "Open",
-    "T-00254-11727": "Open",
-    "T-00254-11728": "Open",
-    "T-00254-11729": "Open",
+    "T-00254-11724": "Closed",
+    "T-00254-11725": "Closed",
+    "T-00254-11726": "Closed",
+    "T-00254-11727": "Closed",
+    "T-00254-11728": "Closed",
+    "T-00254-11729": "Closed",
     "T-00254-11730": "Open",
     "T-00254-11731": "Open",
     "T-00254-11732": "Open",
@@ -15622,6 +15622,78 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-09-LB-8211B-CC01",
+      "task": "T-00254-11721",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/20/2026 2:03:51 "
+    },
+    {
+      "tag": "PS5-09-LB-8211A-CC01",
+      "task": "T-00254-11720",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/20/2026 2:02:21 "
+    },
+    {
+      "tag": "PS5-09-LB-8321B-B-CC01",
+      "task": "T-00254-11729",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/20/2026 2:00:34 "
+    },
+    {
+      "tag": "PS5-09-LB-8321B-A-CC01",
+      "task": "T-00254-11728",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/20/2026 1:56:19 "
+    },
+    {
+      "tag": "PS5-09-LB-8321A-B-CC01",
+      "task": "T-00254-11727",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/20/2026 1:51:57 "
+    },
+    {
+      "tag": "PS5-09-LB-8321A-A-CC01",
+      "task": "T-00254-11726",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/20/2026 1:47:50 "
+    },
+    {
+      "tag": "PS5-09-LB-8311B-B-CC01",
+      "task": "T-00254-11725",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/20/2026 1:46:10 "
+    },
+    {
+      "tag": "PS5-09-LB-8311B-A-CC01",
+      "task": "T-00254-11724",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/20/2026 1:44:07 "
+    },
+    {
       "tag": "PS5-09-LB-8311A-B-CC01",
       "task": "T-00254-11723",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16628,78 +16700,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/18/2026 5:40:58 "
-    },
-    {
-      "tag": "PS5-28-SDV-0053C",
-      "task": "T-00284-0301",
-      "system": "PS5-28-15 - Seal Oil Drain Drum & Pump C",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 5:38:12 "
-    },
-    {
-      "tag": "PS5-28-SDV-0053B",
-      "task": "T-00284-0300",
-      "system": "PS5-28-14 - Seal Oil Drain Drum & Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 5:34:43 "
-    },
-    {
-      "tag": "PS5-71-XV-0091",
-      "task": "T-00284-0299",
-      "system": "PS5-71-18 - Diesel Separator Module",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 5:32:15 "
-    },
-    {
-      "tag": "PS5-25-SDV-0022",
-      "task": "T-00284-0298",
-      "system": "PS5-25-01 - Export Pipeline Pig Receiver",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 5:30:08 "
-    },
-    {
-      "tag": "PS5-28-SDV-0045",
-      "task": "T-00284-0297",
-      "system": "PS5-28-17 - Reinjection Pump",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 5:25:55 "
-    },
-    {
-      "tag": "PS5-09-IES-8317-CD01",
-      "task": "T-00234-3663",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 4:00:07 "
-    },
-    {
-      "tag": "PS5-09-AHU-8211B-CL01",
-      "task": "T-00233-9683",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 3:58:53 "
-    },
-    {
-      "tag": "PS5-09-AHU-8211A-CL01",
-      "task": "T-00233-9682",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 3:57:34 "
     }
   ]
 }
