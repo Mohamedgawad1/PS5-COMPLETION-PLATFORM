@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-20 08:34:11",
+  "updated": "2026-11-20 08:37:33",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 8085,
-  "open": 2283,
-  "today_closed": 4,
+  "closed": 8087,
+  "open": 2281,
+  "today_closed": 6,
   "closed_by_discipline": {
     "I": 3755,
-    "E": 4012,
+    "E": 4014,
     "T": 318
   },
   "open_by_discipline": {
     "I": 854,
-    "E": 669,
+    "E": 667,
     "T": 760
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-11-20",
-      "E": 2,
+      "E": 4,
       "I": 2,
       "T": 0,
-      "Total": 4
+      "Total": 6
     }
   ],
-  "closed_this_week": 214,
-  "closed_this_month": 886,
+  "closed_this_week": 216,
+  "closed_this_month": 888,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -247,7 +247,7 @@
       "milestone": "Milestone D",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 2
+      "count": 4
     },
     {
       "milestone": "Milestone F",
@@ -256,7 +256,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 4,
+  "today_milestone_total": 6,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -304,13 +304,13 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3461,
-      "closed": 2784,
-      "remaining": 677,
-      "pct": 80.4,
+      "closed": 2786,
+      "remaining": 675,
+      "pct": 80.5,
       "status": {
-        "Closed": 2784,
-        "Submitted": 1,
-        "To be completed": 674,
+        "Closed": 2786,
+        "Submitted": 0,
+        "To be completed": 673,
         "Other": 2
       }
     },
@@ -1549,9 +1549,9 @@
       "sid": "PS5-09-03",
       "name": "PS5-09-03 - HVAC for Generator Building",
       "total": 1004,
-      "closed": 411,
-      "open": 593,
-      "pct": 40.9,
+      "closed": 413,
+      "open": 591,
+      "pct": 41.1,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 380,
@@ -1559,7 +1559,7 @@
         "T": 4
       },
       "closed_by_discipline": {
-        "E": 204,
+        "E": 206,
         "I": 207,
         "T": 0
       }
@@ -12686,7 +12686,7 @@
     "T-00233-9690": "Open",
     "T-00233-9691": "Closed",
     "T-00233-9692": "Open",
-    "T-00233-9693": "Open",
+    "T-00233-9693": "Closed",
     "T-00233-9694": "Open",
     "T-00233-9695": "Open",
     "T-00233-9696": "Closed",
@@ -12810,7 +12810,7 @@
     "T-00234-3668": "Closed",
     "T-00234-3669": "Closed",
     "T-00234-3670": "Open",
-    "T-00234-3671": "Open",
+    "T-00234-3671": "Closed",
     "T-00234-3672": "Open",
     "T-00234-3673": "Closed",
     "T-00234-3674": "Closed",
@@ -15604,6 +15604,24 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-09-IES-8401A-CD01",
+      "task": "T-00234-3671",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/20/2026 5:36:34 "
+    },
+    {
+      "tag": "PS5-09-AHU-8331A-CL02",
+      "task": "T-00233-9693",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/20/2026 5:33:44 "
+    },
+    {
       "tag": "PS5-09-AHU-8321B-CL02",
       "task": "T-00233-9691",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16664,24 +16682,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/18/2026 12:57:48"
-    },
-    {
-      "tag": "PS5-71-FCV-0018",
-      "task": "T-00284-0183",
-      "system": "PS5-71-13 - CFO Service Pump A/B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 12:55:02"
-    },
-    {
-      "tag": "PS5-25-FCV-0004",
-      "task": "T-00284-0180",
-      "system": "PS5-25-06 - Crude Oil Export Pumps Discharge",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 12:51:47"
     }
   ]
 }
