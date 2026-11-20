@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-20 18:39:45",
+  "updated": "2026-11-20 18:52:10",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 8125,
-  "open": 2243,
-  "today_closed": 44,
+  "closed": 8126,
+  "open": 2242,
+  "today_closed": 45,
   "closed_by_discipline": {
     "I": 3769,
-    "E": 4038,
+    "E": 4039,
     "T": 318
   },
   "open_by_discipline": {
     "I": 840,
-    "E": 643,
+    "E": 642,
     "T": 760
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-11-20",
-      "E": 28,
+      "E": 29,
       "I": 16,
       "T": 0,
-      "Total": 44
+      "Total": 45
     }
   ],
-  "closed_this_week": 254,
-  "closed_this_month": 926,
+  "closed_this_week": 255,
+  "closed_this_month": 927,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -262,6 +262,12 @@
       "count": 1
     },
     {
+      "milestone": "Milestone G",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 1
+    },
+    {
       "milestone": "Milestone H",
       "disc": "E",
       "discipline": "Electrical (E)",
@@ -274,7 +280,7 @@
       "count": 2
     }
   ],
-  "today_milestone_total": 44,
+  "today_milestone_total": 45,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -364,14 +370,14 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 905,
-      "closed": 814,
-      "remaining": 91,
-      "pct": 89.9,
+      "closed": 815,
+      "remaining": 90,
+      "pct": 90.1,
       "status": {
-        "Closed": 814,
+        "Closed": 815,
         "Submitted": 0,
-        "To be completed": 91,
-        "Other": 0
+        "To be completed": 89,
+        "Other": 1
       }
     },
     {
@@ -3790,9 +3796,9 @@
       "sid": "PS5-62-01",
       "name": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
       "total": 64,
-      "closed": 34,
-      "open": 30,
-      "pct": 53.1,
+      "closed": 35,
+      "open": 29,
+      "pct": 54.7,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 64,
@@ -3800,7 +3806,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 34,
+        "E": 35,
         "I": 0,
         "T": 0
       }
@@ -13306,7 +13312,7 @@
     "T-00031-1346": "Open",
     "T-00031-1347": "Open",
     "T-00031-1348": "Open",
-    "T-00031-1349": "Open",
+    "T-00031-1349": "Closed",
     "T-00031-1350": "Open",
     "T-00031-1351": "Open",
     "T-00031-1352": "Open",
@@ -15622,6 +15628,15 @@
   },
   "recent_closed": [
     {
+      "tag": "",
+      "task": "T-00031-1349",
+      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/20/2026 3:50:03 "
+    },
+    {
       "tag": "PS5-09-AHU-8411B-CL02",
       "task": "T-00233-9701",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16691,15 +16706,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/18/2026 6:17:39 "
-    },
-    {
-      "tag": "PS5-09-IES-8201A-CD01",
-      "task": "T-00234-3639",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 6:16:23 "
     }
   ]
 }
