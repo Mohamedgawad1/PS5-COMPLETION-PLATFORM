@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-20 08:12:31",
+  "updated": "2026-11-20 08:17:24",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 8082,
-  "open": 2286,
-  "today_closed": 1,
+  "closed": 8083,
+  "open": 2285,
+  "today_closed": 2,
   "closed_by_discipline": {
-    "I": 3754,
+    "I": 3755,
     "E": 4010,
     "T": 318
   },
   "open_by_discipline": {
-    "I": 855,
+    "I": 854,
     "E": 671,
     "T": 760
   },
@@ -229,14 +229,20 @@
     {
       "label": "2026-11-20",
       "E": 0,
-      "I": 1,
+      "I": 2,
       "T": 0,
-      "Total": 1
+      "Total": 2
     }
   ],
-  "closed_this_week": 211,
-  "closed_this_month": 883,
+  "closed_this_week": 212,
+  "closed_this_month": 884,
   "today_milestone": [
+    {
+      "milestone": "Milestone B",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
+    },
     {
       "milestone": "Milestone F",
       "disc": "I",
@@ -244,7 +250,7 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 1,
+  "today_milestone_total": 2,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -264,14 +270,14 @@
       "label": "Milestone B",
       "raw": "PS5 - Milestone B",
       "total": 1728,
-      "closed": 1676,
-      "remaining": 52,
+      "closed": 1677,
+      "remaining": 51,
       "pct": 97.0,
       "status": {
-        "Closed": 1676,
+        "Closed": 1677,
         "Submitted": 0,
         "To be completed": 51,
-        "Other": 1
+        "Other": 0
       }
     },
     {
@@ -4539,10 +4545,10 @@
       "sid": "PS5-71-21",
       "name": "PS5-71-21 - Diesel Transfer Pump A/B",
       "total": 35,
-      "closed": 34,
-      "open": 1,
-      "pct": 97.1,
-      "status": "IN PROGRESS",
+      "closed": 35,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 10,
         "I": 25,
@@ -4550,7 +4556,7 @@
       },
       "closed_by_discipline": {
         "E": 10,
-        "I": 24,
+        "I": 25,
         "T": 0
       }
     },
@@ -7700,7 +7706,7 @@
     "T-00067-2070": "Closed",
     "T-00067-2071": "Closed",
     "T-00067-2072": "Closed",
-    "T-00284-0085": "Open",
+    "T-00284-0085": "Closed",
     "T-00284-0086": "Closed",
     "T-00284-0087": "Closed",
     "T-00284-0088": "Closed",
@@ -15592,6 +15598,15 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-71-FIT-0019",
+      "task": "T-00284-0085",
+      "system": "PS5-71-21 - Diesel Transfer Pump A/B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/20/2026 5:12:08 "
+    },
+    {
       "tag": "PS5-50-FIT-0001",
       "task": "T-00284-0086",
       "system": "PS5-50-03 - Water Pre-Treatment Package",
@@ -16661,15 +16676,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/17/2026 5:05:02 "
-    },
-    {
-      "tag": "",
-      "task": "T-00240-1281",
-      "system": "PS5-62-06 - CRO Generator Building Emergency Lighting DB  - PS5-05-IG-0025",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/17/2026 5:02:05 "
     }
   ]
 }
