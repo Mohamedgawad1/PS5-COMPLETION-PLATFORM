@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-20 08:07:31",
+  "updated": "2026-11-20 08:12:31",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 8081,
-  "open": 2287,
-  "today_closed": 0,
+  "closed": 8082,
+  "open": 2286,
+  "today_closed": 1,
   "closed_by_discipline": {
-    "I": 3753,
+    "I": 3754,
     "E": 4010,
     "T": 318
   },
   "open_by_discipline": {
-    "I": 856,
+    "I": 855,
     "E": 671,
     "T": 760
   },
@@ -229,15 +229,22 @@
     {
       "label": "2026-11-20",
       "E": 0,
-      "I": 0,
+      "I": 1,
       "T": 0,
-      "Total": 0
+      "Total": 1
     }
   ],
-  "closed_this_week": 210,
-  "closed_this_month": 882,
-  "today_milestone": [],
-  "today_milestone_total": 0,
+  "closed_this_week": 211,
+  "closed_this_month": 883,
+  "today_milestone": [
+    {
+      "milestone": "Milestone F",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
+    }
+  ],
+  "today_milestone_total": 1,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -263,8 +270,8 @@
       "status": {
         "Closed": 1676,
         "Submitted": 0,
-        "To be completed": 52,
-        "Other": 0
+        "To be completed": 51,
+        "Other": 1
       }
     },
     {
@@ -313,13 +320,13 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 599,
-      "closed": 549,
-      "remaining": 50,
-      "pct": 91.7,
+      "closed": 550,
+      "remaining": 49,
+      "pct": 91.8,
       "status": {
-        "Closed": 549,
+        "Closed": 550,
         "Submitted": 0,
-        "To be completed": 50,
+        "To be completed": 49,
         "Other": 0
       }
     },
@@ -1986,10 +1993,10 @@
       "sid": "PS5-50-03",
       "name": "PS5-50-03 - Water Pre-Treatment Package",
       "total": 8,
-      "closed": 7,
-      "open": 1,
-      "pct": 87.5,
-      "status": "IN PROGRESS",
+      "closed": 8,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 1,
         "I": 7,
@@ -1997,7 +2004,7 @@
       },
       "closed_by_discipline": {
         "E": 1,
-        "I": 6,
+        "I": 7,
         "T": 0
       }
     },
@@ -7694,7 +7701,7 @@
     "T-00067-2071": "Closed",
     "T-00067-2072": "Closed",
     "T-00284-0085": "Open",
-    "T-00284-0086": "Open",
+    "T-00284-0086": "Closed",
     "T-00284-0087": "Closed",
     "T-00284-0088": "Closed",
     "T-00284-0089": "Closed",
@@ -15585,6 +15592,15 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-50-FIT-0001",
+      "task": "T-00284-0086",
+      "system": "PS5-50-03 - Water Pre-Treatment Package",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/20/2026 5:09:36 "
+    },
+    {
       "tag": "",
       "task": "T-00240-1285",
       "system": "PS5-62-06 - CRO Generator Building Emergency Lighting DB  - PS5-05-IG-0025",
@@ -16654,15 +16670,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/17/2026 5:02:05 "
-    },
-    {
-      "tag": "",
-      "task": "T-00031-1282",
-      "system": "PS5-62-06 - CRO Generator Building Emergency Lighting DB  - PS5-05-IG-0025",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/17/2026 4:58:41 "
     }
   ]
 }
