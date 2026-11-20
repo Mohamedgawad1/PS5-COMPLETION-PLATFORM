@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-20 10:09:53",
+  "updated": "2026-11-20 10:27:08",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 8087,
-  "open": 2281,
-  "today_closed": 6,
+  "closed": 8089,
+  "open": 2279,
+  "today_closed": 8,
   "closed_by_discipline": {
-    "I": 3755,
+    "I": 3757,
     "E": 4014,
     "T": 318
   },
   "open_by_discipline": {
-    "I": 854,
+    "I": 852,
     "E": 667,
     "T": 760
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-11-20",
       "E": 4,
-      "I": 2,
+      "I": 4,
       "T": 0,
-      "Total": 6
+      "Total": 8
     }
   ],
-  "closed_this_week": 216,
-  "closed_this_month": 888,
+  "closed_this_week": 218,
+  "closed_this_month": 890,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -254,9 +254,15 @@
       "disc": "I",
       "discipline": "Instrumentation (I)",
       "count": 1
+    },
+    {
+      "milestone": "Milestone H",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 2
     }
   ],
-  "today_milestone_total": 6,
+  "today_milestone_total": 8,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -360,13 +366,13 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3261,
-      "closed": 3021,
-      "remaining": 240,
-      "pct": 92.6,
+      "closed": 3023,
+      "remaining": 238,
+      "pct": 92.7,
       "status": {
-        "Closed": 3021,
+        "Closed": 3023,
         "Submitted": 62,
-        "To be completed": 156,
+        "To be completed": 154,
         "Other": 22
       }
     },
@@ -374,14 +380,14 @@
       "label": "Milestone I",
       "raw": "PS5 - Milestone I",
       "total": 790,
-      "closed": 193,
-      "remaining": 597,
-      "pct": 24.4,
+      "closed": 194,
+      "remaining": 596,
+      "pct": 24.6,
       "status": {
-        "Closed": 193,
+        "Closed": 194,
         "Submitted": 2,
         "To be completed": 586,
-        "Other": 9
+        "Other": 8
       }
     }
   ],
@@ -4266,9 +4272,9 @@
       "sid": "PS5-71-04",
       "name": "PS5-71-04 - CFO Storage Tank",
       "total": 82,
-      "closed": 67,
-      "open": 15,
-      "pct": 81.7,
+      "closed": 68,
+      "open": 14,
+      "pct": 82.9,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 22,
@@ -4277,7 +4283,7 @@
       },
       "closed_by_discipline": {
         "E": 15,
-        "I": 52,
+        "I": 53,
         "T": 0
       }
     },
@@ -4380,9 +4386,9 @@
       "sid": "PS5-71-12",
       "name": "PS5-71-12 - CFO Service Tank",
       "total": 95,
-      "closed": 79,
-      "open": 16,
-      "pct": 83.2,
+      "closed": 80,
+      "open": 15,
+      "pct": 84.2,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 24,
@@ -4391,7 +4397,7 @@
       },
       "closed_by_discipline": {
         "E": 18,
-        "I": 61,
+        "I": 62,
         "T": 0
       }
     },
@@ -10916,8 +10922,8 @@
     "T-00251-0122": "Closed",
     "T-00251-0123": "Closed",
     "T-00251-0124": "Closed",
-    "T-00251-0125": "Open",
-    "T-00251-0126": "Open",
+    "T-00251-0125": "Closed",
+    "T-00251-0126": "Closed",
     "T-00251-0127": "Closed",
     "T-00251-0128": "Closed",
     "T-00251-0129": "Closed",
@@ -15604,6 +15610,24 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-71-PVSV-4102",
+      "task": "T-00251-0126",
+      "system": "PS5-71-04 - CFO Storage Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/20/2026 7:09:35 "
+    },
+    {
+      "tag": "PS5-71-PVSV-4202",
+      "task": "T-00251-0125",
+      "system": "PS5-71-12 - CFO Service Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/20/2026 7:07:30 "
+    },
+    {
       "tag": "PS5-09-IES-8401A-CD01",
       "task": "T-00234-3671",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16664,24 +16688,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/18/2026 1:00:22 "
-    },
-    {
-      "tag": "PS5-71-LCV-4101",
-      "task": "T-00284-0185",
-      "system": "PS5-71-04 - CFO Storage Tank",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 12:58:53"
-    },
-    {
-      "tag": "PS5-25-FCV-0003B",
-      "task": "T-00284-0184",
-      "system": "PS5-25-03 - Crude Oil Export Pump B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 12:57:48"
     }
   ]
 }
