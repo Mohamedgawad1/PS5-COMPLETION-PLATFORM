@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-20 17:24:31",
+  "updated": "2026-11-20 17:28:57",
   "total_tasks_ps5": 14078,
   "eit_total": 10368,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 8118,
-  "open": 2250,
-  "today_closed": 37,
+  "closed": 8120,
+  "open": 2248,
+  "today_closed": 39,
   "closed_by_discipline": {
     "I": 3769,
-    "E": 4031,
+    "E": 4033,
     "T": 318
   },
   "open_by_discipline": {
     "I": 840,
-    "E": 650,
+    "E": 648,
     "T": 760
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-11-20",
-      "E": 21,
+      "E": 23,
       "I": 16,
       "T": 0,
-      "Total": 37
+      "Total": 39
     }
   ],
-  "closed_this_week": 247,
-  "closed_this_month": 919,
+  "closed_this_week": 249,
+  "closed_this_month": 921,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -247,7 +247,7 @@
       "milestone": "Milestone D",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 7
+      "count": 9
     },
     {
       "milestone": "Milestone D",
@@ -274,7 +274,7 @@
       "count": 2
     }
   ],
-  "today_milestone_total": 37,
+  "today_milestone_total": 39,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -322,14 +322,14 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3461,
-      "closed": 2801,
-      "remaining": 660,
-      "pct": 80.9,
+      "closed": 2803,
+      "remaining": 658,
+      "pct": 81.0,
       "status": {
-        "Closed": 2801,
+        "Closed": 2803,
         "Submitted": 0,
-        "To be completed": 656,
-        "Other": 4
+        "To be completed": 655,
+        "Other": 3
       }
     },
     {
@@ -1567,9 +1567,9 @@
       "sid": "PS5-09-03",
       "name": "PS5-09-03 - HVAC for Generator Building",
       "total": 1004,
-      "closed": 428,
-      "open": 576,
-      "pct": 42.6,
+      "closed": 430,
+      "open": 574,
+      "pct": 42.8,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 380,
@@ -1577,7 +1577,7 @@
         "T": 4
       },
       "closed_by_discipline": {
-        "E": 209,
+        "E": 211,
         "I": 219,
         "T": 0
       }
@@ -12698,8 +12698,8 @@
     "T-00233-9684": "Open",
     "T-00233-9685": "Open",
     "T-00233-9686": "Closed",
-    "T-00233-9687": "Open",
-    "T-00233-9688": "Open",
+    "T-00233-9687": "Closed",
+    "T-00233-9688": "Closed",
     "T-00233-9689": "Closed",
     "T-00233-9690": "Open",
     "T-00233-9691": "Closed",
@@ -15622,6 +15622,24 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-09-AHU-8321A-CL01",
+      "task": "T-00233-9688",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/20/2026 2:25:56 "
+    },
+    {
+      "tag": "PS5-09-AHU-8311B-CL02",
+      "task": "T-00233-9687",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/20/2026 2:24:11 "
+    },
+    {
       "tag": "PS5-09-AHU-8311B-CL01",
       "task": "T-00233-9686",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16682,24 +16700,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/18/2026 5:56:33 "
-    },
-    {
-      "tag": "",
-      "task": "T-00031-1287",
-      "system": "PS5-62-06 - CRO Generator Building Emergency Lighting DB  - PS5-05-IG-0025",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 5:54:14 "
-    },
-    {
-      "tag": "PS5-71-SDV-0001",
-      "task": "T-00284-0305",
-      "system": "PS5-71-20 - Diesel Fuel Day Tank",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 5:46:07 "
     }
   ]
 }
