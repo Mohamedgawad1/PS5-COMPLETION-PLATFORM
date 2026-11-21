@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-21 15:43:28",
+  "updated": "2026-11-21 16:02:55",
   "total_tasks_ps5": 14076,
   "eit_total": 10366,
   "eit_by_discipline": {
@@ -9,18 +9,18 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 8131,
-  "open": 2235,
-  "today_closed": 0,
+  "closed": 8133,
+  "open": 2233,
+  "today_closed": 2,
   "closed_by_discipline": {
     "I": 3769,
     "E": 4044,
-    "T": 318
+    "T": 320
   },
   "open_by_discipline": {
     "I": 838,
     "E": 637,
-    "T": 760
+    "T": 758
   },
   "daily": [
     {
@@ -230,12 +230,12 @@
       "label": "2026-11-21",
       "E": 0,
       "I": 0,
-      "T": 0,
-      "Total": 0
+      "T": 2,
+      "Total": 2
     }
   ],
-  "closed_this_week": 260,
-  "closed_this_month": 932,
+  "closed_this_week": 262,
+  "closed_this_month": 934,
   "today_milestone": [],
   "today_milestone_total": 0,
   "milestone_summary": [
@@ -1093,9 +1093,9 @@
       "sid": "PS5-08-01a",
       "name": "PS5-08-01a - PAGA (Required for SU)",
       "total": 96,
-      "closed": 71,
-      "open": 25,
-      "pct": 74.0,
+      "closed": 73,
+      "open": 23,
+      "pct": 76.0,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 0,
@@ -1105,7 +1105,7 @@
       "closed_by_discipline": {
         "E": 0,
         "I": 0,
-        "T": 71
+        "T": 73
       }
     },
     {
@@ -14373,7 +14373,7 @@
     "T-00621-2798": "Open",
     "T-00621-2799": "Open",
     "T-00621-2800": "Open",
-    "T-00621-2801": "Open",
+    "T-00621-2801": "Closed",
     "T-00621-2802": "Open",
     "T-00621-2803": "Open",
     "T-00621-2804": "Open",
@@ -14418,7 +14418,7 @@
     "T-00621-2843": "Closed",
     "T-00621-2844": "Open",
     "T-00621-2845": "Closed",
-    "T-00621-2846": "Open",
+    "T-00621-2846": "Closed",
     "T-00621-2847": "Open",
     "T-00621-2848": "Closed",
     "T-00621-2849": "Closed",
@@ -15583,6 +15583,24 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-08-01LS-0202-CR01",
+      "task": "T-00621-2846",
+      "system": "PS5-08-01a - PAGA (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/21/2026 1:01:05 "
+    },
+    {
+      "tag": "PS5-08-01BT-0003-CR02",
+      "task": "T-00621-2801",
+      "system": "PS5-08-01a - PAGA (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/21/2026 12:54:59"
+    },
+    {
       "tag": "",
       "task": "T-00240-1354",
       "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
@@ -16643,24 +16661,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/18/2026 7:24:11 "
-    },
-    {
-      "tag": "PS5-71-PSV-2403B",
-      "task": "T-00251-0137",
-      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 7:22:00 "
-    },
-    {
-      "tag": "PS5-71-PSV-2403B",
-      "task": "T-00065-0137",
-      "system": "PS5-71-01 - CFO Storage Tank Feed Heater",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 7:20:36 "
     }
   ]
 }
