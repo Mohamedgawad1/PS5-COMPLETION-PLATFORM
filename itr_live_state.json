@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-21 16:06:37",
+  "updated": "2026-11-21 16:09:47",
   "total_tasks_ps5": 14076,
   "eit_total": 10366,
   "eit_by_discipline": {
@@ -9,18 +9,18 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 8134,
-  "open": 2232,
-  "today_closed": 3,
+  "closed": 8135,
+  "open": 2231,
+  "today_closed": 4,
   "closed_by_discipline": {
     "I": 3769,
     "E": 4044,
-    "T": 321
+    "T": 322
   },
   "open_by_discipline": {
     "I": 838,
     "E": 637,
-    "T": 757
+    "T": 756
   },
   "daily": [
     {
@@ -230,12 +230,12 @@
       "label": "2026-11-21",
       "E": 0,
       "I": 0,
-      "T": 3,
-      "Total": 3
+      "T": 4,
+      "Total": 4
     }
   ],
-  "closed_this_week": 263,
-  "closed_this_month": 935,
+  "closed_this_week": 264,
+  "closed_this_month": 936,
   "today_milestone": [],
   "today_milestone_total": 0,
   "milestone_summary": [
@@ -1093,9 +1093,9 @@
       "sid": "PS5-08-01a",
       "name": "PS5-08-01a - PAGA (Required for SU)",
       "total": 96,
-      "closed": 74,
-      "open": 22,
-      "pct": 77.1,
+      "closed": 75,
+      "open": 21,
+      "pct": 78.1,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 0,
@@ -1105,7 +1105,7 @@
       "closed_by_discipline": {
         "E": 0,
         "I": 0,
-        "T": 74
+        "T": 75
       }
     },
     {
@@ -14408,7 +14408,7 @@
     "T-00621-2833": "Closed",
     "T-00621-2834": "Closed",
     "T-00621-2835": "Closed",
-    "T-00621-2836": "Open",
+    "T-00621-2836": "Closed",
     "T-00621-2837": "Open",
     "T-00621-2838": "Closed",
     "T-00621-2839": "Closed",
@@ -15583,6 +15583,15 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-08-01LS-0103-CR01",
+      "task": "T-00621-2836",
+      "system": "PS5-08-01a - PAGA (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/21/2026 1:06:28 "
+    },
+    {
       "tag": "PS5-08-01BT-0004-CR02",
       "task": "T-00621-2803",
       "system": "PS5-08-01a - PAGA (Required for SU)",
@@ -16652,15 +16661,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/18/2026 7:26:25 "
-    },
-    {
-      "tag": "PS5-09-IES-8101B",
-      "task": "T-00067-2732",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 7:25:20 "
     }
   ]
 }
