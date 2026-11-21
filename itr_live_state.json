@@ -1,16 +1,16 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-21 13:34:54",
-  "total_tasks_ps5": 14078,
-  "eit_total": 10368,
+  "updated": "2026-11-21 13:38:42",
+  "total_tasks_ps5": 14077,
+  "eit_total": 10367,
   "eit_by_discipline": {
-    "I": 4609,
+    "I": 4608,
     "E": 4681,
     "T": 1078
   },
   "closed": 8131,
-  "open": 2237,
+  "open": 2236,
   "today_closed": 0,
   "closed_by_discipline": {
     "I": 3769,
@@ -18,7 +18,7 @@
     "T": 318
   },
   "open_by_discipline": {
-    "I": 840,
+    "I": 839,
     "E": 637,
     "T": 760
   },
@@ -354,14 +354,14 @@
     {
       "label": "Milestone I",
       "raw": "PS5 - Milestone I",
-      "total": 790,
+      "total": 789,
       "closed": 197,
-      "remaining": 593,
-      "pct": 24.9,
+      "remaining": 592,
+      "pct": 25.0,
       "status": {
         "Closed": 197,
         "Submitted": 1,
-        "To be completed": 585,
+        "To be completed": 584,
         "Other": 7
       }
     }
@@ -1491,14 +1491,14 @@
     {
       "sid": "PS5-09-01",
       "name": "PS5-09-01 - HVAC for Office and Facilities building",
-      "total": 10,
+      "total": 9,
       "closed": 0,
-      "open": 10,
+      "open": 9,
       "pct": 0.0,
       "status": "OPEN",
       "by_discipline": {
         "E": 0,
-        "I": 10,
+        "I": 9,
         "T": 0
       },
       "closed_by_discipline": {
@@ -15261,7 +15261,6 @@
     "T-00624-0949": "Open",
     "T-00624-0950": "Open",
     "T-00624-0951": "Closed",
-    "T-00614-2626": "Open",
     "T-00614-2627": "Open",
     "T-00614-2628": "Open",
     "T-00614-2629": "Open",
