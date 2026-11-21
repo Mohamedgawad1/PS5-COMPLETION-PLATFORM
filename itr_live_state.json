@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-21 17:40:02",
+  "updated": "2026-11-21 17:50:08",
   "total_tasks_ps5": 14076,
   "eit_total": 10366,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 8136,
-  "open": 2230,
-  "today_closed": 5,
+  "closed": 8139,
+  "open": 2227,
+  "today_closed": 8,
   "closed_by_discipline": {
-    "I": 3769,
-    "E": 4045,
+    "I": 3771,
+    "E": 4046,
     "T": 322
   },
   "open_by_discipline": {
-    "I": 838,
-    "E": 636,
+    "I": 836,
+    "E": 635,
     "T": 756
   },
   "daily": [
@@ -228,23 +228,29 @@
     },
     {
       "label": "2026-11-21",
-      "E": 1,
-      "I": 0,
+      "E": 2,
+      "I": 2,
       "T": 4,
-      "Total": 5
+      "Total": 8
     }
   ],
-  "closed_this_week": 265,
-  "closed_this_month": 937,
+  "closed_this_week": 268,
+  "closed_this_month": 940,
   "today_milestone": [
+    {
+      "milestone": "Milestone D",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 2
+    },
     {
       "milestone": "Milestone I",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 1
+      "count": 2
     }
   ],
-  "today_milestone_total": 1,
+  "today_milestone_total": 4,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -292,14 +298,14 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3461,
-      "closed": 2808,
-      "remaining": 653,
-      "pct": 81.1,
+      "closed": 2810,
+      "remaining": 651,
+      "pct": 81.2,
       "status": {
-        "Closed": 2808,
+        "Closed": 2810,
         "Submitted": 0,
-        "To be completed": 648,
-        "Other": 5
+        "To be completed": 647,
+        "Other": 4
       }
     },
     {
@@ -362,14 +368,14 @@
       "label": "Milestone I",
       "raw": "PS5 - Milestone I",
       "total": 788,
-      "closed": 198,
-      "remaining": 590,
-      "pct": 25.1,
+      "closed": 199,
+      "remaining": 589,
+      "pct": 25.3,
       "status": {
-        "Closed": 198,
+        "Closed": 199,
         "Submitted": 1,
-        "To be completed": 581,
-        "Other": 8
+        "To be completed": 579,
+        "Other": 9
       }
     }
   ],
@@ -1537,9 +1543,9 @@
       "sid": "PS5-09-03",
       "name": "PS5-09-03 - HVAC for Generator Building",
       "total": 1004,
-      "closed": 435,
-      "open": 569,
-      "pct": 43.3,
+      "closed": 437,
+      "open": 567,
+      "pct": 43.5,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 380,
@@ -1548,7 +1554,7 @@
       },
       "closed_by_discipline": {
         "E": 216,
-        "I": 219,
+        "I": 221,
         "T": 0
       }
     },
@@ -1822,9 +1828,9 @@
       "sid": "PS5-28-10",
       "name": "PS5-28-10 - Oil Skimmer Package",
       "total": 9,
-      "closed": 6,
-      "open": 3,
-      "pct": 66.7,
+      "closed": 7,
+      "open": 2,
+      "pct": 77.8,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 8,
@@ -1832,7 +1838,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 5,
+        "E": 6,
         "I": 1,
         "T": 0
       }
@@ -12857,11 +12863,11 @@
     "T-00254-11625": "Open",
     "T-00254-11626": "Open",
     "T-00254-11627": "Open",
-    "T-00254-11628": "Open",
+    "T-00254-11628": "Closed",
     "T-00254-11629": "Open",
     "T-00254-11630": "Open",
     "T-00254-11631": "Open",
-    "T-00254-11632": "Open",
+    "T-00254-11632": "Closed",
     "T-00254-11633": "Open",
     "T-00254-11634": "Open",
     "T-00254-11635": "Open",
@@ -13652,7 +13658,7 @@
     "T-00023-10902": "Closed",
     "T-00023-10903": "Closed",
     "T-00023-10904": "Closed",
-    "T-00233-10889": "Open",
+    "T-00233-10889": "Closed",
     "T-00233-10890": "Closed",
     "T-00233-10891": "Closed",
     "T-00233-10892": "Closed",
@@ -15590,6 +15596,33 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-09-AS-8412A-CU01",
+      "task": "T-00254-11632",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/21/2026 2:41:22 "
+    },
+    {
+      "tag": "PS5-09-AS-8411A-CU01",
+      "task": "T-00254-11628",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/21/2026 2:40:21 "
+    },
+    {
+      "tag": "PS5-28-DM-31100-CL01",
+      "task": "T-00233-10889",
+      "system": "PS5-28-10 - Oil Skimmer Package",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/21/2026 2:38:18 "
+    },
+    {
       "tag": "PS5-28-DM-31100-CL01",
       "task": "T-00023-10886",
       "system": "PS5-28-10 - Oil Skimmer Package",
@@ -16641,33 +16674,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/18/2026 7:31:18 "
-    },
-    {
-      "tag": "PS5-09-IES-8301B",
-      "task": "T-00067-2743",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 7:30:13 "
-    },
-    {
-      "tag": "PS5-09-IES-8301A",
-      "task": "T-00067-2742",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 7:29:00 "
-    },
-    {
-      "tag": "PS5-09-IES-8201B",
-      "task": "T-00067-2737",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/18/2026 7:27:34 "
     }
   ]
 }
