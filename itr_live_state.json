@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-22 16:42:06",
+  "updated": "2026-11-22 17:00:45",
   "total_tasks_ps5": 14076,
   "eit_total": 10366,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4681,
     "T": 1078
   },
-  "closed": 8163,
-  "open": 2203,
-  "today_closed": 13,
+  "closed": 8165,
+  "open": 2201,
+  "today_closed": 15,
   "closed_by_discipline": {
     "I": 3782,
-    "E": 4059,
+    "E": 4061,
     "T": 322
   },
   "open_by_discipline": {
     "I": 825,
-    "E": 622,
+    "E": 620,
     "T": 756
   },
   "daily": [
@@ -228,15 +228,21 @@
     },
     {
       "label": "2026-11-22",
-      "E": 9,
+      "E": 11,
       "I": 4,
       "T": 0,
-      "Total": 13
+      "Total": 15
     }
   ],
-  "closed_this_week": 292,
-  "closed_this_month": 964,
+  "closed_this_week": 294,
+  "closed_this_month": 966,
   "today_milestone": [
+    {
+      "milestone": "Milestone A",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 2
+    },
     {
       "milestone": "Milestone B",
       "disc": "E",
@@ -262,20 +268,20 @@
       "count": 1
     }
   ],
-  "today_milestone_total": 13,
+  "today_milestone_total": 15,
   "milestone_summary": [
     {
       "label": "Milestone A",
       "raw": "PS5 - Milestone A",
       "total": 273,
-      "closed": 245,
-      "remaining": 28,
-      "pct": 89.7,
+      "closed": 247,
+      "remaining": 26,
+      "pct": 90.5,
       "status": {
-        "Closed": 245,
+        "Closed": 247,
         "Submitted": 1,
-        "To be completed": 25,
-        "Other": 2
+        "To be completed": 24,
+        "Other": 1
       }
     },
     {
@@ -4120,9 +4126,9 @@
       "sid": "PS5-63-01",
       "name": "PS5-63-01 - Electrical Earthing",
       "total": 68,
-      "closed": 40,
-      "open": 28,
-      "pct": 58.8,
+      "closed": 42,
+      "open": 26,
+      "pct": 61.8,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 68,
@@ -4130,7 +4136,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 40,
+        "E": 42,
         "I": 0,
         "T": 0
       }
@@ -10840,8 +10846,8 @@
     "T-00039-0310": "Closed",
     "T-00039-0311": "Closed",
     "T-00039-0312": "Open",
-    "T-00039-0313": "Open",
-    "T-00039-0314": "Open",
+    "T-00039-0313": "Closed",
+    "T-00039-0314": "Closed",
     "T-00039-0315": "Closed",
     "T-00040-0052": "Open",
     "T-00040-0053": "Open",
@@ -15608,6 +15614,24 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-86-OB-0003_Earthing",
+      "task": "T-00039-0314",
+      "system": "PS5-63-01 - Electrical Earthing",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/22/2026 1:53:29 "
+    },
+    {
+      "tag": "PS5-86-OB-0002_Earthing",
+      "task": "T-00039-0313",
+      "system": "PS5-63-01 - Electrical Earthing",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/22/2026 1:48:39 "
+    },
+    {
       "tag": "PS5-28-DM-31100",
       "task": "T-00026-0286",
       "system": "PS5-28-10 - Oil Skimmer Package",
@@ -16668,24 +16692,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/19/2026 8:28:56 "
-    },
-    {
-      "tag": "PS5-09-IES-8405A",
-      "task": "T-00067-2774",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/19/2026 8:27:34 "
-    },
-    {
-      "tag": "PS5-09-IES-8404B",
-      "task": "T-00067-2773",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/19/2026 8:23:35 "
     }
   ]
 }
