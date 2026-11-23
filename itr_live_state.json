@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-23 12:16:27",
+  "updated": "2026-11-23 12:23:00",
   "total_tasks_ps5": 14082,
   "eit_total": 10372,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4683,
     "T": 1078
   },
-  "closed": 8214,
-  "open": 2158,
-  "today_closed": 18,
+  "closed": 8216,
+  "open": 2156,
+  "today_closed": 20,
   "closed_by_discipline": {
     "I": 3813,
-    "E": 4079,
+    "E": 4081,
     "T": 322
   },
   "open_by_discipline": {
     "I": 798,
-    "E": 604,
+    "E": 602,
     "T": 756
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-11-23",
-      "E": 18,
+      "E": 20,
       "I": 0,
       "T": 0,
-      "Total": 18
+      "Total": 20
     }
   ],
-  "closed_this_week": 18,
-  "closed_this_month": 1015,
+  "closed_this_week": 20,
+  "closed_this_month": 1017,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -253,10 +253,10 @@
       "milestone": "Milestone G",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 2
+      "count": 4
     }
   ],
-  "today_milestone_total": 18,
+  "today_milestone_total": 20,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -346,14 +346,14 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 907,
-      "closed": 822,
-      "remaining": 85,
-      "pct": 90.6,
+      "closed": 824,
+      "remaining": 83,
+      "pct": 90.8,
       "status": {
-        "Closed": 822,
+        "Closed": 824,
         "Submitted": 0,
         "To be completed": 83,
-        "Other": 2
+        "Other": 0
       }
     },
     {
@@ -3791,9 +3791,9 @@
       "sid": "PS5-62-02",
       "name": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
       "total": 67,
-      "closed": 41,
-      "open": 26,
-      "pct": 61.2,
+      "closed": 43,
+      "open": 24,
+      "pct": 64.2,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 67,
@@ -3801,7 +3801,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 41,
+        "E": 43,
         "I": 0,
         "T": 0
       }
@@ -13303,8 +13303,8 @@
     "T-00031-1361": "Open",
     "T-00031-1362": "Open",
     "T-00031-1363": "Open",
-    "T-00031-1364": "Open",
-    "T-00031-1365": "Open",
+    "T-00031-1364": "Closed",
+    "T-00031-1365": "Closed",
     "T-00031-1366": "Open",
     "T-00031-1367": "Open",
     "T-00031-1368": "Open",
@@ -15609,6 +15609,24 @@
   "recent_closed": [
     {
       "tag": "",
+      "task": "T-00031-1365",
+      "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/23/2026 9:17:25 "
+    },
+    {
+      "tag": "",
+      "task": "T-00031-1364",
+      "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/23/2026 9:16:18 "
+    },
+    {
+      "tag": "",
       "task": "T-00240-1364",
       "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
       "loop": "",
@@ -16668,24 +16686,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/20/2026 7:45:32 "
-    },
-    {
-      "tag": "",
-      "task": "T-00244-1443",
-      "system": "PS5-79-03 - Electrical Heat Tracing Transformer/Distribution Board 3 (PS5-79-IG-0003)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/20/2026 7:44:59 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1711",
-      "system": "PS5-79-12 - Electrical Heat Tracing Transformer/Distribution Board 12 (PS5-79-IG-0012)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/20/2026 7:44:12 "
     }
   ]
 }
