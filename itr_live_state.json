@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-23 11:19:59",
+  "updated": "2026-11-23 11:25:42",
   "total_tasks_ps5": 14082,
   "eit_total": 10372,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4683,
     "T": 1078
   },
-  "closed": 8198,
-  "open": 2174,
-  "today_closed": 2,
+  "closed": 8200,
+  "open": 2172,
+  "today_closed": 4,
   "closed_by_discipline": {
     "I": 3813,
-    "E": 4063,
+    "E": 4065,
     "T": 322
   },
   "open_by_discipline": {
     "I": 798,
-    "E": 620,
+    "E": 618,
     "T": 756
   },
   "daily": [
@@ -228,23 +228,23 @@
     },
     {
       "label": "2026-11-23",
-      "E": 2,
+      "E": 4,
       "I": 0,
       "T": 0,
-      "Total": 2
+      "Total": 4
     }
   ],
-  "closed_this_week": 2,
-  "closed_this_month": 999,
+  "closed_this_week": 4,
+  "closed_this_month": 1001,
   "today_milestone": [
     {
       "milestone": "Milestone B",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 2
+      "count": 4
     }
   ],
-  "today_milestone_total": 2,
+  "today_milestone_total": 4,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -264,14 +264,14 @@
       "label": "Milestone B",
       "raw": "PS5 - Milestone B",
       "total": 1730,
-      "closed": 1683,
-      "remaining": 47,
-      "pct": 97.3,
+      "closed": 1685,
+      "remaining": 45,
+      "pct": 97.4,
       "status": {
-        "Closed": 1683,
+        "Closed": 1685,
         "Submitted": 0,
         "To be completed": 45,
-        "Other": 2
+        "Other": 0
       }
     },
     {
@@ -3855,9 +3855,9 @@
       "sid": "PS5-62-06",
       "name": "PS5-62-06 - CRO Generator Building Emergency Lighting DB  - PS5-05-IG-0025",
       "total": 19,
-      "closed": 16,
-      "open": 3,
-      "pct": 84.2,
+      "closed": 17,
+      "open": 2,
+      "pct": 89.5,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 19,
@@ -3865,7 +3865,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 16,
+        "E": 17,
         "I": 0,
         "T": 0
       }
@@ -3931,17 +3931,17 @@
       "sid": "PS5-62-10",
       "name": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
       "total": 39,
-      "closed": 38,
-      "open": 1,
-      "pct": 97.4,
-      "status": "IN PROGRESS",
+      "closed": 39,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 39,
         "I": 0,
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 38,
+        "E": 39,
         "I": 0,
         "T": 0
       }
@@ -13210,7 +13210,7 @@
     "T-00031-1280": "Open",
     "T-00031-1281": "Closed",
     "T-00031-1282": "Closed",
-    "T-00031-1283": "Open",
+    "T-00031-1283": "Closed",
     "T-00031-1284": "Closed",
     "T-00031-1285": "Closed",
     "T-00031-1286": "Open",
@@ -13257,7 +13257,7 @@
     "T-00031-1327": "Open",
     "T-00031-1328": "Closed",
     "T-00031-1329": "Closed",
-    "T-00031-1330": "Open",
+    "T-00031-1330": "Closed",
     "T-00031-1331": "Closed",
     "T-00031-1332": "Closed",
     "T-00031-1333": "Closed",
@@ -15597,6 +15597,24 @@
   "recent_closed": [
     {
       "tag": "",
+      "task": "T-00031-1283",
+      "system": "PS5-62-06 - CRO Generator Building Emergency Lighting DB  - PS5-05-IG-0025",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/23/2026 8:23:44 "
+    },
+    {
+      "tag": "",
+      "task": "T-00031-1330",
+      "system": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/23/2026 8:23:23 "
+    },
+    {
+      "tag": "",
       "task": "T-00240-1283",
       "system": "PS5-62-06 - CRO Generator Building Emergency Lighting DB  - PS5-05-IG-0025",
       "loop": "",
@@ -16656,24 +16674,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/19/2026 2:02:33 "
-    },
-    {
-      "tag": "",
-      "task": "T-00031-1285",
-      "system": "PS5-62-06 - CRO Generator Building Emergency Lighting DB  - PS5-05-IG-0025",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/19/2026 1:59:27 "
-    },
-    {
-      "tag": "PS5-71-FIT-0012",
-      "task": "T-00284-0089",
-      "system": "PS5-71-17 - Diesel Fuel Distribution Header",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/19/2026 1:50:51 "
     }
   ]
 }
