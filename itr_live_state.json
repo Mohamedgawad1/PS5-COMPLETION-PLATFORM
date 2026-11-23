@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-23 11:25:42",
+  "updated": "2026-11-23 11:31:36",
   "total_tasks_ps5": 14082,
   "eit_total": 10372,
   "eit_by_discipline": {
@@ -298,8 +298,8 @@
       "status": {
         "Closed": 2856,
         "Submitted": 0,
-        "To be completed": 603,
-        "Other": 2
+        "To be completed": 602,
+        "Other": 3
       }
     },
     {
@@ -312,8 +312,8 @@
       "status": {
         "Closed": 1436,
         "Submitted": 0,
-        "To be completed": 112,
-        "Other": 2
+        "To be completed": 111,
+        "Other": 3
       }
     },
     {
