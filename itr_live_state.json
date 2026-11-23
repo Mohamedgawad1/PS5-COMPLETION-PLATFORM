@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-23 12:03:23",
+  "updated": "2026-11-23 12:10:23",
   "total_tasks_ps5": 14082,
   "eit_total": 10372,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4683,
     "T": 1078
   },
-  "closed": 8212,
-  "open": 2160,
-  "today_closed": 16,
+  "closed": 8214,
+  "open": 2158,
+  "today_closed": 18,
   "closed_by_discipline": {
     "I": 3813,
-    "E": 4077,
+    "E": 4079,
     "T": 322
   },
   "open_by_discipline": {
     "I": 798,
-    "E": 606,
+    "E": 604,
     "T": 756
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-11-23",
-      "E": 16,
+      "E": 18,
       "I": 0,
       "T": 0,
-      "Total": 16
+      "Total": 18
     }
   ],
-  "closed_this_week": 16,
-  "closed_this_month": 1013,
+  "closed_this_week": 18,
+  "closed_this_month": 1015,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -248,9 +248,15 @@
       "disc": "E",
       "discipline": "Electrical (E)",
       "count": 12
+    },
+    {
+      "milestone": "Milestone G",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 2
     }
   ],
-  "today_milestone_total": 16,
+  "today_milestone_total": 18,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -340,14 +346,14 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 907,
-      "closed": 820,
-      "remaining": 87,
-      "pct": 90.4,
+      "closed": 822,
+      "remaining": 85,
+      "pct": 90.6,
       "status": {
-        "Closed": 820,
+        "Closed": 822,
         "Submitted": 0,
         "To be completed": 85,
-        "Other": 2
+        "Other": 0
       }
     },
     {
@@ -3785,9 +3791,9 @@
       "sid": "PS5-62-02",
       "name": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
       "total": 67,
-      "closed": 39,
-      "open": 28,
-      "pct": 58.2,
+      "closed": 41,
+      "open": 26,
+      "pct": 61.2,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 67,
@@ -3795,7 +3801,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 39,
+        "E": 41,
         "I": 0,
         "T": 0
       }
@@ -13451,8 +13457,8 @@
     "T-00240-1361": "Open",
     "T-00240-1362": "Open",
     "T-00240-1363": "Open",
-    "T-00240-1364": "Open",
-    "T-00240-1365": "Open",
+    "T-00240-1364": "Closed",
+    "T-00240-1365": "Closed",
     "T-00240-1366": "Open",
     "T-00240-1367": "Open",
     "T-00240-1368": "Open",
@@ -15602,6 +15608,24 @@
   },
   "recent_closed": [
     {
+      "tag": "",
+      "task": "T-00240-1364",
+      "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/23/2026 9:07:58 "
+    },
+    {
+      "tag": "",
+      "task": "T-00240-1365",
+      "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/23/2026 9:05:23 "
+    },
+    {
       "tag": "PS5-09-QX-8451B-CL02",
       "task": "T-00233-9716",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16662,24 +16686,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/20/2026 7:44:12 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1672",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/20/2026 7:40:31 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1665",
-      "system": "PS5-79-11 - Electrical Heat Tracing Transformer/Distribution Board 11 (PS5-79-IG-0011)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/20/2026 7:40:04 "
     }
   ]
 }
