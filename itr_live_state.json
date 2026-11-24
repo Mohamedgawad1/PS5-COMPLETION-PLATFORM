@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-24 15:15:04",
+  "updated": "2026-11-24 15:23:22",
   "total_tasks_ps5": 14082,
   "eit_total": 10372,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4683,
     "T": 1078
   },
-  "closed": 8254,
-  "open": 2118,
-  "today_closed": 6,
+  "closed": 8255,
+  "open": 2117,
+  "today_closed": 7,
   "closed_by_discipline": {
-    "I": 3838,
+    "I": 3839,
     "E": 4092,
     "T": 324
   },
   "open_by_discipline": {
-    "I": 773,
+    "I": 772,
     "E": 591,
     "T": 754
   },
@@ -229,22 +229,28 @@
     {
       "label": "2026-11-24",
       "E": 6,
-      "I": 0,
+      "I": 1,
       "T": 0,
-      "Total": 6
+      "Total": 7
     }
   ],
-  "closed_this_week": 58,
-  "closed_this_month": 1055,
+  "closed_this_week": 59,
+  "closed_this_month": 1056,
   "today_milestone": [
     {
       "milestone": "Milestone G",
       "disc": "E",
       "discipline": "Electrical (E)",
       "count": 6
+    },
+    {
+      "milestone": "Milestone H",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
     }
   ],
-  "today_milestone_total": 6,
+  "today_milestone_total": 7,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -348,14 +354,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3261,
-      "closed": 3078,
-      "remaining": 183,
+      "closed": 3079,
+      "remaining": 182,
       "pct": 94.4,
       "status": {
-        "Closed": 3078,
+        "Closed": 3079,
         "Submitted": 28,
-        "To be completed": 144,
-        "Other": 11
+        "To be completed": 142,
+        "Other": 12
       }
     },
     {
@@ -4254,9 +4260,9 @@
       "sid": "PS5-71-04",
       "name": "PS5-71-04 - CFO Storage Tank",
       "total": 82,
-      "closed": 68,
-      "open": 14,
-      "pct": 82.9,
+      "closed": 69,
+      "open": 13,
+      "pct": 84.1,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 22,
@@ -4265,7 +4271,7 @@
       },
       "closed_by_discipline": {
         "E": 15,
-        "I": 53,
+        "I": 54,
         "T": 0
       }
     },
@@ -7713,7 +7719,7 @@
     "T-00067-2077": "Closed",
     "T-00067-2078": "Open",
     "T-00067-2079": "Closed",
-    "T-00067-2080": "Open",
+    "T-00067-2080": "Closed",
     "T-00067-2081": "Closed",
     "T-00067-2082": "Open",
     "T-00067-2083": "Closed",
@@ -15596,6 +15602,15 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-71-LIT-4101",
+      "task": "T-00067-2080",
+      "system": "PS5-71-04 - CFO Storage Tank",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/24/2026 12:19:16"
+    },
+    {
       "tag": "",
       "task": "T-00240-1307",
       "system": "PS5-62-08 - Outdoor Normal Lighting  DB  - PS5-61-IG-0006",
@@ -16665,15 +16680,6 @@
       "disc": "T - Telecom",
       "cat": "PCOM - Precommissioning",
       "approved": "11/21/2026 1:03:26 "
-    },
-    {
-      "tag": "PS5-08-01LS-0202-CR01",
-      "task": "T-00621-2846",
-      "system": "PS5-08-01a - PAGA (Required for SU)",
-      "loop": "",
-      "disc": "T - Telecom",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/21/2026 1:01:05 "
     }
   ]
 }
