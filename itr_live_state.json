@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-25 17:30:38",
+  "updated": "2026-11-25 17:36:50",
   "total_tasks_ps5": 14082,
   "eit_total": 10372,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4683,
     "T": 1078
   },
-  "closed": 8289,
-  "open": 2083,
-  "today_closed": 15,
+  "closed": 8291,
+  "open": 2081,
+  "today_closed": 17,
   "closed_by_discipline": {
-    "I": 3863,
+    "I": 3865,
     "E": 4102,
     "T": 324
   },
   "open_by_discipline": {
-    "I": 748,
+    "I": 746,
     "E": 581,
     "T": 754
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-11-25",
       "E": 4,
-      "I": 11,
+      "I": 13,
       "T": 0,
-      "Total": 15
+      "Total": 17
     }
   ],
-  "closed_this_week": 93,
-  "closed_this_month": 1090,
+  "closed_this_week": 95,
+  "closed_this_month": 1092,
   "today_milestone": [
     {
       "milestone": "Milestone B",
@@ -247,7 +247,7 @@
       "milestone": "Milestone D",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 8
+      "count": 10
     },
     {
       "milestone": "Milestone F",
@@ -262,7 +262,7 @@
       "count": 4
     }
   ],
-  "today_milestone_total": 15,
+  "today_milestone_total": 17,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -310,14 +310,14 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3461,
-      "closed": 2921,
-      "remaining": 540,
-      "pct": 84.4,
+      "closed": 2923,
+      "remaining": 538,
+      "pct": 84.5,
       "status": {
-        "Closed": 2921,
+        "Closed": 2923,
         "Submitted": 0,
-        "To be completed": 538,
-        "Other": 2
+        "To be completed": 533,
+        "Other": 5
       }
     },
     {
@@ -1555,9 +1555,9 @@
       "sid": "PS5-09-03",
       "name": "PS5-09-03 - HVAC for Generator Building",
       "total": 1004,
-      "closed": 548,
-      "open": 456,
-      "pct": 54.6,
+      "closed": 550,
+      "open": 454,
+      "pct": 54.8,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 380,
@@ -1566,7 +1566,7 @@
       },
       "closed_by_discipline": {
         "E": 238,
-        "I": 308,
+        "I": 310,
         "T": 2
       }
     },
@@ -12863,9 +12863,9 @@
     "T-00254-11613": "Closed",
     "T-00254-11614": "Closed",
     "T-00254-11615": "Closed",
-    "T-00254-11616": "Open",
+    "T-00254-11616": "Closed",
     "T-00254-11617": "Open",
-    "T-00254-11618": "Open",
+    "T-00254-11618": "Closed",
     "T-00254-11619": "Open",
     "T-00254-11620": "Open",
     "T-00254-11621": "Open",
@@ -15614,6 +15614,24 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-09-AS-8331B-B-CU01",
+      "task": "T-00254-11618",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/25/2026 2:35:58 "
+    },
+    {
+      "tag": "PS5-09-AS-8331A-A-CU01",
+      "task": "T-00254-11616",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/25/2026 2:34:24 "
+    },
+    {
       "tag": "",
       "task": "T-00240-1313",
       "system": "PS5-62-08 - Outdoor Normal Lighting  DB  - PS5-61-IG-0006",
@@ -16674,24 +16692,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/22/2026 6:44:38 "
-    },
-    {
-      "tag": "PS5-09-PIT-8403-CU01",
-      "task": "T-00254-11757",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/22/2026 6:43:26 "
-    },
-    {
-      "tag": "PS5-09-PDIT-8411-CU01",
-      "task": "T-00254-11754",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/22/2026 6:42:17 "
     }
   ]
 }
