@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-25 10:29:26",
+  "updated": "2026-11-25 10:33:38",
   "total_tasks_ps5": 14082,
   "eit_total": 10372,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4683,
     "T": 1078
   },
-  "closed": 8274,
-  "open": 2098,
-  "today_closed": 0,
+  "closed": 8277,
+  "open": 2095,
+  "today_closed": 3,
   "closed_by_discipline": {
-    "I": 3852,
+    "I": 3855,
     "E": 4098,
     "T": 324
   },
   "open_by_discipline": {
-    "I": 759,
+    "I": 756,
     "E": 585,
     "T": 754
   },
@@ -229,15 +229,28 @@
     {
       "label": "2026-11-25",
       "E": 0,
-      "I": 0,
+      "I": 3,
       "T": 0,
-      "Total": 0
+      "Total": 3
     }
   ],
-  "closed_this_week": 78,
-  "closed_this_month": 1075,
-  "today_milestone": [],
-  "today_milestone_total": 0,
+  "closed_this_week": 81,
+  "closed_this_month": 1078,
+  "today_milestone": [
+    {
+      "milestone": "Milestone B",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 2
+    },
+    {
+      "milestone": "Milestone F",
+      "disc": "I",
+      "discipline": "Instrumentation (I)",
+      "count": 1
+    }
+  ],
+  "today_milestone_total": 3,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -257,13 +270,13 @@
       "label": "Milestone B",
       "raw": "PS5 - Milestone B",
       "total": 1730,
-      "closed": 1685,
-      "remaining": 45,
-      "pct": 97.4,
+      "closed": 1687,
+      "remaining": 43,
+      "pct": 97.5,
       "status": {
-        "Closed": 1685,
+        "Closed": 1687,
         "Submitted": 0,
-        "To be completed": 45,
+        "To be completed": 43,
         "Other": 0
       }
     },
@@ -313,13 +326,13 @@
       "label": "Milestone F",
       "raw": "PS5 - Milestone F",
       "total": 601,
-      "closed": 550,
-      "remaining": 51,
-      "pct": 91.5,
+      "closed": 551,
+      "remaining": 50,
+      "pct": 91.7,
       "status": {
-        "Closed": 550,
+        "Closed": 551,
         "Submitted": 0,
-        "To be completed": 51,
+        "To be completed": 50,
         "Other": 0
       }
     },
@@ -4437,9 +4450,9 @@
       "sid": "PS5-71-16",
       "name": "PS5-71-16 - Diesel Fuel Supply Pump A/B",
       "total": 20,
-      "closed": 18,
-      "open": 2,
-      "pct": 90.0,
+      "closed": 19,
+      "open": 1,
+      "pct": 95.0,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 8,
@@ -4448,7 +4461,7 @@
       },
       "closed_by_discipline": {
         "E": 8,
-        "I": 10,
+        "I": 11,
         "T": 0
       }
     },
@@ -4532,10 +4545,10 @@
       "sid": "PS5-71-21",
       "name": "PS5-71-21 - Diesel Transfer Pump A/B",
       "total": 37,
-      "closed": 35,
-      "open": 2,
-      "pct": 94.6,
-      "status": "IN PROGRESS",
+      "closed": 37,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 10,
         "I": 27,
@@ -4543,7 +4556,7 @@
       },
       "closed_by_discipline": {
         "E": 10,
-        "I": 25,
+        "I": 27,
         "T": 0
       }
     },
@@ -15582,12 +15595,39 @@
     "T-00284-0305": "Closed",
     "T-00031-1407": "Open",
     "T-00240-1407": "Open",
-    "T-00284-0306": "Open",
+    "T-00284-0306": "Closed",
     "T-00284-0307": "Open",
-    "T-00284-0308": "Open",
-    "T-00284-0309": "Open"
+    "T-00284-0308": "Closed",
+    "T-00284-0309": "Closed"
   },
   "recent_closed": [
+    {
+      "tag": "PS5-71-PDG-0049B",
+      "task": "T-00284-0309",
+      "system": "PS5-71-21 - Diesel Transfer Pump A/B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/25/2026 7:33:27 "
+    },
+    {
+      "tag": "PS5-71-PDG-0049A",
+      "task": "T-00284-0308",
+      "system": "PS5-71-21 - Diesel Transfer Pump A/B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/25/2026 7:32:37 "
+    },
+    {
+      "tag": "PS5-71-PDG-0043A",
+      "task": "T-00284-0306",
+      "system": "PS5-71-16 - Diesel Fuel Supply Pump A/B",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/25/2026 7:31:55 "
+    },
     {
       "tag": "PS5-09-IES-8202C-CD01",
       "task": "T-00024-3643",
@@ -16640,33 +16680,6 @@
       "disc": "E - Electrical",
       "cat": "PCOM - Precommissioning",
       "approved": "11/22/2026 5:59:25 "
-    },
-    {
-      "tag": "",
-      "task": "T-00031-1331",
-      "system": "PS5-62-10 - CRO Generator Building Normal L&SP DB  - PS5-61-IG-0015",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/22/2026 5:57:36 "
-    },
-    {
-      "tag": "PS5-09-LB-8341A-B-CC01",
-      "task": "T-00254-11735",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/22/2026 5:50:16 "
-    },
-    {
-      "tag": "PS5-09-LB-8341A-A-CC01",
-      "task": "T-00254-11734",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/22/2026 5:49:08 "
     }
   ]
 }
