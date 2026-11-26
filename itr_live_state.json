@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-26 17:12:28",
+  "updated": "2026-11-26 17:18:58",
   "total_tasks_ps5": 14082,
   "eit_total": 10372,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4683,
     "T": 1078
   },
-  "closed": 8340,
-  "open": 2032,
-  "today_closed": 22,
+  "closed": 8343,
+  "open": 2029,
+  "today_closed": 25,
   "closed_by_discipline": {
-    "I": 3895,
+    "I": 3898,
     "E": 4121,
     "T": 324
   },
   "open_by_discipline": {
-    "I": 716,
+    "I": 713,
     "E": 562,
     "T": 754
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-11-26",
       "E": 13,
-      "I": 9,
+      "I": 12,
       "T": 0,
-      "Total": 22
+      "Total": 25
     }
   ],
-  "closed_this_week": 144,
-  "closed_this_month": 1141,
+  "closed_this_week": 147,
+  "closed_this_month": 1144,
   "today_milestone": [
     {
       "milestone": "Milestone D",
@@ -253,7 +253,7 @@
       "milestone": "Milestone E",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 5
+      "count": 8
     },
     {
       "milestone": "Milestone G",
@@ -262,7 +262,7 @@
       "count": 6
     }
   ],
-  "today_milestone_total": 22,
+  "today_milestone_total": 25,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -324,13 +324,13 @@
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1550,
-      "closed": 1442,
-      "remaining": 108,
-      "pct": 93.0,
+      "closed": 1445,
+      "remaining": 105,
+      "pct": 93.2,
       "status": {
-        "Closed": 1442,
-        "Submitted": 1,
-        "To be completed": 105,
+        "Closed": 1445,
+        "Submitted": 0,
+        "To be completed": 103,
         "Other": 2
       }
     },
@@ -776,9 +776,9 @@
       "sid": "PS5-03-14",
       "name": "PS5-03-14 - FZ-14 - Power Generation Building - Switchgear Room",
       "total": 76,
-      "closed": 44,
-      "open": 32,
-      "pct": 57.9,
+      "closed": 47,
+      "open": 29,
+      "pct": 61.8,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 6,
@@ -787,7 +787,7 @@
       },
       "closed_by_discipline": {
         "E": 5,
-        "I": 37,
+        "I": 40,
         "T": 2
       }
     },
@@ -9466,12 +9466,12 @@
     "T-00254-4496": "Closed",
     "T-00254-4497": "Closed",
     "T-00254-4498": "Closed",
-    "T-00254-4499": "Open",
-    "T-00254-4500": "Open",
+    "T-00254-4499": "Closed",
+    "T-00254-4500": "Closed",
     "T-00254-4501": "Closed",
     "T-00254-4502": "Closed",
     "T-00254-4503": "Closed",
-    "T-00254-4504": "Open",
+    "T-00254-4504": "Closed",
     "T-00254-4505": "Closed",
     "T-00254-4506": "Closed",
     "T-00254-4507": "Open",
@@ -15614,6 +15614,33 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-03-RDOS-1406-CJ01",
+      "task": "T-00254-4504",
+      "system": "PS5-03-14 - FZ-14 - Power Generation Building - Switchgear Room",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/26/2026 2:12:15 "
+    },
+    {
+      "tag": "PS5-03-RDOS-1401-CJ01",
+      "task": "T-00254-4499",
+      "system": "PS5-03-14 - FZ-14 - Power Generation Building - Switchgear Room",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/26/2026 2:11:07 "
+    },
+    {
+      "tag": "PS5-03-RDOS-1402-CJ01",
+      "task": "T-00254-4500",
+      "system": "PS5-03-14 - FZ-14 - Power Generation Building - Switchgear Room",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/26/2026 2:07:37 "
+    },
+    {
       "tag": "PS5-03-RDOS-1403-CJ01",
       "task": "T-00254-4501",
       "system": "PS5-03-14 - FZ-14 - Power Generation Building - Switchgear Room",
@@ -16665,33 +16692,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/23/2026 1:58:35 "
-    },
-    {
-      "tag": "PS5-09-FD-0021-CU02",
-      "task": "T-00254-11685",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/23/2026 1:57:04 "
-    },
-    {
-      "tag": "PS5-09-FD-0021-CU01",
-      "task": "T-00254-11684",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/23/2026 1:55:53 "
-    },
-    {
-      "tag": "",
-      "task": "T-00035-1714",
-      "system": "PS5-79-12 - Electrical Heat Tracing Transformer/Distribution Board 12 (PS5-79-IG-0012)",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/23/2026 12:00:46"
     }
   ]
 }
