@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-27 17:18:49",
+  "updated": "2026-11-27 17:24:23",
   "total_tasks_ps5": 14082,
   "eit_total": 10372,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4683,
     "T": 1078
   },
-  "closed": 8357,
-  "open": 2015,
-  "today_closed": 10,
+  "closed": 8362,
+  "open": 2010,
+  "today_closed": 15,
   "closed_by_discipline": {
-    "I": 3905,
+    "I": 3910,
     "E": 4128,
     "T": 324
   },
   "open_by_discipline": {
-    "I": 706,
+    "I": 701,
     "E": 555,
     "T": 754
   },
@@ -229,13 +229,13 @@
     {
       "label": "2026-11-27",
       "E": 7,
-      "I": 3,
+      "I": 8,
       "T": 0,
-      "Total": 10
+      "Total": 15
     }
   ],
-  "closed_this_week": 161,
-  "closed_this_month": 1158,
+  "closed_this_week": 166,
+  "closed_this_month": 1163,
   "today_milestone": [
     {
       "milestone": "Milestone D",
@@ -247,7 +247,7 @@
       "milestone": "Milestone E",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 3
+      "count": 8
     },
     {
       "milestone": "Milestone G",
@@ -256,7 +256,7 @@
       "count": 2
     }
   ],
-  "today_milestone_total": 10,
+  "today_milestone_total": 15,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -310,22 +310,22 @@
       "status": {
         "Closed": 2970,
         "Submitted": 0,
-        "To be completed": 489,
-        "Other": 2
+        "To be completed": 487,
+        "Other": 4
       }
     },
     {
       "label": "Milestone E",
       "raw": "PS5 - Milestone E",
       "total": 1550,
-      "closed": 1448,
-      "remaining": 102,
-      "pct": 93.4,
+      "closed": 1453,
+      "remaining": 97,
+      "pct": 93.7,
       "status": {
-        "Closed": 1448,
-        "Submitted": 0,
-        "To be completed": 99,
-        "Other": 3
+        "Closed": 1453,
+        "Submitted": 1,
+        "To be completed": 94,
+        "Other": 2
       }
     },
     {
@@ -789,6 +789,44 @@
       "sid": "PS5-03-15",
       "name": "PS5-03-15 - FZ-15 - Power Generation Building - Generator Room 1",
       "total": 9,
+      "closed": 3,
+      "open": 6,
+      "pct": 33.3,
+      "status": "IN PROGRESS",
+      "by_discipline": {
+        "E": 0,
+        "I": 9,
+        "T": 0
+      },
+      "closed_by_discipline": {
+        "E": 0,
+        "I": 3,
+        "T": 0
+      }
+    },
+    {
+      "sid": "PS5-03-16",
+      "name": "PS5-03-16 - FZ-16 - Power Generation Building - Generator Room 2",
+      "total": 9,
+      "closed": 3,
+      "open": 6,
+      "pct": 33.3,
+      "status": "IN PROGRESS",
+      "by_discipline": {
+        "E": 0,
+        "I": 9,
+        "T": 0
+      },
+      "closed_by_discipline": {
+        "E": 0,
+        "I": 3,
+        "T": 0
+      }
+    },
+    {
+      "sid": "PS5-03-17",
+      "name": "PS5-03-17 - FZ-17 - Power Generation Building - Generator Room 3",
+      "total": 9,
       "closed": 2,
       "open": 7,
       "pct": 22.2,
@@ -801,44 +839,6 @@
       "closed_by_discipline": {
         "E": 0,
         "I": 2,
-        "T": 0
-      }
-    },
-    {
-      "sid": "PS5-03-16",
-      "name": "PS5-03-16 - FZ-16 - Power Generation Building - Generator Room 2",
-      "total": 9,
-      "closed": 0,
-      "open": 9,
-      "pct": 0.0,
-      "status": "OPEN",
-      "by_discipline": {
-        "E": 0,
-        "I": 9,
-        "T": 0
-      },
-      "closed_by_discipline": {
-        "E": 0,
-        "I": 0,
-        "T": 0
-      }
-    },
-    {
-      "sid": "PS5-03-17",
-      "name": "PS5-03-17 - FZ-17 - Power Generation Building - Generator Room 3",
-      "total": 9,
-      "closed": 1,
-      "open": 8,
-      "pct": 11.1,
-      "status": "IN PROGRESS",
-      "by_discipline": {
-        "E": 0,
-        "I": 9,
-        "T": 0
-      },
-      "closed_by_discipline": {
-        "E": 0,
-        "I": 1,
         "T": 0
       }
     },
@@ -9470,11 +9470,11 @@
     "T-00254-4506": "Closed",
     "T-00254-4507": "Closed",
     "T-00254-4508": "Closed",
-    "T-00254-4509": "Open",
-    "T-00254-4510": "Open",
-    "T-00254-4511": "Open",
-    "T-00254-4512": "Open",
-    "T-00254-4513": "Open",
+    "T-00254-4509": "Closed",
+    "T-00254-4510": "Closed",
+    "T-00254-4511": "Closed",
+    "T-00254-4512": "Closed",
+    "T-00254-4513": "Closed",
     "T-00254-4514": "Open",
     "T-00254-4515": "Open",
     "T-00254-4516": "Open",
@@ -15608,6 +15608,51 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-03-RDOS-1701-CJ01",
+      "task": "T-00254-4513",
+      "system": "PS5-03-17 - FZ-17 - Power Generation Building - Generator Room 3",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/27/2026 2:20:53 "
+    },
+    {
+      "tag": "PS5-03-RDOS-1603-CJ01",
+      "task": "T-00254-4512",
+      "system": "PS5-03-16 - FZ-16 - Power Generation Building - Generator Room 2",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/27/2026 2:19:58 "
+    },
+    {
+      "tag": "PS5-03-RDOS-1602-CJ01",
+      "task": "T-00254-4511",
+      "system": "PS5-03-16 - FZ-16 - Power Generation Building - Generator Room 2",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/27/2026 2:19:00 "
+    },
+    {
+      "tag": "PS5-03-RDOS-1601-CJ01",
+      "task": "T-00254-4510",
+      "system": "PS5-03-16 - FZ-16 - Power Generation Building - Generator Room 2",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/27/2026 2:17:30 "
+    },
+    {
+      "tag": "PS5-03-RDOS-1503-CJ01",
+      "task": "T-00254-4509",
+      "system": "PS5-03-15 - FZ-15 - Power Generation Building - Generator Room 1",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/27/2026 2:16:33 "
+    },
+    {
       "tag": "PS5-03-RDOS-1502-CJ01",
       "task": "T-00254-4508",
       "system": "PS5-03-15 - FZ-15 - Power Generation Building - Generator Room 1",
@@ -16641,51 +16686,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/23/2026 5:03:09 "
-    },
-    {
-      "tag": "PS5-09-LB-8331A-B-CC01",
-      "task": "T-00254-11731",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/23/2026 2:21:24 "
-    },
-    {
-      "tag": "PS5-09-LB-8331A-A-CC01",
-      "task": "T-00254-11730",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/23/2026 2:20:07 "
-    },
-    {
-      "tag": "PS5-09-AS-8311B-B-CU02",
-      "task": "T-00254-11603",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/23/2026 2:19:04 "
-    },
-    {
-      "tag": "PS5-09-AS-8311C-A-CU02",
-      "task": "T-00254-11605",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/23/2026 2:18:08 "
-    },
-    {
-      "tag": "PS5-09-AS-8311A-A-CU02",
-      "task": "T-00254-11601",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/23/2026 2:17:07 "
     }
   ]
 }
