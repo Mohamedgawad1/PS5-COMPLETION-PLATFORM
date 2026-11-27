@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-27 13:39:50",
+  "updated": "2026-11-27 15:46:34",
   "total_tasks_ps5": 14082,
   "eit_total": 10372,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4683,
     "T": 1078
   },
-  "closed": 8353,
-  "open": 2019,
-  "today_closed": 6,
+  "closed": 8354,
+  "open": 2018,
+  "today_closed": 7,
   "closed_by_discipline": {
     "I": 3902,
-    "E": 4127,
+    "E": 4128,
     "T": 324
   },
   "open_by_discipline": {
     "I": 709,
-    "E": 556,
+    "E": 555,
     "T": 754
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-11-27",
-      "E": 6,
+      "E": 7,
       "I": 0,
       "T": 0,
-      "Total": 6
+      "Total": 7
     }
   ],
-  "closed_this_week": 157,
-  "closed_this_month": 1154,
+  "closed_this_week": 158,
+  "closed_this_month": 1155,
   "today_milestone": [
     {
       "milestone": "Milestone D",
@@ -247,10 +247,10 @@
       "milestone": "Milestone G",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 1
+      "count": 2
     }
   ],
-  "today_milestone_total": 6,
+  "today_milestone_total": 7,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -340,13 +340,13 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 907,
-      "closed": 841,
-      "remaining": 66,
-      "pct": 92.7,
+      "closed": 842,
+      "remaining": 65,
+      "pct": 92.8,
       "status": {
-        "Closed": 841,
+        "Closed": 842,
         "Submitted": 0,
-        "To be completed": 66,
+        "To be completed": 65,
         "Other": 0
       }
     },
@@ -3899,17 +3899,17 @@
       "sid": "PS5-62-08",
       "name": "PS5-62-08 - Outdoor Normal Lighting  DB  - PS5-61-IG-0006",
       "total": 24,
-      "closed": 23,
-      "open": 1,
-      "pct": 95.8,
-      "status": "IN PROGRESS",
+      "closed": 24,
+      "open": 0,
+      "pct": 100.0,
+      "status": "COMPLETE",
       "by_discipline": {
         "E": 24,
         "I": 0,
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 23,
+        "E": 24,
         "I": 0,
         "T": 0
       }
@@ -15594,13 +15594,22 @@
     "T-00284-0304": "Closed",
     "T-00284-0305": "Closed",
     "T-00031-1407": "Closed",
-    "T-00240-1407": "Open",
+    "T-00240-1407": "Closed",
     "T-00284-0306": "Closed",
     "T-00284-0307": "Open",
     "T-00284-0308": "Closed",
     "T-00284-0309": "Closed"
   },
   "recent_closed": [
+    {
+      "tag": "",
+      "task": "T-00240-1407",
+      "system": "PS5-62-08 - Outdoor Normal Lighting  DB  - PS5-61-IG-0006",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/27/2026 11:43:04"
+    },
     {
       "tag": "PS5-09-FCU-8442F-CL01",
       "task": "T-00023-9707",
@@ -16671,15 +16680,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/23/2026 2:14:06 "
-    },
-    {
-      "tag": "PS5-09-AS-8311A-A-CU01",
-      "task": "T-00254-11600",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/23/2026 2:13:05 "
     }
   ]
 }
