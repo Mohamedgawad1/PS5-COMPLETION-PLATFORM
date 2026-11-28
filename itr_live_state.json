@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-28 14:31:39",
+  "updated": "2026-11-28 14:57:05",
   "total_tasks_ps5": 14082,
   "eit_total": 10372,
   "eit_by_discipline": {
@@ -9,18 +9,18 @@
     "E": 4683,
     "T": 1078
   },
-  "closed": 8396,
-  "open": 1976,
-  "today_closed": 13,
+  "closed": 8409,
+  "open": 1963,
+  "today_closed": 26,
   "closed_by_discipline": {
     "I": 3930,
     "E": 4142,
-    "T": 324
+    "T": 337
   },
   "open_by_discipline": {
     "I": 681,
     "E": 541,
-    "T": 754
+    "T": 741
   },
   "daily": [
     {
@@ -230,12 +230,12 @@
       "label": "2026-11-28",
       "E": 4,
       "I": 9,
-      "T": 0,
-      "Total": 13
+      "T": 13,
+      "Total": 26
     }
   ],
-  "closed_this_week": 200,
-  "closed_this_month": 1197,
+  "closed_this_week": 213,
+  "closed_this_month": 1210,
   "today_milestone": [
     {
       "milestone": "Milestone D",
@@ -1112,9 +1112,9 @@
       "sid": "PS5-08-01a",
       "name": "PS5-08-01a - PAGA (Required for SU)",
       "total": 96,
-      "closed": 75,
-      "open": 21,
-      "pct": 78.1,
+      "closed": 86,
+      "open": 10,
+      "pct": 89.6,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 0,
@@ -1124,16 +1124,16 @@
       "closed_by_discipline": {
         "E": 0,
         "I": 0,
-        "T": 75
+        "T": 86
       }
     },
     {
       "sid": "PS5-08-01b",
       "name": "PS5-08-01b - PAGA (Not required for SU)",
       "total": 134,
-      "closed": 11,
-      "open": 123,
-      "pct": 8.2,
+      "closed": 13,
+      "open": 121,
+      "pct": 9.7,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 0,
@@ -1143,7 +1143,7 @@
       "closed_by_discipline": {
         "E": 0,
         "I": 0,
-        "T": 11
+        "T": 13
       }
     },
     {
@@ -14391,9 +14391,9 @@
     "T-00621-2797": "Open",
     "T-00621-2798": "Open",
     "T-00621-2799": "Open",
-    "T-00621-2800": "Open",
+    "T-00621-2800": "Closed",
     "T-00621-2801": "Closed",
-    "T-00621-2802": "Open",
+    "T-00621-2802": "Closed",
     "T-00621-2803": "Closed",
     "T-00621-2804": "Open",
     "T-00621-2805": "Open",
@@ -14419,26 +14419,26 @@
     "T-00621-2825": "Open",
     "T-00621-2826": "Open",
     "T-00621-2827": "Open",
-    "T-00621-2828": "Open",
+    "T-00621-2828": "Closed",
     "T-00621-2829": "Closed",
-    "T-00621-2830": "Open",
+    "T-00621-2830": "Closed",
     "T-00621-2831": "Closed",
     "T-00621-2832": "Closed",
     "T-00621-2833": "Closed",
     "T-00621-2834": "Closed",
     "T-00621-2835": "Closed",
     "T-00621-2836": "Closed",
-    "T-00621-2837": "Open",
+    "T-00621-2837": "Closed",
     "T-00621-2838": "Closed",
     "T-00621-2839": "Closed",
-    "T-00621-2840": "Open",
+    "T-00621-2840": "Closed",
     "T-00621-2841": "Closed",
     "T-00621-2842": "Closed",
     "T-00621-2843": "Closed",
-    "T-00621-2844": "Open",
+    "T-00621-2844": "Closed",
     "T-00621-2845": "Closed",
     "T-00621-2846": "Closed",
-    "T-00621-2847": "Open",
+    "T-00621-2847": "Closed",
     "T-00621-2848": "Closed",
     "T-00621-2849": "Closed",
     "T-00621-2850": "Closed",
@@ -14451,8 +14451,8 @@
     "T-00621-2857": "Closed",
     "T-00621-2858": "Closed",
     "T-00621-2859": "Closed",
-    "T-00621-2860": "Open",
-    "T-00621-2861": "Open",
+    "T-00621-2860": "Closed",
+    "T-00621-2861": "Closed",
     "T-00621-2862": "Closed",
     "T-00621-2863": "Closed",
     "T-00621-2864": "Open",
@@ -14493,9 +14493,9 @@
     "T-00621-2899": "Closed",
     "T-00621-2900": "Closed",
     "T-00621-2901": "Closed",
-    "T-00621-2902": "Open",
-    "T-00621-2903": "Open",
-    "T-00621-2904": "Open",
+    "T-00621-2902": "Closed",
+    "T-00621-2903": "Closed",
+    "T-00621-2904": "Closed",
     "T-00621-2905": "Open",
     "T-00621-2906": "Open",
     "T-00621-2907": "Open",
@@ -15608,6 +15608,123 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-08-01LS-0526-CR01",
+      "task": "T-00621-2904",
+      "system": "PS5-08-01a - PAGA (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 11:49:31"
+    },
+    {
+      "tag": "PS5-08-01LS-0525-CR01",
+      "task": "T-00621-2903",
+      "system": "PS5-08-01a - PAGA (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 11:48:01"
+    },
+    {
+      "tag": "PS5-08-01LS-0524-CR01",
+      "task": "T-00621-2902",
+      "system": "PS5-08-01a - PAGA (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 11:46:45"
+    },
+    {
+      "tag": "PS5-08-01LS-0305-CR01",
+      "task": "T-00621-2861",
+      "system": "PS5-08-01b - PAGA (Not required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 11:45:32"
+    },
+    {
+      "tag": "PS5-08-01LS-0304-CR01",
+      "task": "T-00621-2860",
+      "system": "PS5-08-01b - PAGA (Not required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 11:44:04"
+    },
+    {
+      "tag": "PS5-08-01LS-0203-CR01",
+      "task": "T-00621-2847",
+      "system": "PS5-08-01a - PAGA (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 11:42:59"
+    },
+    {
+      "tag": "PS5-08-01LS-0110-CR02",
+      "task": "T-00621-2844",
+      "system": "PS5-08-01a - PAGA (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 11:41:50"
+    },
+    {
+      "tag": "PS5-08-01LS-0107-CR01",
+      "task": "T-00621-2840",
+      "system": "PS5-08-01a - PAGA (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 11:40:42"
+    },
+    {
+      "tag": "PS5-08-01LS-0104-CR01",
+      "task": "T-00621-2837",
+      "system": "PS5-08-01a - PAGA (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 11:39:25"
+    },
+    {
+      "tag": "PS5-08-01BT-1902-CR01",
+      "task": "T-00621-2830",
+      "system": "PS5-08-01a - PAGA (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 11:38:09"
+    },
+    {
+      "tag": "PS5-08-01BT-1901-CR01",
+      "task": "T-00621-2828",
+      "system": "PS5-08-01a - PAGA (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 11:36:14"
+    },
+    {
+      "tag": "PS5-08-01BT-0004-CR01",
+      "task": "T-00621-2802",
+      "system": "PS5-08-01a - PAGA (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 11:35:04"
+    },
+    {
+      "tag": "PS5-08-01BT-0003-CR01",
+      "task": "T-00621-2800",
+      "system": "PS5-08-01a - PAGA (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 11:33:03"
+    },
+    {
       "tag": "",
       "task": "T-00240-1323",
       "system": "PS5-62-09 - Outdoor Normal Lighting DB  - PS5-61-IG-0007",
@@ -16569,123 +16686,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/25/2026 7:38:54 "
-    },
-    {
-      "tag": "PS5-09-BI-8411B-CU01",
-      "task": "T-00069-11651",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/25/2026 7:38:05 "
-    },
-    {
-      "tag": "PS5-09-BI-8411A-CU01",
-      "task": "T-00069-11650",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/25/2026 7:37:18 "
-    },
-    {
-      "tag": "PS5-09-BI-8111B-CU01",
-      "task": "T-00069-11633",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/25/2026 7:36:29 "
-    },
-    {
-      "tag": "PS5-09-BI-8111A-CU01",
-      "task": "T-00069-11632",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/25/2026 7:35:27 "
-    },
-    {
-      "tag": "PS5-71-PDG-0049B",
-      "task": "T-00284-0309",
-      "system": "PS5-71-21 - Diesel Transfer Pump A/B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/25/2026 7:33:27 "
-    },
-    {
-      "tag": "PS5-71-PDG-0049A",
-      "task": "T-00284-0308",
-      "system": "PS5-71-21 - Diesel Transfer Pump A/B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/25/2026 7:32:37 "
-    },
-    {
-      "tag": "PS5-71-PDG-0043A",
-      "task": "T-00284-0306",
-      "system": "PS5-71-16 - Diesel Fuel Supply Pump A/B",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/25/2026 7:31:55 "
-    },
-    {
-      "tag": "PS5-09-AS-8421A-CU02",
-      "task": "T-00254-11637",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/24/2026 9:00:00 "
-    },
-    {
-      "tag": "PS5-09-AS-8421B-CU02",
-      "task": "T-00254-11639",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/24/2026 9:00:00 "
-    },
-    {
-      "tag": "PS5-09-FD-0026-CU02",
-      "task": "T-00254-11694",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/24/2026 9:00:00 "
-    },
-    {
-      "tag": "PS5-09-FD-0027-CU02",
-      "task": "T-00254-11697",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/24/2026 9:00:00 "
-    },
-    {
-      "tag": "PS5-09-LB-8411A-CC01",
-      "task": "T-00254-11736",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/24/2026 9:00:00 "
-    },
-    {
-      "tag": "PS5-09-LB-8411B-CC01",
-      "task": "T-00254-11737",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/24/2026 9:00:00 "
     }
   ]
 }
