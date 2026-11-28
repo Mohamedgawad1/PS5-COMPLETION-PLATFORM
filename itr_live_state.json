@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-28 15:06:43",
+  "updated": "2026-11-28 15:11:26",
   "total_tasks_ps5": 14082,
   "eit_total": 10372,
   "eit_by_discipline": {
@@ -9,18 +9,18 @@
     "E": 4683,
     "T": 1078
   },
-  "closed": 8412,
-  "open": 1960,
-  "today_closed": 29,
+  "closed": 8417,
+  "open": 1955,
+  "today_closed": 34,
   "closed_by_discipline": {
     "I": 3930,
-    "E": 4143,
-    "T": 339
+    "E": 4145,
+    "T": 342
   },
   "open_by_discipline": {
     "I": 681,
-    "E": 540,
-    "T": 739
+    "E": 538,
+    "T": 736
   },
   "daily": [
     {
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-11-28",
-      "E": 5,
+      "E": 7,
       "I": 9,
-      "T": 15,
-      "Total": 29
+      "T": 18,
+      "Total": 34
     }
   ],
-  "closed_this_week": 216,
-  "closed_this_month": 1213,
+  "closed_this_week": 221,
+  "closed_this_month": 1218,
   "today_milestone": [
     {
       "milestone": "Milestone D",
@@ -247,7 +247,7 @@
       "milestone": "Milestone G",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 3
+      "count": 5
     },
     {
       "milestone": "Milestone H",
@@ -256,7 +256,7 @@
       "count": 2
     }
   ],
-  "today_milestone_total": 14,
+  "today_milestone_total": 16,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -346,14 +346,14 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 907,
-      "closed": 851,
-      "remaining": 56,
-      "pct": 93.8,
+      "closed": 853,
+      "remaining": 54,
+      "pct": 94.0,
       "status": {
-        "Closed": 851,
+        "Closed": 853,
         "Submitted": 0,
-        "To be completed": 55,
-        "Other": 1
+        "To be completed": 54,
+        "Other": 0
       }
     },
     {
@@ -1112,9 +1112,9 @@
       "sid": "PS5-08-01a",
       "name": "PS5-08-01a - PAGA (Required for SU)",
       "total": 96,
-      "closed": 88,
-      "open": 8,
-      "pct": 91.7,
+      "closed": 91,
+      "open": 5,
+      "pct": 94.8,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 0,
@@ -1124,7 +1124,7 @@
       "closed_by_discipline": {
         "E": 0,
         "I": 0,
-        "T": 88
+        "T": 91
       }
     },
     {
@@ -3791,9 +3791,9 @@
       "sid": "PS5-62-02",
       "name": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
       "total": 67,
-      "closed": 50,
-      "open": 17,
-      "pct": 74.6,
+      "closed": 52,
+      "open": 15,
+      "pct": 77.6,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 67,
@@ -3801,7 +3801,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 50,
+        "E": 52,
         "I": 0,
         "T": 0
       }
@@ -13311,8 +13311,8 @@
     "T-00031-1369": "Closed",
     "T-00031-1370": "Open",
     "T-00031-1371": "Closed",
-    "T-00031-1372": "Open",
-    "T-00031-1373": "Open",
+    "T-00031-1372": "Closed",
+    "T-00031-1373": "Closed",
     "T-00031-1374": "Open",
     "T-00031-1375": "Open",
     "T-00031-1376": "Closed",
@@ -14498,9 +14498,9 @@
     "T-00621-2904": "Closed",
     "T-00621-2905": "Closed",
     "T-00621-2906": "Closed",
-    "T-00621-2907": "Open",
+    "T-00621-2907": "Closed",
     "T-00621-2908": "Closed",
-    "T-00621-2909": "Open",
+    "T-00621-2909": "Closed",
     "T-00621-2910": "Open",
     "T-00621-2911": "Closed",
     "T-00621-2912": "Closed",
@@ -14607,7 +14607,7 @@
     "T-00621-3013": "Open",
     "T-00621-3014": "Open",
     "T-00621-3015": "Open",
-    "T-00621-3016": "Open",
+    "T-00621-3016": "Closed",
     "T-00621-3017": "Open",
     "T-00621-3018": "Open",
     "T-00621-3019": "Open",
@@ -15608,6 +15608,42 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-08-01OC-0002-CJ01",
+      "task": "T-00621-3016",
+      "system": "PS5-08-01a - PAGA (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 12:10:33"
+    },
+    {
+      "tag": "PS5-08-01LS-0530-CR02",
+      "task": "T-00621-2909",
+      "system": "PS5-08-01a - PAGA (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 12:09:12"
+    },
+    {
+      "tag": "PS5-08-01LS-0529-CR01",
+      "task": "T-00621-2907",
+      "system": "PS5-08-01a - PAGA (Required for SU)",
+      "loop": "",
+      "disc": "T - Telecom",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 12:07:38"
+    },
+    {
+      "tag": "",
+      "task": "T-00031-1373",
+      "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 12:06:58"
+    },
+    {
       "tag": "PS5-08-01LS-0528-CR01",
       "task": "T-00621-2906",
       "system": "PS5-08-01a - PAGA (Required for SU)",
@@ -15615,6 +15651,15 @@
       "disc": "T - Telecom",
       "cat": "PCOM - Precommissioning",
       "approved": "11/28/2026 12:03:55"
+    },
+    {
+      "tag": "",
+      "task": "T-00031-1372",
+      "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 12:03:26"
     },
     {
       "tag": "",
@@ -16641,51 +16686,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/25/2026 2:34:24 "
-    },
-    {
-      "tag": "",
-      "task": "T-00240-1313",
-      "system": "PS5-62-08 - Outdoor Normal Lighting  DB  - PS5-61-IG-0006",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/25/2026 8:15:03 "
-    },
-    {
-      "tag": "",
-      "task": "T-00240-1312",
-      "system": "PS5-62-08 - Outdoor Normal Lighting  DB  - PS5-61-IG-0006",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/25/2026 8:13:55 "
-    },
-    {
-      "tag": "",
-      "task": "T-00031-1312",
-      "system": "PS5-62-08 - Outdoor Normal Lighting  DB  - PS5-61-IG-0006",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/25/2026 8:11:58 "
-    },
-    {
-      "tag": "",
-      "task": "T-00031-1313",
-      "system": "PS5-62-08 - Outdoor Normal Lighting  DB  - PS5-61-IG-0006",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/25/2026 8:11:43 "
-    },
-    {
-      "tag": "PS5-09-LB-8211B-CC01",
-      "task": "T-00069-11709",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/25/2026 7:41:34 "
     }
   ]
 }
