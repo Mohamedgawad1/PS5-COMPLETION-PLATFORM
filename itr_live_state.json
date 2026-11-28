@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-28 11:35:22",
+  "updated": "2026-11-28 11:54:20",
   "total_tasks_ps5": 14082,
   "eit_total": 10372,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4683,
     "T": 1078
   },
-  "closed": 8392,
-  "open": 1980,
-  "today_closed": 9,
+  "closed": 8394,
+  "open": 1978,
+  "today_closed": 11,
   "closed_by_discipline": {
     "I": 3930,
-    "E": 4138,
+    "E": 4140,
     "T": 324
   },
   "open_by_discipline": {
     "I": 681,
-    "E": 545,
+    "E": 543,
     "T": 754
   },
   "daily": [
@@ -228,23 +228,29 @@
     },
     {
       "label": "2026-11-28",
-      "E": 0,
+      "E": 2,
       "I": 9,
       "T": 0,
-      "Total": 9
+      "Total": 11
     }
   ],
-  "closed_this_week": 196,
-  "closed_this_month": 1193,
+  "closed_this_week": 198,
+  "closed_this_month": 1195,
   "today_milestone": [
     {
       "milestone": "Milestone D",
       "disc": "I",
       "discipline": "Instrumentation (I)",
       "count": 9
+    },
+    {
+      "milestone": "Milestone H",
+      "disc": "E",
+      "discipline": "Electrical (E)",
+      "count": 2
     }
   ],
-  "today_milestone_total": 9,
+  "today_milestone_total": 11,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -348,14 +354,14 @@
       "label": "Milestone H",
       "raw": "PS5 - Milestone H",
       "total": 3261,
-      "closed": 3112,
-      "remaining": 149,
-      "pct": 95.4,
+      "closed": 3114,
+      "remaining": 147,
+      "pct": 95.5,
       "status": {
-        "Closed": 3112,
+        "Closed": 3114,
         "Submitted": 1,
-        "To be completed": 136,
-        "Other": 12
+        "To be completed": 135,
+        "Other": 11
       }
     },
     {
@@ -4254,9 +4260,9 @@
       "sid": "PS5-71-04",
       "name": "PS5-71-04 - CFO Storage Tank",
       "total": 82,
-      "closed": 71,
-      "open": 11,
-      "pct": 86.6,
+      "closed": 73,
+      "open": 9,
+      "pct": 89.0,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 22,
@@ -4264,7 +4270,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 16,
+        "E": 18,
         "I": 55,
         "T": 0
       }
@@ -5467,13 +5473,13 @@
     "T-00033-0044": "Closed",
     "T-00033-0045": "Closed",
     "T-00033-0046": "Open",
-    "T-00033-0047": "Open",
+    "T-00033-0047": "Closed",
     "T-00033-0048": "Closed",
     "T-00033-0049": "Closed",
     "T-00242-0044": "Closed",
     "T-00242-0045": "Closed",
     "T-00242-0046": "Open",
-    "T-00242-0047": "Open",
+    "T-00242-0047": "Closed",
     "T-00242-0048": "Closed",
     "T-00242-0049": "Closed",
     "T-00046-0291": "Closed",
@@ -15596,6 +15602,24 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-71-HE-2300",
+      "task": "T-00242-0047",
+      "system": "PS5-71-04 - CFO Storage Tank",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 8:37:50 "
+    },
+    {
+      "tag": "PS5-71-HE-2300",
+      "task": "T-00033-0047",
+      "system": "PS5-71-04 - CFO Storage Tank",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 8:32:04 "
+    },
+    {
       "tag": "PS5-09-LB-8341A-B-CC01",
       "task": "T-00069-11723",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16656,24 +16680,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/24/2026 9:00:00 "
-    },
-    {
-      "tag": "PS5-09-IES-8202C-CD01",
-      "task": "T-00024-3643",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/24/2026 1:50:06 "
-    },
-    {
-      "tag": "PS5-09-IES-8202B-CD01",
-      "task": "T-00024-3642",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "E - Electrical",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/24/2026 1:49:03 "
     }
   ]
 }
