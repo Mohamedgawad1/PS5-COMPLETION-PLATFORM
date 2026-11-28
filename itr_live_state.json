@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-28 15:20:29",
+  "updated": "2026-11-28 15:25:14",
   "total_tasks_ps5": 14082,
   "eit_total": 10372,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4683,
     "T": 1078
   },
-  "closed": 8423,
-  "open": 1949,
-  "today_closed": 40,
+  "closed": 8425,
+  "open": 1947,
+  "today_closed": 42,
   "closed_by_discipline": {
     "I": 3930,
-    "E": 4148,
+    "E": 4150,
     "T": 345
   },
   "open_by_discipline": {
     "I": 681,
-    "E": 535,
+    "E": 533,
     "T": 733
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-11-28",
-      "E": 10,
+      "E": 12,
       "I": 9,
       "T": 21,
-      "Total": 40
+      "Total": 42
     }
   ],
-  "closed_this_week": 227,
-  "closed_this_month": 1224,
+  "closed_this_week": 229,
+  "closed_this_month": 1226,
   "today_milestone": [
     {
       "milestone": "Milestone D",
@@ -247,7 +247,7 @@
       "milestone": "Milestone G",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 8
+      "count": 10
     },
     {
       "milestone": "Milestone H",
@@ -256,7 +256,7 @@
       "count": 2
     }
   ],
-  "today_milestone_total": 19,
+  "today_milestone_total": 21,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -346,13 +346,13 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 907,
-      "closed": 856,
-      "remaining": 51,
-      "pct": 94.4,
+      "closed": 858,
+      "remaining": 49,
+      "pct": 94.6,
       "status": {
-        "Closed": 856,
+        "Closed": 858,
         "Submitted": 0,
-        "To be completed": 51,
+        "To be completed": 49,
         "Other": 0
       }
     },
@@ -3791,9 +3791,9 @@
       "sid": "PS5-62-02",
       "name": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
       "total": 67,
-      "closed": 55,
-      "open": 12,
-      "pct": 82.1,
+      "closed": 57,
+      "open": 10,
+      "pct": 85.1,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 67,
@@ -3801,7 +3801,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 55,
+        "E": 57,
         "I": 0,
         "T": 0
       }
@@ -13466,8 +13466,8 @@
     "T-00240-1370": "Open",
     "T-00240-1371": "Closed",
     "T-00240-1372": "Closed",
-    "T-00240-1373": "Open",
-    "T-00240-1374": "Open",
+    "T-00240-1373": "Closed",
+    "T-00240-1374": "Closed",
     "T-00240-1375": "Open",
     "T-00240-1376": "Closed",
     "T-00240-1377": "Open",
@@ -15609,6 +15609,24 @@
   "recent_closed": [
     {
       "tag": "",
+      "task": "T-00240-1374",
+      "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 12:20:05"
+    },
+    {
+      "tag": "",
+      "task": "T-00240-1373",
+      "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 12:18:37"
+    },
+    {
+      "tag": "",
       "task": "T-00240-1372",
       "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
       "loop": "",
@@ -16668,24 +16686,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/25/2026 2:44:01 "
-    },
-    {
-      "tag": "PS5-09-FD-0033-CJ01",
-      "task": "T-00254-11713",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/25/2026 2:42:50 "
-    },
-    {
-      "tag": "PS5-09-AS-8432B-CU02",
-      "task": "T-00254-11643",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/25/2026 2:42:07 "
     }
   ]
 }
