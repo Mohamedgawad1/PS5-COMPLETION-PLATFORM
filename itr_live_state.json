@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-28 15:55:08",
+  "updated": "2026-11-28 16:01:03",
   "total_tasks_ps5": 14082,
   "eit_total": 10372,
   "eit_by_discipline": {
@@ -9,17 +9,17 @@
     "E": 4683,
     "T": 1078
   },
-  "closed": 8425,
-  "open": 1947,
-  "today_closed": 42,
+  "closed": 8427,
+  "open": 1945,
+  "today_closed": 44,
   "closed_by_discipline": {
     "I": 3930,
-    "E": 4150,
+    "E": 4152,
     "T": 345
   },
   "open_by_discipline": {
     "I": 681,
-    "E": 533,
+    "E": 531,
     "T": 733
   },
   "daily": [
@@ -228,14 +228,14 @@
     },
     {
       "label": "2026-11-28",
-      "E": 12,
+      "E": 14,
       "I": 9,
       "T": 21,
-      "Total": 42
+      "Total": 44
     }
   ],
-  "closed_this_week": 229,
-  "closed_this_month": 1226,
+  "closed_this_week": 231,
+  "closed_this_month": 1228,
   "today_milestone": [
     {
       "milestone": "Milestone D",
@@ -247,7 +247,7 @@
       "milestone": "Milestone G",
       "disc": "E",
       "discipline": "Electrical (E)",
-      "count": 10
+      "count": 12
     },
     {
       "milestone": "Milestone H",
@@ -256,7 +256,7 @@
       "count": 2
     }
   ],
-  "today_milestone_total": 21,
+  "today_milestone_total": 23,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -346,13 +346,13 @@
       "label": "Milestone G",
       "raw": "PS5 - Milestone G",
       "total": 907,
-      "closed": 858,
-      "remaining": 49,
-      "pct": 94.6,
+      "closed": 860,
+      "remaining": 47,
+      "pct": 94.8,
       "status": {
-        "Closed": 858,
-        "Submitted": 1,
-        "To be completed": 48,
+        "Closed": 860,
+        "Submitted": 0,
+        "To be completed": 47,
         "Other": 0
       }
     },
@@ -3772,9 +3772,9 @@
       "sid": "PS5-62-01",
       "name": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
       "total": 64,
-      "closed": 42,
-      "open": 22,
-      "pct": 65.6,
+      "closed": 44,
+      "open": 20,
+      "pct": 68.8,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 64,
@@ -3782,7 +3782,7 @@
         "T": 0
       },
       "closed_by_discipline": {
-        "E": 42,
+        "E": 44,
         "I": 0,
         "T": 0
       }
@@ -13295,7 +13295,7 @@
     "T-00031-1353": "Closed",
     "T-00031-1354": "Closed",
     "T-00031-1355": "Open",
-    "T-00031-1356": "Open",
+    "T-00031-1356": "Closed",
     "T-00031-1357": "Open",
     "T-00031-1358": "Open",
     "T-00031-1359": "Open",
@@ -13449,7 +13449,7 @@
     "T-00240-1353": "Closed",
     "T-00240-1354": "Closed",
     "T-00240-1355": "Open",
-    "T-00240-1356": "Open",
+    "T-00240-1356": "Closed",
     "T-00240-1357": "Open",
     "T-00240-1358": "Open",
     "T-00240-1359": "Open",
@@ -15609,6 +15609,24 @@
   "recent_closed": [
     {
       "tag": "",
+      "task": "T-00240-1356",
+      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 12:55:37"
+    },
+    {
+      "tag": "",
+      "task": "T-00031-1356",
+      "system": "PS5-62-01 - Lighting Control Panel - PS5-62-IE-0001",
+      "loop": "",
+      "disc": "E - Electrical",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 12:51:07"
+    },
+    {
+      "tag": "",
       "task": "T-00240-1374",
       "system": "PS5-62-02 - Lighting Control Panel - PS5-62-IE-0002",
       "loop": "",
@@ -16668,24 +16686,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/25/2026 2:45:58 "
-    },
-    {
-      "tag": "PS5-09-LB-8442D-CC01",
-      "task": "T-00254-11741",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/25/2026 2:44:56 "
-    },
-    {
-      "tag": "PS5-09-LB-8442C-CC01",
-      "task": "T-00254-11740",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/25/2026 2:44:01 "
     }
   ]
 }
