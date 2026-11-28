@@ -1,7 +1,7 @@
 {
   "source": "Smart Completions (live authenticated pull)",
   "scope": "PS5 / CPP AGI / PCOM (ITR tests) / E&I&T / vTasks_TestsPlanned",
-  "updated": "2026-11-28 16:19:38",
+  "updated": "2026-11-28 16:24:16",
   "total_tasks_ps5": 14082,
   "eit_total": 10372,
   "eit_by_discipline": {
@@ -9,16 +9,16 @@
     "E": 4683,
     "T": 1078
   },
-  "closed": 8437,
-  "open": 1935,
-  "today_closed": 54,
+  "closed": 8438,
+  "open": 1934,
+  "today_closed": 55,
   "closed_by_discipline": {
-    "I": 3940,
+    "I": 3941,
     "E": 4152,
     "T": 345
   },
   "open_by_discipline": {
-    "I": 671,
+    "I": 670,
     "E": 531,
     "T": 733
   },
@@ -229,19 +229,19 @@
     {
       "label": "2026-11-28",
       "E": 14,
-      "I": 19,
+      "I": 20,
       "T": 21,
-      "Total": 54
+      "Total": 55
     }
   ],
-  "closed_this_week": 241,
-  "closed_this_month": 1238,
+  "closed_this_week": 242,
+  "closed_this_month": 1239,
   "today_milestone": [
     {
       "milestone": "Milestone D",
       "disc": "I",
       "discipline": "Instrumentation (I)",
-      "count": 19
+      "count": 20
     },
     {
       "milestone": "Milestone G",
@@ -256,7 +256,7 @@
       "count": 2
     }
   ],
-  "today_milestone_total": 33,
+  "today_milestone_total": 34,
   "milestone_summary": [
     {
       "label": "Milestone A",
@@ -304,12 +304,12 @@
       "label": "Milestone D",
       "raw": "PS5 - Milestone D",
       "total": 3461,
-      "closed": 2999,
-      "remaining": 462,
+      "closed": 3000,
+      "remaining": 461,
       "pct": 86.7,
       "status": {
-        "Closed": 2999,
-        "Submitted": 1,
+        "Closed": 3000,
+        "Submitted": 0,
         "To be completed": 458,
         "Other": 3
       }
@@ -1549,9 +1549,9 @@
       "sid": "PS5-09-03",
       "name": "PS5-09-03 - HVAC for Generator Building",
       "total": 1004,
-      "closed": 626,
-      "open": 378,
-      "pct": 62.4,
+      "closed": 627,
+      "open": 377,
+      "pct": 62.5,
       "status": "IN PROGRESS",
       "by_discipline": {
         "E": 380,
@@ -1560,7 +1560,7 @@
       },
       "closed_by_discipline": {
         "E": 256,
-        "I": 368,
+        "I": 369,
         "T": 2
       }
     },
@@ -13030,7 +13030,7 @@
     "T-00254-11786": "Closed",
     "T-00254-11787": "Closed",
     "T-00254-11788": "Closed",
-    "T-00254-11789": "Open",
+    "T-00254-11789": "Closed",
     "T-00254-11790": "Open",
     "T-00254-11791": "Closed",
     "T-00254-11792": "Closed",
@@ -15608,6 +15608,15 @@
   },
   "recent_closed": [
     {
+      "tag": "PS5-09-XV-8414-CU01",
+      "task": "T-00254-11789",
+      "system": "PS5-09-03 - HVAC for Generator Building",
+      "loop": "",
+      "disc": "I - Instrumentation",
+      "cat": "PCOM - Precommissioning",
+      "approved": "11/28/2026 1:19:33 "
+    },
+    {
       "tag": "PS5-09-XV-8413-CU02",
       "task": "T-00254-11788",
       "system": "PS5-09-03 - HVAC for Generator Building",
@@ -16677,15 +16686,6 @@
       "disc": "I - Instrumentation",
       "cat": "PCOM - Precommissioning",
       "approved": "11/25/2026 9:00:00 "
-    },
-    {
-      "tag": "PS5-09-AS-8432A-CU02",
-      "task": "T-00254-11641",
-      "system": "PS5-09-03 - HVAC for Generator Building",
-      "loop": "",
-      "disc": "I - Instrumentation",
-      "cat": "PCOM - Precommissioning",
-      "approved": "11/25/2026 4:00:29 "
     }
   ]
 }
